@@ -29,9 +29,11 @@ function showArenaTrend(container, lineTicks, winData) {
     return line;
 }
 
-function showClassWins(container, winData) {
-    var barTicks = ["Druid", "Hunter", "Mage", "Paladin", "Priest",
+var classNames = ["Druid", "Hunter", "Mage", "Paladin", "Priest",
         "Rogue", "Shaman", "Warlock", "Warrior"];
+
+function showClassWins(container, winData) {
+    var barTicks = classNames;
     var barOptions = {
         width: 900,
         height: 400,
@@ -60,4 +62,20 @@ function showClassWins(container, winData) {
     var barData = [{name: 0, data: arr}];
     var bar = new Venus.SvgChart(container, barData, barOptions);
     return bar;
+}
+
+function showClassRates(container, playData) {
+    var pieOptions = {
+        width: 900,
+        height: 400,
+        pie: {
+            radius: 100, 
+        },
+    };
+    var pieData = [];
+    for (var i = 0; i < classNames.length; i++) {
+        pieData.push({name: classNames[i], data: playData[i]});
+    }
+    var pie = new Venus.SvgChart(container, pieData, pieOptions);
+    return pie;
 }
