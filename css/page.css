@@ -1,1 +1,22 @@
 /* not implemented yet */
+.chart {
+    height: 160px;
+}
+
+#left-bottom, #arena-table {
+    float: left;
+    width: 49%;
+}
+
+#rates-chart {
+    padding-top: 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    width: 25%;
+}

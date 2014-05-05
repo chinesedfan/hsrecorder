@@ -1,7 +1,5 @@
 function showArenaTrend(container, lineTicks, winData) {
     var lineOptions = {
-        width: 900,
-        height: 400,
         axis: {
             x: {
                 tickWidth: 20,
@@ -35,19 +33,19 @@ var classNames = ["Druid", "Hunter", "Mage", "Paladin", "Priest",
 function showClassWins(container, winData) {
     var barTicks = classNames;
     var barOptions = {
-        width: 900,
-        height: 400,
         axis: {
             x: {
-                tickWidth: 75,
+                total: 9,
+                tickWidth: 60,
                 ticks: barTicks,
+                labelRotate: 30,
             },
             y: {
                 min: 0,
                 max: 11,
                 total: 11,
                 tickSize: 2,
-                tickWidth: 20,
+                tickWidth: 16,
                 rotate: 90,
             },
         },
@@ -66,10 +64,8 @@ function showClassWins(container, winData) {
 
 function showClassRates(container, playData) {
     var pieOptions = {
-        width: 900,
-        height: 400,
         pie: {
-            radius: 100, 
+            radius: 60, 
         },
     };
     var pieData = [];
