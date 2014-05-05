@@ -15,29 +15,17 @@
             </ul>
         </div>
     </div>
+    <div id="trend-chart"></div>
+    <div>
+        <div>
+            <div id="wins-chart"></div>
+            <div id="rates-chart"></div>
+        </div>
+        <div id="arena-table"></div>
+    </div>
     <script type="text/javascript" src="js/svgchart.min.js"></script>
     <script type="text/javascript" src="js/arena.js"></script>
     <script type="text/javascript" src="js/database.js"></script>
-    <div id="container" style="height: 750px; width: 1000px;"></div>
-    <script>
-        window.onload = function() {
-/*
-            var line = showArenaTrend(window.document.getElementById("container"),
-                [1,2,3,4,5,6,7,8,9,10,11,12],
-                [1,2,3,4,5,6,7,8,9,1,2,3]);
-            line.destroy();
-            showArenaTrend(window.document.getElementById("container"),
-                [1,2,3,4,5,6,7,8,9,10,11,12],
-                [12,2,3,4,5,6,7,8,9,1,2,3]);
-            showClassWins(window.document.getElementById("container"),
-                [12,2,3,4,5,6,7,8,9]);
-            showClassRates(window.document.getElementById("container"),
-                [12,2,3,4,5,6,7,8,9]);
-*/
-            var container = document.getElementById("container");
-            initDB();
-            loadArenaData(container);
-        };
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
