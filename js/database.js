@@ -17,10 +17,10 @@ function loadArenaData(container) {
     var arenaData = window.arenaData = {};
     arenaData.trend = {};
     db.transaction(function(tx) {
-        tx.executeSql("SELECT class, sum(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
+        tx.executeSql("SELECT class, avg(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
             var temp = {};
             for (var i = 0; i < rs.rows.length; i++) {
-                temp[rs.rows.item(i).class] = rs.rows.item(i).wins;
+                temp[rs.rows.item(i).class] = rs.rows.item(i).wins.toFixed(2);
             }
             arenaData.classWins = []; 
             for (var i = 0; i < window.classNames.length; i++) {

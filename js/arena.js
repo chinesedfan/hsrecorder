@@ -73,6 +73,9 @@ function showClassRates(container, playData) {
     for (var i = 0; i < classNames.length; i++) {
         pieData.push({name: classNames[i], data: playData[i]});
     }
+    pieData.sort(function(a, b) {
+        return b.data - a.data;
+    });
     var pie = new Venus.SvgChart(container, pieData, pieOptions);
     return pie;
 }
