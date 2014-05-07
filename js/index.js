@@ -41,12 +41,9 @@ function refreshRatesChart() {
 function refreshArenaTable() {
     var rows = arenaData.rows;
     var tbl = document.createElement("table");
-    var tr = document.createElement("tr");
-    tr.innerHTML = "<th>id</th><th>day</th><th>class</th><th>wins</th>";
-    tbl.appendChild(tr);
     for (var i = 0; i < rows.length; i++) {
         var row = rows.item(i);
-        tr = document.createElement("tr");
+        var tr = document.createElement("tr");
         tr.innerHTML = "<td>" + row.id + "</td><td>" + row.day + "</td><td>" + row.class + "</td><td>" + row.wins + "</td>";
         tbl.appendChild(tr);
     }

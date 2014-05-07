@@ -3,7 +3,7 @@
     height: 160px;
 }
 
-#left-bottom, #arena-table {
+#left-bottom, #right-bottom {
     float: left;
     width: 49%;
 }
@@ -12,11 +12,16 @@
     padding-top: 20px;
 }
 
+#arena-table {
+    overflow-y: auto;
+    height: 310px;
+}
+
 table {
     width: 100%;
     text-align: center;
 }
 
-td {
+th, td {
     width: 25%;
 }
