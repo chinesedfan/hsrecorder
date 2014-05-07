@@ -27,7 +27,8 @@ function showArenaTrend(container, lineTicks, winData) {
     return line;
 }
 
-var classNames = ["Druid", "Hunter", "Mage", "Paladin", "Priest",
+var classNames = window.classNames =
+       ["Druid", "Hunter", "Mage", "Paladin", "Priest",
         "Rogue", "Shaman", "Warlock", "Warrior"];
 
 function showClassWins(container, winData) {

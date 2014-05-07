@@ -14,19 +14,46 @@ function initDB() {
 }
 
 function loadArenaData(container) {
+    var arenaData = window.arenaData = {};
+    arenaData.trend = {};
     db.transaction(function(tx) {
-        tx.executeSql("SELECT id, day, class, wins FROM arena", [], function(tx, rs) {
-            var tbl = document.createElement("table");
-            var tr = document.createElement("tr");
-            tr.innerHTML = "<th>id</th><th>day</th><th>class</th><th>wins</th>";
-            tbl.appendChild(tr);
+        tx.executeSql("SELECT class, sum(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
+            var temp = {};
             for (var i = 0; i < rs.rows.length; i++) {
-                var row = rs.rows.item(i);
-                tr = document.createElement("tr");
-                tr.innerHTML = "<td>" + row.id + "</td><td>" + row.day + "</td><td>" + row.class + "</td><td>" + row.wins + "</td>";
-                tbl.appendChild(tr);
+                temp[rs.rows.item(i).class] = rs.rows.item(i).wins;
             }
-            container.appendChild(tbl);
+            arenaData.classWins = []; 
+            for (var i = 0; i < window.classNames.length; i++) {
+                 arenaData.classWins.push(temp[window.classNames[i]]);
+            }
+            refreshWinsChart();
+        }, onSqlError);
+        tx.executeSql("SELECT class, count(id) as nums FROM arena GROUP BY class", [], function(tx, rs) {
+            var temp = {};
+            for (var i = 0; i < rs.rows.length; i++) {
+                temp[rs.rows.item(i).class] = rs.rows.item(i).nums;
+            }
+            arenaData.classNums = []; 
+            for (var i = 0; i < window.classNames.length; i++) {
+                 arenaData.classNums.push(temp[window.classNames[i]] ?
+                     temp[window.classNames[i]] : 0);
+            }
+            refreshRatesChart();
+        }, onSqlError);
+        tx.executeSql("SELECT wins FROM arena", [], function(tx, rs) {
+            arenaData.wins = [];
+            for (var i = 0; i < rs.rows.length; i++) {
+                arenaData.wins.push(rs.rows.item(i).wins);
+            }
+            if (!arenaData.trend.start) {
+                arenaData.trend.start = 0;
+                arenaData.trend.end = rs.rows.length;
+            }
+            refreshTrendChart();
+        }, onSqlError);
+        tx.executeSql("SELECT id, day, class, wins FROM arena", [], function(tx, rs) {
+            arenaData.rows = rs.rows;
+            refreshArenaTable();
         }, onSqlError);
     });
 }
