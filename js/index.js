@@ -1,7 +1,7 @@
 var trendObj, winsObj, ratesObj;
 
 /*
-   classWins: list of wins grouped by classes
+   classWins: list of total wins grouped by classes
    classNums: list of played games grouped by classes
    rows: list of database rows
    trend: 
@@ -18,8 +18,8 @@ function refreshTrendChart() {
     var trendTicks = [];
     var trendData = [];
     for (var i = arenaData.trend.start; i < arenaData.trend.end; i++) {
-        trendTicks.push(i+1);
-        trendData.push(arenaData.wins[i]);
+        trendTicks.push(i);
+        trendData.push(arenaData.wins[i-arenaData.trend.start]);
     }
     trendObj = showArenaTrend(trendChart, trendTicks, trendData);
 }
@@ -28,7 +28,11 @@ function refreshWinsChart() {
     if (winsObj) winsObj.destory();
 
     var winsChart = document.getElementById("wins-chart");
-    winsObj = showClassWins(winsChart, arenaData.classWins);
+    var winsData = [];
+    for (var i = 0; i < window.classNames.length; i++) {
+        winsData.push((arenaData.classNums[i] == 0) ? 0: (arenaData.classWins[i]/arenaData.classNums[i]).toFixed(2));
+    }
+    winsObj = showClassWins(winsChart, winsData);
 }
 
 function refreshRatesChart() {

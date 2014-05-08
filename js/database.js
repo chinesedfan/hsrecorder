@@ -13,32 +13,33 @@ function initDB() {
     });
 }
 
+var arenaData;
+
 function loadArenaData(container) {
-    var arenaData = window.arenaData = {};
+    arenaData = window.arenaData = {};
     arenaData.trend = {};
     db.transaction(function(tx) {
-        tx.executeSql("SELECT class, avg(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
-            var temp = {};
-            for (var i = 0; i < rs.rows.length; i++) {
-                temp[rs.rows.item(i).class] = rs.rows.item(i).wins.toFixed(2);
-            }
-            arenaData.classWins = []; 
-            for (var i = 0; i < window.classNames.length; i++) {
-                 arenaData.classWins.push(temp[window.classNames[i]]);
-            }
-            refreshWinsChart();
-        }, onSqlError);
         tx.executeSql("SELECT class, count(id) as nums FROM arena GROUP BY class", [], function(tx, rs) {
-            var temp = {};
-            for (var i = 0; i < rs.rows.length; i++) {
-                temp[rs.rows.item(i).class] = rs.rows.item(i).nums;
-            }
-            arenaData.classNums = []; 
+            arenaData.classNums = [];
             for (var i = 0; i < window.classNames.length; i++) {
-                 arenaData.classNums.push(temp[window.classNames[i]] ?
-                     temp[window.classNames[i]] : 0);
+                arenaData.classNums.push(0);
+            };
+            for (var i = 0; i < rs.rows.length; i++) {
+                var index = window.classMap[rs.rows.item(i).class];
+                arenaData.classNums[index] = rs.rows.item(i).nums;
             }
             refreshRatesChart();
+        }, onSqlError);
+        tx.executeSql("SELECT class, sum(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
+            arenaData.classWins = [];
+            for (var i = 0; i < window.classNames.length; i++) {
+                arenaData.classWins.push(0);
+            };
+            for (var i = 0; i < rs.rows.length; i++) {
+                var index = window.classMap[rs.rows.item(i).class];
+                arenaData.classWins[index] = rs.rows.item(i).wins;
+            }
+            refreshWinsChart();
         }, onSqlError);
         tx.executeSql("SELECT wins FROM arena", [], function(tx, rs) {
             arenaData.wins = [];
@@ -46,14 +47,62 @@ function loadArenaData(container) {
                 arenaData.wins.push(rs.rows.item(i).wins);
             }
             if (!arenaData.trend.start) {
-                arenaData.trend.start = 0;
-                arenaData.trend.end = rs.rows.length;
+                arenaData.trend.start = 1;
+                arenaData.trend.end = rs.rows.length + 1;
             }
             refreshTrendChart();
         }, onSqlError);
         tx.executeSql("SELECT id, day, class, wins FROM arena", [], function(tx, rs) {
             arenaData.rows = rs.rows;
             refreshArenaTable();
+        }, onSqlError);
+    });
+}
+
+/*
+   Should keep the continuity of all records
+*/
+function checkContinuity(row) {
+    if (row.id < arenaData.trend.start
+        || row.id > arenaData.trend.end) {
+        alert("invalid row.id" + row.id);
+        return false;
+    }
+    return true;
+}
+
+function insertArenaRecord(row) {
+    if (!checkContinuity(row)) return;
+    db.transaction(function(tx) {
+        tx.executeSql("INSERT INTO arena(id, day, class, wins) VALUES(?, ?, ?, ?)", [row.id, row.day, row.class, row.wins], function(tx, rs) {
+            var index = window.classMap[row.class];
+            arenaData.classNums[index] += 1;
+            arenaData.classWins[index] += row.wins;
+            if (row.id == arenaData.trend.start) {
+                arenaData.trend.start--;
+            }
+            if (row.id == arenaData.trend.end) {
+                arenaData.trend.end++;
+            }
+            refreshCharts();
+        }, onSqlError);
+    });
+}
+
+function deleteArenaRecord(row) {
+    if (!checkContinuity(row)) return;
+    db.transaction(function(tx) {
+        tx.executeSql("DELETE FROM arena WHERE id = ?", [row.id], function(tx, rs) {
+            var index = window.classMap[row.class];
+            arenaData.classNums[index] -= 1;
+            arenaData.classWins[index] -= row.wins;
+            if (row.id == arenaData.trend.start) {
+                arenaData.trend.start++;
+            }
+            if (row.id == arenaData.trend.end) {
+                arenaData.trend.end--;
+            }
+            refreshCharts();
         }, onSqlError);
     });
 }

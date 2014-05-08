@@ -1,3 +1,15 @@
+window.classMap = {
+    Druid: 0, Hunter: 1, Mage: 2,
+    Paladin: 3, Priest: 4, Rogue: 5,
+    Shaman: 6, Warlock: 7, Warrior: 8,
+};
+window.classNames = [];
+for (var key in classMap) {
+    window.classNames.push(key);
+}
+
+var classNames = window.classNames;
+
 function showArenaTrend(container, lineTicks, winData) {
     var lineOptions = {
         axis: {
@@ -26,10 +38,6 @@ function showArenaTrend(container, lineTicks, winData) {
     var line = new Venus.SvgChart(container, lineData, lineOptions);
     return line;
 }
-
-var classNames = window.classNames =
-       ["Druid", "Hunter", "Mage", "Paladin", "Priest",
-        "Rogue", "Shaman", "Warlock", "Warrior"];
 
 function showClassWins(container, winData) {
     var barTicks = classNames;
