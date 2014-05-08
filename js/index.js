@@ -56,12 +56,14 @@ function refreshEditRow() {
         + ((month>9) ? month : ("0"+month)) + "-"
         + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate()));
 
-    window.classNames.map(function(name) {
-        var op = document.createElement("option");
-        op.value = name;
-        op.text = name;
-        tdClass.add(op);
-    });
+    if (tdClass.length == 0) {
+        window.classNames.map(function(name) {
+            var op = document.createElement("option");
+            op.value = name;
+            op.text = name;
+            tdClass.add(op);
+        });
+    }
     tdWins.value = 0;
 }
 
@@ -95,14 +97,13 @@ window.onload = function() {
 
     document.getElementById("add-btn").onclick = function() {
         var row = {};
-        row.id = document.getElementById("edit-id").value;
+        row.id = parseInt(document.getElementById("edit-id").value);
         row.day = document.getElementById("edit-day").value;
         row.class = document.getElementById("edit-class").value;
-        row.wins = document.getElementById("edit-wins").value;
+        row.wins = parseInt(document.getElementById("edit-wins").value);
         insertArenaRecord(row);
     };
     document.getElementById("del-btn").onclick = function() {
-        var row = getEditingRow();
-        deleteArenaRecord(row);
+        deleteArenaRecord(arenaData.rows[arenaData.rows.length-1]);
     };
 };

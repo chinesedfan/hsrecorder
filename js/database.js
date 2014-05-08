@@ -102,7 +102,7 @@ function deleteArenaRecord(row) {
             var index = window.classMap[row.class];
             arenaData.classNums[index] -= 1;
             arenaData.classWins[index] -= row.wins;
-            if (row.id == arenaData.trend.end) {
+            if (row.id == arenaData.trend.end-1) {
                 arenaData.trend.end--;
             }
             arenaData.wins.splice(row.id - arenaData.trend.start, 1);
