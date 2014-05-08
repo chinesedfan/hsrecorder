@@ -12,7 +12,7 @@ var trendObj, winsObj, ratesObj;
 var arenaData = window.arenaData;
 
 function refreshTrendChart() {
-    if (trendObj) trendObj.destory();
+    if (trendObj) trendObj.destroy();
 
     var trendChart = document.getElementById("trend-chart");
     var trendTicks = [];
@@ -25,7 +25,7 @@ function refreshTrendChart() {
 }
 
 function refreshWinsChart() {
-    if (winsObj) winsObj.destory();
+    if (winsObj) winsObj.destroy();
 
     var winsChart = document.getElementById("wins-chart");
     var winsData = [];
@@ -36,28 +36,73 @@ function refreshWinsChart() {
 }
 
 function refreshRatesChart() {
-    if (ratesObj) ratesObj.destory();
+    if (ratesObj) ratesObj.destroy();
 
     var ratesChart = window.document.getElementById("rates-chart");
     ratesObj = showClassRates(ratesChart, arenaData.classNums);
 }
 
+function refreshEditRow() {
+    var tdId = document.getElementById("edit-id");
+    var tdDay = document.getElementById("edit-day");
+    var tdClass = document.getElementById("edit-class");
+    var tdWins = document.getElementById("edit-wins");
+
+    tdId.value = arenaData.trend.end;
+
+    var today = new Date();
+    var month = today.getMonth()+1; // the special one
+    tdDay.value = today.getFullYear() + "-" 
+        + ((month>9) ? month : ("0"+month)) + "-"
+        + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate()));
+
+    window.classNames.map(function(name) {
+        var op = document.createElement("option");
+        op.value = name;
+        op.text = name;
+        tdClass.add(op);
+    });
+    tdWins.value = 0;
+}
+
 function refreshArenaTable() {
     var rows = arenaData.rows;
     var tbl = document.createElement("table");
-    for (var i = 0; i < rows.length; i++) {
-        var row = rows.item(i);
+    for (var i = rows.length-1; i >= 0; i--) {
+        var row = rows[i];
         var tr = document.createElement("tr");
         tr.innerHTML = "<td>" + row.id + "</td><td>" + row.day + "</td><td>" + row.class + "</td><td>" + row.wins + "</td>";
         tbl.appendChild(tr);
     }
 
     var arenaTable = document.getElementById("arena-table");
-    arenaTable.childNodes = null;
+    arenaTable.innerHTML = "";
     arenaTable.appendChild(tbl);
+
+    refreshEditRow();
+}
+
+function refreshCharts() {
+    refreshTrendChart();
+    refreshWinsChart();
+    refreshRatesChart();
+    refreshArenaTable();
 }
 
 window.onload = function() {
     initDB();
     loadArenaData();
+
+    document.getElementById("add-btn").onclick = function() {
+        var row = {};
+        row.id = document.getElementById("edit-id").value;
+        row.day = document.getElementById("edit-day").value;
+        row.class = document.getElementById("edit-class").value;
+        row.wins = document.getElementById("edit-wins").value;
+        insertArenaRecord(row);
+    };
+    document.getElementById("del-btn").onclick = function() {
+        var row = getEditingRow();
+        deleteArenaRecord(row);
+    };
 };

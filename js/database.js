@@ -53,7 +53,10 @@ function loadArenaData(container) {
             refreshTrendChart();
         }, onSqlError);
         tx.executeSql("SELECT id, day, class, wins FROM arena", [], function(tx, rs) {
-            arenaData.rows = rs.rows;
+            arenaData.rows = [];
+            for (var i = 0; i < rs.rows.length; i++) {
+                arenaData.rows.push(rs.rows.item(i));
+            }
             refreshArenaTable();
         }, onSqlError);
     });
@@ -62,46 +65,48 @@ function loadArenaData(container) {
 /*
    Should keep the continuity of all records
 */
-function checkContinuity(row) {
-    if (row.id < arenaData.trend.start
-        || row.id > arenaData.trend.end) {
-        alert("invalid row.id" + row.id);
-        return false;
-    }
-    return true;
-}
 
 function insertArenaRecord(row) {
-    if (!checkContinuity(row)) return;
+    // only the exsited rows can be modified or insert at the end
+    if (row.id < arenaData.trend.start - 1
+        || row.id > arenaData.trend.end) {
+        alert("invalid row.id=" + row.id);
+        return;
+    }
     db.transaction(function(tx) {
         tx.executeSql("INSERT INTO arena(id, day, class, wins) VALUES(?, ?, ?, ?)", [row.id, row.day, row.class, row.wins], function(tx, rs) {
             var index = window.classMap[row.class];
-            arenaData.classNums[index] += 1;
-            arenaData.classWins[index] += row.wins;
-            if (row.id == arenaData.trend.start) {
-                arenaData.trend.start--;
-            }
             if (row.id == arenaData.trend.end) {
+                arenaData.classNums[index] += 1;
+                arenaData.classWins[index] += row.wins;
                 arenaData.trend.end++;
+            } else {
+                arenaData.classWins[index] -= arenaData.wins[row.id-1].wins;
+                arenaData.classWins[index] += row.wins;
             }
+            arenaData.wins[row.id-1] = row.wins;
+            arenaData.rows[row.id-1] = row;
             refreshCharts();
         }, onSqlError);
     });
 }
 
 function deleteArenaRecord(row) {
-    if (!checkContinuity(row)) return;
+    // only the last row can be deleted
+    if (row.id != arenaData.trend.end - 1) {
+        alert("invalid row.id=" + row.id);
+        return;
+    }
     db.transaction(function(tx) {
         tx.executeSql("DELETE FROM arena WHERE id = ?", [row.id], function(tx, rs) {
             var index = window.classMap[row.class];
             arenaData.classNums[index] -= 1;
             arenaData.classWins[index] -= row.wins;
-            if (row.id == arenaData.trend.start) {
-                arenaData.trend.start++;
-            }
             if (row.id == arenaData.trend.end) {
                 arenaData.trend.end--;
             }
+            arenaData.wins.splice(row.id - arenaData.trend.start, 1);
+            arenaData.rows.splice(row.id - arenaData.trend.start, 1);
             refreshCharts();
         }, onSqlError);
     });

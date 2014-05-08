@@ -22,8 +22,18 @@
             <div id="rates-chart" class="chart"></div>
         </div>
         <div id="right-bottom">
+            <div id="button-area">
+                <button id="add-btn">Add Editing</button>
+                <button id="del-btn">Remove Last</button>
+            </div>
             <table>
                 <tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
+                <tr id="edit-row">
+                    <td><input id="edit-id" type="text" /></td>
+                    <td><input id="edit-day" type="text" /></td>
+                    <td><select id="edit-class"/></td>
+                    <td><input id="edit-wins"type="text" /></td>
+                </tr>
             </table>
             <div id="arena-table"></div>
         </div>

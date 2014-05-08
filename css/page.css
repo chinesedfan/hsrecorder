@@ -3,7 +3,7 @@
     height: 160px;
 }
 
-#left-bottom, #right-bottom {
+button, #left-bottom, #right-bottom {
     float: left;
     width: 49%;
 }
@@ -17,7 +17,7 @@
     height: 310px;
 }
 
-table {
+input, table {
     width: 100%;
     text-align: center;
 }
