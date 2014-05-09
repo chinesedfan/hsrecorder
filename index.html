@@ -7,35 +7,62 @@
     <div class="header">
         <div class="header-nav">
             <ul>
-                <li>Arena(CN)</li>
-                <li>Packs(CN)</li>
+                <li id="arena-nav">Arena(CN)</li>
+                <li id="packs-nav">Packs(CN)</li>
                 <li>Arena(TW)</li>
                 <li>Packs(TW)</li>
                 <li>Lacks(CN)</li>
             </ul>
         </div>
     </div>
-    <div id="trend-chart" class="chart"></div>
-    <div id="bottom">
-        <div id="left-bottom">
-            <div id="wins-chart" class="chart"></div>
-            <div id="rates-chart" class="chart"></div>
-        </div>
-        <div id="right-bottom">
-            <div id="button-area">
-                <button id="add-btn">Add Editing</button>
-                <button id="del-btn">Remove Last</button>
+    <div id="arena-frame">
+        <div id="trend-chart" class="chart"></div>
+        <div class="bottom">
+            <div class="left-bottom">
+                <div id="wins-chart" class="chart"></div>
+                <div id="rates-chart" class="chart"></div>
             </div>
-            <table>
-                <tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
-                <tr id="edit-row">
-                    <td><input id="edit-id" type="text" /></td>
-                    <td><input id="edit-day" type="text" /></td>
-                    <td><select id="edit-class"/></td>
-                    <td><input id="edit-wins"type="text" /></td>
-                </tr>
-            </table>
-            <div id="arena-table"></div>
+            <div class="right-bottom">
+                <div id="button-area">
+                    <button id="add-btn">Add Editing</button>
+                    <button id="del-btn">Remove Last</button>
+                </div>
+                <table>
+                    <tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
+                    <tr id="edit-row">
+                        <td><input id="edit-id" type="text" /></td>
+                        <td><input id="edit-day" type="text" /></td>
+                        <td><select id="edit-class"/></td>
+                        <td><input id="edit-wins"type="text" /></td>
+                    </tr>
+                </table>
+                <div id="arena-table"></div>
+            </div>
+        </div>
+    </div>
+    <div id="packs-frame">
+        <div id="packs-trend" class="chart"></div>
+        <div class="bottom">
+            <div class="left-botton">
+                <div id="quality-parts" class="chart"></div>
+                <div id="quality-rates" class="chart"></div>
+            </div>
+            <div class="right-bottom">
+                <div>
+                    <button id="packs-add">Add Editing</button>
+                    <button id="packs-del">Remove Last</button>
+                </div>
+                <table>
+                    <tr id="packs-thead"></tr>
+                    <tr id="packs-edit">
+                        <td><input id="edit-id" type="text" /></td>
+                        <td><input id="edit-day" type="text" /></td>
+                        <td><select id="edit-class"/></td>
+                        <td><input id="edit-wins"type="text" /></td>
+                    </tr>
+                </table>
+                <div id="packs-table"></div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="js/svgchart.min.js"></script>

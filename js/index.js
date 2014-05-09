@@ -91,9 +91,26 @@ function refreshCharts() {
     refreshArenaTable();
 }
 
+var frames = ["arena-frame", "packs-frame"];
+
+function showFrame(id) {
+    frames.map(function(f) {
+        var ele = document.getElementById(f);
+        ele.style.display = (f == id) ? "block" : "none";
+    });
+}
+
 window.onload = function() {
     initDB();
     loadArenaData();
+    showFrame("arena-frame");
+
+    document.getElementById("arena-nav").onclick = function() {
+        showFrame("arena-frame");
+    };
+    document.getElementById("packs-nav").onclick = function() {
+        showFrame("packs-frame");
+    };
 
     document.getElementById("add-btn").onclick = function() {
         var row = {};

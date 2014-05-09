@@ -3,9 +3,13 @@
     height: 160px;
 }
 
-button, #left-bottom, #right-bottom {
+button, .left-bottom, .right-bottom {
     float: left;
     width: 49%;
+}
+
+.header {
+    height: 50px;
 }
 
 #rates-chart {
@@ -24,4 +28,9 @@ input, table {
 
 th, td {
     width: 25%;
+}
+
+li {
+    float: left;
+    width: 100px;
 }
