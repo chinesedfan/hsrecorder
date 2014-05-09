@@ -73,6 +73,7 @@ function showClassWins(container, winData) {
 
 function showClassRates(container, playData) {
     var pieOptions = {
+        height: 200,
         pie: {
             radius: 60, 
         },

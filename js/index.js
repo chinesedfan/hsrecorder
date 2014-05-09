@@ -8,6 +8,8 @@ var trendObj, winsObj, ratesObj;
        start: the first shown arena record id
        end: the last shown arena record id *PLUS* one
    wins: list of wins
+   totalWins: total wins
+   totalNums: total played
 */
 var arenaData = window.arenaData;
 

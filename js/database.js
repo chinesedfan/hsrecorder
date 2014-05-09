@@ -19,44 +19,36 @@ function loadArenaData(container) {
     arenaData = window.arenaData = {};
     arenaData.trend = {};
     db.transaction(function(tx) {
-        tx.executeSql("SELECT class, count(id) as nums FROM arena GROUP BY class", [], function(tx, rs) {
+        tx.executeSql("SELECT class, count(id) as nums, sum(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
             arenaData.classNums = [];
+            arenaData.classWins = [];
+            arenaData.totalWins = 0;
             for (var i = 0; i < window.classNames.length; i++) {
                 arenaData.classNums.push(0);
-            };
-            for (var i = 0; i < rs.rows.length; i++) {
-                var index = window.classMap[rs.rows.item(i).class];
-                arenaData.classNums[index] = rs.rows.item(i).nums;
-            }
-            refreshRatesChart();
-        }, onSqlError);
-        tx.executeSql("SELECT class, sum(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
-            arenaData.classWins = [];
-            for (var i = 0; i < window.classNames.length; i++) {
                 arenaData.classWins.push(0);
             };
             for (var i = 0; i < rs.rows.length; i++) {
                 var index = window.classMap[rs.rows.item(i).class];
+                arenaData.classNums[index] = rs.rows.item(i).nums;
                 arenaData.classWins[index] = rs.rows.item(i).wins;
+                arenaData.totalWins += rs.rows.item(i).wins;
             }
+            refreshRatesChart();
             refreshWinsChart();
         }, onSqlError);
-        tx.executeSql("SELECT wins FROM arena", [], function(tx, rs) {
+        tx.executeSql("SELECT id, day, class, wins FROM arena", [], function(tx, rs) {
             arenaData.wins = [];
+            arenaData.rows = [];
             for (var i = 0; i < rs.rows.length; i++) {
                 arenaData.wins.push(rs.rows.item(i).wins);
+                arenaData.rows.push(rs.rows.item(i));
             }
             if (!arenaData.trend.start) {
                 arenaData.trend.start = 1;
                 arenaData.trend.end = rs.rows.length + 1;
             }
+            arenaData.totalNums = rs.rows.length;
             refreshTrendChart();
-        }, onSqlError);
-        tx.executeSql("SELECT id, day, class, wins FROM arena", [], function(tx, rs) {
-            arenaData.rows = [];
-            for (var i = 0; i < rs.rows.length; i++) {
-                arenaData.rows.push(rs.rows.item(i));
-            }
             refreshArenaTable();
         }, onSqlError);
     });
@@ -79,10 +71,14 @@ function insertArenaRecord(row) {
             if (row.id == arenaData.trend.end) {
                 arenaData.classNums[index] += 1;
                 arenaData.classWins[index] += row.wins;
+                arenaData.totalWins += row.wins;
+                arenaData.totalNums++;
                 arenaData.trend.end++;
             } else {
                 arenaData.classWins[index] -= arenaData.wins[row.id-1].wins;
                 arenaData.classWins[index] += row.wins;
+                arenaData.totalWins -= arenaData.wins[row.id-1].wins;
+                arenaData.totalWins += row.wins;
             }
             arenaData.wins[row.id-1] = row.wins;
             arenaData.rows[row.id-1] = row;
@@ -102,6 +98,8 @@ function deleteArenaRecord(row) {
             var index = window.classMap[row.class];
             arenaData.classNums[index] -= 1;
             arenaData.classWins[index] -= row.wins;
+            arenaData.totalNums--;
+            arenaData.totalWins -= row.wins;
             if (row.id == arenaData.trend.end-1) {
                 arenaData.trend.end--;
             }
