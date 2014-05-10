@@ -18,21 +18,21 @@
     <div id="arena-frame">
         <div id="trend-chart" class="chart center"></div>
         <div class="bottom">
-            <div class="left-bottom">
+            <div class="half">
                 <div id="wins-chart" class="chart"></div>
                 <div id="rates-chart" class="chart"></div>
             </div>
-            <div class="right-bottom">
+            <div class="half">
                 <div id="button-area">
-                    <button id="add-btn">Add Editing</button>
-                    <button id="del-btn">Remove Last</button>
+                    <button id="add-btn" class="half">Add Editing</button>
+                    <button id="del-btn" class="half">Remove Last</button>
                 </div>
                 <table>
                     <tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
                     <tr id="edit-row">
                         <td><input id="edit-id" type="text" /></td>
                         <td><input id="edit-day" type="text" /></td>
-                        <td><select id="edit-class"/></td>
+                        <td><select id="edit-class" /></td>
                         <td><input id="edit-wins"type="text" /></td>
                     </tr>
                 </table>
@@ -43,14 +43,20 @@
     <div id="packs-frame">
         <div id="packs-trend" class="chart"></div>
         <div class="bottom">
-            <div class="left-bottom">
+            <div class="half">
                 <div id="quality-parts" class="chart"></div>
                 <div id="quality-rates" class="chart"></div>
             </div>
-            <div class="right-bottom">
+            <div class="half">
                 <div>
-                    <button id="packs-add">Add Editing</button>
-                    <button id="packs-del">Remove Last</button>
+                    <button id="golden-btn" class="quarter">Golden</button>
+                    <select id="quality-select" class="quarter"></select>
+                    <select id="card-select" class="quarter"></select>
+                    <button id="append-btn" class="quarter">Append</button>
+                </div>
+                <div>
+                    <button id="packs-add" class="half">Add Editing</button>
+                    <button id="packs-del" class="half">Remove Last</button>
                 </div>
                 <table>
                     <tr id="packs-thead"></tr>

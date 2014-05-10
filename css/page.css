@@ -1,15 +1,36 @@
-/* not implemented yet */
-.chart {
-    height: 160px;
+li {
+    float: left;
+    width: 100px;
 }
 
-button, .left-bottom, .right-bottom {
-    float: left;
-    width: 49%;
+input, table {
+    width: 100%;
+    text-align: center;
 }
 
 .header {
     height: 50px;
+}
+
+.chart {
+    height: 160px;
+}
+
+.datetd {
+    width: 20%;
+}
+
+.othertd {
+    width: 8%;
+}
+
+.quarter, #arena-frame th, #arena-frame td {
+    width: 24%;
+}
+
+.half {
+    float: left;
+    width: 49%;
 }
 
 .center {
@@ -25,26 +46,4 @@ button, .left-bottom, .right-bottom {
 #arena-table {
     overflow-y: auto;
     height: 310px;
-}
-
-input, table {
-    width: 100%;
-    text-align: center;
-}
-
-#arena-frame th, #arena-frame td {
-    width: 25%;
-}
-
-.datetd {
-    width: 20%;
-}
-
-.othertd {
-    width: 8%;
-}
-
-li {
-    float: left;
-    width: 100px;
 }
