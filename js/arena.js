@@ -33,8 +33,16 @@ function showArenaTrend(container, lineTicks, winData) {
         icons: {
             0: "circle",
         },
+        legend: {
+            position: ["right", "center"],
+            borderColor: "white",
+        },
     };
-    var lineData = [{name: 0, data: winData}];
+    var arenaData = window.arenaData;
+    var seriesName = "totalNums = " + arenaData.totalNums
+        + "\ntotalWins = " + arenaData.totalWins
+        + "\ntotalAvg = " + ((arenaData.totalNums == 0) ? 0 : (arenaData.totalWins/arenaData.totalNums).toFixed(2));
+    var lineData = [{name: seriesName, data: winData}];
     var line = new Venus.SvgChart(container, lineData, lineOptions);
     return line;
 }
