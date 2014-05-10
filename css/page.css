@@ -32,8 +32,16 @@ input, table {
     text-align: center;
 }
 
-th, td {
+#arena-frame th, #arena-frame td {
     width: 25%;
+}
+
+.datetd {
+    width: 20%;
+}
+
+.othertd {
+    width: 8%;
 }
 
 li {
