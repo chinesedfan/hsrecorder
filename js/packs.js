@@ -5,6 +5,17 @@ var qualityInfo = [
     {name: "Common", color: "white"},
 ];
 
+$("#golden-btn").click(function () {
+    // toggle this button between golden and normal
+    var btn = $("#golden-btn");
+    if (btn.text() == "Golden") {
+        btn.text("Normal");
+    } else {
+        btn.text("Golden");
+    }
+    $("#auto-input").toggle();
+});
+
 $("#packs-thead").ready(function () {
     var texts = ["id", "day"];
     qualityInfo.map(function(q) { texts.push("G-" + q.name[0]); });
