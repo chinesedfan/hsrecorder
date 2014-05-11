@@ -13,7 +13,6 @@ $("#golden-btn").click(function () {
     } else {
         btn.text("Golden");
     }
-    $("#auto-input").toggle();
 });
 
 $("#packs-thead").ready(function () {
@@ -59,4 +58,27 @@ $("#packs-edit").ready(function () {
     td.attr("id", "packs-dust");
     td.attr("class", "othertd");
     td.text(0);
+});
+
+$("#card-input").keyup(function () {
+    var autoInput = $("#auto-input");
+    autoInput.empty();
+
+    var cardInput = $("#card-input");
+    var key = cardInput.val();
+    if (key == "") {
+        autoInput.hide();
+        return; 
+    }
+
+    if (key.length >= 10) key = key.substring(0, 10);
+    var list = window.cardsMap[key];
+    if (list.length >= 10) list.splice(10, list.length-10);
+
+    list.map(function(row) {
+        var lbl = $("<label></label>").appendTo(autoInput);
+        lbl.text(row.name);
+        $("<br/>").appendTo(autoInput);
+    });
+    autoInput.show();
 });
