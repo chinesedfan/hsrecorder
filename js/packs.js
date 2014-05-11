@@ -1,8 +1,8 @@
 var qualityInfo = [
-    {name: "Legendary", color: "organge"},
+    {name: "Legendary", color: "orange"},
     {name: "Epic", color: "purple"},
     {name: "Rare", color: "blue"},
-    {name: "Common", color: "white"},
+    {name: "Common", color: "black"},
 ];
 
 $("#golden-btn").click(function () {
@@ -73,10 +73,12 @@ $("#card-input").keyup(function () {
 
     if (key.length >= 10) key = key.substring(0, 10);
     var list = window.cardsMap[key];
+    if (!list) return;
     if (list.length >= 10) list.splice(10, list.length-10);
 
     list.map(function(row) {
         var lbl = $("<label></label>").appendTo(autoInput);
+        lbl.css("color", qualityInfo[5 - parseInt(row.id/10000)].color);
         lbl.text(row.name);
         $("<br/>").appendTo(autoInput);
     });
