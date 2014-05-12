@@ -64,37 +64,35 @@ var autoCursor = 0; // the cursor position of auto input
 var autoLabels;
 
 function moveUpCursor() {
-    cancelAutoSelected();
-    autoCursor--; 
-    if (autoCursor == -1) autoCursor = autoLabels.length - 1;
-    markAutoSelected();
+    setAutoCursor(
+        (autoCursor == 0) ? (autoLabels.length-1) : (autoCursor-1));
 }
 
 function moveDownCursor() {
-    cancelAutoSelected();
-    autoCursor++; 
-    if (autoCursor == autoLabels.length) autoCursor = 0;
-    markAutoSelected();
+    setAutoCursor(
+        (autoCursor == autoLabels.length-1) ? 0 : (autoCursor+1));
 }
 
 function getSelectedAutoText() {
     return autoLabels[autoCursor].innerHTML;
 }
 
-function cancelAutoSelected() {
+function setAutoCursor(val) {
     autoLabels[autoCursor].className = "";
+    autoCursor = parseInt(val);
+    autoLabels[autoCursor].className = "selected";
 }
 
-function markAutoSelected() {
-    autoLabels[autoCursor].className = "selected";
+function confirmAutoSelected() {
+    $("#card-input").attr("value", getSelectedAutoText());
+    $("#auto-input").hide();
 }
 
 $("#card-input").keyup(function (event) {
     var key = event.which; 
     switch(key) {
     case 13: // enter
-        $("#card-input").attr("value", getSelectedAutoText());
-        $("#auto-input").hide();
+        confirmAutoSelected();
         return;
     case 27: // escape
         $("#auto-input").hide();
@@ -124,17 +122,21 @@ $("#card-input").keyup(function (event) {
 
     list.map(function(row) {
         var lbl = $("<label></label>").appendTo(autoInput);
+        lbl.attr("labelindex", autoInput.children("label").length-1);
         lbl.attr("cardid", row.id);
         lbl.attr("cardqindex", 5 - parseInt(row.id/10000));
         lbl.css("color", qualityInfo[lbl.attr("cardqindex")].color);
         lbl.text(row.name);
+        lbl.mouseover(function() {
+            setAutoCursor(lbl.attr("labelindex"));
+        });
+        lbl.click(confirmAutoSelected);
         $("<br/>").appendTo(autoInput);
     });
     autoInput.show();
 
-    autoCursor = 0;
     autoLabels = autoInput.children("label");
-    markAutoSelected();
+    setAutoCursor(0);
 });
 
 var editingCids = [];
