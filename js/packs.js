@@ -60,7 +60,53 @@ $("#packs-edit").ready(function () {
     td.text(0);
 });
 
-$("#card-input").keyup(function () {
+var autoCursor = 0; // the cursor position of auto input
+var autoLabels;
+
+function moveUpCursor() {
+    cancelAutoSelected();
+    autoCursor--; 
+    if (autoCursor == -1) autoCursor = autoLabels.length - 1;
+    markAutoSelected();
+}
+
+function moveDownCursor() {
+    cancelAutoSelected();
+    autoCursor++; 
+    if (autoCursor == autoLabels.length) autoCursor = 0;
+    markAutoSelected();
+}
+
+function getSelectedAutoText() {
+    return autoLabels[autoCursor].innerHTML;
+}
+
+function cancelAutoSelected() {
+    autoLabels[autoCursor].className = "";
+}
+
+function markAutoSelected() {
+    autoLabels[autoCursor].className = "selected";
+}
+
+$("#card-input").keyup(function (event) {
+    var key = event.which; 
+    switch(key) {
+    case 13: // enter
+        $("#card-input").attr("value", getSelectedAutoText());
+        $("#auto-input").hide();
+        return;
+    case 27: // escape
+        $("#auto-input").hide();
+        return;
+    case 38: // arrow up
+        moveUpCursor();
+        return;
+    case 40: // arrow down
+        moveDownCursor();
+        return;
+    }
+
     var autoInput = $("#auto-input");
     autoInput.empty();
 
@@ -83,4 +129,8 @@ $("#card-input").keyup(function () {
         $("<br/>").appendTo(autoInput);
     });
     autoInput.show();
+
+    autoCursor = 0;
+    autoLabels = autoInput.children("label");
+    markAutoSelected();
 });

@@ -40,6 +40,10 @@ input, table {
     margin-right: auto;
 }
 
+.selected {
+    background-color: gray;
+}
+
 #auto-input {
     position: absolute;
     left: 772px;
