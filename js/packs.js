@@ -1,8 +1,8 @@
 var qualityInfo = [
-    {name: "Legendary", color: "orange"},
-    {name: "Epic", color: "purple"},
-    {name: "Rare", color: "blue"},
-    {name: "Common", color: "black"},
+    {name: "Legendary", color: "orange", dust: 1600, gdust: 3200},
+    {name: "Epic", color: "purple", dust: 400, gdust: 1600},
+    {name: "Rare", color: "blue", dust: 100, gdust: 400},
+    {name: "Common", color: "black", dust: 5, gdust: 50},
 ];
 
 $("#golden-btn").click(function () {
@@ -124,7 +124,9 @@ $("#card-input").keyup(function (event) {
 
     list.map(function(row) {
         var lbl = $("<label></label>").appendTo(autoInput);
-        lbl.css("color", qualityInfo[5 - parseInt(row.id/10000)].color);
+        lbl.attr("cardid", row.id);
+        lbl.attr("cardqindex", 5 - parseInt(row.id/10000));
+        lbl.css("color", qualityInfo[lbl.attr("cardqindex")].color);
         lbl.text(row.name);
         $("<br/>").appendTo(autoInput);
     });
@@ -133,4 +135,28 @@ $("#card-input").keyup(function (event) {
     autoCursor = 0;
     autoLabels = autoInput.children("label");
     markAutoSelected();
+});
+
+var editingCids = [];
+
+$("#append-btn").click(function () {
+    var label = autoLabels[autoCursor]; 
+    if (label.innerHTML != $("#card-input").val()) return;
+    editingCids.push(label.cid);
+    // update numbers in the editing row
+    var prefix = "normal";
+    if ($("#golden-btn").text() == "Golden") prefix = "golden";
+    var cell = $("#" + prefix + "-" + label.style.color);
+    var count = parseInt(cell.text());
+    if (count == 5) return;
+    cell.text(count+1);
+    // update the dust
+    cell = $("#packs-dust");
+    count = parseInt(cell.text());
+    var index = label.getAttribute("cardqindex");
+    if (prefix == "golden") {
+        cell.text(count + qualityInfo[index].gdust);
+    } else {
+        cell.text(count + qualityInfo[index].dust);
+    }
 });
