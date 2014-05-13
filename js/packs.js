@@ -152,6 +152,8 @@ $("#append-btn").click(function () {
     var count = parseInt(cell.text());
     if (count == 5) return;
     cell.text(count+1);
+    var tip = cell.attr("title");
+    cell.attr("title", tip ? tip + "\n" + label.innerHTML : label.innerHTML);
     // update the dust
     cell = $("#packs-dust");
     count = parseInt(cell.text());
