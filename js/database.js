@@ -10,6 +10,7 @@ var db = openDatabase("hsdb", "1.0", "HearthStone Records", "4096");
 function initDB() {
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS arena(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer)", []);
+        tx.executeSql("CREATE TABLE IF NOT EXISTS packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer)", [], undefined, onSqlError);
     });
 }
 
@@ -110,6 +111,75 @@ function deleteArenaRecord(row) {
     });
 }
 
+/*
+   rows: object list
+   {
+       id: integer
+       day: string
+       counts: integer list, length = 2*qualities
+       tips: string list, length = 2*qualities
+       dust: integer
+    }
+   sums: list for all 8 kinds of cards
+*/
+var packsData;
+
+function loadPacksData() {
+    packsData = window.packsData = {};
+    packsData.rows = [];
+    packsData.sums = [0, 0, 0, 0, 0, 0, 0, 0];
+    db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM packs", [], function(tx, rs) {
+            for (var i = 0; i < rs.rows.length; i++) {
+                var row = rs.rows.item(i);
+                var rowData = {};
+
+                rowData.id = row.id;
+                rowData.day = row.day;
+                rowData.counts = [row.count_gl, row.count_ge, row.count_gr, row.count_gc, row.count_l, row.count_e, row.count_r, row.count_c];
+                rowData.counts.map(function(x, p) {
+                    if (i == 0) packsData.sums[p] = x; else packsData.sums[p] += x;
+                });
+                rowData.tips = [row.tip_gl, row.tip_ge, row.tip_gr, row.tip_gc, row.tip_l, row.tip_e, row.tip_r, row.tip_c];
+                rowData.dust = row.dust;
+                packsData.rows.push(rowData);
+            }
+            refreshPacksTable();
+        }, onSqlError);
+    });
+}
+
+function insertPacksData(row) {
+    db.transaction(function(tx) {
+        var lst = [];
+        lst.push(row.id);
+        lst.push(row.day);
+        row.counts.map(function(x) { lst.push(x); });
+        row.tips.map(function(x) {lst.push(x); });
+        lst.push(row.dust);
+        tx.executeSql("INSERT INTO packs VALUES(?,?, ?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?, ?)", lst, function(tx, rs) {
+            packsData.rows.push(row);
+            for (var i = 0; i < packsData.sums.length; i++) {
+                //FIXME: ugly codes
+                packsData.sums[i] += row[i+2];
+            };
+            refreshPacksTable();
+        }, onSqlError);
+    });
+}
+
+function deletePacksData(row) {
+    db.transaction(function(tx) {
+        tx.executeSql("DELETE FROM packs WHERE id = ?", [row.id], function(tx, rs) {
+            packsData.rows.splice(packsData.rows.length-1, 1);
+            for (var i = 0; i < packsData.sums.length; i++) {
+                packsData.sums[i] -= row[i];
+            };
+            refreshPacksTable();
+        }, onSqlError);
+    });
+}
+
 function onSqlError(tx, error) {
-    alert(error.message);
+    alert("[onSqlError]" + error.message);
 }

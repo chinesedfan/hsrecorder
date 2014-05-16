@@ -164,3 +164,82 @@ $("#append-btn").click(function () {
         cell.text(count + qualityInfo[index].dust);
     }
 });
+
+function refreshPacksEditRow() {
+    var trEdit = $("#packs-edit");
+    var tdId = $("#packs-id");
+    var tdDay = $("#packs-day");
+
+    tdId.val(window.packsData.rows.length + 1);
+
+    var today = new Date();
+    var month = today.getMonth()+1; // the special one
+    tdDay.val(today.getFullYear() + "-" 
+        + ((month>9) ? month : ("0"+month)) + "-"
+        + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate())));
+
+    for (var i = 2; i < trEdit.children().length; i++) {
+        trEdit.children().get(i).innerHTML = 0;
+    }
+}
+
+function refreshPacksTable() {
+    $("#packs-table").empty();
+
+    var rows = window.packsData.rows;
+    var tbl = document.createElement("table");
+    for (var i = rows.length-1; i >= 0; i--) {
+        var row = rows[i];
+        var tr = document.createElement("tr");
+        var td;
+
+        td = document.createElement("td");
+        td.innerHTML = row.id;
+        tr.appendChild(td);
+
+        td = document.createElement("td");
+        td.innerHTML = row.day;
+        tr.appendChild(td);
+
+        for (var j = 0; j < row.counts.length; j++) {
+            td = document.createElement("td");
+            td.innerHTML = row.counts[j];
+            td.title = row.tips[j];
+            tr.appendChild(td);
+        }
+
+        td = document.createElement("td");
+        td.innerHTML = row.dust;
+        tr.appendChild(td);
+
+        tbl.appendChild(tr);
+    }
+    document.getElementById("packs-table").appendChild(tbl);
+
+    refreshPacksEditRow();
+}
+
+$("#packs-add").click(function() {
+    var tr = $("#packs-edit");
+    var row = {};
+    // FIXME: ugly codes blow
+    row.id = $("#packs-id").val();
+    row.day = $("#packs-day").val();
+    row.counts = [];
+    row.tips = [];
+    for (var i = 2; i < 10; i++) {
+        row.counts.push(tr.children().get(i).innerHTML);
+    };
+    for (var i = 2; i < 10; i++) {
+        row.tips.push(tr.children().get(i).title);
+    };
+    row.dust = tr.children().get(10).innerHTML;
+
+    insertPacksData(row);
+});
+
+$("#packs-del").click(function() {
+    var row = {};
+    row.id = window.packsData.rows.length;
+    deletePacksData(row);
+});
