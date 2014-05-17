@@ -179,9 +179,9 @@ DbConn.prototype = {
         var packsData = page.packsData;
         this._db.transaction(function(tx) {
             tx.executeSql("DELETE FROM packs WHERE id = ?", [row.id], function(tx, rs) {
-                packsData.rows.splice(packsData.rows.length-1, 1);
+                row = packsData.rows.splice(packsData.rows.length-1, 1)[0]; // now "row" is different with the argument
                 for (var i = 0; i < packsData.sums.length; i++) {
-                    packsData.sums[i] -= row[i];
+                    packsData.sums[i] -= row.counts[i];
                 };
                 page.refreshCharts();
             }, this._onSqlError);

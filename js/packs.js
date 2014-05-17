@@ -214,6 +214,8 @@ PacksPage.prototype = {
     },
 
     _showDustTrend: function(container, lineTicks, dustData) {
+        if (dustData.length == 0) return null;
+
         var lineOptions = {
             axis: {
                 x: {
@@ -222,8 +224,6 @@ PacksPage.prototype = {
                 },
                 y: {
                     min: 0,
-                    //max: 4000,
-                    //total: 4,
                     tickSize: 2,
                     tickWidth: 20,
                     rotate: 90,
@@ -242,6 +242,8 @@ PacksPage.prototype = {
         return line;
     },
     _showQualityCounts: function(container, qualityData) {
+        if (eval(qualityData.join("+")) == 0) return null;
+
         var barTicks = CardsInfo.qualityNames;
         var barOptions = {
             axis: {
@@ -253,8 +255,6 @@ PacksPage.prototype = {
                 },
                 y: {
                     min: 0,
-                    //max: 11,
-                    //total: 11,
                     tickSize: 2,
                     tickWidth: 16,
                     rotate: 90,
@@ -274,6 +274,9 @@ PacksPage.prototype = {
         return bar;
     },
     _showQualityRates: function(container, qualityData) {
+        // avoid the chart library to crash
+        if (eval(qualityData.join("+")) == 0) return null;
+
         var pieOptions = {
             height: 200,
             pie: {
@@ -285,6 +288,7 @@ PacksPage.prototype = {
             pieData.push({name: "Golden " + CardsInfo.qualityNames[i], data: qualityData[i]});
             pieData.push({name: CardsInfo.qualityNames[i], data: qualityData[i+CardsInfo.qualityNames.length]});
         }
+
         pieData.sort(function(a, b) {
             return b.data - a.data;
         });

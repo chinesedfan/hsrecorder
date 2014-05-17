@@ -50,7 +50,7 @@ ArenaPage.prototype = {
                 },
                 y: {
                     min: 0,
-                    max: 11,
+                    max: 11, // if not set, empty input will cause the chart library to crash
                     total: 11,
                     tickSize: 2,
                     tickWidth: 20,
@@ -109,6 +109,9 @@ ArenaPage.prototype = {
         return bar;
     },
     _showClassRates: function(container, playData) {
+        // avoid the chart library to crash
+        if (eval(playData.join("+")) == 0) return null;
+
         var pieOptions = {
             height: 200,
             pie: {
@@ -116,9 +119,11 @@ ArenaPage.prototype = {
             },
         };
         var pieData = [];
+        var sum = 0;
         for (var i = 0; i < CardsInfo.classNames.length; i++) {
             pieData.push({name: CardsInfo.classNames[i], data: playData[i]});
         }
+
         pieData.sort(function(a, b) {
             return b.data - a.data;
         });
