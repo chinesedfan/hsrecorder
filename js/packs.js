@@ -19,16 +19,21 @@ PacksPage.prototype = {
 
         this.cardInputJqEle = $("#card-input");
 
+        this.trendChartDomEle = document.getElementById("packs-trend");
+        this.countsChartDomEle = document.getElementById("quality-parts");
+        this.ratesChartDomEle = document.getElementById("quality-rates");
+
         /*
             The following fields may be set by member functions
                 this.packsData
+                this.trendObj, this.numsObj, this.ratesObj
         */
     },
     _initData: function() {
         this._dbConn.loadPacksData(this);
     },
     _initView: function() {
-        this.refreshPacksTable();
+        // do nothing
     },
     _initEventHandler: function() {
         var page = this;
@@ -89,17 +94,17 @@ PacksPage.prototype = {
             var tr = $("#packs-edit");
             var row = {};
             // FIXME: ugly codes blow
-            row.id = $("#packs-id").val();
+            row.id = parseInt($("#packs-id").val());
             row.day = $("#packs-day").val();
             row.counts = [];
             row.tips = [];
             for (var i = 2; i < 10; i++) {
-                row.counts.push(tr.children().get(i).innerHTML);
+                row.counts.push(parseInt(tr.children().get(i).innerHTML));
             };
             for (var i = 2; i < 10; i++) {
                 row.tips.push(tr.children().get(i).title);
             };
-            row.dust = tr.children().get(10).innerHTML;
+            row.dust = parseInt(tr.children().get(10).innerHTML);
 
             page._dbConn.insertPacksData(page, row);
         });
@@ -208,6 +213,106 @@ PacksPage.prototype = {
         $("#auto-input").hide();
     },
 
+    _showDustTrend: function(container, lineTicks, dustData) {
+        var lineOptions = {
+            axis: {
+                x: {
+                    tickWidth: 20,
+                    ticks: lineTicks,
+                },
+                y: {
+                    min: 0,
+                    //max: 4000,
+                    //total: 4,
+                    tickSize: 2,
+                    tickWidth: 20,
+                    rotate: 90,
+                },
+            },
+            line: {
+                dots: true,
+                dotRadius: 6,
+            },
+            icons: {
+                0: "circle",
+            },
+        };
+        var lineData = [{name: 0, data: dustData}];
+        var line = new Venus.SvgChart(container, lineData, lineOptions);
+        return line;
+    },
+    _showQualityCounts: function(container, qualityData) {
+        var barTicks = CardsInfo.qualityNames;
+        var barOptions = {
+            axis: {
+                x: {
+                    total: 9,
+                    tickWidth: 60,
+                    ticks: barTicks,
+                    labelRotate: 30,
+                },
+                y: {
+                    min: 0,
+                    //max: 11,
+                    //total: 11,
+                    tickSize: 2,
+                    tickWidth: 16,
+                    rotate: 90,
+                },
+            },
+            bar: {
+                radius: 0,
+            },
+        };
+        var arr1 = {}, arr2 = {};
+        for (var i = 0; i < barTicks.length; i++) {
+            arr1[barTicks[i]] = qualityData[i];
+            arr2[barTicks[i]] = qualityData[i+barTicks.length];
+        }
+        var barData = [{name: "golden", data: arr1}, {name: "normal", data: arr2}];
+        var bar = new Venus.SvgChart(container, barData, barOptions);
+        return bar;
+    },
+    _showQualityRates: function(container, qualityData) {
+        var pieOptions = {
+            height: 200,
+            pie: {
+                radius: 60, 
+            },
+        };
+        var pieData = [];
+        for (var i = 0; i < CardsInfo.qualityNames.length; i++) {
+            pieData.push({name: "Golden " + CardsInfo.qualityNames[i], data: qualityData[i]});
+            pieData.push({name: CardsInfo.qualityNames[i], data: qualityData[i+CardsInfo.qualityNames.length]});
+        }
+        pieData.sort(function(a, b) {
+            return b.data - a.data;
+        });
+        var pie = new Venus.SvgChart(container, pieData, pieOptions);
+        return pie;
+    },
+
+    refreshTrendChart: function() {
+        if (this.trendObj) this.trendObj.destroy();
+
+        var trendTicks = [];
+        var trendData = [];
+        for (var i = 0; i < this.packsData.rows.length; i++) {
+            trendTicks.push(i+1);
+            trendData.push(this.packsData.rows[i].dust);
+        }
+        this.trendObj = this._showDustTrend(this.trendChartDomEle, trendTicks, trendData);
+    },
+    refreshCountsChart: function() {
+        if (this.numsObj) this.numsObj.destroy();
+
+        this.numsObj = this._showQualityCounts(this.countsChartDomEle, this.packsData.sums);
+    },
+    refreshRatesChart: function() {
+        if (this.ratesObj) this.ratesObj.destroy();
+
+        this.ratesObj = this._showQualityRates(this.ratesChartDomEle, this.packsData.sums);
+    },
     refreshPacksEditRow: function() {
         var trEdit = $("#packs-edit");
         var tdId = $("#packs-id");
@@ -239,21 +344,25 @@ PacksPage.prototype = {
 
             td = document.createElement("td");
             td.innerHTML = row.id;
+            td.className = "othertd";
             tr.appendChild(td);
 
             td = document.createElement("td");
             td.innerHTML = row.day;
+            td.className = "datetd";
             tr.appendChild(td);
 
             for (var j = 0; j < row.counts.length; j++) {
                 td = document.createElement("td");
                 td.innerHTML = row.counts[j];
                 td.title = row.tips[j];
+                td.className = "othertd";
                 tr.appendChild(td);
             }
 
             td = document.createElement("td");
             td.innerHTML = row.dust;
+            td.className = "othertd";
             tr.appendChild(td);
 
             tbl.appendChild(tr);
@@ -261,5 +370,11 @@ PacksPage.prototype = {
         document.getElementById("packs-table").appendChild(tbl);
 
         this.refreshPacksEditRow();
+    },
+    refreshCharts: function() {
+        this.refreshTrendChart();
+        this.refreshCountsChart();
+        this.refreshRatesChart();
+        this.refreshPacksTable();
     },
 }

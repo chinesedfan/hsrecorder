@@ -336,6 +336,9 @@ var CardsInfo = (function() {
         {name: "Rare", color: "blue", dust: 100, gdust: 400},
         {name: "Common", color: "black", dust: 5, gdust: 50},
     ];
+    var _qualityNames = _qualityList.map(function(q) {
+        return q.name;
+    });
 
     var _classMap = {
         Druid: 0, Hunter: 1, Mage: 2,
@@ -370,6 +373,8 @@ var CardsInfo = (function() {
         prefixMap: _prefixMap,
         // [object]
         qualityList: _qualityList,
+        // [string]
+        qualityNames: _qualityNames,
 
         init: _init,
     };

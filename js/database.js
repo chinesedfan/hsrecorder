@@ -152,7 +152,7 @@ DbConn.prototype = {
                     rowData.dust = row.dust;
                     packsData.rows.push(rowData);
                 }
-                page.refreshPacksTable();
+                page.refreshCharts();
             }, this._onSqlError);
         });
     },
@@ -169,9 +169,9 @@ DbConn.prototype = {
                 packsData.rows.push(row);
                 for (var i = 0; i < packsData.sums.length; i++) {
                     //FIXME: ugly codes
-                    packsData.sums[i] += row[i+2];
+                    packsData.sums[i] += lst[i+2];
                 };
-                page.refreshPacksTable();
+                page.refreshCharts();
             }, this._onSqlError);
         });
     },
@@ -183,7 +183,7 @@ DbConn.prototype = {
                 for (var i = 0; i < packsData.sums.length; i++) {
                     packsData.sums[i] -= row[i];
                 };
-                page.refreshPacksTable();
+                page.refreshCharts();
             }, this._onSqlError);
         });
     } 

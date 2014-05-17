@@ -59,7 +59,7 @@ input, table {
     padding-top: 20px;
 }
 
-#arena-table {
+#arena-table, #packs-table {
     overflow-y: auto;
     height: 310px;
 }
