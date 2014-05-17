@@ -196,18 +196,20 @@ PacksPage.prototype = {
     },
 
     _moveUpCursor: function() {
-        setAutoCursor(
+        this._setAutoCursor(
             (this._autoCursor == 0) ? (this._autoLabels.length-1) : (this._autoCursor-1));
     },
     _moveDownCursor: function() {
-        setAutoCursor(
+        this._setAutoCursor(
             (this._autoCursor == this._autoLabels.length-1) ? 0 : (this._autoCursor+1));
     },
     _getSelectedAutoText: function() {
         return this._autoLabels[this._autoCursor].innerHTML;
     },
     _setAutoCursor: function(val) {
-        this._autoLabels[this._autoCursor].className = "";
+        if (this._autoCursor < this._autoLabels.length) {
+            this._autoLabels[this._autoCursor].className = "";
+        }
         this._autoCursor = parseInt(val);
         this._autoLabels[this._autoCursor].className = "selected";
     },
@@ -283,7 +285,8 @@ PacksPage.prototype = {
         var pieOptions = {
             height: 200,
             pie: {
-                radius: 60, 
+                radius: 60,
+                rotate: 30, 
             },
         };
         var pieData = [];
