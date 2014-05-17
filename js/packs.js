@@ -1,3 +1,44 @@
+/* class AutoInput begin */
+function AutoInput(page) {
+    this.page = page;
+
+    this.labelCursor = 0;
+}
+
+AutoInput.prototype = {
+    setLabelCursor: function(val) {
+        if (this.labelCursor < this.getLabelDomEleList().length) {
+            this.getSelectedLabelDomEle().className = "";
+        }
+        this.labelCursor = parseInt(val);
+        this.getSelectedLabelDomEle().className = "selected";
+    },
+
+    moveUpCursor: function() {
+        this.setLabelCursor(
+            (this.labelCursor == 0) ? (this.getLabelDomEleList().length-1) : (this.labelCursor-1)
+        );
+    },
+    moveDownCursor: function() {
+        this.setLabelCursor(
+            (this.labelCursor == this.getLabelDomEleList().length-1) ? 0 : (this.labelCursor+1)
+        );
+    },
+
+    getLabelDomEleList: function() {
+        return this.page.autoInputJqEle.children("label");
+    },
+    getSelectedLabelDomEle: function() {
+        return this.getLabelDomEleList()[this.labelCursor];
+    },
+    confirmSelectedLabel: function() {
+        this.page.cardInputJqEle.attr("value", this.getSelectedLabelDomEle().innerHTML);
+        this.page.autoInputJqEle.hide();
+    },
+}
+/* class AutoInput begin */
+
+/* class PacksPage begin */
 function PacksPage() {
     PageBase.apply(this);
 }
@@ -5,108 +46,167 @@ function PacksPage() {
 PacksPage.prototype = {
     _initMember: function() {
         this._dbConn = new DbConn();
-        this._autoCursor = 0;
-        this._autoLabels = [];
 
         this.tableHeaderJqEle = $("#packs-thead");
         this.editingRowJqEle = $("#packs-edit");
         
         this.goldenButtonJqEle = $("#golden-btn");
-        this.addButtonJqEle = $("#packs-add");
-        this.delButtonJqEle = $("#packs-del");
+        this.cardInputJqEle = $("#card-input");
+        this.autoInputJqEle = $("#auto-input");
         this.appendButtonJqEle = $("#append-btn");
 
-        this.cardInputJqEle = $("#card-input");
+        this.addButtonJqEle = $("#packs-add");
+        this.delButtonJqEle = $("#packs-del");
 
         this.trendChartDomEle = document.getElementById("packs-trend");
         this.countsChartDomEle = document.getElementById("quality-parts");
         this.ratesChartDomEle = document.getElementById("quality-rates");
 
+        this.autoInputObj = new AutoInput(this);
+
         /*
             The following fields may be set by member functions
                 this.packsData
                 this.trendObj, this.numsObj, this.ratesObj
-                this.editingCellCJqEle
+                this.editingCellCJqEle, this.editingCellDustJqEle
         */
     },
     _initData: function() {
         this._dbConn.loadPacksData(this);
     },
     _initView: function() {
-        // do nothing
+        var page = this;
+        // set the fixed header 
+        var texts = ["id", "day"];
+        CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });
+        CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
+        texts.push("dust");
+
+        texts.map(function(t) {
+            var td = $("<td/>").appendTo(page.tableHeaderJqEle);
+            td.attr("class", t == "day" ? "datetd" : "othertd");
+            td.text(t);
+        });
+        // prepare the edit row without any values been set
+        var cellids = ["packs-id", "packs-day"];
+        CardsInfo.qualityList.map(function(q) { cellids.push("golden-" + q.color); });
+        CardsInfo.qualityList.map(function(q) { cellids.push("normal-" + q.color); });
+        cellids.push("packs-dust");
+
+        cellids.map(function(c) {
+            var td = $("<td/>").appendTo(page.editingRowJqEle);
+            td.attr("class", c == "packs-day" ? "datetd" : "othertd");
+            // the first two own an inner input box
+            if (c == "packs-id" || c == "packs-day") {
+                var input = $("<input/>").appendTo(td);
+                input.attr("id", c);
+            } else {
+                td.attr("id", c);
+            }
+        });
+        this.editingCellCJqEle = $("#normal-black");
+        this.editingCellDustJqEle = $("#packs-dust");
     },
     _initEventHandler: function() {
         var page = this;
-        this.tableHeaderJqEle.ready(function () {
-            var texts = ["id", "day"];
-            CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });
-            CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
-            texts.push("dust");
-
-            texts.map(function(t) {
-                var td = $("<td/>").appendTo($("#packs-thead"));
-                td.attr("class", t == "day" ? "datetd" : "othertd");
-                td.text(t);
-            });
-        });
-        this.editingRowJqEle.ready(function () {
-            // prepare the edit row
-            var td, input;
-            td = $("<td/>").appendTo($("#packs-edit"));
-            td.attr("class", "othertd");
-            input = $("<input/>").appendTo(td);
-            input.attr("id", "packs-id");
-
-            td = $("<td/>").appendTo($("#packs-edit"));
-            input = $("<input/>").appendTo(td);
-            input.attr("id", "packs-day");
-            td.attr("class", "datetd");
-
-            CardsInfo.qualityList.map(function(q) {
-                td = $("<td/>").appendTo($("#packs-edit"));
-                td.attr("id", "golden-"+q.color);
-                td.attr("class", "othertd");
-                td.text(0);
-            });
-            CardsInfo.qualityList.map(function(q) {
-                td = $("<td/>").appendTo($("#packs-edit"));
-                td.attr("id", "normal-"+q.color);
-                td.attr("class", "othertd");
-                td.text(q.color == CardsInfo.qualityList[3].color ? 5 : 0);
-            });
-
-            page.editingCellCJqEle = $("#normal-black");
-
-            td = $("<td/>").appendTo($("#packs-edit"));
-            td.attr("id", "packs-dust");
-            td.attr("class", "othertd");
-            td.text(5*CardsInfo.qualityList[3].dust);
-        });
-
         this.goldenButtonJqEle.click(function () {
             // toggle this button between golden and normal
-            var btn = $("#golden-btn");
+            var btn = this.goldenButtonJqEle;
             if (btn.text() == "Golden") {
                 btn.text("Normal");
             } else {
                 btn.text("Golden");
             }
         });
+        this.cardInputJqEle.keyup(function (event) {
+            var key = event.which; 
+            // special keys
+            switch(key) {
+            case 13: // enter
+                page.autoInputObj.confirmSelectedLabel();                
+                return;
+            case 27: // escape
+                page.autoInputJqEle.hide();
+                return;
+            case 38: // arrow up
+                page.autoInputObj.moveUpCursor();
+                return;
+            case 40: // arrow down
+                page.autoInputObj.moveDownCursor();
+                return;
+            }
+            // normal input, use the perfix as key to find card candidates
+            page.autoInputJqEle.empty();
+            page.autoInputJqEle.hide();
+
+            key = page.cardInputJqEle.val();
+            if (key.length >= 10) key = key.substring(0, 10);
+
+            var list = CardsInfo.prefixMap[key];
+            if (!list) return;
+            if (list.length >= 10) list.splice(10, list.length-10);
+
+            list.map(function(card) {
+                // normal card infomation label
+                var lbl = $("<label></label>").appendTo(page.autoInputJqEle);
+                lbl.attr("labelindex", page.autoInputJqEle.children("label").length - 1);
+                lbl.attr("cardid", card.id);
+                lbl.attr("cardqindex", 5 - parseInt(card.id/10000));
+                lbl.css("color", CardsInfo.qualityList[lbl.attr("cardqindex")].color);
+                lbl.text(card.name);
+                lbl.mouseover(function() {
+                    page.autoInputObj.setLabelCursor(lbl.attr("labelindex"));
+                });
+                lbl.click(function() {
+                    page.autoInputObj.confirmSelectedLabel();
+                });
+                // additional line break element
+                $("<br/>").appendTo(page.autoInputJqEle);
+            });
+            page.autoInputObj.setLabelCursor(0);
+
+            page.autoInputJqEle.show();
+        });
+        this.appendButtonJqEle.click(function () {
+            // verfiy the input
+            var curLabelDomEle = page.autoInputObj.getSelectedLabelDomEle();
+            if (curLabelDomEle.innerHTML != page.cardInputJqEle.val()) return;
+            // update numbers in the editing row
+            var prefix = page.goldenButtonJqEle.text().toLowerCase();
+            var cell = $("#" + prefix + "-" + curLabelDomEle.style.color);
+            var count = parseInt(cell.text());
+            if (count == 5) return;
+            cell.text(count+1);
+            var tip = cell.attr("title");
+            cell.attr("title", tip ? tip + "\n" + curLabelDomEle.innerHTML : curLabelDomEle.innerHTML);
+            // update the normal common cell
+            page.editingCellCJqEle.text(parseInt(page.editingCellCJqEle.text()) - 1);
+            // update the dust
+            cell = page.editingCellDustJqEle;
+            count = parseInt(cell.text()) - 5; // to replace a normal common
+            var index = curLabelDomEle.getAttribute("cardqindex");
+            if (prefix == "golden") {
+                cell.text(count + CardsInfo.qualityList[index].gdust);
+            } else {
+                cell.text(count + CardsInfo.qualityList[index].dust);
+            }
+        });
+
         this.addButtonJqEle.click(function() {
-            var tr = $("#packs-edit");
             var row = {};
-            // FIXME: ugly codes blow
-            row.id = parseInt($("#packs-id").val());
-            row.day = $("#packs-day").val();
             row.counts = [];
             row.tips = [];
-            for (var i = 2; i < 10; i++) {
-                row.counts.push(parseInt(tr.children().get(i).innerHTML));
+
+            var i = 0; 
+            var tdDomEleList = page.editingRowJqEle.children();
+            // remember they have an inner input box
+            row.id = parseInt(tdDomEleList.get(i++).children[0].value);
+            row.day = tdDomEleList.get(i++).children[0].value;
+            for (var j = 0, len = CardsInfo.qualityList.length * 2; j < len; i++, j++) {
+                row.counts.push(parseInt(tdDomEleList.get(i).innerHTML));
+                row.tips.push(tdDomEleList.get(i).title);
             };
-            for (var i = 2; i < 10; i++) {
-                row.tips.push(tr.children().get(i).title);
-            };
-            row.dust = parseInt(tr.children().get(10).innerHTML);
+            row.dust = parseInt(tdDomEleList.get(i).innerHTML);
 
             page._dbConn.insertPacksData(page, row);
         });
@@ -115,107 +215,6 @@ PacksPage.prototype = {
             row.id = page.packsData.rows.length;
             page._dbConn.deletePacksData(page, row);
         });
-        this.appendButtonJqEle.click(function () {
-            var label = page._autoLabels[page._autoCursor]; 
-            if (label.innerHTML != $("#card-input").val()) return;
-            // update numbers in the editing row
-            var prefix = "normal";
-            if ($("#golden-btn").text() == "Golden") prefix = "golden";
-            var cell = $("#" + prefix + "-" + label.style.color);
-            var count = parseInt(cell.text());
-            if (count == 5) return;
-            cell.text(count+1);
-            var tip = cell.attr("title");
-            cell.attr("title", tip ? tip + "\n" + label.innerHTML : label.innerHTML);
-            // update the normal common cell
-            page.editingCellCJqEle.text(parseInt(page.editingCellCJqEle.text()) - 1);
-            // update the dust
-            cell = $("#packs-dust");
-            count = parseInt(cell.text()) - 5; // to replace a normal common
-            var index = label.getAttribute("cardqindex");
-            if (prefix == "golden") {
-                cell.text(count + CardsInfo.qualityList[index].gdust);
-            } else {
-                cell.text(count + CardsInfo.qualityList[index].dust);
-            }
-        });
-
-        this.cardInputJqEle.keyup(function (event) {
-            var key = event.which; 
-            switch(key) {
-            case 13: // enter
-                page._confirmAutoSelected();
-                return;
-            case 27: // escape
-                $("#auto-input").hide();
-                return;
-            case 38: // arrow up
-                page._moveUpCursor();
-                return;
-            case 40: // arrow down
-                page._moveDownCursor();
-                return;
-            }
-
-            var autoInput = $("#auto-input");
-            autoInput.empty();
-
-            var cardInput = $("#card-input");
-            var key = cardInput.val();
-            if (key == "") {
-                autoInput.hide();
-                return; 
-            }
-
-            if (key.length >= 10) key = key.substring(0, 10);
-            var list = CardsInfo.prefixMap[key];
-            if (!list) return;
-            if (list.length >= 10) list.splice(10, list.length-10);
-
-            list.map(function(row) {
-                var lbl = $("<label></label>").appendTo(autoInput);
-                lbl.attr("labelindex", autoInput.children("label").length-1);
-                lbl.attr("cardid", row.id);
-                lbl.attr("cardqindex", 5 - parseInt(row.id/10000));
-                lbl.css("color", CardsInfo.qualityList[lbl.attr("cardqindex")].color);
-                lbl.text(row.name);
-                lbl.mouseover(function() {
-                    page._setAutoCursor(lbl.attr("labelindex"));
-                });
-                lbl.click(function() {
-                    $("#card-input").attr("value", page._getSelectedAutoText());
-                    $("#auto-input").hide();
-                });
-                $("<br/>").appendTo(autoInput);
-            });
-            autoInput.show();
-
-            page._autoLabels = autoInput.children("label");
-            page._setAutoCursor(0);
-        });
-    },
-
-    _moveUpCursor: function() {
-        this._setAutoCursor(
-            (this._autoCursor == 0) ? (this._autoLabels.length-1) : (this._autoCursor-1));
-    },
-    _moveDownCursor: function() {
-        this._setAutoCursor(
-            (this._autoCursor == this._autoLabels.length-1) ? 0 : (this._autoCursor+1));
-    },
-    _getSelectedAutoText: function() {
-        return this._autoLabels[this._autoCursor].innerHTML;
-    },
-    _setAutoCursor: function(val) {
-        if (this._autoCursor < this._autoLabels.length) {
-            this._autoLabels[this._autoCursor].className = "";
-        }
-        this._autoCursor = parseInt(val);
-        this._autoLabels[this._autoCursor].className = "selected";
-    },
-    _confirmAutoSelected: function() {
-        $("#card-input").attr("value", this._getSelectedAutoText());
-        $("#auto-input").hide();
     },
 
     _showDustTrend: function(container, lineTicks, dustData) {
@@ -392,3 +391,4 @@ PacksPage.prototype = {
         this.refreshPacksTable();
     },
 }
+/* class PacksPage end */
