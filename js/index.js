@@ -106,7 +106,7 @@ window.onload = function() {
     initDB();
     loadArenaData();
     loadPacksData();
-    showFrame("packs-frame");
+    showFrame("arena-frame");
 
     document.getElementById("arena-nav").onclick = function() {
         showFrame("arena-frame");

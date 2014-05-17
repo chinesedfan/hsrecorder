@@ -24,7 +24,7 @@ input, table {
     width: 8%;
 }
 
-.quarter, #arena-frame th, #arena-frame td {
+.quarter {
     float: left;
     width: 24%;
 }
@@ -62,4 +62,8 @@ input, table {
 #arena-table {
     overflow-y: auto;
     height: 310px;
+}
+
+#arena-frame th, #arena-frame td {
+    width: 24%;
 }

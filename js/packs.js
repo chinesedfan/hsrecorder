@@ -189,6 +189,7 @@ function refreshPacksTable() {
     var rows = window.packsData.rows;
     var tbl = document.createElement("table");
     for (var i = rows.length-1; i >= 0; i--) {
+        //TODO: set id and class of each cell
         var row = rows[i];
         var tr = document.createElement("tr");
         var td;
