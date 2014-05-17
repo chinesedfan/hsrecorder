@@ -7,11 +7,10 @@ PacksPage.prototype = {
         this._dbConn = new DbConn();
         this._autoCursor = 0;
         this._autoLabels = [];
-        this._editingCids = [];
 
         this.tableHeaderJqEle = $("#packs-thead");
         this.editingRowJqEle = $("#packs-edit");
-
+        
         this.goldenButtonJqEle = $("#golden-btn");
         this.addButtonJqEle = $("#packs-add");
         this.delButtonJqEle = $("#packs-del");
@@ -27,6 +26,7 @@ PacksPage.prototype = {
             The following fields may be set by member functions
                 this.packsData
                 this.trendObj, this.numsObj, this.ratesObj
+                this.editingCellCJqEle
         */
     },
     _initData: function() {
@@ -72,13 +72,15 @@ PacksPage.prototype = {
                 td = $("<td/>").appendTo($("#packs-edit"));
                 td.attr("id", "normal-"+q.color);
                 td.attr("class", "othertd");
-                td.text(0);
+                td.text(q.color == CardsInfo.qualityList[3].color ? 5 : 0);
             });
+
+            page.editingCellCJqEle = $("#normal-black");
 
             td = $("<td/>").appendTo($("#packs-edit"));
             td.attr("id", "packs-dust");
             td.attr("class", "othertd");
-            td.text(0);
+            td.text(5*CardsInfo.qualityList[3].dust);
         });
 
         this.goldenButtonJqEle.click(function () {
@@ -116,7 +118,6 @@ PacksPage.prototype = {
         this.appendButtonJqEle.click(function () {
             var label = page._autoLabels[page._autoCursor]; 
             if (label.innerHTML != $("#card-input").val()) return;
-            page._editingCids.push(label.cid);
             // update numbers in the editing row
             var prefix = "normal";
             if ($("#golden-btn").text() == "Golden") prefix = "golden";
@@ -126,9 +127,11 @@ PacksPage.prototype = {
             cell.text(count+1);
             var tip = cell.attr("title");
             cell.attr("title", tip ? tip + "\n" + label.innerHTML : label.innerHTML);
+            // update the normal common cell
+            page.editingCellCJqEle.text(parseInt(page.editingCellCJqEle.text()) - 1);
             // update the dust
             cell = $("#packs-dust");
-            count = parseInt(cell.text());
+            count = parseInt(cell.text()) - 5; // to replace a normal common
             var index = label.getAttribute("cardqindex");
             if (prefix == "golden") {
                 cell.text(count + CardsInfo.qualityList[index].gdust);
@@ -331,7 +334,11 @@ PacksPage.prototype = {
             + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate())));
 
         for (var i = 2; i < trEdit.children().length; i++) {
-            trEdit.children().get(i).innerHTML = 0;
+            var html = 0;
+            if (i == trEdit.children().length-2) html = 5; // the normal common
+            if (i == trEdit.children().length-1) html = 25; // the dust
+            
+            trEdit.children().get(i).innerHTML = html;
             trEdit.children().get(i).title = "";
         }
     },

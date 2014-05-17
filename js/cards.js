@@ -331,9 +331,9 @@ var CardsInfo = (function() {
     var _prefixMap = {};
 
     var _qualityList = [
-        {name: "Legendary", color: "orange", dust: 1600, gdust: 3200},
-        {name: "Epic", color: "purple", dust: 400, gdust: 1600},
-        {name: "Rare", color: "blue", dust: 100, gdust: 400},
+        {name: "Legendary", color: "orange", dust: 400, gdust: 1600},
+        {name: "Epic", color: "purple", dust: 100, gdust: 400},
+        {name: "Rare", color: "blue", dust: 20, gdust: 100},
         {name: "Common", color: "black", dust: 5, gdust: 50},
     ];
     var _qualityNames = _qualityList.map(function(q) {
