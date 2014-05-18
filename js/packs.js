@@ -39,11 +39,103 @@ AutoInput.prototype = {
 /* class AutoInput begin */
 
 /* class PacksPage begin */
-function PacksPage() {
-    PageBase.apply(this);
+function PacksPage(container) {
+    PageBase.apply(this, arguments);
 }
 
 PacksPage.prototype = {
+    _initView: function() {
+        var page = this;
+        // this page includes the trend chart and the bottom part
+        var trendChartJqEle = $("<div/>").appendTo(this.container);
+        trendChartJqEle.attr("id", "packs-trend");
+        trendChartJqEle.attr("class", "chart");
+
+        var bottomJqEle = $("<div/>").appendTo(this.container);
+
+        // the bottom part includes the left part and the right part
+        var leftBottomJqEle = $("<div/>").appendTo(bottomJqEle);
+        leftBottomJqEle.attr("class", "half");
+
+        var rightBottomJqEle = $("<div/>").appendTo(bottomJqEle);
+        rightBottomJqEle.attr("class", "half");
+
+        // the left bottom part includes two charts
+        var countsChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
+        countsChartJqEle.attr("id", "quality-parts");
+        countsChartJqEle.attr("class", "chart");
+
+        var ratesChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
+        ratesChartJqEle.attr("id", "quality-rates");
+        ratesChartJqEle.attr("class", "chart");
+
+        // the right bottom part includes 4 parts
+        var appendRowJqEle = $("<div/>").appendTo(rightBottomJqEle);
+        var buttonAreaJqEle = $("<div/>").appendTo(rightBottomJqEle);
+        var fixedTableJqEle = $("<table/>").appendTo(rightBottomJqEle);
+        var packsTableJqEle = $("<div/>").appendTo(rightBottomJqEle);
+        packsTableJqEle.attr("id", "packs-table");
+
+        // the append row includes 4 parts
+        var goldenButtonJqEle = $("<button/>").appendTo(appendRowJqEle);
+        goldenButtonJqEle.attr("id", "golden-btn");
+        goldenButtonJqEle.attr("class", "quarter");
+        goldenButtonJqEle.text("Normal");
+
+        var cardInputJqEle = $("<input/>").appendTo(appendRowJqEle);
+        cardInputJqEle.attr("id", "card-input");
+        cardInputJqEle.attr("class", "half");
+
+        var autoInputJqEle = $("<div/>").appendTo(appendRowJqEle);
+        autoInputJqEle.attr("id", "auto-input");
+
+        var appendButtonJqEle = $("<button/>").appendTo(appendRowJqEle);
+        appendButtonJqEle.attr("id", "append-btn");
+        appendButtonJqEle.attr("class", "quarter");
+        appendButtonJqEle.text("Append");
+
+        // the button area include two buttons
+        var addButtonJqEle = $("<button/>").appendTo(buttonAreaJqEle);
+        addButtonJqEle.attr("id", "packs-add");
+        addButtonJqEle.attr("class", "half");
+        addButtonJqEle.text("Add Editing");
+
+        var delButtonJqEle = $("<button/>").appendTo(buttonAreaJqEle);
+        delButtonJqEle.attr("id", "packs-del");
+        delButtonJqEle.attr("class", "half");
+        delButtonJqEle.text("Remove Last");
+
+        // the fixed table includes its head row and the edit row
+        var headRowJqEle = $("<tr/>").appendTo(fixedTableJqEle);
+        headRowJqEle.attr("id", "packs-thead");
+        var texts = ["id", "day"];
+        CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });
+        CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
+        texts.push("dust");
+        texts.map(function(t) {
+            var td = $("<td/>").appendTo(headRowJqEle);
+            td.attr("class", t == "day" ? "datetd" : "othertd");
+            td.text(t);
+        });
+
+        var editingRowJqEle = $("<tr/>").appendTo(fixedTableJqEle);
+        editingRowJqEle.attr("id", "packs-edit");
+        var cellids = ["packs-id", "packs-day"];
+        CardsInfo.qualityList.map(function(q) { cellids.push("golden-" + q.color); });
+        CardsInfo.qualityList.map(function(q) { cellids.push("normal-" + q.color); });
+        cellids.push("packs-dust");
+        cellids.map(function(c) {
+            var td = $("<td/>").appendTo(editingRowJqEle);
+            td.attr("class", c == "packs-day" ? "datetd" : "othertd");
+            // the first two own an inner input box
+            if (c == "packs-id" || c == "packs-day") {
+                var input = $("<input/>").appendTo(td);
+                input.attr("id", c);
+            } else {
+                td.attr("id", c);
+            }
+        });
+    },
     _initMember: function() {
         this._dbConn = new DbConn();
 
@@ -58,6 +150,13 @@ PacksPage.prototype = {
         this.addButtonJqEle = $("#packs-add");
         this.delButtonJqEle = $("#packs-del");
 
+        this.editIdJqEle = $("#packs-id");
+        this.editDayJqEle = $("#packs-day");
+
+        this.packsTableJqEle = $("#packs-table");
+        this.editingCellCJqEle = $("#normal-black");
+        this.editingCellDustJqEle = $("#packs-dust");
+
         this.trendChartDomEle = document.getElementById("packs-trend");
         this.countsChartDomEle = document.getElementById("quality-parts");
         this.ratesChartDomEle = document.getElementById("quality-rates");
@@ -68,44 +167,10 @@ PacksPage.prototype = {
             The following fields may be set by member functions
                 this.packsData
                 this.trendObj, this.numsObj, this.ratesObj
-                this.editingCellCJqEle, this.editingCellDustJqEle
         */
     },
     _initData: function() {
         this._dbConn.loadPacksData(this);
-    },
-    _initView: function() {
-        var page = this;
-        // set the fixed header 
-        var texts = ["id", "day"];
-        CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });
-        CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
-        texts.push("dust");
-
-        texts.map(function(t) {
-            var td = $("<td/>").appendTo(page.tableHeaderJqEle);
-            td.attr("class", t == "day" ? "datetd" : "othertd");
-            td.text(t);
-        });
-        // prepare the edit row without any values been set
-        var cellids = ["packs-id", "packs-day"];
-        CardsInfo.qualityList.map(function(q) { cellids.push("golden-" + q.color); });
-        CardsInfo.qualityList.map(function(q) { cellids.push("normal-" + q.color); });
-        cellids.push("packs-dust");
-
-        cellids.map(function(c) {
-            var td = $("<td/>").appendTo(page.editingRowJqEle);
-            td.attr("class", c == "packs-day" ? "datetd" : "othertd");
-            // the first two own an inner input box
-            if (c == "packs-id" || c == "packs-day") {
-                var input = $("<input/>").appendTo(td);
-                input.attr("id", c);
-            } else {
-                td.attr("id", c);
-            }
-        });
-        this.editingCellCJqEle = $("#normal-black");
-        this.editingCellDustJqEle = $("#packs-dust");
     },
     _initEventHandler: function() {
         var page = this;
@@ -148,7 +213,7 @@ PacksPage.prototype = {
 
             list.map(function(card) {
                 // normal card infomation label
-                var lbl = $("<label></label>").appendTo(page.autoInputJqEle);
+                var lbl = $("<label/>").appendTo(page.autoInputJqEle);
                 lbl.attr("labelindex", page.autoInputJqEle.children("label").length - 1);
                 lbl.attr("cardid", card.id);
                 lbl.attr("cardqindex", 5 - parseInt(card.id/10000));
@@ -323,34 +388,30 @@ PacksPage.prototype = {
         this.ratesObj = this._showQualityRates(this.ratesChartDomEle, this.packsData.sums);
     },
     refreshPacksEditRow: function() {
-        var trEdit = $("#packs-edit");
-        var tdId = $("#packs-id");
-        var tdDay = $("#packs-day");
-
-        tdId.val(this.packsData.rows.length + 1);
+        this.editIdJqEle.val(this.packsData.rows.length + 1);
 
         var today = new Date();
         var month = today.getMonth()+1; // the special one
-        tdDay.val(today.getFullYear() + "-" 
+        this.editDayJqEle.val(today.getFullYear() + "-" 
             + ((month>9) ? month : ("0"+month)) + "-"
             + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate())));
 
+        var trEdit = this.editingRowJqEle;
         for (var i = 2; i < trEdit.children().length; i++) {
-            var html = 0;
-            if (i == trEdit.children().length-2) html = 5; // the normal common
-            if (i == trEdit.children().length-1) html = 25; // the dust
-            
-            trEdit.children().get(i).innerHTML = html;
+            trEdit.children().get(i).innerHTML = 0;
             trEdit.children().get(i).title = "";
         }
+
+        // by default, it is 5 normal common cards
+        this.editingCellCJqEle.text(5);
+        this.editingCellDustJqEle.text(25);
     },
     refreshPacksTable: function() {
-        $("#packs-table").empty();
+        this.packsTableJqEle.empty();
 
         var rows = this.packsData.rows;
         var tbl = document.createElement("table");
         for (var i = rows.length-1; i >= 0; i--) {
-            //TODO: set id and class of each cell
             var row = rows[i];
             var tr = document.createElement("tr");
             var td;
@@ -380,7 +441,7 @@ PacksPage.prototype = {
 
             tbl.appendChild(tr);
         }
-        document.getElementById("packs-table").appendChild(tbl);
+        this.packsTableJqEle.append(tbl);
 
         this.refreshPacksEditRow();
     },

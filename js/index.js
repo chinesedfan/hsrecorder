@@ -1,11 +1,13 @@
 /* class PageBase begin */
-function PageBase() {
-    // add fields of this class
+function PageBase(container) {
+    this.container = container;
+
+    // initialize HTML elements
+    this._initView();
+    // add other fields of this class besides this.container
     this._initMember();
     // load datas for the database
     this._initData();
-    // initialize HTML elements
-    this._initView();
     // register event handers
     this._initEventHandler();
 }
@@ -17,18 +19,20 @@ function MainPage() {
 }
 
 MainPage.prototype = {
+    _initView: function() {
+        // because this page is not reusable, all elements are defined in HTML directly
+
+        this._frameIds = ["arena-frame", "packs-frame"];
+        this.showFrame("arena-frame");
+    },
     _initMember: function() {
         this._dbConn = new DbConn();
-        this._frameIds = ["arena-frame", "packs-frame"];        
 
         this.arenaNavDomEle = document.getElementById("arena-nav");
         this.packsNavDomEle = document.getElementById("packs-nav");
     },
     _initData: function() {
         this._dbConn.initDB();
-    },
-    _initView: function() {
-        this.showFrame("arena-frame");
     },
     _initEventHandler: function() {
         var page = this;
@@ -50,7 +54,7 @@ MainPage.prototype = {
 /* class MainPage end */
 
 window.onload = function() {
-    new MainPage();
-    new ArenaPage();
-    new PacksPage();
+    new MainPage(document.getElementById("header-div"));
+    new ArenaPage(document.getElementById("arena-frame"));
+    new PacksPage(document.getElementById("packs-frame"));
 };

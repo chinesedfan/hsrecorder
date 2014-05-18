@@ -4,7 +4,7 @@
    <link type="text/css" rel="stylesheet" href="css/page.css" />
 </head>
 <body>
-    <div class="header">
+    <div id="header-div" class="header">
         <div class="header-nav">
             <ul>
                 <li id="arena-nav">Arena(CN)</li>
@@ -15,57 +15,8 @@
             </ul>
         </div>
     </div>
-    <div id="arena-frame">
-        <div id="trend-chart" class="chart center"></div>
-        <div class="bottom">
-            <div class="half">
-                <div id="wins-chart" class="chart"></div>
-                <div id="rates-chart" class="chart"></div>
-            </div>
-            <div class="half">
-                <div id="button-area">
-                    <button id="add-btn" class="half">Add Editing</button>
-                    <button id="del-btn" class="half">Remove Last</button>
-                </div>
-                <table>
-                    <tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
-                    <tr id="edit-row">
-                        <td><input id="edit-id" type="text" /></td>
-                        <td><input id="edit-day" type="text" /></td>
-                        <td><select id="edit-class" /></td>
-                        <td><input id="edit-wins"type="text" /></td>
-                    </tr>
-                </table>
-                <div id="arena-table"></div>
-            </div>
-        </div>
-    </div>
-    <div id="packs-frame">
-        <div id="packs-trend" class="chart"></div>
-        <div class="bottom">
-            <div class="half">
-                <div id="quality-parts" class="chart"></div>
-                <div id="quality-rates" class="chart"></div>
-            </div>
-            <div class="half">
-                <div>
-                    <button id="golden-btn" class="quarter">Normal</button>
-                    <input id="card-input" class="half" />
-                    <div id="auto-input"></div>
-                    <button id="append-btn" class="quarter">Append</button>
-                </div>
-                <div>
-                    <button id="packs-add" class="half">Add Editing</button>
-                    <button id="packs-del" class="half">Remove Last</button>
-                </div>
-                <table>
-                    <tr id="packs-thead"></tr>
-                    <tr id="packs-edit"></tr>
-                </table>
-                <div id="packs-table"></div>
-            </div>
-        </div>
-    </div>
+    <div id="arena-frame"></div>
+    <div id="packs-frame"></div>
     <script type="text/javascript" src="js/svgchart.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/arena.js"></script>

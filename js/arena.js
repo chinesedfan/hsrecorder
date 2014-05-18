@@ -1,8 +1,104 @@
-function ArenaPage() {
-    PageBase.apply(this);
+function ArenaPage(container) {
+    PageBase.apply(this, arguments);
 }
 
 ArenaPage.prototype = {
+    _initView: function() {
+        // this page includes the trend chart and the bottom part
+        var trendChartDomEle = document.createElement("div");
+        trendChartDomEle.id = "trend-chart";
+        trendChartDomEle.className = "chart center";
+        this.container.appendChild(trendChartDomEle);
+        
+        var bottomDomEle = document.createElement("div");
+        bottomDomEle.className = "bottom";
+        this.container.appendChild(bottomDomEle);
+
+        // the bottom part includes the left part and the right part
+        var leftBottomDomEle = document.createElement("div");
+        leftBottomDomEle.className = "half";
+        bottomDomEle.appendChild(leftBottomDomEle);
+
+        var rightBottomDomEle = document.createElement("div");
+        rightBottomDomEle.className = "half";
+        bottomDomEle.appendChild(rightBottomDomEle);
+
+        // the left bottom part includes two charts
+        var winsChartDomEle = document.createElement("div");
+        winsChartDomEle.id = "wins-chart";
+        winsChartDomEle.className = "chart";
+        leftBottomDomEle.appendChild(winsChartDomEle);
+
+        var ratesChartDomEle = document.createElement("div");
+        ratesChartDomEle.id = "rates-chart";
+        ratesChartDomEle.className = "chart";
+        leftBottomDomEle.appendChild(ratesChartDomEle);
+
+        // the right bottom part includes the button area, the fixed table and the real arena table
+        var buttonAreaDomEle = document.createElement("div");
+        rightBottomDomEle.appendChild(buttonAreaDomEle);
+
+        var fixedTableDomEle = document.createElement("table");
+        rightBottomDomEle.appendChild(fixedTableDomEle);
+
+        var arenaTableDomEle = document.createElement("div");
+        arenaTableDomEle.id = "arena-table";
+        rightBottomDomEle.appendChild(arenaTableDomEle);
+
+        // the button area include two buttons
+        var addButtonDomEle = document.createElement("button");
+        addButtonDomEle.id = "add-btn";
+        addButtonDomEle.className = "half";
+        addButtonDomEle.innerHTML = "Add Editing";
+        buttonAreaDomEle.appendChild(addButtonDomEle);
+
+        var delButtonDomEle = document.createElement("button");
+        delButtonDomEle.id = "del-btn";
+        delButtonDomEle.className = "half";
+        delButtonDomEle.innerHTML = "Remove Last";
+        buttonAreaDomEle.appendChild(delButtonDomEle);
+
+        // the fixed table includes its head row and the edit row
+        var headTrDomEle = document.createElement("tr");
+        headTrDomEle.innerHTML = "<th>id</th><th>day</th><th>class</th><th>wins</th>";
+        fixedTableDomEle.appendChild(headTrDomEle);
+
+        var editRowDomEle = document.createElement("tr");
+        editRowDomEle.id = "edit-row";
+        fixedTableDomEle.appendChild(editRowDomEle);
+
+        // the edit row includes 4 cells, and each cell incldes an input or select element
+        var td, input, select;
+        td = document.createElement("td");
+        input = document.createElement("input");
+        input.id = "edit-id";
+        td.appendChild(input);
+        editRowDomEle.appendChild(td);
+
+        td = document.createElement("td");
+        input = document.createElement("input");
+        input.id = "edit-day";
+        td.appendChild(input);
+        editRowDomEle.appendChild(td);
+
+        td = document.createElement("td");
+        select = document.createElement("select");
+        select.id = "edit-class";
+        CardsInfo.classNames.map(function(name) {
+            var op = document.createElement("option");
+            op.value = name;
+            op.text = name;
+            select.add(op);
+        });
+        td.appendChild(select);
+        editRowDomEle.appendChild(td);
+
+        td = document.createElement("td");
+        input = document.createElement("input");
+        input.id = "edit-wins";
+        td.appendChild(input);
+        editRowDomEle.appendChild(td);
+    },
     _initMember: function() {
         this._dbConn = new DbConn();
 
@@ -14,6 +110,11 @@ ArenaPage.prototype = {
         this.addButtonDomEle = document.getElementById("add-btn");
         this.delButtonDomEle = document.getElementById("del-btn");
 
+        this.editIdDomEle = document.getElementById("edit-id");
+        this.editDayDomEle = document.getElementById("edit-day");
+        this.editClassDomEle = document.getElementById("edit-class");
+        this.editWinsDomEle = document.getElementById("edit-wins");
+
         /*
             The following fields may be set by member functions
                 this.arenaData
@@ -23,17 +124,14 @@ ArenaPage.prototype = {
     _initData: function() {
         this._dbConn.loadArenaData(this);
     },
-    _initView: function() {
-        // do nothing
-    },
     _initEventHandler: function() {
         var page = this;
         this.addButtonDomEle.onclick = function() {
             var row = {};
-            row.id = parseInt(document.getElementById("edit-id").value);
-            row.day = document.getElementById("edit-day").value;
-            row.class = document.getElementById("edit-class").value;
-            row.wins = parseInt(document.getElementById("edit-wins").value);
+            row.id = parseInt(page.editIdDomEle.value);
+            row.day = page.editDayDomEle.value;
+            row.class = page.editClassDomEle.value;
+            row.wins = parseInt(page.editWinsDomEle.value);
             page._dbConn.insertArenaRecord(page, row);
         };
         this.delButtonDomEle.onclick = function() {
@@ -160,28 +258,15 @@ ArenaPage.prototype = {
         this.ratesObj = this._showClassRates(this.ratesChartDomEle, arenaData.classNums);
     },
     refreshEditRow: function() {
-        var tdId = document.getElementById("edit-id");
-        var tdDay = document.getElementById("edit-day");
-        var tdClass = document.getElementById("edit-class");
-        var tdWins = document.getElementById("edit-wins");
-
-        tdId.value = this.arenaData.trend.end;
+        this.editIdDomEle.value = this.arenaData.trend.end;
 
         var today = new Date();
         var month = today.getMonth()+1; // the special one
-        tdDay.value = today.getFullYear() + "-" 
+        this.editDayDomEle.value = today.getFullYear() + "-" 
             + ((month>9) ? month : ("0"+month)) + "-"
             + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate()));
 
-        if (tdClass.length == 0) {
-            CardsInfo.classNames.map(function(name) {
-                var op = document.createElement("option");
-                op.value = name;
-                op.text = name;
-                tdClass.add(op);
-            });
-        }
-        tdWins.value = 0;
+        this.editWinsDomEle.value = 0;
     },
     refreshArenaTable: function() {
         var rows = this.arenaData.rows;
