@@ -7,4 +7,4 @@ In fact, an Excel file may be enough. But I want to have more power to add perso
 
 It leverages HTML5 local storage APIs to manage all data. The database is a SQLite file, whose location has been specified in the corresponding file. Because its location is controlled by the browser, be careful when you clear the browser caches.
 
-The open source library for drawing statistics charts is provided by Dmitry Baranovskiy and Sencha Labs, as well as its comments describe.
+The open source library for drawing statistics charts is provided by [Dianping's Venus project](https://github.com/DPF2EBS/venus), which is built on KineticJS and Raphaël.
