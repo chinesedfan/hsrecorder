@@ -140,6 +140,8 @@ ArenaPage.prototype = {
     },
 
     _showArenaTrend: function(container, lineTicks, winData) {
+        var arenaData = this.arenaData;
+        var totalAvg = (arenaData.totalNums == 0) ? 0 : (arenaData.totalWins/arenaData.totalNums).toFixed(2);
         var lineOptions = {
             axis: {
                 x: {
@@ -166,11 +168,15 @@ ArenaPage.prototype = {
                 position: ["right", "center"],
                 borderColor: "white",
             },
+            threshold: {
+                y: {
+                    value: totalAvg,
+                },
+            },
         };
-        var arenaData = this.arenaData;
         var seriesName = "totalNums = " + arenaData.totalNums
             + "\ntotalWins = " + arenaData.totalWins
-            + "\ntotalAvg = " + ((arenaData.totalNums == 0) ? 0 : (arenaData.totalWins/arenaData.totalNums).toFixed(2));
+            + "\ntotalAvg = " + totalAvg;
         var lineData = [{name: seriesName, data: winData}];
         var line = new Venus.SvgChart(container, lineData, lineOptions);
         return line;
