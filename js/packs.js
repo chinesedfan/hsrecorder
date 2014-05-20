@@ -292,10 +292,13 @@ PacksPage.prototype = {
                     ticks: lineTicks,
                 },
                 y: {
-                    min: 0,
-                    tickSize: 2,
-                    tickWidth: 20,
+                    min: 1,
+                    max: 9999,
+                    tickSize: 4,
+                    tickWidth: 30,
                     rotate: 90,
+                    type: "logscale",
+                    //logbase: 10,
                 },
             },
             line: {
