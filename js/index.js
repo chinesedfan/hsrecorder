@@ -15,39 +15,49 @@ function PageBase(container) {
 
 /* class MainPage begin */
 function MainPage() {    
-    PageBase.apply(this);
+    PageBase.apply(this, arguments);
 }
 
 MainPage.prototype = {
     _initView: function() {
         // because this page is not reusable, all elements are defined in HTML directly
 
-        this._frameIds = ["arena-frame", "packs-frame"];
-        this.showFrame("arena-frame");
+        this._subpages = [
+            {index: 0, id: "arena-frame", constructor: ArenaPage, initialized: false},
+            {index: 1, id: "packs-frame", constructor: PacksPage, initialized: false},
+        ];
+        this.showSubPage(0);
     },
     _initMember: function() {
         this._dbConn = new DbConn();
-
-        this.arenaNavDomEle = document.getElementById("arena-nav");
-        this.packsNavDomEle = document.getElementById("packs-nav");
+        this.headerListJqEle = $("#header-div li");
     },
     _initData: function() {
         this._dbConn.initDB();
     },
     _initEventHandler: function() {
         var page = this;
-        this.arenaNavDomEle.onclick = function() {
-            page.showFrame("arena-frame");
-        }
-        this.packsNavDomEle.onclick = function() {
-            page.showFrame("packs-frame");
-        }
+        this._subpages.map(function(sp) {
+            var domEle = page.headerListJqEle[sp.index];
+            domEle.onclick = function() {
+                page.showSubPage(sp.index);
+            };
+        });
     },
 
-    showFrame: function(frameid) {
-        this._frameIds.map(function(fid) {
-            var domEle = document.getElementById(fid);
-            domEle.style.display = (fid == frameid) ? "block" : "none";
+    showSubPage: function(index) {
+        var subpage = this._subpages[index];
+        this._subpages.map(function(sp) {
+            var domEle = document.getElementById(sp.id);
+            var isShow = (sp.id == subpage.id);
+            if (!sp.initialized) {
+                if (isShow) {
+                    new (sp.constructor)(document.getElementById(sp.id));
+                    sp.initialized = true;
+                }
+            } else {
+                domEle.style.display = isShow ? "block" : "none";
+            }
         });
     },
 }
@@ -55,6 +65,4 @@ MainPage.prototype = {
 
 window.onload = function() {
     new MainPage(document.getElementById("header-div"));
-    new ArenaPage(document.getElementById("arena-frame"));
-    new PacksPage(document.getElementById("packs-frame"));
 };
