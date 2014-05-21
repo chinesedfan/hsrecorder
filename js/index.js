@@ -26,11 +26,11 @@ MainPage.prototype = {
             {index: 0, id: "arena-frame", constructor: ArenaPage, initialized: false},
             {index: 1, id: "packs-frame", constructor: PacksPage, initialized: false},
         ];
+        this.headerListJqEle = $("#header-div li");
         this.showSubPage(0);
     },
     _initMember: function() {
-        this._dbConn = new DbConn();
-        this.headerListJqEle = $("#header-div li");
+        this._dbConn = new DbConn();        
     },
     _initData: function() {
         this._dbConn.initDB();
@@ -46,6 +46,7 @@ MainPage.prototype = {
     },
 
     showSubPage: function(index) {
+        var page = this;
         var subpage = this._subpages[index];
         this._subpages.map(function(sp) {
             var domEle = document.getElementById(sp.id);
@@ -58,6 +59,7 @@ MainPage.prototype = {
             } else {
                 domEle.style.display = isShow ? "block" : "none";
             }
+            page.headerListJqEle[sp.index].className = isShow ? "active" : "";
         });
     },
 }
