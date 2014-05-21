@@ -3,13 +3,9 @@ li {
     width: 100px;
 }
 
-input, table {
+input, table, th {
     width: 100%;
     text-align: center;
-}
-
-.header {
-    height: 50px;
 }
 
 .chart {

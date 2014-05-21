@@ -98,6 +98,11 @@ ArenaPage.prototype = {
         input.id = "edit-wins";
         td.appendChild(input);
         editRowDomEle.appendChild(td);
+
+        // set css style at last
+        $("input").map(function(i, domEle) { domEle.className = "form-control"; });
+        $("select").map(function(i, domEle) { domEle.className = "form-control"; });
+        $("button").map(function(i, domEle) { domEle.className = "btn btn-default col-md-6"; });                 
     },
     _initMember: function() {
         this._dbConn = new DbConn();
