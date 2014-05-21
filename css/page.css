@@ -8,6 +8,10 @@ input, table, th {
     text-align: center;
 }
 
+label {
+    margin: 0px;
+}
+
 .chart {
     height: 160px;
 }
@@ -22,12 +26,12 @@ input, table, th {
 
 .quarter {
     float: left;
-    width: 24%;
+    width: 24.9%;
 }
 
 .half {
     float: left;
-    width: 49%;
+    width: 49.9%;
 }
 
 .center {
@@ -62,7 +66,7 @@ input, table, th {
 
 #packs-table {
     overflow-y: auto;
-    height: 290px;
+    height: 280px;
 }
 
 #arena-frame th, #arena-frame td {

@@ -135,6 +135,10 @@ PacksPage.prototype = {
                 td.attr("id", c);
             }
         });
+
+        // set css style at last
+        $("button").map(function(i, domEle) { domEle.className += " btn btn-default"; }); 
+        $("input").map(function(i, domEle) { domEle.className += " form-control"; });
     },
     _initMember: function() {
         this._dbConn = new DbConn();
