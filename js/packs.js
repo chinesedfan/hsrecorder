@@ -33,6 +33,7 @@ AutoInput.prototype = {
     },
     confirmSelectedLabel: function() {
         this.page.cardInputJqEle.attr("value", this.getSelectedLabelDomEle().innerHTML);
+        this.page.cardInputJqEle.css("color", this.getSelectedLabelDomEle().style.color);
         this.page.autoInputJqEle.hide();
     },
 }
@@ -180,11 +181,13 @@ PacksPage.prototype = {
         var page = this;
         this.goldenButtonJqEle.click(function () {
             // toggle this button between golden and normal
-            var btn = this.goldenButtonJqEle;
+            var btn = page.goldenButtonJqEle;
             if (btn.text() == "Golden") {
                 btn.text("Normal");
+                btn.css("background-color", "#fff");
             } else {
                 btn.text("Golden");
+                btn.css("background-color", "#ffff00");
             }
         });
         this.cardInputJqEle.keyup(function (event) {
@@ -239,7 +242,7 @@ PacksPage.prototype = {
         this.appendButtonJqEle.click(function () {
             // verfiy the input
             var curLabelDomEle = page.autoInputObj.getSelectedLabelDomEle();
-            if (curLabelDomEle.innerHTML != page.cardInputJqEle.val()) return;
+            if (!curLabelDomEle || curLabelDomEle.innerHTML != page.cardInputJqEle.val()) return;
             // update numbers in the editing row
             var prefix = page.goldenButtonJqEle.text().toLowerCase();
             var cell = $("#" + prefix + "-" + curLabelDomEle.style.color);
