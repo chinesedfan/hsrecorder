@@ -36,6 +36,14 @@ AutoInput.prototype = {
         this.page.cardInputJqEle.css("color", this.getSelectedLabelDomEle().style.color);
         this.page.autoInputJqEle.hide();
     },
+    updatePosition: function() {
+        var ele = this.page.cardInputJqEle;
+        this.page.autoInputJqEle.css({
+            width: ele.outerWidth() + "px",
+            top: ele.offset().top + ele.outerHeight() + "px",
+            left: ele.offset().left + "px",
+        });
+    },
 }
 /* class AutoInput begin */
 
@@ -239,6 +247,7 @@ PacksPage.prototype = {
                 $("<br/>").appendTo(page.autoInputJqEle);
             });
             page.autoInputObj.setLabelCursor(0);
+            page.autoInputObj.updatePosition();
 
             page.autoInputJqEle.show();
         });
