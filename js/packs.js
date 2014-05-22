@@ -439,6 +439,7 @@ PacksPage.prototype = {
             for (var j = 0; j < row.counts.length; j++) {
                 td = document.createElement("td");
                 td.innerHTML = row.counts[j];
+                if (td.innerHTML != 0) td.style.backgroundColor = "rgba(0,0,0,0.1)";
                 td.title = row.tips[j];
                 td.className = "othertd";
                 tr.appendChild(td);
