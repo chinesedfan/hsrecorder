@@ -32,6 +32,7 @@ ArenaPage.prototype = {
         var ratesChartDomEle = document.createElement("div");
         ratesChartDomEle.id = "rates-chart";
         ratesChartDomEle.className = "chart";
+        ratesChartDomEle.style.paddingTop = "20px";
         leftBottomDomEle.appendChild(ratesChartDomEle);
 
         // the right bottom part includes the button area, the fixed table and the real arena table
@@ -39,10 +40,13 @@ ArenaPage.prototype = {
         rightBottomDomEle.appendChild(buttonAreaDomEle);
 
         var fixedTableDomEle = document.createElement("table");
+        fixedTableDomEle.style.tableLayout = "fixed";
         rightBottomDomEle.appendChild(fixedTableDomEle);
 
         var arenaTableDomEle = document.createElement("div");
         arenaTableDomEle.id = "arena-table";
+        arenaTableDomEle.style.overflowY = "auto";
+        arenaTableDomEle.style.height = "310px";
         rightBottomDomEle.appendChild(arenaTableDomEle);
 
         // the button area include two buttons
@@ -282,6 +286,7 @@ ArenaPage.prototype = {
     refreshArenaTable: function() {
         var rows = this.arenaData.rows;
         var tbl = document.createElement("table");
+        tbl.style.tableLayout = "fixed";
         for (var i = rows.length-1; i >= 0; i--) {
             var row = rows[i];
             var tr = document.createElement("tr");

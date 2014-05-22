@@ -44,31 +44,14 @@ label {
     background-color: gray;
 }
 
-#auto-input {
+.auto-input {
+    /* FIXME: hard code is so stupid */
     position: absolute;
-    left: 772px;
-    top: 240px;
-    width: 300px;
+    left: 793px;
+    top: 237px;
+    width: 316px;
     border: 1px solid black;
     background-color: white;
     z-index: 9999;
     display: none;
-}
-
-#rates-chart {
-    padding-top: 20px;
-}
-
-#arena-table {
-    overflow-y: auto;
-    height: 310px;
-}
-
-#packs-table {
-    overflow-y: auto;
-    height: 280px;
-}
-
-#arena-frame th, #arena-frame td {
-    width: 24%;
 }

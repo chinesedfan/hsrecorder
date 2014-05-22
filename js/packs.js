@@ -76,6 +76,8 @@ PacksPage.prototype = {
         var fixedTableJqEle = $("<table/>").appendTo(rightBottomJqEle);
         var packsTableJqEle = $("<div/>").appendTo(rightBottomJqEle);
         packsTableJqEle.attr("id", "packs-table");
+        packsTableJqEle.css("height", "280px");
+        packsTableJqEle.css("overflow-y", "auto");
 
         // the append row includes 4 parts
         var goldenButtonJqEle = $("<button/>").appendTo(appendRowJqEle);
@@ -89,6 +91,7 @@ PacksPage.prototype = {
 
         var autoInputJqEle = $("<div/>").appendTo(appendRowJqEle);
         autoInputJqEle.attr("id", "auto-input");
+        autoInputJqEle.attr("class", "auto-input");
 
         var appendButtonJqEle = $("<button/>").appendTo(appendRowJqEle);
         appendButtonJqEle.attr("id", "append-btn");
