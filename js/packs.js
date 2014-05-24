@@ -72,7 +72,7 @@ PacksPage.prototype = {
         // the left bottom part includes two charts
         var countsChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
         countsChartJqEle.attr("id", "quality-parts");
-        countsChartJqEle.attr("class", "chart");
+        countsChartJqEle.attr("class", "chart center");
 
         var ratesChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
         ratesChartJqEle.attr("id", "quality-rates");
@@ -405,9 +405,23 @@ PacksPage.prototype = {
         this.trendObj = this._showDustTrend(this.trendChartDomEle, trendTicks, trendData);
     },
     refreshCountsChart: function() {
-        if (this.numsObj) this.numsObj.destroy();
+        this.countsChartDomEle.innerHTML = "";
 
-        this.numsObj = this._showQualityCounts(this.countsChartDomEle, this.packsData.sums);
+        var tbl, tr, td;
+        tbl = $("<table/>").appendTo(this.countsChartDomEle);
+        tbl.attr("class", "table table-boarded");
+
+        tr = $("<tr><td/><td>Normal</td><td>Golden</td></tr>").appendTo(tbl);
+        for (var i = 0; i < CardsInfo.qualityList.length; i++) {
+            tr = $("<tr/>").appendTo(tbl);
+
+            td = $("<td/>").appendTo(tr);
+            td.text(CardsInfo.qualityList[i].name);
+            td = $("<td/>").appendTo(tr);
+            td.text(this.packsData.sums[i+CardsInfo.qualityList.length]);
+            td = $("<td/>").appendTo(tr);
+            td.text(this.packsData.sums[i]);
+        }
     },
     refreshRatesChart: function() {
         if (this.ratesObj) this.ratesObj.destroy();
