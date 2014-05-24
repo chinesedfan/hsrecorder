@@ -229,7 +229,7 @@ ArenaPage.prototype = {
             height: 200,
             pie: {
                 radius: 60, 
-                rotate: 90, 
+                rotate: 45, 
             },
         };
         var pieData = [];

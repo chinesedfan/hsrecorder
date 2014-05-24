@@ -332,6 +332,11 @@ PacksPage.prototype = {
             icons: {
                 0: "circle",
             },
+            threshold: {
+                y: {
+                    value: 420,
+                },
+            },
         };
         var lineData = [{name: 0, data: dustData}];
         var line = new Venus.SvgChart(container, lineData, lineOptions);
