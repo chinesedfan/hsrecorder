@@ -121,8 +121,8 @@ PacksPage.prototype = {
         var headRowJqEle = $("<tr/>").appendTo(fixedTableJqEle);
         headRowJqEle.attr("id", "packs-thead");
         var texts = ["id", "day"];
-        CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });
         CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
+        CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });        
         texts.push("dust");
         texts.map(function(t) {
             var td = $("<td/>").appendTo(headRowJqEle);
@@ -133,8 +133,8 @@ PacksPage.prototype = {
         var editingRowJqEle = $("<tr/>").appendTo(fixedTableJqEle);
         editingRowJqEle.attr("id", "packs-edit");
         var cellids = ["packs-id", "packs-day"];
-        CardsInfo.qualityList.map(function(q) { cellids.push("golden-" + q.color); });
         CardsInfo.qualityList.map(function(q) { cellids.push("normal-" + q.color); });
+        CardsInfo.qualityList.map(function(q) { cellids.push("golden-" + q.color); });        
         cellids.push("packs-dust");
         cellids.map(function(c) {
             var td = $("<td/>").appendTo(editingRowJqEle);
@@ -286,11 +286,16 @@ PacksPage.prototype = {
             // remember they have an inner input box
             row.id = parseInt(tdDomEleList.get(i++).children[0].value);
             row.day = tdDomEleList.get(i++).children[0].value;
-            for (var j = 0, len = CardsInfo.qualityList.length * 2; j < len; i++, j++) {
-                row.counts.push(parseInt(tdDomEleList.get(i).innerHTML));
-                row.tips.push(tdDomEleList.get(i).title);
+
+            // [0, len - 1] -> [len, 2*len - 1], [len, 2*len - 1] -> [0, len - 1]
+            for (var j = 0, len = CardsInfo.qualityList.length; j < len; i++, j++) {
+                row.counts[j] = parseInt(tdDomEleList.get(i+len).innerHTML);
+                row.counts[j+len] = parseInt(tdDomEleList.get(i).innerHTML);
+
+                row.tips[j] = tdDomEleList.get(i+len).title;
+                row.tips[j+len] = tdDomEleList.get(i).title;
             };
-            row.dust = parseInt(tdDomEleList.get(i).innerHTML);
+            row.dust = parseInt(tdDomEleList.get(tdDomEleList.length-1).innerHTML);
 
             page._dbConn.insertPacksData(page, row);
         });
@@ -448,11 +453,17 @@ PacksPage.prototype = {
             td.className = "datetd";
             tr.appendChild(td);
 
+            // show the normal first, then the golden
+            var offset = CardsInfo.qualityList.length;
             for (var j = 0; j < row.counts.length; j++) {
                 td = document.createElement("td");
-                td.innerHTML = row.counts[j];
-                if (td.innerHTML != 0) td.style.backgroundColor = "rgba(0,0,0,0.1)";
-                td.title = row.tips[j];
+                td.innerHTML = (j < offset) ? row.counts[j+offset] : row.counts[j-offset];
+                if (td.innerHTML != 0) {
+                    td.style.backgroundColor = "rgba(0,0,0,0.1)";
+
+                    td.title = (j < offset) ? row.tips[j+offset] : row.tips[j-offset];
+                    if (!td.title) td.title = "?";
+                }
                 td.className = "othertd";
                 tr.appendChild(td);
             }
