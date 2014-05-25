@@ -152,9 +152,7 @@ ArenaPage.prototype = {
         };
     },
 
-    _showArenaTrend: function(container, lineTicks, winData) {
-        var arenaData = this.arenaData;
-        var totalAvg = (arenaData.totalNums == 0) ? 0 : (arenaData.totalWins/arenaData.totalNums).toFixed(2);
+    _showArenaTrend: function(container, lineTicks, winData, ythres, seriesName) {
         var lineOptions = {
             axis: {
                 x: {
@@ -183,13 +181,10 @@ ArenaPage.prototype = {
             },
             threshold: {
                 y: {
-                    value: totalAvg,
+                    value: ythres,
                 },
             },
         };
-        var seriesName = "totalNums = " + arenaData.totalNums
-            + "\ntotalWins = " + arenaData.totalWins
-            + "\ntotalAvg = " + totalAvg;
         var lineData = [{name: seriesName, data: winData}];
         var line = new Venus.SvgChart(container, lineData, lineOptions);
         return line;
@@ -258,7 +253,13 @@ ArenaPage.prototype = {
             trendTicks.push(i);
             trendData.push(arenaData.wins[i-arenaData.trend.start]);
         }
-        this.trendObj = this._showArenaTrend(this.trendChartDomEle, trendTicks, trendData);
+
+        var totalAvg = (arenaData.totalNums == 0) ? 0 : (arenaData.totalWins/arenaData.totalNums).toFixed(2);
+        var totalMsg = "totalNums = " + arenaData.totalNums
+            + "\ntotalWins = " + arenaData.totalWins
+            + "\ntotalAvg = " + totalAvg;
+
+        this.trendObj = this._showArenaTrend(this.trendChartDomEle, trendTicks, trendData, totalAvg, totalMsg);
     },
     refreshWinsChart: function() {
         if (this.winsObj) this.winsObj.destroy();
