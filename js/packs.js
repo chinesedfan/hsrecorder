@@ -40,7 +40,7 @@ AutoInput.prototype = {
         var ele = this.page.cardInputJqEle;
         this.page.autoInputJqEle.css({
             width: ele.outerWidth() + "px",
-            top: ele.offset().top + ele.outerHeight() + "px",
+            top: ele.outerHeight() + "px",
             left: ele.offset().left + "px",
         });
     },
@@ -61,13 +61,17 @@ PacksPage.prototype = {
         trendChartJqEle.attr("class", "chart");
 
         var bottomJqEle = $("<div/>").appendTo(this.container);
+        bottomJqEle.attr("class", "bottom");
+        bottomJqEle.css("top", (this.container.offsetTop + trendChartJqEle.height()) + "px");
 
         // the bottom part includes the left part and the right part
         var leftBottomJqEle = $("<div/>").appendTo(bottomJqEle);
         leftBottomJqEle.attr("class", "half");
+        leftBottomJqEle.css("height", "100%");
 
         var rightBottomJqEle = $("<div/>").appendTo(bottomJqEle);
         rightBottomJqEle.attr("class", "half");
+        rightBottomJqEle.css("height", "100%");
 
         // the left bottom part includes two charts
         var countsChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
@@ -76,7 +80,8 @@ PacksPage.prototype = {
 
         var ratesChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
         ratesChartJqEle.attr("id", "quality-rates");
-        ratesChartJqEle.attr("class", "chart");
+        ratesChartJqEle.attr("class", "bottom");
+        ratesChartJqEle.css("top", countsChartJqEle.height() + "px");
 
         // the right bottom part includes 4 parts
         var appendRowJqEle = $("<div/>").appendTo(rightBottomJqEle);
@@ -84,7 +89,7 @@ PacksPage.prototype = {
         var fixedTableJqEle = $("<table/>").appendTo(rightBottomJqEle);
         var packsTableJqEle = $("<div/>").appendTo(rightBottomJqEle);
         packsTableJqEle.attr("id", "packs-table");
-        packsTableJqEle.css("height", "280px");
+        packsTableJqEle.attr("class", "bottom");
         packsTableJqEle.css("overflow-y", "auto");
 
         // the append row includes 4 parts
@@ -151,6 +156,7 @@ PacksPage.prototype = {
         // set css style at last
         $("button").map(function(i, domEle) { domEle.className += " btn btn-default"; }); 
         $("input").map(function(i, domEle) { domEle.className += " form-control"; });
+        packsTableJqEle.css("top", (goldenButtonJqEle.outerHeight() + addButtonJqEle.outerHeight() + fixedTableJqEle.height()) + "px");
     },
     _initMember: function() {
         this._dbConn = new DbConn();
@@ -379,7 +385,6 @@ PacksPage.prototype = {
         if (eval(qualityData.join("+")) == 0) return null;
 
         var pieOptions = {
-            height: 200,
             pie: {
                 radius: 60,
                 rotate: 30, 

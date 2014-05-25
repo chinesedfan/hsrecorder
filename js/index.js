@@ -47,20 +47,19 @@ MainPage.prototype = {
 
     showSubPage: function(index) {
         var page = this;
-        var subpage = this._subpages[index];
         this._subpages.map(function(sp) {
-            var domEle = document.getElementById(sp.id);
-            var isShow = (sp.id == subpage.id);
-            if (!sp.initialized) {
-                if (isShow) {
-                    new (sp.constructor)(document.getElementById(sp.id));
-                    sp.initialized = true;
-                }
-            } else {
-                domEle.style.display = isShow ? "table-row" : "none";
-            }
-            page.headerListJqEle[sp.index].className = isShow ? "active" : "";
+            document.getElementById(sp.id).style.display = "none";
+            page.headerListJqEle[sp.index].className = "";
         });
+
+        var sp = this._subpages[index];
+        document.getElementById(sp.id).style.display = "table-row";
+        if (!sp.initialized) {
+            new (sp.constructor)(document.getElementById(sp.id));
+            sp.initialized = true;
+        }
+        
+        page.headerListJqEle[sp.index].className = "active";
     },
 }
 /* class MainPage end */

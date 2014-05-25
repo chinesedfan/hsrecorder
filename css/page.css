@@ -54,6 +54,7 @@ label {
     position: absolute;
     bottom: 0px;
     /* top: set in js */
+    width: inherit;
 }
 
 .page {

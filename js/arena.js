@@ -35,7 +35,6 @@ ArenaPage.prototype = {
         var ratesChartDomEle = document.createElement("div");
         ratesChartDomEle.id = "rates-chart";
         ratesChartDomEle.className = "bottom";
-        ratesChartDomEle.style.width = "inherit";
         ratesChartDomEle.style.top = winsChartDomEle.offsetHeight + "px";
         leftBottomDomEle.appendChild(ratesChartDomEle);
 
