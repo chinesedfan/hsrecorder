@@ -57,7 +57,7 @@ MainPage.prototype = {
                     sp.initialized = true;
                 }
             } else {
-                domEle.style.display = isShow ? "block" : "none";
+                domEle.style.display = isShow ? "table-row" : "none";
             }
             page.headerListJqEle[sp.index].className = isShow ? "active" : "";
         });

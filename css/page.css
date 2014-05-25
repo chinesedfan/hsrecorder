@@ -1,3 +1,9 @@
+body {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
 li {
     float: left;
     width: 100px;
@@ -42,6 +48,18 @@ label {
 
 .selected {
     background-color: gray;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    /* top: set in js */
+}
+
+.page {
+    display: table-row;
+    width: 100%;
+    height: 100%;
 }
 
 .auto-input {

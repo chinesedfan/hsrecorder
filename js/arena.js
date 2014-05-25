@@ -12,15 +12,18 @@ ArenaPage.prototype = {
         
         var bottomDomEle = document.createElement("div");
         bottomDomEle.className = "bottom";
+        bottomDomEle.style.top = (this.container.offsetTop + trendChartDomEle.offsetHeight) + "px";
         this.container.appendChild(bottomDomEle);
 
         // the bottom part includes the left part and the right part
         var leftBottomDomEle = document.createElement("div");
         leftBottomDomEle.className = "half";
+        leftBottomDomEle.style.height = "100%";
         bottomDomEle.appendChild(leftBottomDomEle);
 
         var rightBottomDomEle = document.createElement("div");
         rightBottomDomEle.className = "half";
+        rightBottomDomEle.style.height = "100%";
         bottomDomEle.appendChild(rightBottomDomEle);
 
         // the left bottom part includes two charts
@@ -31,8 +34,9 @@ ArenaPage.prototype = {
 
         var ratesChartDomEle = document.createElement("div");
         ratesChartDomEle.id = "rates-chart";
-        ratesChartDomEle.className = "chart";
-        ratesChartDomEle.style.paddingTop = "20px";
+        ratesChartDomEle.className = "bottom";
+        ratesChartDomEle.style.width = "inherit";
+        ratesChartDomEle.style.top = winsChartDomEle.offsetHeight + "px";
         leftBottomDomEle.appendChild(ratesChartDomEle);
 
         // the right bottom part includes the button area, the fixed table and the real arena table
@@ -45,8 +49,8 @@ ArenaPage.prototype = {
 
         var arenaTableDomEle = document.createElement("div");
         arenaTableDomEle.id = "arena-table";
+        arenaTableDomEle.className = "bottom";
         arenaTableDomEle.style.overflowY = "auto";
-        arenaTableDomEle.style.height = "310px";
         rightBottomDomEle.appendChild(arenaTableDomEle);
 
         // the button area include two buttons
@@ -101,12 +105,13 @@ ArenaPage.prototype = {
         input = document.createElement("input");
         input.id = "edit-wins";
         td.appendChild(input);
-        editRowDomEle.appendChild(td);
+        editRowDomEle.appendChild(td); 
 
         // set css style at last
         $("input").map(function(i, domEle) { domEle.className += " form-control"; });
         $("select").map(function(i, domEle) { domEle.className += " form-control"; });
         $("button").map(function(i, domEle) { domEle.className += " btn btn-default col-md-6"; });                 
+        arenaTableDomEle.style.top = (addButtonDomEle.offsetHeight + fixedTableDomEle.offsetHeight) + "px";
     },
     _initMember: function() {
         this._dbConn = new DbConn();
@@ -226,7 +231,6 @@ ArenaPage.prototype = {
         if (eval(playData.join("+")) == 0) return null;
 
         var pieOptions = {
-            height: 200,
             pie: {
                 radius: 60, 
                 rotate: 45, 
