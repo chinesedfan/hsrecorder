@@ -1,8 +1,64 @@
 /* class AutoInput begin */
-function AutoInput(page) {
-    this.page = page;
+function AutoInput(cardInput, autoInput) {
+    this.cardInputJqEle = cardInput;
+    this.autoInputJqEle = autoInput;
 
     this.labelCursor = 0;
+
+    var page = this;
+    this.cardInputJqEle.keyup(function (event) {
+        var key = event.which; 
+        // special keys
+        switch(key) {
+        case 13: // enter
+            page.confirmSelectedLabel();                
+            return;
+        case 27: // escape
+            page.autoInputJqEle.hide();
+            return;
+        case 38: // arrow up
+            page.moveUpCursor();
+            return;
+        case 40: // arrow down
+            page.moveDownCursor();
+            return;
+        }
+        // normal input, use the perfix as key to find card candidates
+        page.autoInputJqEle.empty();
+        page.autoInputJqEle.hide();
+
+        key = page.cardInputJqEle.val();
+        if (key.length >= 10) key = key.substring(0, 10);
+
+        var list = CardsInfo.prefixMap[key];
+        if (!list) return;
+        if (list.length >= 10) list.splice(10, list.length-10);
+
+        var LABEL_INDEX = "label-index",
+            QUALITY_INDEX = "quality-index",
+            CARD_ID = "card-id";
+        list.map(function(card) {
+            // normal card infomation label
+            var lbl = $("<label/>").appendTo(page.autoInputJqEle);
+            lbl.attr(LABEL_INDEX, page.autoInputJqEle.children("label").length - 1);
+            lbl.attr(CARD_ID, card.id);
+            lbl.attr(QUALITY_INDEX, 5 - parseInt(card.id/10000));
+            lbl.css("color", CardsInfo.qualityList[lbl.attr(QUALITY_INDEX)].color);
+            lbl.text(card.name);
+            lbl.mouseover(function() {
+                page.setLabelCursor(lbl.attr(LABEL_INDEX));
+            });
+            lbl.click(function() {
+                page.confirmSelectedLabel();
+            });
+            // additional line break element
+            $("<br/>").appendTo(page.autoInputJqEle);
+        });
+        page.setLabelCursor(0);
+        page.updatePosition();
+
+        page.autoInputJqEle.show();
+    });
 }
 
 AutoInput.prototype = {
@@ -26,19 +82,19 @@ AutoInput.prototype = {
     },
 
     getLabelDomEleList: function() {
-        return this.page.autoInputJqEle.children("label");
+        return this.autoInputJqEle.children("label");
     },
     getSelectedLabelDomEle: function() {
         return this.getLabelDomEleList()[this.labelCursor];
     },
     confirmSelectedLabel: function() {
-        this.page.cardInputJqEle.attr("value", this.getSelectedLabelDomEle().innerHTML);
-        this.page.cardInputJqEle.css("color", this.getSelectedLabelDomEle().style.color);
-        this.page.autoInputJqEle.hide();
+        this.cardInputJqEle.attr("value", this.getSelectedLabelDomEle().innerHTML);
+        this.cardInputJqEle.css("color", this.getSelectedLabelDomEle().style.color);
+        this.autoInputJqEle.hide();
     },
     updatePosition: function() {
-        var ele = this.page.cardInputJqEle;
-        this.page.autoInputJqEle.css({
+        var ele = this.cardInputJqEle;
+        this.autoInputJqEle.css({
             width: ele.outerWidth() + "px",
             top: ele.outerHeight() + "px",
             left: ele.offset().left + "px",
@@ -97,7 +153,7 @@ PacksPage.prototype = {
         this.editDayJqEle = $("#packs-day");
         this.editingCellCJqEle = $("#normal-black");
         this.editingCellDustJqEle = $("#packs-dust");
-        
+
         this.packsTableJqEle.css("top", (this.goldenButtonJqEle.outerHeight() + this.addButtonJqEle.outerHeight() + this.fixedTableJqEle.height()) + "px");
     },
     _initMember: function() {
@@ -121,7 +177,7 @@ PacksPage.prototype = {
         this.countsChartDomEle = document.getElementById("quality-parts");
         this.ratesChartDomEle = document.getElementById("quality-rates");
 
-        this.autoInputObj = new AutoInput(this);
+        this.autoInputObj = new AutoInput(this.cardInputJqEle, this.autoInputJqEle);
 
         /*
             The following fields may be set by member functions
@@ -144,56 +200,6 @@ PacksPage.prototype = {
                 btn.text("Golden");
                 btn.css("background-color", "#ffff00");
             }
-        });
-        this.cardInputJqEle.keyup(function (event) {
-            var key = event.which; 
-            // special keys
-            switch(key) {
-            case 13: // enter
-                page.autoInputObj.confirmSelectedLabel();                
-                return;
-            case 27: // escape
-                page.autoInputJqEle.hide();
-                return;
-            case 38: // arrow up
-                page.autoInputObj.moveUpCursor();
-                return;
-            case 40: // arrow down
-                page.autoInputObj.moveDownCursor();
-                return;
-            }
-            // normal input, use the perfix as key to find card candidates
-            page.autoInputJqEle.empty();
-            page.autoInputJqEle.hide();
-
-            key = page.cardInputJqEle.val();
-            if (key.length >= 10) key = key.substring(0, 10);
-
-            var list = CardsInfo.prefixMap[key];
-            if (!list) return;
-            if (list.length >= 10) list.splice(10, list.length-10);
-
-            list.map(function(card) {
-                // normal card infomation label
-                var lbl = $("<label/>").appendTo(page.autoInputJqEle);
-                lbl.attr("labelindex", page.autoInputJqEle.children("label").length - 1);
-                lbl.attr("cardid", card.id);
-                lbl.attr("cardqindex", 5 - parseInt(card.id/10000));
-                lbl.css("color", CardsInfo.qualityList[lbl.attr("cardqindex")].color);
-                lbl.text(card.name);
-                lbl.mouseover(function() {
-                    page.autoInputObj.setLabelCursor(lbl.attr("labelindex"));
-                });
-                lbl.click(function() {
-                    page.autoInputObj.confirmSelectedLabel();
-                });
-                // additional line break element
-                $("<br/>").appendTo(page.autoInputJqEle);
-            });
-            page.autoInputObj.setLabelCursor(0);
-            page.autoInputObj.updatePosition();
-
-            page.autoInputJqEle.show();
         });
         this.appendButtonJqEle.click(function () {
             // verfiy the input
