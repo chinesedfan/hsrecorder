@@ -29,19 +29,9 @@ var HtmlTemplate = (function() {
     function _packsTemplate() {
 /*
     <div id="packs-trend" class="chart"></div>
-    <div class="bottom">
+    <div id="packs-bottom" class="bottom">
         <div class="half yfull">
-            <div id="quality-parts" class="chart center">
-                <table class="table table-boarded">
-                    <tbody>
-                        <tr><td></td><td>Normal</td><td>Golden</td></tr>
-                        <tr><td>Legendary</td><td></td><td></td></tr>
-                        <tr><td>Epic</td><td></td><td></td></tr>
-                        <tr><td>Rare</td><td></td><td></td></tr>
-                        <tr><td>Common</td><td></td><td></td></tr>
-                    </tbody>
-                </table>
-            </div>
+            <div id="quality-parts" class="chart center"></div>
             <div id="quality-rates" class="bottom"></div>
         </div>
         <div class="half yfull">
@@ -51,6 +41,7 @@ var HtmlTemplate = (function() {
                 <div id="auto-input" class="auto-input"></div>
                 <button id="append-btn" class="quarter btn btn-default">Append</button>
             </div>
+            <table id="packs-fixed" class="table-fixed"></table>
             <div>
                 <button id="packs-add" class="half btn btn-default">Add Editing</button>
                 <button id="packs-del" class="half btn btn-default">Remove Last</button>

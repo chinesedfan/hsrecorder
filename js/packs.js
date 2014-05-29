@@ -55,75 +55,11 @@ function PacksPage(container) {
 PacksPage.prototype = {
     _initView: function() {
         var page = this;
-        // this page includes the trend chart and the bottom part
-        var trendChartJqEle = $("<div/>").appendTo(this.container);
-        trendChartJqEle.attr("id", "packs-trend");
-        trendChartJqEle.attr("class", "chart");
-
-        var bottomJqEle = $("<div/>").appendTo(this.container);
-        bottomJqEle.attr("class", "bottom");
-        bottomJqEle.css("top", (this.container.offsetTop + trendChartJqEle.height()) + "px");
-
-        // the bottom part includes the left part and the right part
-        var leftBottomJqEle = $("<div/>").appendTo(bottomJqEle);
-        leftBottomJqEle.attr("class", "half");
-        leftBottomJqEle.css("height", "100%");
-
-        var rightBottomJqEle = $("<div/>").appendTo(bottomJqEle);
-        rightBottomJqEle.attr("class", "half");
-        rightBottomJqEle.css("height", "100%");
-
-        // the left bottom part includes two charts
-        var countsChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
-        countsChartJqEle.attr("id", "quality-parts");
-        countsChartJqEle.attr("class", "chart center");
-
-        var ratesChartJqEle = $("<div/>").appendTo(leftBottomJqEle);
-        ratesChartJqEle.attr("id", "quality-rates");
-        ratesChartJqEle.attr("class", "bottom");
-        ratesChartJqEle.css("top", countsChartJqEle.height() + "px");
-
-        // the right bottom part includes 4 parts
-        var appendRowJqEle = $("<div/>").appendTo(rightBottomJqEle);
-        var buttonAreaJqEle = $("<div/>").appendTo(rightBottomJqEle);
-        var fixedTableJqEle = $("<table/>").appendTo(rightBottomJqEle);
-        var packsTableJqEle = $("<div/>").appendTo(rightBottomJqEle);
-        packsTableJqEle.attr("id", "packs-table");
-        packsTableJqEle.attr("class", "bottom");
-        packsTableJqEle.css("overflow-y", "auto");
-
-        // the append row includes 4 parts
-        var goldenButtonJqEle = $("<button/>").appendTo(appendRowJqEle);
-        goldenButtonJqEle.attr("id", "golden-btn");
-        goldenButtonJqEle.attr("class", "quarter");
-        goldenButtonJqEle.text("Normal");
-
-        var cardInputJqEle = $("<input/>").appendTo(appendRowJqEle);
-        cardInputJqEle.attr("id", "card-input");
-        cardInputJqEle.attr("class", "half");
-
-        var autoInputJqEle = $("<div/>").appendTo(appendRowJqEle);
-        autoInputJqEle.attr("id", "auto-input");
-        autoInputJqEle.attr("class", "auto-input");
-
-        var appendButtonJqEle = $("<button/>").appendTo(appendRowJqEle);
-        appendButtonJqEle.attr("id", "append-btn");
-        appendButtonJqEle.attr("class", "quarter");
-        appendButtonJqEle.text("Append");
-
-        // the button area include two buttons
-        var addButtonJqEle = $("<button/>").appendTo(buttonAreaJqEle);
-        addButtonJqEle.attr("id", "packs-add");
-        addButtonJqEle.attr("class", "half");
-        addButtonJqEle.text("Add Editing");
-
-        var delButtonJqEle = $("<button/>").appendTo(buttonAreaJqEle);
-        delButtonJqEle.attr("id", "packs-del");
-        delButtonJqEle.attr("class", "half");
-        delButtonJqEle.text("Remove Last");
+        this.bottomJqEle.css("top", (this.container.offsetTop + this.trendChartDomEle.offsetHeight) + "px");
+        this.ratesChartDomEle.style.top = this.countsChartDomEle.offsetHeight + "px";
 
         // the fixed table includes its head row and the edit row
-        var headRowJqEle = $("<tr/>").appendTo(fixedTableJqEle);
+        var headRowJqEle = $("<tr/>").appendTo(this.fixedTableJqEle);
         headRowJqEle.attr("id", "packs-thead");
         var texts = ["id", "day"];
         CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
@@ -135,7 +71,7 @@ PacksPage.prototype = {
             td.text(t);
         });
 
-        var editingRowJqEle = $("<tr/>").appendTo(fixedTableJqEle);
+        var editingRowJqEle = $("<tr/>").appendTo(this.fixedTableJqEle);
         editingRowJqEle.attr("id", "packs-edit");
         var cellids = ["packs-id", "packs-day"];
         CardsInfo.qualityList.map(function(q) { cellids.push("normal-" + q.color); });
@@ -148,21 +84,27 @@ PacksPage.prototype = {
             if (c == "packs-id" || c == "packs-day") {
                 var input = $("<input/>").appendTo(td);
                 input.attr("id", c);
+                input.attr("class", "form-control");
             } else {
                 td.attr("id", c);
             }
         });
 
-        // set css style at last
-        $("button").map(function(i, domEle) { domEle.className += " btn btn-default"; }); 
-        $("input").map(function(i, domEle) { domEle.className += " form-control"; });
-        packsTableJqEle.css("top", (goldenButtonJqEle.outerHeight() + addButtonJqEle.outerHeight() + fixedTableJqEle.height()) + "px");
+        this.tableHeaderJqEle = $("#packs-thead");
+        this.editingRowJqEle = $("#packs-edit");
+
+        this.editIdJqEle = $("#packs-id");
+        this.editDayJqEle = $("#packs-day");
+        this.editingCellCJqEle = $("#normal-black");
+        this.editingCellDustJqEle = $("#packs-dust");
+        
+        this.packsTableJqEle.css("top", (this.goldenButtonJqEle.outerHeight() + this.addButtonJqEle.outerHeight() + this.fixedTableJqEle.height()) + "px");
     },
     _initMember: function() {
         this._dbConn = new DbConn();
+        this.container.innerHTML = HtmlTemplate.getTemplate("packs");
 
-        this.tableHeaderJqEle = $("#packs-thead");
-        this.editingRowJqEle = $("#packs-edit");
+        this.bottomJqEle = $("#packs-bottom");
         
         this.goldenButtonJqEle = $("#golden-btn");
         this.cardInputJqEle = $("#card-input");
@@ -172,12 +114,8 @@ PacksPage.prototype = {
         this.addButtonJqEle = $("#packs-add");
         this.delButtonJqEle = $("#packs-del");
 
-        this.editIdJqEle = $("#packs-id");
-        this.editDayJqEle = $("#packs-day");
-
+        this.fixedTableJqEle = $("#packs-fixed");
         this.packsTableJqEle = $("#packs-table");
-        this.editingCellCJqEle = $("#normal-black");
-        this.editingCellDustJqEle = $("#packs-dust");
 
         this.trendChartDomEle = document.getElementById("packs-trend");
         this.countsChartDomEle = document.getElementById("quality-parts");
