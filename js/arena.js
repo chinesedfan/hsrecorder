@@ -4,121 +4,28 @@ function ArenaPage(container) {
 
 ArenaPage.prototype = {
     _initView: function() {
-        // this page includes the trend chart and the bottom part
-        var trendChartDomEle = document.createElement("div");
-        trendChartDomEle.id = "trend-chart";
-        trendChartDomEle.className = "chart center";
-        this.container.appendChild(trendChartDomEle);
-        
-        var bottomDomEle = document.createElement("div");
-        bottomDomEle.className = "bottom";
-        bottomDomEle.style.top = (this.container.offsetTop + trendChartDomEle.offsetHeight) + "px";
-        this.container.appendChild(bottomDomEle);
-
-        // the bottom part includes the left part and the right part
-        var leftBottomDomEle = document.createElement("div");
-        leftBottomDomEle.className = "half";
-        leftBottomDomEle.style.height = "100%";
-        bottomDomEle.appendChild(leftBottomDomEle);
-
-        var rightBottomDomEle = document.createElement("div");
-        rightBottomDomEle.className = "half";
-        rightBottomDomEle.style.height = "100%";
-        bottomDomEle.appendChild(rightBottomDomEle);
-
-        // the left bottom part includes two charts
-        var winsChartDomEle = document.createElement("div");
-        winsChartDomEle.id = "wins-chart";
-        winsChartDomEle.className = "chart";
-        leftBottomDomEle.appendChild(winsChartDomEle);
-
-        var ratesChartDomEle = document.createElement("div");
-        ratesChartDomEle.id = "rates-chart";
-        ratesChartDomEle.className = "bottom";
-        ratesChartDomEle.style.top = winsChartDomEle.offsetHeight + "px";
-        leftBottomDomEle.appendChild(ratesChartDomEle);
-
-        // the right bottom part includes the button area, the fixed table and the real arena table
-        var buttonAreaDomEle = document.createElement("div");
-        rightBottomDomEle.appendChild(buttonAreaDomEle);
-
-        var fixedTableDomEle = document.createElement("table");
-        fixedTableDomEle.style.tableLayout = "fixed";
-        rightBottomDomEle.appendChild(fixedTableDomEle);
-
-        var arenaTableDomEle = document.createElement("div");
-        arenaTableDomEle.id = "arena-table";
-        arenaTableDomEle.className = "bottom";
-        arenaTableDomEle.style.overflowY = "auto";
-        rightBottomDomEle.appendChild(arenaTableDomEle);
-
-        // the button area include two buttons
-        var addButtonDomEle = document.createElement("button");
-        addButtonDomEle.id = "add-btn";
-        addButtonDomEle.className = "half";
-        addButtonDomEle.innerHTML = "Add Editing";
-        buttonAreaDomEle.appendChild(addButtonDomEle);
-
-        var delButtonDomEle = document.createElement("button");
-        delButtonDomEle.id = "del-btn";
-        delButtonDomEle.className = "half";
-        delButtonDomEle.innerHTML = "Remove Last";
-        buttonAreaDomEle.appendChild(delButtonDomEle);
-
-        // the fixed table includes its head row and the edit row
-        var headTrDomEle = document.createElement("tr");
-        headTrDomEle.innerHTML = "<th>id</th><th>day</th><th>class</th><th>wins</th>";
-        fixedTableDomEle.appendChild(headTrDomEle);
-
-        var editRowDomEle = document.createElement("tr");
-        editRowDomEle.id = "edit-row";
-        fixedTableDomEle.appendChild(editRowDomEle);
-
-        // the edit row includes 4 cells, and each cell incldes an input or select element
-        var td, input, select;
-        td = document.createElement("td");
-        input = document.createElement("input");
-        input.id = "edit-id";
-        td.appendChild(input);
-        editRowDomEle.appendChild(td);
-
-        td = document.createElement("td");
-        input = document.createElement("input");
-        input.id = "edit-day";
-        td.appendChild(input);
-        editRowDomEle.appendChild(td);
-
-        td = document.createElement("td");
-        select = document.createElement("select");
-        select.id = "edit-class";
+        var page = this;        
+        this.bottomDomEle.style.top = (this.container.offsetTop + this.trendChartDomEle.offsetHeight) + "px";
+        this.ratesChartDomEle.style.top = this.winsChartDomEle.offsetHeight + "px";
         CardsInfo.classNames.map(function(name) {
             var op = document.createElement("option");
             op.value = name;
             op.text = name;
-            select.add(op);
+            page.editClassDomEle.add(op);
         });
-        td.appendChild(select);
-        editRowDomEle.appendChild(td);
-
-        td = document.createElement("td");
-        input = document.createElement("input");
-        input.id = "edit-wins";
-        td.appendChild(input);
-        editRowDomEle.appendChild(td); 
-
-        // set css style at last
-        $("input").map(function(i, domEle) { domEle.className += " form-control"; });
-        $("select").map(function(i, domEle) { domEle.className += " form-control"; });
-        $("button").map(function(i, domEle) { domEle.className += " btn btn-default col-md-6"; });                 
-        arenaTableDomEle.style.top = (addButtonDomEle.offsetHeight + fixedTableDomEle.offsetHeight) + "px";
+        this.arenaTableDomEle.style.top = (this.addButtonDomEle.offsetHeight + this.fixedTableDomEle.offsetHeight) + "px";
     },
     _initMember: function() {
         this._dbConn = new DbConn();
+        this.container.innerHTML = HtmlTemplate.getTemplate("arena");
+        
+        this.bottomDomEle = document.getElementById("arena-bottom");
 
         this.trendChartDomEle = document.getElementById("trend-chart");
         this.winsChartDomEle = document.getElementById("wins-chart");
         this.ratesChartDomEle = document.getElementById("rates-chart");
         this.arenaTableDomEle = document.getElementById("arena-table");
+        this.fixedTableDomEle = document.getElementById("arena-fixed");
 
         this.addButtonDomEle = document.getElementById("add-btn");
         this.delButtonDomEle = document.getElementById("del-btn");
@@ -291,7 +198,7 @@ ArenaPage.prototype = {
     refreshArenaTable: function() {
         var rows = this.arenaData.rows;
         var tbl = document.createElement("table");
-        tbl.style.tableLayout = "fixed";
+        tbl.className = "table-fixed";
         for (var i = rows.length-1; i >= 0; i--) {
             var row = rows[i];
             var tr = document.createElement("tr");
