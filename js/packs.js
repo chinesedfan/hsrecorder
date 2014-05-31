@@ -5,6 +5,10 @@ function AutoInput(cardInput, autoInput) {
 
     this.labelCursor = 0;
 
+    this.LABEL_INDEX = "label-index",
+    this.QUALITY_INDEX = "quality-index",
+    this.CARD_ID = "card-id";
+
     var page = this;
     this.cardInputJqEle.keyup(function (event) {
         var key = event.which; 
@@ -34,19 +38,16 @@ function AutoInput(cardInput, autoInput) {
         if (!list) return;
         if (list.length >= 10) list.splice(10, list.length-10);
 
-        var LABEL_INDEX = "label-index",
-            QUALITY_INDEX = "quality-index",
-            CARD_ID = "card-id";
         list.map(function(card) {
             // normal card infomation label
             var lbl = $("<label/>").appendTo(page.autoInputJqEle);
-            lbl.attr(LABEL_INDEX, page.autoInputJqEle.children("label").length - 1);
-            lbl.attr(CARD_ID, card.id);
-            lbl.attr(QUALITY_INDEX, 5 - parseInt(card.id/10000));
-            lbl.css("color", CardsInfo.qualityList[lbl.attr(QUALITY_INDEX)].color);
+            lbl.attr(page.LABEL_INDEX, page.autoInputJqEle.children("label").length - 1);
+            lbl.attr(page.CARD_ID, card.id);
+            lbl.attr(page.QUALITY_INDEX, 5 - parseInt(card.id/10000));
+            lbl.css("color", CardsInfo.qualityList[lbl.attr(page.QUALITY_INDEX)].color);
             lbl.text(card.name);
             lbl.mouseover(function() {
-                page.setLabelCursor(lbl.attr(LABEL_INDEX));
+                page.setLabelCursor(lbl.attr(page.LABEL_INDEX));
             });
             lbl.click(function() {
                 page.confirmSelectedLabel();
@@ -218,7 +219,7 @@ PacksPage.prototype = {
             // update the dust
             cell = page.editingCellDustJqEle;
             count = parseInt(cell.text()) - 5; // to replace a normal common
-            var index = curLabelDomEle.getAttribute("cardqindex");
+            var index = curLabelDomEle.getAttribute(page.autoInputObj.QUALITY_INDEX);
             if (prefix == "golden") {
                 cell.text(count + CardsInfo.qualityList[index].gdust);
             } else {
