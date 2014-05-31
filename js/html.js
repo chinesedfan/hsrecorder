@@ -50,10 +50,27 @@ var HtmlTemplate = (function() {
     </div>
 */
     }
+    function _lacksTemplate() {
+/*
+    <div id="lacks-bottom">
+        <div class="half">
+            <input id="lacks-input" class="half form-control">
+            <div id="lacks-auto" class="auto-input"></div>
+            <button id="lacks-add" class="quarter btn btn-default">Add</button>
+        </div>
+        <table id="lacks-fixed" class="table-fixed">
+            <tr id="lacks-title"></tr>
+            <tr id="lacks-count"></tr>
+        </table>
+        <div id="lacks-table" class="bottom yscrolled"></div>
+    </div>
+*/
+    }
 
     var _funcMap = {
         arena: _arenaTemplate,
         packs: _packsTemplate,
+        lacks: _lacksTemplate,
     };
 
     function _getTemplate(key) {

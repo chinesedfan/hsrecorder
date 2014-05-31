@@ -29,6 +29,7 @@ MainPage.prototype = {
         this._subpages = [
             {index: 0, id: "arena-frame", constructor: ArenaPage, initialized: false},
             {index: 1, id: "packs-frame", constructor: PacksPage, initialized: false},
+            {index: 2, id: "lacks-frame", constructor: LacksPage, initialized: false},
         ];
         this.headerListJqEle = $("#header-div li");        
     },
