@@ -3,10 +3,11 @@ HearthStone Recorder
 
 This project provides a single HTML page for recording your HearthStone's arena winning rates and opening packs results.
 
-<img src="pic/screenshot_arena.png" width="80%" />
-<img src="pic/screenshot_packs.png" width="80%" />
+<img src="pic/screenshot_arena.jpg" width="80%" />
+<img src="pic/screenshot_packs.jpg" width="80%" />
+<img src="pic/screenshot_lacks.jpg" width="80%" />
 
-In fact, an Excel file may be enough. But I want to have more power to add personal functionalities, and practise programming for fun at the same time.:)
+In fact, an Excel file may be enough. But I want to have more power to add personal functionalities, and practise programming for fun at the same time. :)
 
 It leverages HTML5 local storage APIs to manage all data. The database is a SQLite file, whose location has been specified in the corresponding file. Because its location is controlled by the browser, be careful when you clear the browser caches.
 

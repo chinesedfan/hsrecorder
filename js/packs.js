@@ -263,7 +263,7 @@ PacksPage.prototype = {
         var lineOptions = {
             axis: {
                 x: {
-                    tickWidth: 20,
+                    tickWidth: 10,
                     ticks: lineTicks,
                 },
                 y: {
