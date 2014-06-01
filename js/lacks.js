@@ -14,7 +14,7 @@ LacksPage.prototype = {
 			td.text(0);
 
 			div = $("<div/>").appendTo(page.lacksTableJqEle);
-			div.attr("class", "quarter yfull");
+			div.attr("class", "quarter yfull yscrolled");
 
 			table = $("<table/>").appendTo(div);
 			table.attr("id", page.tableIdPrefix + q.color);

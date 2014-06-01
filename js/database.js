@@ -234,8 +234,7 @@ DbConn.prototype = {
     },
     deleteLacksData: function(page, row) {
         this._db.transaction(function(tx) {
-            // TODO: only delete one
-            tx.executeSql("DELETE FROM lacks WHERE card_id = ?", [row.id], function(tx, rs) {
+            tx.executeSql("DELETE FROM lacks WHERE id IN (SELECT min(id) FROM lacks WHERE card_id = ?)", [row.id], function(tx, rs) {
                 page.deleteCard(row);
             }, this._onSqlError);
         });

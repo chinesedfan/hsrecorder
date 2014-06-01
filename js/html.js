@@ -46,7 +46,7 @@ var HtmlTemplate = (function() {
                 <button id="packs-add" class="half btn btn-default">Add Editing</button>
                 <button id="packs-del" class="half btn btn-default">Remove Last</button>
             </div>
-            <div id="packs-table" class="bottom yscrolled"></div>
+            <div id="packs-table" class="bottom"></div>
     </div>
 */
     }
