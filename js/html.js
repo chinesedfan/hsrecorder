@@ -52,11 +52,12 @@ var HtmlTemplate = (function() {
     }
     function _lacksTemplate() {
 /*
-    <div id="lacks-bottom">
+    <div id="lacks-bottom" class="bottom">
         <div class="half">
             <input id="lacks-input" class="half form-control">
             <div id="lacks-auto" class="auto-input"></div>
-            <button id="lacks-add" class="quarter btn btn-default">Add</button>
+            <button id="lacks-add" class="quarter btn btn-default">Insert</button>
+            <button id="lacks-del" class="quarter btn btn-default">Delete</button>
         </div>
         <table id="lacks-fixed" class="table-fixed">
             <tr id="lacks-title"></tr>
