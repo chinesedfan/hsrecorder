@@ -97,7 +97,7 @@ AutoInput.prototype = {
         var ele = this.cardInputJqEle;
         this.autoInputJqEle.css({
             width: ele.outerWidth() + "px",
-            top: ele.outerHeight() + "px",
+            top: ele.position().top + ele.outerHeight() + "px",
             left: ele.offset().left + "px",
         });
     },

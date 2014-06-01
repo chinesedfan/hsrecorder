@@ -5,6 +5,10 @@ function LacksPage(container) {
 LacksPage.prototype = {
 	_initView: function() {
 		var page = this;
+		this.controllAreaJqEle.css("width", "30%");
+		this.controllAreaJqEle.css("height", this.addButtonJqEle.outerHeight());
+		this.controllAreaJqEle.css("margin", "20px auto 20px auto");
+
 		var td, table, div;
 		CardsInfo.qualityList.map(function(q) {
 			td = $("<th/>").appendTo(page.titleTrJqEle);
@@ -21,13 +25,14 @@ LacksPage.prototype = {
 		});
 
 		this.bottomJqEle.css("top", this.container.offsetTop);
-		this.lacksTableJqEle.css("top", this.addButtonJqEle.outerHeight() + this.fixedTableJqEle.outerHeight());
+		this.lacksTableJqEle.css("top", this.controllAreaJqEle.outerHeight(true) + this.fixedTableJqEle.outerHeight());
 	},
 	_initMember: function() {
 		this._dbConn = new DbConn();
 		this.container.innerHTML = HtmlTemplate.getTemplate("lacks");
 
 		this.bottomJqEle = $("#lacks-bottom");
+		this.controllAreaJqEle = $("#lacks-controll");
 		this.fixedTableJqEle = $("#lacks-fixed");
 		this.lacksTableJqEle = $("#lacks-table");
 
