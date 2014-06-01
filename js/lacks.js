@@ -24,6 +24,7 @@ LacksPage.prototype = {
 		this.lacksTableJqEle.css("top", this.addButtonJqEle.outerHeight() + this.fixedTableJqEle.outerHeight());
 	},
 	_initMember: function() {
+		this._dbConn = new DbConn();
 		this.container.innerHTML = HtmlTemplate.getTemplate("lacks");
 
 		this.bottomJqEle = $("#lacks-bottom");
@@ -44,41 +45,62 @@ LacksPage.prototype = {
 		this.trClassPrefix = "Tag-tr-";   // + card_id
 	},
 	_initData: function() {
-
+		this._dbConn.loadLacksData(this);	
 	},
 	_initEventHandler: function() {
 		var page = this;
+		function _labelToRow(curLabelDomEle) {
+			var row = {};
+            row.id = curLabelDomEle.getAttribute(page.autoInputObj.CARD_ID);
+            row.name = curLabelDomEle.innerHTML;
+            row.quality = curLabelDomEle.getAttribute(page.autoInputObj.QUALITY_INDEX);
+            row.color = curLabelDomEle.style.color;
+            return row;
+		}
+
 		this.addButtonJqEle.click(function() {
 			// verfiy the input
             var curLabelDomEle = page.autoInputObj.getSelectedLabelDomEle();
             if (!curLabelDomEle || curLabelDomEle.innerHTML != page.lacksInputJqEle.val()) return;
-            // update the count
-            var cell = $("#" + page.countIdPrefix + curLabelDomEle.style.color);
-            var count = parseInt(cell.text());
-            cell.text(count+1);
-            // update the list
-            var table = $("#" + page.tableIdPrefix + curLabelDomEle.style.color);
-            var tr = $("<tr/>").appendTo(table);
-            tr.attr("class", page.trClassPrefix + curLabelDomEle.getAttribute(page.autoInputObj.CARD_ID));
-            var td = $("<td/>").appendTo(tr);
-            var lbl = $(curLabelDomEle.cloneNode()).appendTo(td);
-            lbl.attr("class", "");
-            lbl.text(curLabelDomEle.innerHTML);
-            // TODO: update the data
+                        
+            page._dbConn.insertLacksData(page, _labelToRow(curLabelDomEle));
 		});
 		this.delButtonJqEle.click(function() {
 			// verfiy the input
             var curLabelDomEle = page.autoInputObj.getSelectedLabelDomEle();
             if (!curLabelDomEle || curLabelDomEle.innerHTML != page.lacksInputJqEle.val()) return;
-            // update the list
-            var tr = $("." + page.trClassPrefix + curLabelDomEle.getAttribute(page.autoInputObj.CARD_ID));
-            if (tr.length == 0) return;
-            tr[0].remove();
-            // update the count
-            var cell = $("#" + page.countIdPrefix + curLabelDomEle.style.color);
-            var count = parseInt(cell.text());
-            cell.text(count-1);
-            // TODO: update the data
+
+            page._dbConn.deleteLacksData(page, _labelToRow(curLabelDomEle));
 		});
+	},
+
+	insertCard: function(row) {
+        // update the list
+        var table = $("#" + this.tableIdPrefix + row.color);
+        var tr = $("<tr/>").appendTo(table);
+        tr.attr("class", this.trClassPrefix + row.id);
+        var td = $("<td/>").appendTo(tr);
+        var lbl = $("<label/>").appendTo(td);
+        lbl.css("color", row.color);
+        lbl.text(row.name);
+		// update the count
+        var cell = $("#" + this.countIdPrefix + row.color);
+        var count = parseInt(cell.text());
+        cell.text(count+1);
+	},
+	deleteCard: function(row) {
+	    // update the list
+        var tr = $("." + this.trClassPrefix + row.id);
+        if (tr.length == 0) return; // not found
+        tr[0].remove();
+        // update the count
+        var cell = $("#" + this.countIdPrefix + row.color);
+        var count = parseInt(cell.text());
+        cell.text(count-1);
+	},
+	refreshLacksTable: function() {
+		for (var i = 0; i < this.lacksData.rows.length; i++) {
+			this.insertCard(this.lacksData.rows[i]);
+		}
 	},
 }

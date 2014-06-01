@@ -7,6 +7,8 @@
 */
 function DbConn() {
     this._db = openDatabase("hsdb", "1.0", "HearthStone Records", "4096");
+
+    window._onSqlError = this._onSqlError; // tricky solution
 }
 
 DbConn.prototype = {
@@ -18,6 +20,7 @@ DbConn.prototype = {
         this._db.transaction(function(tx) {
             tx.executeSql("CREATE TABLE IF NOT EXISTS arena(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer)", [], undefined, this._onSqlError);
             tx.executeSql("CREATE TABLE IF NOT EXISTS packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer)", [], undefined, this._onSqlError);
+            tx.executeSql("CREATE TABLE IF NOT EXISTS lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer)", [], undefined, this._onSqlError);
         });
     },
 
@@ -186,5 +189,55 @@ DbConn.prototype = {
                 page.refreshCharts();
             }, this._onSqlError);
         });
-    } 
+    },
+
+    loadLacksData: function(page) {
+        /*
+            rows: [object]
+                id: integer, card id definded in cards.js
+                name: string
+                quality: integer, index for CardsInfo.qualityList
+                color: string
+            counts: [integer]
+        */
+        var lacksData = page.lacksData = {};
+        lacksData.rows = [];
+        lacksData.counts = [0, 0, 0, 0];
+        this._db.transaction(function(tx) {
+            tx.executeSql("SELECT * FROM lacks", [], function(tx, rs) {
+                for (var i = 0; i < rs.rows.length; i++) {
+                    var row = rs.rows.item(i);
+                    var rowData = {};
+
+                    rowData.id = row.card_id;
+                    rowData.name = row.card_name;
+                    rowData.quality = row.card_quality;
+                    rowData.color = CardsInfo.qualityList[row.card_quality].color;
+                    lacksData.rows.push(rowData);
+
+                    lacksData.counts[row.card_quality]++;
+                }
+                page.refreshLacksTable();
+            }, this._onSqlError);
+        });
+    },
+    insertLacksData: function(page, row) {
+        this._db.transaction(function(tx) {
+            var lst = [];
+            lst.push(row.id);
+            lst.push(row.name);
+            lst.push(row.quality);
+            tx.executeSql("INSERT INTO lacks(card_id, card_name, card_quality) VALUES(?,?,?)", lst, function(tx, rs) {
+                page.insertCard(row);
+            }, this._onSqlError);
+        });
+    },
+    deleteLacksData: function(page, row) {
+        this._db.transaction(function(tx) {
+            // TODO: only delete one
+            tx.executeSql("DELETE FROM lacks WHERE card_id = ?", [row.id], function(tx, rs) {
+                page.deleteCard(row);
+            }, this._onSqlError);
+        });
+    },
 }
