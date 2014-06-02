@@ -101,6 +101,9 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '97','2014-05-10','Druid','9' )
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '98','2014-05-17','Paladin','7' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '99','2014-05-24','Mage','6' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '100','2014-05-31','Druid','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '101','2014-06-01','Paladin','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '102','2014-06-02','Mage','0' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '103','2014-06-03','Mage','12' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
@@ -177,13 +180,13 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '80','500
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '81','50012','Gelbin Mekkatorque','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '82','50016','Hogger','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '83','50017','Illidan Stormrage','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '84','50031','Sylvanas Windrunner','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '85','50032','The Beast','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '86','50014','Gruul','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '87','50002','Alexstrasza','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '88','50023','Malygos','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '89','50028','Onyxia','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '90','50036','Ysera','0' );
+INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '91','50031','Sylvanas Windrunner','0' );
 CREATE TABLE packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '1','2014-03-03','0','0','1','0','0','0','2','2',NULL,NULL,'Ethereal Arcanist',NULL,NULL,NULL,'?',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '2','2014-03-03','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'?',NULL,'40' );
@@ -255,3 +258,8 @@ Demolisher',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '61','2014-05-24','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Big Game Hunter','Imp Master',NULL,'135' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '62','2014-05-31','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'Alarm-o-Bot
 Ancient Mage',NULL,'55' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '63','2014-06-01','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Mana Tide Totem',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '64','2014-06-02','0','0','1','0','0','0','1','3',NULL,NULL,'Eaglehorn Bow',NULL,NULL,NULL,'Master Swordsmith',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '65','2014-06-03','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Vaporize',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '66','2014-06-03','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'Counterspell
+Arcane Golem',NULL,'55' );
