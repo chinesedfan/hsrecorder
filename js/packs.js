@@ -85,17 +85,19 @@ PacksPage.prototype = {
     },
     _initEventHandler: function() {
         var page = this;
-        this.goldenButtonJqEle.click(function () {
+        this.goldenButtonJqEle.toggle(
             // toggle this button between golden and normal
-            var btn = page.goldenButtonJqEle;
-            if (btn.text() == "Golden") {
-                btn.text("Normal");
-                btn.css("background-color", "#fff");
-            } else {
+            function() {
+                var btn = page.goldenButtonJqEle;
                 btn.text("Golden");
                 btn.css("background-color", "#ffff00");
+            },
+            function() {
+                var btn = page.goldenButtonJqEle;
+                btn.text("Normal");
+                btn.css("background-color", "#fff");
             }
-        });
+        );
         this.appendButtonJqEle.click(function () {
             // verfiy the input
             var curLabelDomEle = page.autoInputObj.getSelectedLabelDomEle();
