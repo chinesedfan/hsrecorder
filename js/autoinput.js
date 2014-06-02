@@ -9,6 +9,15 @@ function AutoInput(cardInput, autoInput) {
     this.CARD_ID = "card-id";
 
     var page = this;
+    this.cardInputJqEle.focus(function () {
+        // clear the content when obtaining focus
+        page.cardInputJqEle.val("");
+    });
+    this.cardInputJqEle.blur(function () {
+        // hide the candidates area when losing focus, but not clear
+        // delay a while for the click event of autoInputJqEle to be triggered
+        window.setTimeout(function() { page.autoInputJqEle.hide(); }, 100);
+    });
     this.cardInputJqEle.keyup(function (event) {
         var key = event.which; 
         // special keys
