@@ -44,6 +44,16 @@ label {
     width: 49.9%;
 }
 
+.third {
+    float: left;
+    width: 33%;
+}
+
+.third2 {
+    float: left;
+    width: 66%;
+}
+
 .center {
     width: 80%;
     margin-left: auto;

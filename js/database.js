@@ -28,6 +28,7 @@ DbConn.prototype = {
         /*
             classWins: [int], list of total wins grouped by classes
             classNums: [int], list of played games grouped by classes
+            winNums: [int], list of different wins games
             rows: [rowObject], list of database rows
             trend: object
                 start: int, the first shown arena record id
@@ -39,6 +40,15 @@ DbConn.prototype = {
         var arenaData = page.arenaData = {};
         arenaData.trend = {};
         this._db.transaction(function(tx) {
+            tx.executeSql("SELECT wins, count(id) as count FROM arena GROUP BY wins", [], function(tx, rs) {
+                arenaData.winNums = [];
+                for (var i = 0; i <= 12; i++) {
+                    arenaData.winNums.push(0);
+                }
+                for (var i = 0; i < rs.rows.length; i++) {
+                    arenaData.winNums[rs.rows.item(i).wins] = rs.rows.item(i).count;
+                }
+            }, this._onSqlError);
             tx.executeSql("SELECT class, count(id) as nums, sum(wins) as wins FROM arena GROUP BY class", [], function(tx, rs) {
                 arenaData.classNums = [];
                 arenaData.classWins = [];
@@ -95,9 +105,11 @@ DbConn.prototype = {
                     arenaData.classWins[index] += row.wins;
                     arenaData.totalWins -= arenaData.wins[row.id-1].wins;
                     arenaData.totalWins += row.wins;
+                    arenaData.winNums[arenaData.wins[row.id-1].wins]--;
                 }
                 arenaData.wins[row.id-1] = row.wins;
                 arenaData.rows[row.id-1] = row;
+                arenaData.winNums[row.wins]++;
                 page.refreshCharts();
             }, this._onSqlError);
         });
@@ -121,6 +133,7 @@ DbConn.prototype = {
                 }
                 arenaData.wins.splice(row.id - arenaData.trend.start, 1);
                 arenaData.rows.splice(row.id - arenaData.trend.start, 1);
+                arenaData.winNums[row.wins]--;
                 page.refreshCharts();
             }, this._onSqlError);
         });

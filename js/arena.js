@@ -6,7 +6,7 @@ ArenaPage.prototype = {
     _initView: function() {
         var page = this;        
         this.bottomDomEle.style.top = (this.container.offsetTop + this.trendChartDomEle.offsetHeight) + "px";
-        this.ratesChartDomEle.style.top = this.winsChartDomEle.offsetHeight + "px";
+        this.pieAreaDomEle.style.top = this.winsChartDomEle.offsetHeight + "px";
         CardsInfo.classNames.map(function(name) {
             var op = document.createElement("option");
             op.value = name;
@@ -23,7 +23,9 @@ ArenaPage.prototype = {
 
         this.trendChartDomEle = document.getElementById("trend-chart");
         this.winsChartDomEle = document.getElementById("wins-chart");
+        this.pieAreaDomEle = document.getElementById("arena-pie");
         this.ratesChartDomEle = document.getElementById("rates-chart");
+        this.pieWinsDomEle = document.getElementById("pie-wins");
         this.arenaTableDomEle = document.getElementById("arena-table");
         this.fixedTableDomEle = document.getElementById("arena-fixed");
 
@@ -127,9 +129,9 @@ ArenaPage.prototype = {
         var bar = new Venus.SvgChart(container, barData, barOptions);
         return bar;
     },
-    _showClassRates: function(container, playData) {
+    _showClassRates: function(container, nameList, dataList) {
         // avoid the chart library to crash
-        if (eval(playData.join("+")) == 0) return null;
+        if (eval(dataList.join("+")) == 0) return null;
 
         var pieOptions = {
             pie: {
@@ -138,9 +140,8 @@ ArenaPage.prototype = {
             },
         };
         var pieData = [];
-        var sum = 0;
-        for (var i = 0; i < CardsInfo.classNames.length; i++) {
-            pieData.push({name: CardsInfo.classNames[i], data: playData[i]});
+        for (var i = 0; i < nameList.length; i++) {
+            pieData.push({name: nameList[i], data: dataList[i]});
         }
 
         pieData.sort(function(a, b) {
@@ -180,9 +181,16 @@ ArenaPage.prototype = {
     },
     refreshRatesChart: function() {
         if (this.ratesObj) this.ratesObj.destroy();
+        if (this.pieWinsObj) this.pieWinsObj.destroy();
 
         var arenaData = this.arenaData;
-        this.ratesObj = this._showClassRates(this.ratesChartDomEle, arenaData.classNums);
+        this.ratesObj = this._showClassRates(this.ratesChartDomEle, CardsInfo.classNames, arenaData.classNums);
+
+        var winNames = [];
+        for (var i = 0; i <= 12; i++) {
+            winNames.push(i);
+        }
+        this.pieWinsObj = this._showClassRates(this.pieWinsDomEle, winNames, arenaData.winNums);
     },
     refreshEditRow: function() {
         this.editIdDomEle.value = this.arenaData.trend.end;

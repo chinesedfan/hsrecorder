@@ -3,11 +3,14 @@ var HtmlTemplate = (function() {
 /*
 	<div id="trend-chart" class="chart center"></div>
     <div id="arena-bottom" class="bottom">
-        <div class="half yfull">
+        <div class="third2 yfull">
             <div id="wins-chart" class="chart"></div>
-            <div id="rates-chart" class="bottom"></div>
+            <div id="arena-pie" class="bottom">
+                <div id="rates-chart" class="half yfull"></div>
+                <div id="pie-wins" class="half yfull"></div>
+            </div>
         </div>
-    	<div class="half yfull">
+    	<div class="third yfull">
     		<div>
     			<button id="add-btn" class="half btn btn-default col-md-6">Add Editing</button>
     			<button id="del-btn" class="half btn btn-default col-md-6">Remove Last</button>
