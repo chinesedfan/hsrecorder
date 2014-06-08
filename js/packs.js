@@ -256,7 +256,7 @@ PacksPage.prototype = {
         this.trendObj = this._showDustTrend(this.trendChartDomEle, trendTicks, trendData);
 
         // highlight legendary cards
-        var circles = $("#packs-trend circle");
+        var circles = $(this.trendChartDomEle).find("circle");
         this.packsData.oranges.map(function(x) {
             var dom = circles[x-1];
             dom.onclick();
