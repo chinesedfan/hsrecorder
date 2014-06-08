@@ -259,7 +259,7 @@ PacksPage.prototype = {
         var circles = $(this.trendChartDomEle).find("circle");
         this.packsData.oranges.map(function(x) {
             var dom = circles[x-1];
-            dom.onclick();
+            dom.highlight();
         });
     },
     refreshCountsChart: function() {

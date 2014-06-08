@@ -174,7 +174,7 @@ ArenaPage.prototype = {
         circles.map(function(i, ele) {
             // FIXME: hardcard the cy filter
             if (ele.getAttribute("cy") != "20") return;
-            ele.onclick && ele.onclick();
+            ele.highlight && ele.highlight();
         });
     },
     refreshWinsChart: function() {
