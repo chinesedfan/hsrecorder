@@ -275,6 +275,7 @@ PacksPage.prototype = {
 
             td = $("<td/>").appendTo(tr);
             td.text(CardsInfo.qualityList[i].name);
+            td.css("color", CardsInfo.qualityList[i].color);
 
             td = $("<td/>").appendTo(tr);
             td.text(this.packsData.sums[i+CardsInfo.qualityList.length]);
