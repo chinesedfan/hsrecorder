@@ -268,7 +268,7 @@ DbConn.prototype = {
             lst.push(row.name);
             lst.push(row.quality);
             tx.executeSql("INSERT INTO lacks(card_id, card_name, card_quality) VALUES(?,?,?)", lst, function(tx, rs) {
-                page.insertCard(row);
+                page.insertCard(row, true);
             }, this._onSqlError);
         });
     },

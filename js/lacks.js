@@ -79,7 +79,7 @@ LacksPage.prototype = {
 		});
 	},
 
-	insertCard: function(row) {
+	insertCard: function(row, isNew) {
         // update the list
         var table = $("#" + this.tableIdPrefix + row.color);
         var tr = $("<tr/>").appendTo(table);
@@ -88,6 +88,11 @@ LacksPage.prototype = {
         var lbl = $("<label/>").appendTo(td);
         lbl.css("color", row.color);
         lbl.text(row.name);
+        var span = $("<span/>").appendTo(td);
+        if (isNew) {
+	        span.css("color", "red");
+	        span.text(" new!");
+        }
 		// update the count
         var cell = $("#" + this.countIdPrefix + row.color);
         var count = parseInt(cell.text());
@@ -97,7 +102,15 @@ LacksPage.prototype = {
 	    // update the list
         var tr = $("." + this.trClassPrefix + row.id);
         if (tr.length == 0) return; // not found
-        tr[0].remove();
+        
+        var i = 0;
+        var td = tr[i].children[0];
+        while(td.children[0].style.textDecoration == "line-through" && i < tr.length) {
+        	td = tr[++i].children[0];
+        }
+        while (td.children.length > 1) td.children[1].remove();
+        td.children[0].style.textDecoration = "line-through";
+
         // update the count
         var cell = $("#" + this.countIdPrefix + row.color);
         var count = parseInt(cell.text());
@@ -105,7 +118,7 @@ LacksPage.prototype = {
 	},
 	refreshLacksTable: function() {
 		for (var i = 0; i < this.lacksData.rows.length; i++) {
-			this.insertCard(this.lacksData.rows[i]);
+			this.insertCard(this.lacksData.rows[i], false);
 		}
 	},
 }
