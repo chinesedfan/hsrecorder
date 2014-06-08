@@ -254,6 +254,13 @@ PacksPage.prototype = {
             trendData.push(this.packsData.rows[i].dust);
         }
         this.trendObj = this._showDustTrend(this.trendChartDomEle, trendTicks, trendData);
+
+        // highlight legendary cards
+        var circles = $("#packs-trend circle");
+        this.packsData.oranges.map(function(x) {
+            var dom = circles[x-1];
+            dom.onclick();
+        });
     },
     refreshCountsChart: function() {
         this.countsChartDomEle.innerHTML = "";
@@ -262,16 +269,24 @@ PacksPage.prototype = {
         tbl = $("<table/>").appendTo(this.countsChartDomEle);
         tbl.attr("class", "table table-boarded");
 
-        tr = $("<tr><td/><td>Normal</td><td>Golden</td></tr>").appendTo(tbl);
+        tr = $("<tr><td/><td>Normal</td><td/><td>Golden</td><td/></tr>").appendTo(tbl);
         for (var i = 0; i < CardsInfo.qualityList.length; i++) {
             tr = $("<tr/>").appendTo(tbl);
 
             td = $("<td/>").appendTo(tr);
             td.text(CardsInfo.qualityList[i].name);
+
             td = $("<td/>").appendTo(tr);
             td.text(this.packsData.sums[i+CardsInfo.qualityList.length]);
             td = $("<td/>").appendTo(tr);
+            td.text("+" + (this.packsData.rows.length - this.packsData.lasts[i+CardsInfo.qualityList.length]));
+            td.css("color", "red");
+
+            td = $("<td/>").appendTo(tr);
             td.text(this.packsData.sums[i]);
+            td = $("<td/>").appendTo(tr);
+            td.text("+" + (this.packsData.rows.length - this.packsData.lasts[i]));
+            td.css("color", "red");
         }
     },
     refreshRatesChart: function() {

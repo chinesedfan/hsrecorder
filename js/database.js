@@ -147,11 +147,15 @@ DbConn.prototype = {
                 counts: [int], length = 2*qualities
                 tips: [string], length = 2*qualities
                 dust: int
-            sums: [int], list for all 8 kinds of cards
+            sums: [int], length = 2*qualities, the count of different kinds of cards
+            lasts: [int], length = 2*qualities, the last appearance of different kinds of cards
+            oranges: [int], row id of legendary cards, which starts from 1
         */
         var packsData = page.packsData = {};
         packsData.rows = [];
         packsData.sums = [0, 0, 0, 0, 0, 0, 0, 0];
+        packsData.lasts = [-1, -1, -1, -1, -1, -1, -1, -1];
+        packsData.oranges = [];
         this._db.transaction(function(tx) {
             tx.executeSql("SELECT * FROM packs", [], function(tx, rs) {
                 for (var i = 0; i < rs.rows.length; i++) {
@@ -163,7 +167,11 @@ DbConn.prototype = {
                     rowData.counts = [row.count_gl, row.count_ge, row.count_gr, row.count_gc, row.count_l, row.count_e, row.count_r, row.count_c];
                     rowData.counts.map(function(x, p) {
                         if (i == 0) packsData.sums[p] = x; else packsData.sums[p] += x;
+                        if (x > 0) packsData.lasts[p] = row.id;
                     });
+                    if (row.count_gl > 0 || row.count_l > 0) {
+                        packsData.oranges.push(row.id);
+                    }
                     rowData.tips = [row.tip_gl, row.tip_ge, row.tip_gr, row.tip_gc, row.tip_l, row.tip_e, row.tip_r, row.tip_c];
                     rowData.dust = row.dust;
                     packsData.rows.push(rowData);
