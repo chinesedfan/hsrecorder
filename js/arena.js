@@ -168,6 +168,14 @@ ArenaPage.prototype = {
             + "\ntotalAvg = " + totalAvg;
 
         this.trendObj = this._showArenaTrend(this.trendChartDomEle, trendTicks, trendData, totalAvg, totalMsg);
+
+        // highlight 12 wins
+        var circles = $(this.trendChartDomEle).find("circle");
+        circles.map(function(i, ele) {
+            // FIXME: hardcard the cy filter
+            if (ele.getAttribute("cy") != "20") return;
+            ele.onclick && ele.onclick();
+        });
     },
     refreshWinsChart: function() {
         if (this.winsObj) this.winsObj.destroy();
