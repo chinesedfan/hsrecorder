@@ -148,7 +148,7 @@ DbConn.prototype = {
                 tips: [string], length = 2*qualities
                 dust: int
             sums: [int], length = 2*qualities, the count of different kinds of cards
-            lasts: [int], length = 2*qualities, the last appearance of different kinds of cards
+            lasts: [int], length = 2*qualities, the last appearance of different kinds of cards, which starts from 1
             oranges: [int], row id of legendary cards, which starts from 1
         */
         var packsData = page.packsData = {};
@@ -186,7 +186,10 @@ DbConn.prototype = {
             var lst = [];
             lst.push(row.id);
             lst.push(row.day);
-            row.counts.map(function(x) { lst.push(x); });
+            row.counts.map(function(x, p) {
+                lst.push(x);
+                if (x) packsData.lasts[p] = row.id;
+            });
             row.tips.map(function(x) {lst.push(x); });
             lst.push(row.dust);
             tx.executeSql("INSERT INTO packs VALUES(?,?, ?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?, ?)", lst, function(tx, rs) {
@@ -195,6 +198,9 @@ DbConn.prototype = {
                     //FIXME: ugly codes
                     packsData.sums[i] += lst[i+2];
                 };
+                if (row.counts[0] > 0 || row.counts[0+CardsInfo.qualityList.length] > 0) {
+                    packsData.oranges.push(row.id);
+                }
                 page.refreshCharts();
             }, this._onSqlError);
         });
@@ -207,6 +213,19 @@ DbConn.prototype = {
                 for (var i = 0; i < packsData.sums.length; i++) {
                     packsData.sums[i] -= row.counts[i];
                 };
+                // backtrace to update
+                if (row.counts[0] > 0 || row.counts[0+CardsInfo.qualityList.length] > 0) {
+                    packsData.oranges.splice(packsData.oranges.length-1, 1);
+                }
+                row.counts.map(function(x, p) {
+                    if (x == 0) return;
+                    var i = packsData.rows.length-1;
+                    while (i >= 0) {
+                        if (packsData.rows[i].counts[p] > 0) break;
+                        i--;
+                    }
+                    packsData.lasts[p] = i+1; // the id
+                });
                 page.refreshCharts();
             }, this._onSqlError);
         });
