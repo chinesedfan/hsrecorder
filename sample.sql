@@ -105,10 +105,12 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '101','2014-06-01','Paladin','5
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '102','2014-06-02','Mage','0' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '103','2014-06-03','Mage','12' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '104','2014-06-07','Paladin','8' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '105','2014-06-11','Rogue','6' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '106','2014-06-14','Mage','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '107','2014-06-14','Mage','7' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '11','20090','Lightspawn','3' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '12','30042','Keeper of the Grove','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '13','30048','Lightwell','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '14','30052','Mass Dispel','2' );
@@ -124,7 +126,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '24','300
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '25','30006','Ancient Watcher','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '26','30080','Wild Pyromancer','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '27','30002','Alarm-o-Bot','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '28','30018','Coldlight Oracle','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '29','30018','Coldlight Oracle','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '30','30041','Injured Blademaster','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '31','30074','Sunwalker','2' );
@@ -264,3 +265,6 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '66','2014-06-03','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'Counterspell
 Arcane Golem',NULL,'55' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '67','2014-06-07','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Shadow Madness',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '68','2014-06-11','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Coldlight Oracle',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '69','2014-06-14','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Ancient of War','Arcane Golem',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '70','2014-06-14','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Perdition''s Blade',NULL,'40' );
