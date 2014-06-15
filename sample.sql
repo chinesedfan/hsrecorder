@@ -108,6 +108,8 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '104','2014-06-07','Paladin','8
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '105','2014-06-11','Rogue','6' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '106','2014-06-14','Mage','5' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '107','2014-06-14','Mage','7' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '108','2014-06-15','Druid','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '109','2014-06-15','Druid','9' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
@@ -118,7 +120,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '16','300
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '17','30054','Master of Disguise','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '18','30054','Master of Disguise','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '19','30010','Armorsmith','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '20','30035','Frothing Berserker','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '21','30007','Angry Chicken','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '22','30058','Murloc Tidecaller','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '23','30058','Murloc Tidecaller','2' );
@@ -146,7 +147,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '45','400
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '46','40027','Patient Assassin','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '47','40021','Kidnapper','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '48','40021','Kidnapper','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '49','40015','Far Sight','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '50','40011','Doomhammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '51','40011','Doomhammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '52','40028','Pit Lord','1' );
@@ -268,3 +268,5 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '68','2014-06-11','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Coldlight Oracle',NULL,'40' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '69','2014-06-14','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Ancient of War','Arcane Golem',NULL,'135' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '70','2014-06-14','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Perdition''s Blade',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '71','2014-06-15','0','0','0','0','0','1','0','4',NULL,NULL,NULL,NULL,NULL,'Far Sight',NULL,NULL,'120' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '72','2014-06-15','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Frothing Berserker',NULL,'40' );
