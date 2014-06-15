@@ -32,9 +32,12 @@ MainPage.prototype = {
             {index: 2, id: "lacks-frame", constructor: LacksPage, initialized: false},
         ];
         this.headerListJqEle = $("#header-div li");        
+
+        // initialize the database before show any page
+        this._dbConn.initDB();        
     },
     _initData: function() {
-        this._dbConn.initDB();
+        // do nothing
     },
     _initEventHandler: function() {
         var page = this;
