@@ -116,10 +116,8 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','500
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '12','30042','Keeper of the Grove','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '13','30048','Lightwell','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '14','30052','Mass Dispel','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '16','30064','SI:7 Agent','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '17','30054','Master of Disguise','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '18','30054','Master of Disguise','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '19','30010','Armorsmith','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '21','30007','Angry Chicken','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '22','30058','Murloc Tidecaller','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '23','30058','Murloc Tidecaller','2' );
@@ -145,7 +143,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '43','400
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '44','40029','Preparation','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '45','40029','Preparation','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '46','40027','Patient Assassin','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '47','40021','Kidnapper','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '48','40021','Kidnapper','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '50','40011','Doomhammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '51','40011','Doomhammer','1' );
@@ -154,7 +151,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '53','400
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '54','40038','Twisting Nether','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '55','40038','Twisting Nether','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '56','40004','Bane of Doom','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '57','40033','Shield Slam','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '58','40033','Shield Slam','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '59','40008','Brawl','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '60','40008','Brawl','1' );
@@ -165,7 +161,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '64','400
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '65','40035','Southsea Captain','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '66','40014','Faceless Manipulator','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '67','40014','Faceless Manipulator','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '68','40031','Sea Giant','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '69','50029','Prophet Velen','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '70','50010','Edwin VanCleef','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '71','50001','Al''Akir the Windlord','0' );
@@ -270,3 +265,15 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '70','2014-06-14','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Perdition''s Blade',NULL,'40' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '71','2014-06-15','0','0','0','0','0','1','0','4',NULL,NULL,NULL,NULL,NULL,'Far Sight',NULL,NULL,'120' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '72','2014-06-15','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Frothing Berserker',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '73','2014-06-18','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Kidnapper','Armorsmith',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '74','2014-06-18','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Shield Slam','Felguard',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '75','2014-06-18','0','0','1','0','0','0','1','3',NULL,NULL,'Auchenai Soulpriest',NULL,NULL,NULL,'Commanding Shout',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '76','2014-06-18','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'Emperor Cobra
+Bloodsail Corsair',NULL,'55' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '77','2014-06-18','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Doomguard',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '78','2014-06-18','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Gorehowl','Ethereal Arcanist',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '79','2014-06-18','0','0','0','1','1','0','0','3',NULL,NULL,NULL,'Flame Imp','Lord Jaraxxus',NULL,NULL,NULL,'465' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '80','2014-06-18','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Eaglehorn Bow',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '81','2014-06-18','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Sea Giant','Shadowflame',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '82','2014-06-18','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'SI:7 Agent
+Knife Juggler',NULL,'55' );
