@@ -59,6 +59,9 @@ ArenaPage.prototype = {
         this.delButtonDomEle.onclick = function() {
             page._dbConn.deleteArenaRecord(page, page.arenaData.rows[page.arenaData.rows.length-1]);
         };
+        this.editWinsDomEle.onfocus = function() {
+            page.editWinsDomEle.value = '';
+        }
     },
 
     _showArenaTrend: function(container, lineTicks, winData, ythres, seriesName) {
