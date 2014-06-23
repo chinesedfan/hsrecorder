@@ -110,11 +110,14 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '106','2014-06-14','Mage','5' )
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '107','2014-06-14','Mage','7' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '108','2014-06-15','Druid','4' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '109','2014-06-15','Druid','9' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '110','2014-06-20','Shaman','11' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '111','2014-06-20','Shaman','1' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '112','2014-06-20','Mage','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '113','2014-06-21','Paladin','3' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '12','30042','Keeper of the Grove','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '13','30048','Lightwell','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '14','30052','Mass Dispel','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '17','30054','Master of Disguise','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '18','30054','Master of Disguise','2' );
@@ -172,7 +175,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '76','500
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '77','50034','Tinkmaster Overspark','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '78','50007','Captain Greenskin','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '79','50011','Elite Tauren Chieftain','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '80','50006','Cairne Bloodhoof','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '81','50012','Gelbin Mekkatorque','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '82','50016','Hogger','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '83','50017','Illidan Stormrage','0' );
@@ -277,3 +279,7 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '81','2014-06-18','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Sea Giant','Shadowflame',NULL,'135' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '82','2014-06-18','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'SI:7 Agent
 Knife Juggler',NULL,'55' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '83','2014-06-20','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Ancient Mage',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '84','2014-06-20','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Demolisher',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '85','2014-06-20','0','0','1','0','0','0','1','3',NULL,NULL,'Misdirection',NULL,NULL,NULL,'Sunfury Protector',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '86','2014-06-21','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Lightwell',NULL,'40' );
