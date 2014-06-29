@@ -114,10 +114,14 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '110','2014-06-20','Shaman','11
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '111','2014-06-20','Shaman','1' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '112','2014-06-20','Mage','3' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '113','2014-06-21','Paladin','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '114','2014-06-27','Mage','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '115','2014-06-28','Druid','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '116','2014-06-28','Shaman','7' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '117','2014-06-28','Mage','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '118','2014-06-28','Druid','1' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '12','30042','Keeper of the Grove','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '14','30052','Mass Dispel','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '17','30054','Master of Disguise','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '18','30054','Master of Disguise','2' );
@@ -128,19 +132,16 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '24','300
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '25','30006','Ancient Watcher','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '26','30080','Wild Pyromancer','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '27','30002','Alarm-o-Bot','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '29','30018','Coldlight Oracle','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '30','30041','Injured Blademaster','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '31','30074','Sunwalker','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '32','30063','Ravenholdt Assassin','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '33','40001','Ancient of Lore','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '34','40005','Bestial Wrath','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '35','40034','Snake Trap','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '36','40017','Gladiator''s Longbow','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '37','40017','Gladiator''s Longbow','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '38','40020','Ice Block','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '39','40036','Spellbender','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '40','40037','Sword of Justice','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '41','40032','Shadowform','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '42','40009','Cabal Shadow Priest','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '43','40009','Cabal Shadow Priest','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '44','40029','Preparation','1' );
@@ -283,3 +284,10 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '84','2014-06-20','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Demolisher',NULL,'40' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '85','2014-06-20','0','0','1','0','0','0','1','3',NULL,NULL,'Misdirection',NULL,NULL,NULL,'Sunfury Protector',NULL,'135' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '86','2014-06-21','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Lightwell',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '87','2014-06-27','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Commanding Shout',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '88','2014-06-28','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Shadowform','Void Terror',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '89','2014-06-28','0','0','0','1','0','1','1','2',NULL,NULL,NULL,'Leper Gnome',NULL,'Snake Trap','Shadow Madness',NULL,'180' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '90','2014-06-28','0','0','1','0','0','1','2','1',NULL,NULL,'Keeper of the Grove',NULL,NULL,'Far Sight','Blizzard
+Secretkeeper',NULL,'245' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '91','2014-06-28','0','0','0','0','0','1','2','2',NULL,NULL,NULL,NULL,NULL,'Lay on Hands','Coldlight Oracle
+Demolisher',NULL,'150' );
