@@ -1,7 +1,7 @@
 var HtmlTemplate = (function() {
     function _arenaTemplate() {
 /*
-	<div id="trend-chart" class="chart center"></div>
+	<div id="trend-chart" class="chart"></div>
     <div id="arena-bottom" class="bottom">
         <div class="third2 yfull">
             <div id="wins-chart" class="chart"></div>

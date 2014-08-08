@@ -10,32 +10,37 @@ PacksPage.prototype = {
         this.ratesChartDomEle.style.top = this.countsChartDomEle.offsetHeight + "px";
 
         // the fixed table includes its head row and the edit row
-        var headRowJqEle = $("<tr/>").appendTo(this.fixedTableJqEle);
-        headRowJqEle.attr("id", "packs-thead");
-        var texts = ["id", "day"];
+        var headRowJqEle = $("<tr/>", {
+                id: "packs-thead"
+            }).appendTo(this.fixedTableJqEle),
+            texts = ["id", "day"];
         CardsInfo.qualityList.map(function(q) { texts.push(q.name[0]); });
         CardsInfo.qualityList.map(function(q) { texts.push("G-" + q.name[0]); });        
         texts.push("dust");
         texts.map(function(t) {
-            var td = $("<td/>").appendTo(headRowJqEle);
-            td.attr("class", t == "day" ? "datetd" : "othertd");
-            td.text(t);
+            $("<td/>", {
+                "class": t == "day" ? "datetd" : "othertd",
+                text: t
+            }).appendTo(headRowJqEle);
         });
 
-        var editingRowJqEle = $("<tr/>").appendTo(this.fixedTableJqEle);
-        editingRowJqEle.attr("id", "packs-edit");
-        var cellids = ["packs-id", "packs-day"];
+        var editingRowJqEle = $("<tr/>", {
+                id: "packs-edit"
+            }).appendTo(this.fixedTableJqEle),
+            cellids = ["packs-id", "packs-day"];
         CardsInfo.qualityList.map(function(q) { cellids.push("normal-" + q.color); });
         CardsInfo.qualityList.map(function(q) { cellids.push("golden-" + q.color); });        
         cellids.push("packs-dust");
         cellids.map(function(c) {
-            var td = $("<td/>").appendTo(editingRowJqEle);
-            td.attr("class", c == "packs-day" ? "datetd" : "othertd");
+            var td = $("<td/>", {
+                "class": c == "packs-day" ? "datetd" : "othertd"
+            }).appendTo(editingRowJqEle);
             // the first two own an inner input box
             if (c == "packs-id" || c == "packs-day") {
-                var input = $("<input/>").appendTo(td);
-                input.attr("id", c);
-                input.attr("class", "form-control");
+                $("<input/>", {
+                    id: c,
+                    "class": "form-control"
+                }).appendTo(td);
             } else {
                 td.attr("id", c);
             }
@@ -88,12 +93,12 @@ PacksPage.prototype = {
         this.goldenButtonJqEle.toggle(
             // toggle this button between golden and normal
             function() {
-                var btn = page.goldenButtonJqEle;
+                var btn = $(this);
                 btn.text("Golden");
                 btn.css("background-color", "#ffff00");
             },
             function() {
-                var btn = page.goldenButtonJqEle;
+                var btn = $(this);
                 btn.text("Normal");
                 btn.css("background-color", "#fff");
             }
@@ -159,7 +164,7 @@ PacksPage.prototype = {
         var lineOptions = {
             axis: {
                 x: {
-                    tickWidth: 10,
+                    tickWidth: 20,
                     ticks: lineTicks,
                 },
                 y: {
@@ -265,29 +270,37 @@ PacksPage.prototype = {
     refreshCountsChart: function() {
         this.countsChartDomEle.innerHTML = "";
 
-        var tbl, tr, td;
-        tbl = $("<table/>").appendTo(this.countsChartDomEle);
-        tbl.attr("class", "table table-boarded");
+        var tbl, tr;
+        tbl = $("<table/>", {
+            "class": "table table-boarded"
+        }).appendTo(this.countsChartDomEle);
 
         tr = $("<tr><td/><td>Normal</td><td/><td>Golden</td><td/></tr>").appendTo(tbl);
         for (var i = 0; i < CardsInfo.qualityList.length; i++) {
             tr = $("<tr/>").appendTo(tbl);
-
-            td = $("<td/>").appendTo(tr);
-            td.text(CardsInfo.qualityList[i].name);
-            td.css("color", CardsInfo.qualityList[i].color);
-
-            td = $("<td/>").appendTo(tr);
-            td.text(this.packsData.sums[i+CardsInfo.qualityList.length]);
-            td = $("<td/>").appendTo(tr);
-            td.text("+" + (this.packsData.rows.length - this.packsData.lasts[i+CardsInfo.qualityList.length]));
-            td.css("color", "red");
-
-            td = $("<td/>").appendTo(tr);
-            td.text(this.packsData.sums[i]);
-            td = $("<td/>").appendTo(tr);
-            td.text("+" + (this.packsData.rows.length - this.packsData.lasts[i]));
-            td.css("color", "red");
+            // quality name
+            $("<td/>", {
+                text: CardsInfo.qualityList[i].name,
+                css: {color: CardsInfo.qualityList[i].color}
+            }).appendTo(tr);
+            // normal count
+            $("<td/>", {
+                text: this.packsData.sums[i+CardsInfo.qualityList.length]
+            }).appendTo(tr);
+            // normal distance
+            $("<td/>", {
+                text: "+" + (this.packsData.rows.length - this.packsData.lasts[i+CardsInfo.qualityList.length]),
+                css: {color: "red"}
+            }).appendTo(tr);
+            // golden count
+            $("<td/>", {
+                text: this.packsData.sums[i]
+            }).appendTo(tr);
+            // golden distance
+            $("<td/>", {
+                text: "+" + (this.packsData.rows.length - this.packsData.lasts[i]),
+                css: {color: "red"}
+            }).appendTo(tr);
         }
     },
     refreshRatesChart: function() {
@@ -317,44 +330,42 @@ PacksPage.prototype = {
     refreshPacksTable: function() {
         this.packsTableJqEle.empty();
 
-        var rows = this.packsData.rows;
-        var tbl = document.createElement("table");
+        var rows = this.packsData.rows, row,
+            tbl = $("<table/>"), tr, td;
         for (var i = rows.length-1; i >= 0; i--) {
-            var row = rows[i];
-            var tr = document.createElement("tr");
-            var td;
-
-            td = document.createElement("td");
-            td.innerHTML = row.id;
-            td.className = "othertd";
-            tr.appendChild(td);
-
-            td = document.createElement("td");
-            td.innerHTML = row.day;
-            td.className = "datetd";
-            tr.appendChild(td);
+            row = rows[i];
+            tr = $("<tr/>").appendTo(tbl);
+            // row id
+            $("<td/>", {
+                html: row.id,
+                "class": "othertd",
+            }).appendTo(tr);
+            // date
+            $("<td/>", {
+                html: row.day,
+                "class": "datetd",
+            }).appendTo(tr);
 
             // show the normal first, then the golden
             var offset = CardsInfo.qualityList.length;
             for (var j = 0; j < row.counts.length; j++) {
-                td = document.createElement("td");
-                td.innerHTML = (j < offset) ? row.counts[j+offset] : row.counts[j-offset];
-                if (td.innerHTML != 0) {
-                    td.style.backgroundColor = "rgba(0,0,0,0.1)";
+                td = $("<td/>", {
+                    html: (j < offset) ? row.counts[j+offset] : row.counts[j-offset],
+                    "class": "othertd"
+                }).appendTo(tr);
+                if (td.html() != 0) {
+                    td.css("backgroundColor", "rgba(0,0,0,0.1)");
 
-                    td.title = (j < offset) ? row.tips[j+offset] : row.tips[j-offset];
-                    if (!td.title) td.title = "?";
+                    var title = (j < offset) ? row.tips[j+offset] : row.tips[j-offset];
+                    td.attr("title", title ? title : "?");
                 }
-                td.className = "othertd";
-                tr.appendChild(td);
             }
 
-            td = document.createElement("td");
-            td.innerHTML = row.dust;
-            td.className = "othertd";
-            tr.appendChild(td);
-
-            tbl.appendChild(tr);
+            // dust
+            $("<td/>", {
+                html: row.dust,
+                "class": "othertd"
+            }).appendTo(tr);
         }
         this.packsTableJqEle.append(tbl);
 
