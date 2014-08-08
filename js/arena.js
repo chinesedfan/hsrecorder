@@ -1,3 +1,4 @@
+/* class ArenaPage begin */
 function ArenaPage(container) {
     PageBase.apply(this, arguments);
 }
@@ -237,3 +238,4 @@ ArenaPage.prototype = {
         this.refreshArenaTable();
     },
 }
+/* class ArenaPage end */
