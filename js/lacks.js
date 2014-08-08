@@ -9,19 +9,24 @@ LacksPage.prototype = {
 		this.controllAreaJqEle.css("height", this.addButtonJqEle.outerHeight());
 		this.controllAreaJqEle.css("margin", "20px auto 20px auto");
 
-		var td, table, div;
 		CardsInfo.qualityList.map(function(q) {
-			td = $("<th/>").appendTo(page.titleTrJqEle);
-			td.text(q.name);
-			td = $("<th/>").appendTo(page.countTrJqEle);
-			td.attr("id", page.countIdPrefix + q.color);
-			td.text(0);
+			// title
+			$("<th/>", {
+				text: q.name
+			}).appendTo(page.titleTrJqEle);
+			// count
+			$("<th/>", {
+				id: page.countIdPrefix + q.color,
+				text: 0
+			}).appendTo(page.countTrJqEle);
 
-			div = $("<div/>").appendTo(page.lacksTableJqEle);
-			div.attr("class", "quarter yfull yscrolled");
+			var div = $("<div/>", {
+			    "class": "quarter yfull yscrolled"
+			}).appendTo(page.lacksTableJqEle);
 
-			table = $("<table/>").appendTo(div);
-			table.attr("id", page.tableIdPrefix + q.color);
+			$("<table/>", {
+				id: page.tableIdPrefix + q.color
+			}).appendTo(div);
 		});
 
 		this.bottomJqEle.css("top", this.container.offsetTop);
@@ -82,12 +87,14 @@ LacksPage.prototype = {
 	insertCard: function(row, isNew) {
         // update the list
         var table = $("#" + this.tableIdPrefix + row.color);
-        var tr = $("<tr/>").appendTo(table);
-        tr.attr("class", this.trClassPrefix + row.id);
+        var tr = $("<tr/>", {
+            "class": this.trClassPrefix + row.id
+        }).appendTo(table);
         var td = $("<td/>").appendTo(tr);
-        var lbl = $("<label/>").appendTo(td);
-        lbl.css("color", row.color);
-        lbl.text(row.name);
+        var lbl = $("<label/>", {
+        	css: {color: row.color},
+        	text: row.name
+        }).appendTo(td);
         var span = $("<span/>").appendTo(td);
         if (isNew) {
 	        span.css("color", "red");
