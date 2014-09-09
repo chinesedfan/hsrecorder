@@ -133,6 +133,16 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '129','2014-07-27','Paladin','2
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '130','2014-08-01','Warrior','6' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '131','2014-08-02','Druid','2' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '132','2014-08-02','Mage','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '133','2014-08-09','Warrior','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '134','2014-08-16','Druid','10' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '135','2014-08-24','Mage','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '136','2014-08-24','Warrior','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '137','2014-08-25','Mage','12' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '138','2014-08-30','Paladin','9' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '139','2014-08-31','Druid','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '140','2014-09-07','Paladin','0' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '141','2014-09-07','Mage','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '142','2014-09-08','Mage','2' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
@@ -316,3 +326,14 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '109','2014-08-02','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Arcane Golem',NULL,'40' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '110','2014-08-02','0','0','0','0','0','1','2','2',NULL,NULL,NULL,NULL,NULL,'Sea Giant','Aldor Peacekeeper
 Savagery',NULL,'150' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '111','2014-08-09','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Wild Pyromancer',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '112','2014-08-16','0','0','1','0','0','0','1','3',NULL,NULL,'Blizzard',NULL,NULL,NULL,'Bloodsail Corsair',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '113','2014-08-24','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Coldlight Seer',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '114','2014-08-24','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Angry Chicken',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '115','2014-08-25','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Secretkeeper',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '116','2014-08-25','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Angry Chicken',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '117','2014-08-30','0','0','0','0','0','1','0','4',NULL,NULL,NULL,NULL,NULL,'Ancient of Lore',NULL,NULL,'120' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '118','2014-08-31','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Murloc Tidecaller',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '119','2014-09-07','0','0','0','0','1','0','1','3',NULL,NULL,NULL,NULL,'The Black Knight',NULL,'Azure Drake',NULL,'435' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '120','2014-09-07','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Eaglehorn Bow',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '121','2014-09-08','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Azure Drake',NULL,'40' );
