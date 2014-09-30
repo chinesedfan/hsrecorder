@@ -143,22 +143,21 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '139','2014-08-31','Druid','3' 
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '140','2014-09-07','Paladin','0' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '141','2014-09-07','Mage','3' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '142','2014-09-08','Mage','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '143','2014-09-25','Paladin','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '144','2014-09-27','Warrior','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '145','2014-09-28','Mage','5' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '17','30054','Master of Disguise','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '18','30054','Master of Disguise','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '22','30058','Murloc Tidecaller','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '23','30058','Murloc Tidecaller','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '25','30006','Ancient Watcher','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '27','30002','Alarm-o-Bot','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '31','30074','Sunwalker','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '32','30063','Ravenholdt Assassin','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '34','40005','Bestial Wrath','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '36','40017','Gladiator''s Longbow','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '37','40017','Gladiator''s Longbow','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '42','40009','Cabal Shadow Priest','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '43','40009','Cabal Shadow Priest','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '44','40029','Preparation','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '45','40029','Preparation','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '46','40027','Patient Assassin','1' );
@@ -196,7 +195,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '88','500
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '89','50028','Onyxia','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '90','50036','Ysera','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '91','50031','Sylvanas Windrunner','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '113','30027','Eaglehorn Bow','2' );
 CREATE TABLE packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '1','2014-03-03','0','0','1','0','0','0','2','2',NULL,NULL,'Ethereal Arcanist',NULL,NULL,NULL,'?',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '2','2014-03-03','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'?',NULL,'40' );
@@ -337,3 +335,7 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '119','2014-09-07','0','0','0','0','1','0','1','3',NULL,NULL,NULL,NULL,'The Black Knight',NULL,'Azure Drake',NULL,'435' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '120','2014-09-07','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Eaglehorn Bow',NULL,'40' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '121','2014-09-08','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Azure Drake',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '122','2014-09-25','0','0','0','1','0','0','1','3',NULL,NULL,NULL,'Eye for an Eye',NULL,NULL,'Savannah Highmane',NULL,'85' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '123','2014-09-27','0','0','0','0','0','1','2','2',NULL,NULL,NULL,NULL,NULL,'Cabal Shadow Priest','Wild Pyromancer
+Divine Favor',NULL,'150' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '124','2014-09-28','0','0','1','0','0','0','1','3',NULL,NULL,'Mana Addict',NULL,NULL,NULL,'Sunwalker',NULL,'135' );
