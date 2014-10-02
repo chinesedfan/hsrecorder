@@ -70,11 +70,22 @@ var HtmlTemplate = (function() {
     </div>
 */
     }
+    function _exportTemplate() {
+/*
+    <div id="export-bottom" class="bottom">
+        <div id="export-control">
+            <button id="btn-export" class="half btn btn-default">Import</button>
+            <button id="btn-import" class="half btn btn-default">Export</button>
+        </div>
+    </div>
+*/
+    }
 
     var _funcMap = {
         arena: _arenaTemplate,
         packs: _packsTemplate,
         lacks: _lacksTemplate,
+        "export": _exportTemplate
     };
 
     function _getTemplate(key) {

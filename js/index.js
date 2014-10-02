@@ -22,7 +22,7 @@ MainPage.prototype = {
     _initView: function() {
         // because this page is not reusable, all elements are defined in HTML directly
 
-        this.showSubPage(0);
+        this.showSubPage(3);
     },
     _initMember: function() {
         this._dbConn = new DbConn();
@@ -30,7 +30,9 @@ MainPage.prototype = {
             {index: 0, id: "arena-frame", constructor: ArenaPage, initialized: false},
             {index: 1, id: "packs-frame", constructor: PacksPage, initialized: false},
             {index: 2, id: "lacks-frame", constructor: LacksPage, initialized: false},
+            {index: 3, id: "export-frame", constructor: ExportPage, initialized: false}
         ];
+        this.pagesArr = new Array(this._subpages.length);
         this.headerListJqEle = $("#header-div li");        
 
         // initialize the database before show any page
@@ -49,6 +51,12 @@ MainPage.prototype = {
         });
     },
 
+    _initSubPage: function(page, sp) {
+        if (!sp.initialized) {
+            page.pagesArr[sp.index] = new (sp.constructor)(document.getElementById(sp.id));
+            sp.initialized = true;
+        }
+    },
     showSubPage: function(index) {
         var page = this;
         this._subpages.map(function(sp) {
@@ -58,16 +66,19 @@ MainPage.prototype = {
 
         var sp = this._subpages[index];
         document.getElementById(sp.id).style.display = "table-row";
-        if (!sp.initialized) {
-            new (sp.constructor)(document.getElementById(sp.id));
-            sp.initialized = true;
-        }
+        this._initSubPage(this, sp);
         
         page.headerListJqEle[sp.index].className = "active";
     },
+    initAllSubPages: function() {
+        var page = this;
+        this._subpages.map(function(sp) {
+            page._initSubpage(page, sp);
+        });
+    }
 }
 /* class MainPage end */
 
 window.onload = function() {
-    new MainPage(document.getElementById("header-div"));
+    window.mainPage = new MainPage(document.getElementById("header-div"));
 };
