@@ -32,9 +32,7 @@
 		size++;
 	}
 
-	console.log('var TagMap = {');
-	for (var key in dict) {
-		console.log('\t\'' + key + '\': \'' + dict[key] + '\'' + (--size != 0 ? ',' : ''));	
-	}
-	console.log('};');
+	console.log('module.exports =');
+	console.log(dict);
+	console.log(';');
 })();
