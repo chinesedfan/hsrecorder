@@ -15,8 +15,8 @@
 	var content = Fs.readFileSync(args[0], 'utf-8'),
 	    lines = content.split('\n'),
 	    line, key, value, curVal = 0,
+	    dict = {},
 	    reg = /^\s*([A-Z_][A-Z0-9_]+)(?:\s*=\s*(\d+))?,?\s*$/, matches;
-	console.log('var TagMap = {');
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		if (!reg.test(line)) continue;
@@ -28,7 +28,12 @@
 			value = curVal;
 		}
 		curVal = parseInt(value) + 1;
-		console.log('\t\'' + value + '\': \'' + key + '\',');
+		dict[value] = key;
+	}
+
+	console.log('var TagMap = {');
+	for (var key in dict) {
+		console.log('\t\'' + key + '\': \'' + dict[key] + '\',');
 	}
 	console.log('};');
 })();
