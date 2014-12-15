@@ -1,20 +1,20 @@
 (function () {
 	var Fs = require('fs');
-	var TagMap = require('../bin/tagmap.js');
 	// run 'npm install <module> -g' if need
 	var DOMParser = require('xmldom').DOMParser;
 
 	function printHelp() {
-		console.log('Usage: node parseXml.js <xml_file>');
+		console.log('Usage: node parseXml.js <xml_file> <tag_map_file>');
 	}
 
 	// The first is 'node', and the second is this file's full path.
 	var args = process.argv.splice(2);
-	if (args.length != 1) {
+	if (args.length != 2) {
 		printHelp();
 		return;
 	}
 
+	var TagMap = require(args[1]);
 	function node2obj(entity) {
 		var obj = {}, key,
 		    tags = entity.getElementsByTagName('Tag'),
