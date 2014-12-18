@@ -12,15 +12,27 @@ ExportPage.prototype = {
         this.btnImport = $("#btn-import");
         this.exportBottom = $("#export-bottom");
         this.exportControl = $("#export-control");
+
+        this.exportContainer = $("#export-container");
+        this.exportContent = $("#export-content");
     },
     _initView: function() {
+        this.exportBottom.css("top", this.container.offsetTop);
+
         this.exportControl.css({
             width: "50%",
             height: this.btnExport.outerHeight(),
             margin: "20px auto"
         });
-
-        this.exportBottom.css("top", this.container.offsetTop);
+        this.exportContainer.css({
+            width: "50%",
+            height: "80%",
+            margin: "0 auto"
+        });
+        this.exportContent.css({
+            width: "100%",
+            height: "100%"
+        });        
     },
     _initData: function() {
         this.mailScript = 'http://tcloud.sjtu.edu.cn/course/css/sendmail.php',
