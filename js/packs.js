@@ -57,7 +57,7 @@ PacksPage.prototype = {
         this.packsTableJqEle.css("top", (this.goldenButtonJqEle.outerHeight() + this.addButtonJqEle.outerHeight() + this.fixedTableJqEle.height()) + "px");
     },
     _initMember: function() {
-        this._dbConn = new DbConn();
+        this._dbConn = window.dbConn;
         this.container.innerHTML = HtmlTemplate.getTemplate("packs");
 
         this.bottomJqEle = $("#packs-bottom");

@@ -16,6 +16,12 @@ DbConn.prototype = {
         alert("[onSqlError]" + error.message);
     },
 
+    execSqlScript: function(script) {
+        this._db.transaction(function(tx) {
+            tx.executeSql(script, this._onSqlError);
+        });
+    },
+
     initDB: function() {
         this._db.transaction(function(tx) {
             tx.executeSql("CREATE TABLE IF NOT EXISTS arena(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer)", [], undefined, this._onSqlError);

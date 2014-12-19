@@ -73,7 +73,7 @@ MainPage.prototype = {
     initAllSubPages: function() {
         var page = this;
         this._subpages.map(function(sp) {
-            page._initSubpage(page, sp);
+            page._initSubPage(page, sp);
         });
     }
 }
@@ -81,4 +81,5 @@ MainPage.prototype = {
 
 window.onload = function() {
     window.mainPage = new MainPage(document.getElementById("header-div"));
+    window.dbConn = new DbConn();
 };

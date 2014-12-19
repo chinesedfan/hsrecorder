@@ -74,8 +74,8 @@ var HtmlTemplate = (function() {
 /*
     <div id="export-bottom" class="bottom">
         <div id="export-control">
-            <button id="btn-export" class="half btn btn-default">Import</button>
-            <button id="btn-import" class="half btn btn-default">Export</button>
+            <button id="btn-import" class="half btn btn-default">Import</button>
+            <button id="btn-export" class="half btn btn-default">Export</button>
         </div>
         <div id="export-container">
 	        <textarea id="export-content"></textarea>

@@ -33,7 +33,7 @@ LacksPage.prototype = {
 		this.lacksTableJqEle.css("top", this.controllAreaJqEle.outerHeight(true) + this.fixedTableJqEle.outerHeight());
 	},
 	_initMember: function() {
-		this._dbConn = new DbConn();
+		this._dbConn = window.dbConn;
 		this.container.innerHTML = HtmlTemplate.getTemplate("lacks");
 
 		this.bottomJqEle = $("#lacks-bottom");

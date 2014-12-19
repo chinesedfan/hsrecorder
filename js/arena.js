@@ -17,7 +17,7 @@ ArenaPage.prototype = {
         this.arenaTableDomEle.style.top = (this.addButtonDomEle.offsetHeight + this.fixedTableDomEle.offsetHeight) + "px";
     },
     _initMember: function() {
-        this._dbConn = new DbConn();
+        this._dbConn = window.dbConn;
         this.container.innerHTML = HtmlTemplate.getTemplate("arena");
         
         this.bottomDomEle = document.getElementById("arena-bottom");
