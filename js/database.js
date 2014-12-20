@@ -240,6 +240,7 @@ DbConn.prototype = {
     loadLacksData: function(page) {
         /*
             rows: [object]
+                autoid: integer, auto increase index
                 id: integer, card id definded in cards.js
                 name: string
                 quality: integer, index for CardsInfo.qualityList
@@ -255,6 +256,7 @@ DbConn.prototype = {
                     var row = rs.rows.item(i);
                     var rowData = {};
 
+                    rowData.autoid = row.id;
                     rowData.id = row.card_id;
                     rowData.name = row.card_name;
                     rowData.quality = row.card_quality;
