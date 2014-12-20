@@ -146,6 +146,15 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '142','2014-09-08','Mage','2' )
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '143','2014-09-25','Paladin','4' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '144','2014-09-27','Warrior','3' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '145','2014-09-28','Mage','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '146','2014-09-30','Druid','7' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '147','2014-10-05','Paladin','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '148','2014-10-16','Mage','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '149','2014-10-19','Mage','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '150','2014-10-31','Warrior','0' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '151','2014-11-08','Warrior','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '152','2014-12-16','Mage','8' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '153','2014-12-18','Priest','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '154','2014-12-19','Mage','3' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
@@ -164,7 +173,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '46','400
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '48','40021','Kidnapper','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '50','40011','Doomhammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '51','40011','Doomhammer','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '52','40028','Pit Lord','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '53','40028','Pit Lord','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '54','40038','Twisting Nether','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '55','40038','Twisting Nether','1' );
@@ -194,7 +202,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '87','500
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '88','50023','Malygos','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '89','50028','Onyxia','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '90','50036','Ysera','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '91','50031','Sylvanas Windrunner','0' );
 CREATE TABLE packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '1','2014-03-03','0','0','1','0','0','0','2','2',NULL,NULL,'Ethereal Arcanist',NULL,NULL,NULL,'?',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '2','2014-03-03','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'?',NULL,'40' );
@@ -339,3 +346,10 @@ INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l"
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '123','2014-09-27','0','0','0','0','0','1','2','2',NULL,NULL,NULL,NULL,NULL,'Cabal Shadow Priest','Wild Pyromancer
 Divine Favor',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '124','2014-09-28','0','0','1','0','0','0','1','3',NULL,NULL,'Mana Addict',NULL,NULL,NULL,'Sunwalker',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '125','2014-09-30','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Vaporize',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '126','2014-10-05','0','0','0','0','0','1','0','4',NULL,NULL,NULL,NULL,NULL,'Avenging Wrath',NULL,NULL,'120' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '127','2014-10-16','0','0','0','0','0','1','1','3',NULL,NULL,NULL,NULL,NULL,'Pit Lord','Vaporize',NULL,'135' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '128','2014-10-19','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'Siphon Soul',NULL,'40' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '129','2014-10-31','0','1','0','0','0','0','1','3',NULL,'Avenging Wrath',NULL,NULL,NULL,NULL,'Frothing Berserker',NULL,'435' );
+INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '130','2014-11-08','0','0','0','0','0','0','2','3',NULL,NULL,NULL,NULL,NULL,NULL,'SI:7 Agent
+Crazed Alchemist',NULL,'55' );
