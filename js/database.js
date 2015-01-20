@@ -2,7 +2,7 @@
    Database location:
        Windows Vista or 7: \Users\_username_\AppData\Local\Google\Chrome\User Data\Default\databases
        Windows XP: \Documents and Settings\_username_\Local Settings\Application Data\Google\Chrome\User Data\Default\databases
-       Mac OS X: ~/Library/Application Support/Google/Chrome/Default/databases
+       Mac OS X: ~/Library/Application\ Support/Google/Chrome/Default/databases
        Linux: ~/.config/google-chrome/Default/databases
 */
 function DbConn() {
