@@ -2,7 +2,7 @@
    Database location:
        Windows Vista or 7: \Users\_username_\AppData\Local\Google\Chrome\User Data\Default\databases
        Windows XP: \Documents and Settings\_username_\Local Settings\Application Data\Google\Chrome\User Data\Default\databases
-       Mac OS X: ~/Library/Application Support/Google/Chrome/Default/databases
+       Mac OS X: ~/Library/Application\ Support/Google/Chrome/Default/databases
        Linux: ~/.config/google-chrome/Default/databases
 */
 function DbConn() {
@@ -14,6 +14,18 @@ function DbConn() {
 DbConn.prototype = {
     _onSqlError: function(tx, error) {
         alert("[onSqlError]" + error.message);
+    },
+
+    execSqlScript: function(script) {
+        this._db.transaction(function(tx) {
+            var sqls = script.split(';\n'),
+                n = sqls.length, success = 0;
+            for (var i = 0; i < sqls.length; i++) {
+                tx.executeSql(sqls[i], [], function(tx, rs) {
+                    console.log("[execSqlScript]" + (++success) + "/" + n);
+                }, this._onSqlError);
+            }
+        });
     },
 
     initDB: function() {
@@ -234,6 +246,7 @@ DbConn.prototype = {
     loadLacksData: function(page) {
         /*
             rows: [object]
+                autoid: integer, auto increase index
                 id: integer, card id definded in cards.js
                 name: string
                 quality: integer, index for CardsInfo.qualityList
@@ -249,6 +262,7 @@ DbConn.prototype = {
                     var row = rs.rows.item(i);
                     var rowData = {};
 
+                    rowData.autoid = row.id;
                     rowData.id = row.card_id;
                     rowData.name = row.card_name;
                     rowData.quality = row.card_quality;
