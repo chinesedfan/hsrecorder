@@ -155,6 +155,11 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '151','2014-11-08','Warrior','2
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '152','2014-12-16','Mage','8' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '153','2014-12-18','Priest','3' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '154','2014-12-19','Mage','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '155','2014-12-21','Priest','1' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '156','2014-12-21','Druid','1' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '157','2015-01-11','Priest','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '158','2015-01-17','Shaman','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '159','2015-01-17','Priest','3' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '9','50003','Archmage Antonidas','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '10','50035','Tirion Fordring','0' );
