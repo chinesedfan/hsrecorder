@@ -47,13 +47,12 @@ ExportPage.prototype = {
             }, 1000);
         });
         this.btnImport.click(function() {
-            console.log("import");
-            //window.dbConn.execSqlScript(page.exportContent.val());
+            window.dbConn.execSqlScript(page.exportContent.val());
         });
     },
 
     sqlTemplate: {
-        dropAllTables: 'DROP TABLE __WebKitDatabaseInfoTable__;\nDROP TABLE arena;\nDROP TABLE packs;\nDROP TABLE lacks;\n',
+        dropAllTables: 'DROP TABLE IF EXISTS __WebKitDatabaseInfoTable__;\nDROP TABLE IF EXISTS arena;\nDROP TABLE IF EXISTS packs;\nDROP TABLE IF EXISTS lacks;\n',
         createDbInfo: 'CREATE TABLE __WebKitDatabaseInfoTable__ (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL);\nINSERT INTO "__WebKitDatabaseInfoTable__" ( "key",value ) VALUES ( \'WebKitDatabaseVersionKey\',\'1.0\' );\n',
         createArena: 'CREATE TABLE arena(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer);\n',
         createLacks: 'CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);\n',

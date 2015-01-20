@@ -18,7 +18,13 @@ DbConn.prototype = {
 
     execSqlScript: function(script) {
         this._db.transaction(function(tx) {
-            tx.executeSql(script, this._onSqlError);
+            var sqls = script.split(';\n'),
+                n = sqls.length, success = 0;
+            for (var i = 0; i < sqls.length; i++) {
+                tx.executeSql(sqls[i], [], function(tx, rs) {
+                    console.log("[execSqlScript]" + (++success) + "/" + n);
+                }, this._onSqlError);
+            }
         });
     },
 
