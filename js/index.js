@@ -22,10 +22,10 @@ MainPage.prototype = {
     _initView: function() {
         // because this page is not reusable, all elements are defined in HTML directly
 
-        this.showSubPage(3);
+        this.showSubPage(0);
     },
     _initMember: function() {
-        this._dbConn = new DbConn();
+        this._dbConn = window.dbConn;
         this._subpages = [
             {index: 0, id: "arena-frame", constructor: ArenaPage, initialized: false},
             {index: 1, id: "packs-frame", constructor: PacksPage, initialized: false},
@@ -80,6 +80,6 @@ MainPage.prototype = {
 /* class MainPage end */
 
 window.onload = function() {
-    window.mainPage = new MainPage(document.getElementById("header-div"));
     window.dbConn = new DbConn();
+    window.mainPage = new MainPage(document.getElementById("header-div"));    
 };
