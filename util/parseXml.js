@@ -19,6 +19,8 @@
 		var obj = {}, key,
 		    tags = entity.getElementsByTagName('Tag'),
 		    tid, type, value, text;
+
+		obj['CardID'] = entity.getAttribute('CardID');
 		for (var i = 0; i < tags.length; i++) {
 			tid = tags[i].getAttribute('enumID');
 			type = tags[i].getAttribute('type');
