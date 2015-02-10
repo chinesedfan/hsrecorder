@@ -40,8 +40,24 @@
 	    objs = [], obj;
 	for (var i = 0; i < entities.length; i++) {
 		obj = node2obj(entities[i]);
+		obj = sortDict(obj);
 		objs.push(obj);
-	}	
+	}
+	objs.sort(function(o1, o2) {
+		return o1.CardID.localeCompare(o2.CardID);
+	});
+
+	function sortDict(dict) {
+		var ret = {}, 
+	        keys = Object.keys(dict).sort();
+
+	    for (var i = 0, n = keys.length, key; i < n; ++i) {
+	        key = keys[i];
+	        ret[key] = dict[key];
+	    }
+
+	    return ret;
+	}
 
 	console.log('var _infoList =');
 	console.log(objs);
