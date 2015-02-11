@@ -1,241 +1,273 @@
+/*
+	@param: 
+		rows: [rowObject], list of database rows
+	@member:
+		rows: [object], simple form of rs
+		gameByClass: [int], list of played games grouped by classes
+		gameByWins: [int], list of different wins games
+		winsByClass: [int], list of total wins grouped by classes
+		winsList: [int], list of wins
+		totalWins: int, total wins
+*/
+function ArenaData(rows) {
+	var i = 0, n = rows.length;
+
+	this.rows = [];
+	this.gameByClass = new ZeroArray(GameConst.CLASS_LIST.length);
+	this.gameByWins = new ZeroArray(GameConst.MAX_ARENA_WINS + 1);
+	this.winsList = new ZeroArray(n);
+	this.winsByClass = new ZeroArray(GameConst.CLASS_LIST.length);
+	this.totalWins = 0;
+
+	for (; i < n; i++) {
+		this.insertRow(rows.item(i));
+	}
+}
+
+ArenaData.prototype = {
+	insertRow: function(row) {
+		icls = GameConst.CLASS_LIST.indexOf(row.class);
+		w = row.wins;
+
+		this.rows.push(row);
+		this.gameByClass[icls]++;
+		this.gameByWins[w]++;
+		this.winsList.push(w); // TODO: find the position instead of appending
+		this.winsByClass[icls] += w;
+		this.totalWins += w;
+	},
+	deleteById: function(id) {
+		var i = id, // TODO: find the position instead of simple mapping
+			r = this.rows[i],
+			icls = GameConst.CLASS_LIST.indexOf(r.class),
+			w = r.wins;
+
+		this.rows.splice(i);
+		this.gameByClass[icls]--;
+		this.gameByWins[w]--;
+		this.winsList.splice(i);
+		this.winsByClass[icls] -= w;
+		this.totalWins -= w;
+	}
+}
+
 /* class ArenaPage begin */
 function ArenaPage(container) {
-    PageBase.apply(this, arguments);
+	PageBase.apply(this, arguments);
 }
 
 ArenaPage.prototype = {
-    _initView: function() {
-        var page = this;        
-        this.bottomDomEle.style.top = (this.container.offsetTop + this.trendChartDomEle.offsetHeight) + "px";
-        this.pieAreaDomEle.style.top = this.winsChartDomEle.offsetHeight + "px";
-        CardsInfo.classNames.map(function(name) {
-            var op = document.createElement("option");
-            op.value = name;
-            op.text = name;
-            page.editClassDomEle.add(op);
-        });
-        this.arenaTableDomEle.style.top = (this.addButtonDomEle.offsetHeight + this.fixedTableDomEle.offsetHeight) + "px";
-    },
-    _initMember: function() {
-        this._dbConn = window.dbConn;
-        this.container.innerHTML = HtmlTemplate.getTemplate("arena");
-        
-        this.bottomDomEle = document.getElementById("arena-bottom");
+	constructor: ArenaPage,
+	_initData: function() {
+		var self = this;
 
-        this.trendChartDomEle = document.getElementById("trend-chart");
-        this.winsChartDomEle = document.getElementById("wins-chart");
-        this.pieAreaDomEle = document.getElementById("arena-pie");
-        this.ratesChartDomEle = document.getElementById("rates-chart");
-        this.pieWinsDomEle = document.getElementById("pie-wins");
-        this.arenaTableDomEle = document.getElementById("arena-table");
-        this.fixedTableDomEle = document.getElementById("arena-fixed");
+		window.dbConn.loadArenaData(function(tx, rs) {
+			self.data = new ArenaData(rs.rows);
+		});
+	},
+	_initView: function() {
+		var select = $(".arena-right select"),
+			option;
 
-        this.addButtonDomEle = document.getElementById("add-btn");
-        this.delButtonDomEle = document.getElementById("del-btn");
+		// generate the class select
+		GameConst.CLASS_LIST.map(function(name) {
+			option = $("<option></option>").appendTo(select);
+			option.val(name);
+			option.text(name);
+		});
+	},
+	_initEventHandler: function() {
+		var self = this,
+			addButton = $(".arena-add"), delButton = $(".arena-del"),
+			idInput = $(".arena-edit-id"), dayInput = $(".arena-edit-day"), classSelect = $(".arena-edit-class"), winsInput = $(".arena-edit-wins"),
+			id, row;
 
-        this.editIdDomEle = document.getElementById("edit-id");
-        this.editDayDomEle = document.getElementById("edit-day");
-        this.editClassDomEle = document.getElementById("edit-class");
-        this.editWinsDomEle = document.getElementById("edit-wins");
+		// add the editing one
+		addButton.click(function() {
+			row = {
+				id: idInput.val(),
+				day: dayInput.val(),
+				class: classSelect.val(),
+				wins: winsInput.val()
+			}
 
-        /*
-            The following fields may be set by member functions
-                this.arenaData
-                this.trendObj, this.winsObj, this.ratesObj
-        */
-    },
-    _initData: function() {
-        this._dbConn.loadArenaData(this);
-    },
-    _initEventHandler: function() {
-        var page = this;
-        this.addButtonDomEle.onclick = function() {
-            var row = {};
-            row.id = parseInt(page.editIdDomEle.value);
-            row.day = page.editDayDomEle.value;
-            row.class = page.editClassDomEle.value;
-            row.wins = parseInt(page.editWinsDomEle.value);
-            page._dbConn.insertArenaRecord(page, row);
-        };
-        this.delButtonDomEle.onclick = function() {
-            page._dbConn.deleteArenaRecord(page, page.arenaData.rows[page.arenaData.rows.length-1]);
-        };
-        this.editWinsDomEle.onfocus = function() {
-            page.editWinsDomEle.value = '';
-        }
-    },
+			window.dbConn.insertArenaRow(row, function(tx, rs) {
+				self.data.insertRow(row);
+				self.refreshCharts();
+			});
+		});
 
-    _showArenaTrend: function(container, lineTicks, winData, ythres, seriesName) {
-        var lineOptions = {
-            axis: {
-                x: {
-                    tickWidth: 20,
-                    ticks: lineTicks,
-                },
-                y: {
-                    min: 0,
-                    max: 11, // if not set, empty input will cause the chart library to crash
-                    total: 11,
-                    tickSize: 2,
-                    tickWidth: 20,
-                    rotate: 90,
-                },
-            },
-            line: {
-                dots: true,
-                dotRadius: 6,
-            },
-            icons: {
-                0: "circle",
-            },
-            legend: {
-                position: ["right", "center"],
-                borderColor: "white",
-            },
-            threshold: {
-                y: {
-                    value: ythres,
-                },
-            },
-        };
-        var lineData = [{name: seriesName, data: winData}];
-        var line = new Venus.SvgChart(container, lineData, lineOptions);
-        return line;
-    },
-    _showClassWins: function(container, winData) {
-        var barTicks = CardsInfo.classNames;
-        var barOptions = {
-            axis: {
-                x: {
-                    total: 9,
-                    tickWidth: 60,
-                    ticks: barTicks,
-                    labelRotate: 30,
-                },
-                y: {
-                    min: 0,
-                    max: 11,
-                    total: 11,
-                    tickSize: 2,
-                    tickWidth: 16,
-                    rotate: 90,
-                },
-            },
-            bar: {
-                radius: 0,
-            },
-        };
-        var arr = {};
-        for (var i = 0; i < barTicks.length; i++) {
-            arr[barTicks[i]] = winData[i];
-        }
-        var barData = [{name: 0, data: arr}];
-        var bar = new Venus.SvgChart(container, barData, barOptions);
-        return bar;
-    },
-    _showClassRates: function(container, nameList, dataList) {
-        // avoid the chart library to crash
-        if (eval(dataList.join("+")) == 0) return null;
+		// delete the last one
+		delButton.click(function() {
+			id = self.data.winsList.length - 1;
 
-        var pieOptions = {
-            pie: {
-                radius: 60, 
-                rotate: 45, 
-            },
-        };
-        var pieData = [];
-        for (var i = 0; i < nameList.length; i++) {
-            pieData.push({name: nameList[i], data: dataList[i]});
-        }
+			window.dbConn.deleteArenaById(id, function(tx, rs) {
+				self.data.deleteById(id);
+				self.refreshCharts();
+			});
+		});
 
-        pieData.sort(function(a, b) {
-            return b.data - a.data;
-        });
-        var pie = new Venus.SvgChart(container, pieData, pieOptions);
-        return pie;
-    },
+		// auto clear the wins field when focused
+		winsInput.focus(function() {
+			winsInput.val("");
+		});
 
-    refreshTrendChart: function() {
-        if (this.trendObj) this.trendObj.destroy();
+		// TODO: double click, CTRL/SHIFT multi select to delete rows
+	},
 
-        var trendTicks = [];
-        var trendData = [];
-        var arenaData = this.arenaData;
-        for (var i = arenaData.trend.start; i < arenaData.trend.end; i++) {
-            trendTicks.push(i);
-            trendData.push(arenaData.wins[i-arenaData.trend.start]);
-        }
+	_getPieData: function(nameList, dataList) {
+		var pieData = [];
 
-        var totalAvg = (arenaData.totalNums == 0) ? 0 : (arenaData.totalWins/arenaData.totalNums).toFixed(2);
-        var totalMsg = "totalNums = " + arenaData.totalNums
-            + "\ntotalWins = " + arenaData.totalWins
-            + "\ntotalAvg = " + totalAvg;
+		nameList.map(function(name, i) {
+			pieData.push({name: nameList[i], data: dataList[i]});
+		})
 
-        this.trendObj = this._showArenaTrend(this.trendChartDomEle, trendTicks, trendData, totalAvg, totalMsg);
+		pieData.sort(function(a, b) {
+			return b.data - a.data;
+		});
 
-        // highlight 12 wins
-        var circles = $(this.trendChartDomEle).find("circle");
-        circles.map(function(i, ele) {
-            // FIXME: hardcard the cy filter
-            if (ele.getAttribute("cy") != "20") return;
-            ele.highlight && ele.highlight();
-        });
-    },
-    refreshWinsChart: function() {
-        if (this.winsObj) this.winsObj.destroy();
+		return pieData;
+	},
 
-        var winsData = [];
-        var arenaData = this.arenaData;
-        for (var i = 0; i < CardsInfo.classNames.length; i++) {
-            winsData.push((arenaData.classNums[i] == 0) ? 0: (arenaData.classWins[i]/arenaData.classNums[i]).toFixed(2));
-        }
-        this.winsObj = this._showClassWins(this.winsChartDomEle, winsData);
-    },
-    refreshRatesChart: function() {
-        if (this.ratesObj) this.ratesObj.destroy();
-        if (this.pieWinsObj) this.pieWinsObj.destroy();
+	refreshTrendChart: function() {
+		var trendChart = $(".arena-trend"), circles,
+			arenaData = this.data,
+			totalGame = arenaData.winsList.length,
+			totalAvg = (totalGame == 0) ? 0 : (arenaData.totalWins/totalGame).toFixed(2),
+			totalMsg = "totalGame = " + totalGame + "\ntotalWins = " + arenaData.totalWins + "\ntotalAvg = " + totalAvg,
+			lineData = [{name: totalMsg, data: arenaData.winsList}],
+			lineOptions = {
+				axis: {
+					x: {
+						tickWidth: 20,
+						ticks: Object.keys(arenaData.winsList),
+					},
+					y: {
+						min: 0,
+						max: 11, // if not set, empty input will cause the chart library to crash
+						total: 11,
+						tickSize: 2,
+						tickWidth: 20,
+						rotate: 90,
+					},
+				},
+				line: {
+					dots: true,
+					dotRadius: 6,
+				},
+				icons: {
+					0: "circle",
+				},
+				legend: {
+					position: ["right", "center"],
+					borderColor: "white",
+				},
+				threshold: {
+					y: {
+						value: totalAvg,
+					},
+				},
+			};
 
-        var arenaData = this.arenaData;
-        this.ratesObj = this._showClassRates(this.ratesChartDomEle, CardsInfo.classNames, arenaData.classNums);
+		if (this.trendChartObj) this.trendChartObj.destroy();
+		this.trendChartObj = new Venus.SvgChart(trendChart, lineData, lineOptions);
 
-        var winNames = [];
-        for (var i = 0; i <= 12; i++) {
-            winNames.push(i);
-        }
-        this.pieWinsObj = this._showClassRates(this.pieWinsDomEle, winNames, arenaData.winNums);
-    },
-    refreshEditRow: function() {
-        this.editIdDomEle.value = this.arenaData.trend.end;
+		// highlight 12 wins
+		circles = trendChart.find("circle");
+		circles.map(function(i, ele) {
+			// FIXME: hardcard the cy filter
+			if (ele.getAttribute("cy") != "20") return;
+			ele.highlight && ele.highlight();
+		});
+	},
+	refreshWinsChart: function() {
+		var winsChart = $(".arena-wins"),
+			arenaData = this.data,
+			winsData = [{name: 0, data: {}}],
+			winsOptions = {
+				axis: {
+					x: {
+						total: 9,
+						tickWidth: 60,
+						ticks: GameConst.CLASS_LIST,
+						labelRotate: 30,
+					},
+					y: {
+						min: 0,
+						max: 11,
+						total: 11,
+						tickSize: 2,
+						tickWidth: 16,
+						rotate: 90,
+					},
+				},
+				bar: {
+					radius: 0,
+				},
+			};
 
-        var today = new Date();
-        var month = today.getMonth()+1; // the special one
-        this.editDayDomEle.value = today.getFullYear() + "-" 
-            + ((month>9) ? month : ("0"+month)) + "-"
-            + ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate()));
+		GameConst.CLASS_LIST.map(function(name, i) {
+			winsData[0].data[name] = (arenaData.gameByClass[i] == 0) ? 0: (arenaData.winsByClass[i]/arenaData.gameByClass[i]).toFixed(2);
+		});
 
-        this.editWinsDomEle.value = 0;
-    },
-    refreshArenaTable: function() {
-        var rows = this.arenaData.rows;
-        var tbl = document.createElement("table");
-        tbl.className = "table-fixed";
-        for (var i = rows.length-1; i >= 0; i--) {
-            var row = rows[i];
-            var tr = document.createElement("tr");
-            tr.innerHTML = "<td>" + row.id + "</td><td>" + row.day + "</td><td>" + row.class + "</td><td>" + row.wins + "</td>";
-            tbl.appendChild(tr);
-        }
+		if (this.winsChartObj) this.winsChartObj.destroy();
+		this.winsChartObj = new Venus.SvgChart(winsChart, winsData, winsOptions);
+	},
+	refreshRatesChart: function() {
+		var classPie = $(".arena-class-pie"), winsPie = $(".arena-wins-pie"),
+			arenaData = this.data,
+			classPieData = this._getPieData(GameConst.CLASS_LIST, arenaData.gameByClass),
+			winsPieData = this._getPieData(Object.keys(arenaData.gameByWins, arenaData.gameByWins)),
+			pieOptions = {
+				pie: {
+					radius: 60, 
+					rotate: 45, 
+				},
+			};
 
-        this.arenaTableDomEle.innerHTML = "";
-        this.arenaTableDomEle.appendChild(tbl);
+		if (arenaData.winsList.length == 0) return;
 
-        this.refreshEditRow();
-    },
-    refreshCharts: function() {
-        this.refreshTrendChart();
-        this.refreshWinsChart();
-        this.refreshRatesChart();
-        this.refreshArenaTable();
-    },
+		if (this.classPieObj) this.classPieObj.destroy();
+		this.classPieObj = new Venus.SvgChart(classPie, classPieData, pieOptions);
+
+		if (this.winsPieObj) this.winsPieObj.destroy();
+		this.winsPieObj = new Venus.SvgChart(winsPie, winsPieData, pieOptions);
+	},
+	refreshEditRow: function() {
+		var idInput = $(".arena-edit-id"), dayInput = $(".arena-edit-day"), classSelect = $(".arena-edit-class"), winsInput = $(".arena-edit-wins"),
+			today = new Date(),
+			y = today.getFullYear(), m = today.getMonth() + 1, d = today.getDate();
+
+		if (m < 10) m = "0" + m;
+		if (d < 10) d = "0" + d;
+
+		idInput.val(this.arenaData.winsList.length);
+		dayInput.val([y, m, d].join("-"));
+		classSelect.val(0);
+		winsInput.val(0);
+	},
+	refreshArenaTable: function() {
+		var rows = this.arenaData.rows,
+			table = $(".arena-table"), tr,
+			TR_TEMPLATE = '<div class="arena-tr"></div>',
+			TD_TEMPLATE = '<div class="arena-td">{val}</div>';
+
+		table.html("");
+		rows.map(function(row) {
+			tr = $(TR_TEMPLATE).appendTo(table);
+			Object.keys(row).map(function(key) {
+				$(TD_TEMPLATE.replace("{val}", key)).appendTo(tr);
+			});
+		});
+
+		this.refreshEditRow();
+	},
+	refreshCharts: function() {
+		this.refreshTrendChart();
+		this.refreshWinsChart();
+		this.refreshRatesChart();
+		this.refreshArenaTable();
+	}
 }
+ArenaPage.prototype = $.extend(PageBase.prototype, ArenaPage.prototype);
 /* class ArenaPage end */

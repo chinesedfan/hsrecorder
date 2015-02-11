@@ -1,34 +1,101 @@
+<!DOCTYPE html>
 <html>
-<head>
-   <title>HearthStone Recorder</title>
-   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-   <link type="text/css" rel="stylesheet" href="css/page.css" />
-</head>
-<body>
-    <div id="header-div">
-        <div>
-            <ul class="nav nav-tabs">
-                <li id="arena-nav"><a>Arena</a></li>
-                <li id="packs-nav"><a>Packs</a></li>
-                <li id="lacks-nav"><a>Lacks</a></li>
-                <li id="export-nav"><a>Export</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="arena-frame" class="page"></div>
-    <div id="packs-frame" class="page"></div>
-    <div id="lacks-frame" class="page"></div>
-    <div id="export-frame" class="page"></div>
-    <script type="text/javascript" src="js/svgchart.min.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/autoinput.js"></script>
-    <script type="text/javascript" src="js/arena.js"></script>
-    <script type="text/javascript" src="js/packs.js"></script>
-    <script type="text/javascript" src="js/lacks.js"></script>
-    <script type="text/javascript" src="js/export.js"></script>
-    <script type="text/javascript" src="js/cards.js"></script>
-    <script type="text/javascript" src="js/html.js"></script>
-    <script type="text/javascript" src="js/database.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-</body>
+	<head>
+		<title>HearthStone Recorder</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/page.css" />
+		<script type="text/html" id="arena-template">
+			<div class="arena-trend"></div>
+			<div class="arena-bottom">
+				<div class="arena-left">
+					<div class="arena-wins"></div>
+					<div class="arena-pies">
+						<div class="arena-class-pie"></div>
+						<div class="arena-wins-pie"></div>
+					</div>
+				</div>
+				<div class="arena-right">
+					<button class="btn btn-default col-md-6 arena-add">Add Editing</button>
+					<button class="btn btn-default col-md-6 arena-del">Remove Last</button>
+					<div>
+						<span>id</span>
+						<span>day</span>
+						<span>class</span>
+						<span>wins</span>
+					</div>
+					<div>
+						<input class="form-control arena-edit-id">
+						<input class="form-control arena-edit-day">
+						<select class="form-control arena-edit-class"></select>
+						<input class="form-control arena-edit-wins">
+					</div>
+					<div class="arena-table"></div>
+				</div>
+			</div>
+		</script>
+		<script type="text/html" id="packs-template">
+			<div class="packs-trend"></div>
+			<div class="packs-bottom">
+				<div>
+					<div class="packs-counts"></div>
+					<div class="packs-rates"></div>
+				</div>
+				<div>
+					<div>
+						<button class="btn btn-default packs-card-golden">Normal</button>
+						<input class="form-control packs-card-name">
+						<button class="btn btn-default packs-append">Append</button>
+					</div>
+					<div class="packs-title"></div>
+					<div class="packs-edit"></div>
+					<div>
+						<button class="btn btn-default packs-add">Add Editing</button>
+						<button class="btn btn-default packs-del">Remove Last</button>
+					</div>
+					<div class="packs-table"></div>
+			</div>
+		</script>
+		<script type="text/html" id="lacks-template">
+			<div class="lacks-controll">
+				<input  class="form-control lacks-card">
+				<button class="btn btn-default lacks-add">Insert</button>
+				<button class="btn btn-default lacks-del">Delete</button>
+			</div>
+			<div class="lacks-caption">
+				<div class="lacks-title"></div>
+				<div class="lacks-count"></div>
+			</div>
+			<div class="bottom lacks-table"></div>
+		</script>
+		<script type="text/html" id="export-template">
+			<div class="export-control">
+				<button class="btn btn-default export-import">Import</button>
+				<button class="btn btn-default export-export">Export</button>
+			</div>
+			<textarea id="export-content"></textarea>
+		</script>
+	</head>
+	<body>
+		<ul class="nav nav-tabs">
+			<li><a>Arena</a></li>
+			<li><a>Packs</a></li>
+			<li><a>Lacks</a></li>
+			<li><a>Export</a></li>
+		</ul>
+		<div id="arena-page" page-constructor="ArenaPage" page-template="arena-template"></div>
+		<div id="packs-page" page-constructor="PacksPage" page-template="packs-template"></div>
+		<div id="lacks-page" page-constructor="LacksPage" page-template="lacks-template"></div>
+		<div id="export-page" page-constructor="ExportPage" page-template="export-template"></div>
+		<script type="text/javascript" src="js/svgchart.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/cards.js"></script>
+		<script type="text/javascript" src="js/database.js"></script>
+		<script type="text/javascript" src="js/autoinput.js"></script>
+		<script type="text/javascript" src="js/arena.js"></script>
+		<script type="text/javascript" src="js/packs.js"></script>
+		<script type="text/javascript" src="js/lacks.js"></script>
+		<script type="text/javascript" src="js/export.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
 </html>
