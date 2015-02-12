@@ -15,7 +15,7 @@ function ArenaData(rows) {
 	this.rows = [];
 	this.gameByClass = new ZeroArray(GameConst.CLASS_LIST.length);
 	this.gameByWins = new ZeroArray(GameConst.MAX_ARENA_WINS + 1);
-	this.winsList = new ZeroArray(n);
+	this.winsList = [];
 	this.winsByClass = new ZeroArray(GameConst.CLASS_LIST.length);
 	this.totalWins = 0;
 
@@ -63,6 +63,7 @@ ArenaPage.prototype = {
 
 		window.dbConn.loadArenaData(function(tx, rs) {
 			self.data = new ArenaData(rs.rows);
+			self.refreshCharts();
 		});
 	},
 	_initView: function() {
@@ -148,29 +149,29 @@ ArenaPage.prototype = {
 						total: 11,
 						tickSize: 2,
 						tickWidth: 20,
-						rotate: 90,
-					},
+						rotate: 90
+					}
 				},
 				line: {
 					dots: true,
-					dotRadius: 6,
+					dotRadius: 6
 				},
 				icons: {
-					0: "circle",
+					0: "circle"
 				},
 				legend: {
 					position: ["right", "center"],
-					borderColor: "white",
+					borderColor: "white"
 				},
 				threshold: {
 					y: {
-						value: totalAvg,
-					},
-				},
+						value: totalAvg
+					}
+				}
 			};
 
 		if (this.trendChartObj) this.trendChartObj.destroy();
-		this.trendChartObj = new Venus.SvgChart(trendChart, lineData, lineOptions);
+		this.trendChartObj = new Venus.SvgChart(trendChart.get(0), lineData, lineOptions);
 
 		// highlight 12 wins
 		circles = trendChart.find("circle");
@@ -190,7 +191,7 @@ ArenaPage.prototype = {
 						total: 9,
 						tickWidth: 60,
 						ticks: GameConst.CLASS_LIST,
-						labelRotate: 30,
+						labelRotate: 30
 					},
 					y: {
 						min: 0,
@@ -198,12 +199,12 @@ ArenaPage.prototype = {
 						total: 11,
 						tickSize: 2,
 						tickWidth: 16,
-						rotate: 90,
-					},
+						rotate: 90
+					}
 				},
 				bar: {
-					radius: 0,
-				},
+					radius: 0
+				}
 			};
 
 		GameConst.CLASS_LIST.map(function(name, i) {
@@ -211,27 +212,27 @@ ArenaPage.prototype = {
 		});
 
 		if (this.winsChartObj) this.winsChartObj.destroy();
-		this.winsChartObj = new Venus.SvgChart(winsChart, winsData, winsOptions);
+		this.winsChartObj = new Venus.SvgChart(winsChart.get(0), winsData, winsOptions);
 	},
 	refreshRatesChart: function() {
 		var classPie = $(".arena-class-pie"), winsPie = $(".arena-wins-pie"),
 			arenaData = this.data,
 			classPieData = this._getPieData(GameConst.CLASS_LIST, arenaData.gameByClass),
-			winsPieData = this._getPieData(Object.keys(arenaData.gameByWins, arenaData.gameByWins)),
+			winsPieData = this._getPieData(Object.keys(arenaData.gameByWins), arenaData.gameByWins),
 			pieOptions = {
 				pie: {
 					radius: 60, 
-					rotate: 45, 
-				},
+					rotate: 45
+				}
 			};
 
 		if (arenaData.winsList.length == 0) return;
 
 		if (this.classPieObj) this.classPieObj.destroy();
-		this.classPieObj = new Venus.SvgChart(classPie, classPieData, pieOptions);
+		this.classPieObj = new Venus.SvgChart(classPie.get(0), classPieData, pieOptions);
 
 		if (this.winsPieObj) this.winsPieObj.destroy();
-		this.winsPieObj = new Venus.SvgChart(winsPie, winsPieData, pieOptions);
+		this.winsPieObj = new Venus.SvgChart(winsPie.get(0), winsPieData, pieOptions);
 	},
 	refreshEditRow: function() {
 		var idInput = $(".arena-edit-id"), dayInput = $(".arena-edit-day"), classSelect = $(".arena-edit-class"), winsInput = $(".arena-edit-wins"),
@@ -241,13 +242,13 @@ ArenaPage.prototype = {
 		if (m < 10) m = "0" + m;
 		if (d < 10) d = "0" + d;
 
-		idInput.val(this.arenaData.winsList.length);
+		idInput.val(this.data.winsList.length);
 		dayInput.val([y, m, d].join("-"));
 		classSelect.val(0);
 		winsInput.val(0);
 	},
 	refreshArenaTable: function() {
-		var rows = this.arenaData.rows,
+		var rows = this.data.rows,
 			table = $(".arena-table"), tr,
 			TR_TEMPLATE = '<div class="arena-tr"></div>',
 			TD_TEMPLATE = '<div class="arena-td">{val}</div>';

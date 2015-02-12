@@ -7,10 +7,14 @@ function ZeroArray(n) {
 	}
 }
 
-//ZeroArray.prototype = $.extend({
-//	constructor: ZeroArray
-//}, Array.prototype);
-ZeroArray.prototype = new Array();
+// jQuery's $.extend is not suitable here, because it uses 'in' to iterate
+// properties, while properties of Array.prototype have enumerable=false.
+(function() {
+    var F = function() {};
+    F.prototype = Array.prototype;
+    ZeroArray.prototype = new F();
+    ZeroArray.prototype.constructor = ZeroArray;
+})();
 /* class ZeroArray end */
 
 /* class PageBase begin */
