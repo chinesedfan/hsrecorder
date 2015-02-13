@@ -14,15 +14,15 @@ $(window).load(function() {
 		});
 	}
 
-	function showSubpage(i) {
-		var sp = $(subpages[i]), func,
-			li = $(lis[i]);
+	function showSubpage(index) {
+		var sp = $(subpages[index]), func,
+			li = $(lis[index]);
 
 		// hide all at first
-		subpages.map(function(ele) {
+		subpages.map(function(i, ele) {
 			$(ele).hide();
 		});
-		lis.map(function(ele) {
+		lis.map(function(i, ele) {
 			$(ele).removeClass("active");
 		})
 

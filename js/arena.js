@@ -248,25 +248,25 @@ ArenaPage.prototype = {
 		winsInput.val(0);
 	},
 	refreshArenaTable: function() {
-		var rows = this.data.rows,
-			table = $(".arena-table"), tr,
-			TR_TEMPLATE = '<div class="arena-tr"></div>',
-			TD_TEMPLATE = '<div class="arena-td">{val}</div>';
+		var rows = this.data.rows, row,
+			table = $(".arena-table"), tr, td;
 
 		table.html("");
-		rows.map(function(row) {
-			tr = $(TR_TEMPLATE).appendTo(table);
+		for (var i = rows.length-1; i >= 0; i--) {
+			row = rows[i];
+
+			tr = $("<tr></tr>").appendTo(table);
 			Object.keys(row).map(function(key) {
-				$(TD_TEMPLATE.replace("{val}", key)).appendTo(tr);
+				$("<td></td>", {html: row[key]}).appendTo(tr);
 			});
-		});
+		}
 
 		this.refreshEditRow();
 	},
 	refreshCharts: function() {
 		this.refreshTrendChart();
-		this.refreshWinsChart();
-		this.refreshRatesChart();
+		//this.refreshWinsChart();
+		//this.refreshRatesChart();
 		this.refreshArenaTable();
 	}
 }

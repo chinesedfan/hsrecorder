@@ -5,31 +5,34 @@
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 		<link type="text/css" rel="stylesheet" href="css/page.css" />
 		<script type="text/html" id="arena-template">
-			<div class="arena-trend"></div>
-			<div class="arena-bottom">
-				<div class="arena-left">
-					<div class="arena-wins"></div>
-					<div class="arena-pies">
+			<div class="arena-trend fixed-top"></div>
+			<div class="arena-bottom flex-bottom">
+				<div class="arena-left flex-main">
+					<div class="arena-wins fixed-top"></div>
+					<div class="arena-pies flex-bottom">
 						<div class="arena-class-pie"></div>
 						<div class="arena-wins-pie"></div>
 					</div>
 				</div>
-				<div class="arena-right">
-					<button class="btn btn-default col-md-6 arena-add">Add Editing</button>
-					<button class="btn btn-default col-md-6 arena-del">Remove Last</button>
-					<div>
-						<span>id</span>
-						<span>day</span>
-						<span>class</span>
-						<span>wins</span>
+				<div class="arena-right flex-main">
+					<div class="arena-right-top fixed-top">
+						<div>
+							<button class="btn btn-default col-md-6 arena-add">Add Editing</button>
+							<button class="btn btn-default col-md-6 arena-del">Remove Last</button>
+						</div>
+						<table>
+							<tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
+							<tr>
+								<td><input class="form-control arena-edit-id"></td>
+								<td><input class="form-control arena-edit-day"></td>
+								<td><select class="form-control arena-edit-class"></select></td>
+								<td><input class="form-control arena-edit-wins"></td>
+							</tr>
+						</table>
 					</div>
-					<div>
-						<input class="form-control arena-edit-id">
-						<input class="form-control arena-edit-day">
-						<select class="form-control arena-edit-class"></select>
-						<input class="form-control arena-edit-wins">
+					<div class="arena-right-bottom flex-bottom">
+						<table class="arena-table"></table>
 					</div>
-					<div class="arena-table"></div>
 				</div>
 			</div>
 		</script>
@@ -75,17 +78,17 @@
 			<textarea id="export-content"></textarea>
 		</script>
 	</head>
-	<body>
-		<ul class="nav nav-tabs">
+	<body class="flex-main">
+		<ul class="nav nav-tabs fixed-top">
 			<li><a>Arena</a></li>
 			<li><a>Packs</a></li>
 			<li><a>Lacks</a></li>
 			<li><a>Export</a></li>
 		</ul>
-		<div id="arena-page" page-constructor="ArenaPage" page-template="arena-template"></div>
-		<div id="packs-page" page-constructor="PacksPage" page-template="packs-template"></div>
-		<div id="lacks-page" page-constructor="LacksPage" page-template="lacks-template"></div>
-		<div id="export-page" page-constructor="ExportPage" page-template="export-template"></div>
+		<div id="arena-page" class="flex-bottom flex-main" page-constructor="ArenaPage" page-template="arena-template"></div>
+		<div id="packs-page" class="flex-bottom flex-main" page-constructor="PacksPage" page-template="packs-template"></div>
+		<div id="lacks-page" class="flex-bottom flex-main" page-constructor="LacksPage" page-template="lacks-template"></div>
+		<div id="export-page" class="flex-bottom flex-main" page-constructor="ExportPage" page-template="export-template"></div>
 		<script type="text/javascript" src="js/svgchart.min.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/common.js"></script>
