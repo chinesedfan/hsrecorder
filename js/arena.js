@@ -265,8 +265,8 @@ ArenaPage.prototype = {
 	},
 	refreshCharts: function() {
 		this.refreshTrendChart();
-		//this.refreshWinsChart();
-		//this.refreshRatesChart();
+		this.refreshWinsChart();
+		this.refreshRatesChart();
 		this.refreshArenaTable();
 	}
 }
