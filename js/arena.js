@@ -191,7 +191,7 @@ ArenaPage.prototype = {
 						total: 9,
 						tickWidth: 60,
 						ticks: GameConst.CLASS_LIST,
-						labelRotate: 30
+						labelRotate: 33
 					},
 					y: {
 						min: 0,
