@@ -42,7 +42,7 @@ PacksData.prototype = {
 
 		rowData.counts.map(function(count, i) {
 			self.sums[i] += count;
-			if (i > 0) {
+			if (count > 0) {
 				self.lasts[i] = rowData.id;
 			}
 		});
@@ -183,42 +183,6 @@ PacksPage.prototype = {
 		});
 	},
 
-	_showDustTrend: function(container, lineTicks, dustData) {
-		if (dustData.length == 0) return null;
-
-		var lineOptions = {
-			axis: {
-				x: {
-					tickWidth: 20,
-					ticks: lineTicks,
-				},
-				y: {
-					min: 1,
-					max: 9999,
-					tickSize: 4,
-					tickWidth: 30,
-					rotate: 90,
-					type: "logscale",
-					//logbase: 10,
-				},
-			},
-			line: {
-				dots: true,
-				dotRadius: 6,
-			},
-			icons: {
-				0: "circle",
-			},
-			threshold: {
-				y: {
-					value: 420,
-				},
-			},
-		};
-		var lineData = [{name: 0, data: dustData}];
-		var line = new Venus.SvgChart(container, lineData, lineOptions);
-		return line;
-	},
 	_showQualityCounts: function(container, qualityData) {
 		if (eval(qualityData.join("+")) == 0) return null;
 
@@ -325,40 +289,16 @@ PacksPage.prototype = {
 		});
 	},
 	refreshCountsChart: function() {
-		this.countsChartDomEle.innerHTML = "";
+        var countTable = $(".packs-counts"),
+            cells = countTable.find("td"), COL_PER_ROW = 5,
+            packsData = this.data;
 
-		var tbl, tr;
-		tbl = $("<table/>", {
-			"class": "table table-boarded"
-		}).appendTo(this.countsChartDomEle);
-
-		tr = $("<tr><td/><td>Normal</td><td/><td>Golden</td><td/></tr>").appendTo(tbl);
-		for (var i = 0; i < CardsInfo.qualityList.length; i++) {
-			tr = $("<tr/>").appendTo(tbl);
-			// quality name
-			$("<td/>", {
-				text: CardsInfo.qualityList[i].name,
-				css: {color: CardsInfo.qualityList[i].color}
-			}).appendTo(tr);
-			// normal count
-			$("<td/>", {
-				text: this.packsData.sums[i+CardsInfo.qualityList.length]
-			}).appendTo(tr);
-			// normal distance
-			$("<td/>", {
-				text: "+" + (this.packsData.rows.length - this.packsData.lasts[i+CardsInfo.qualityList.length]),
-				css: {color: "red"}
-			}).appendTo(tr);
-			// golden count
-			$("<td/>", {
-				text: this.packsData.sums[i]
-			}).appendTo(tr);
-			// golden distance
-			$("<td/>", {
-				text: "+" + (this.packsData.rows.length - this.packsData.lasts[i]),
-				css: {color: "red"}
-			}).appendTo(tr);
-		}
+        QualityList.map(function(q, i) {
+            cells[(i + 1) * COL_PER_ROW + 1].innerHTML = packsData.sums[i + QualityList.length];
+            cells[(i + 1) * COL_PER_ROW + 2].innerHTML = "+" + (packsData.rows.length - packsData.lasts[i + QualityList.length]);
+            cells[(i + 1) * COL_PER_ROW + 3].innerHTML = packsData.sums[i];
+            cells[(i + 1) * COL_PER_ROW + 4].innerHTML = "+" + (packsData.rows.length - packsData.lasts[i]);
+        });
 	},
 	refreshRatesChart: function() {
 		if (this.ratesObj) this.ratesObj.destroy();
@@ -429,8 +369,8 @@ PacksPage.prototype = {
 		this.refreshPacksEditRow();
 	},
 	refreshCharts: function() {
-		this.refreshTrendChart();return;
-		this.refreshCountsChart();
+		this.refreshTrendChart();
+		this.refreshCountsChart();return;
 		this.refreshRatesChart();
 		this.refreshPacksTable();
 	},
