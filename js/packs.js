@@ -290,46 +290,42 @@ PacksPage.prototype = {
 		this.editingCellDustJqEle.text(25);
 	},
 	refreshPacksTable: function() {
-		this.packsTableJqEle.empty();
+		var rows = this.data.rows, row,
+			tbl = $(".packs-table"), tr, td;
 
-		var rows = this.packsData.rows, row,
-			tbl = $("<table/>"), tr, td;
+		tbl.html("");
 		for (var i = rows.length-1; i >= 0; i--) {
 			row = rows[i];
 			tr = $("<tr/>").appendTo(tbl);
 			// row id
 			$("<td/>", {
-				html: row.id,
-				"class": "othertd",
+				html: row.id
 			}).appendTo(tr);
 			// date
 			$("<td/>", {
 				html: row.day,
-				"class": "datetd",
+				"class": "packs-day"
 			}).appendTo(tr);
 
 			// show the normal first, then the golden
-			var offset = CardsInfo.qualityList.length;
+			var offset = QualityList.length;
 			for (var j = 0; j < row.counts.length; j++) {
 				td = $("<td/>", {
-					html: (j < offset) ? row.counts[j+offset] : row.counts[j-offset],
-					"class": "othertd"
+					html: (j < offset) ? row.counts[j+offset] : row.counts[j-offset]
 				}).appendTo(tr);
 				if (td.html() != 0) {
 					td.css("backgroundColor", "rgba(0,0,0,0.1)");
 
 					var title = (j < offset) ? row.tips[j+offset] : row.tips[j-offset];
-					td.attr("title", title ? title : "?");
+					td.data("tips", title ? title : "?");
 				}
 			}
 
 			// dust
 			$("<td/>", {
-				html: row.dust,
-				"class": "othertd"
+				html: row.dust
 			}).appendTo(tr);
 		}
-		this.packsTableJqEle.append(tbl);
 
 		this.refreshPacksEditRow();
 	},
