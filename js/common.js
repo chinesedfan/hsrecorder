@@ -1,13 +1,13 @@
-/* class ZeroArray begin */
-function ZeroArray(n) {
+/* class SameArray begin */
+function SameArray(n, val) {
 	var arr = new Array(), i;
 
 	for (i = 0; i < n; i++) {
-		arr.push(0);
+		arr.push(val);
 	}
 	return arr;
 }
-/* class ZeroArray end */
+/* class SameArray end */
 
 /* class PageBase begin */
 function PageBase(container) {

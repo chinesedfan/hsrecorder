@@ -7,7 +7,7 @@ $(window).load(function() {
 	showSubpage(0);
 
 	function bindNavEvents() {
-		lis.map(function(ele, i) {
+		lis.map(function(i, ele) {
 			ele.onclick = function() {
 				showSubpage(i);
 			}

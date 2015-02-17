@@ -13,10 +13,10 @@ function ArenaData(rows) {
 	var i = 0, n = rows.length;
 
 	this.rows = [];
-	this.gameByClass = new ZeroArray(GameConst.CLASS_LIST.length);
-	this.gameByWins = new ZeroArray(GameConst.MAX_ARENA_WINS + 1);
+	this.gameByClass = new SameArray(GameConst.CLASS_LIST.length, 0);
+	this.gameByWins = new SameArray(GameConst.MAX_ARENA_WINS + 1, 0);
 	this.winsList = [];
-	this.winsByClass = new ZeroArray(GameConst.CLASS_LIST.length);
+	this.winsByClass = new SameArray(GameConst.CLASS_LIST.length, 0);
 	this.totalWins = 0;
 
 	for (; i < n; i++) {
@@ -270,5 +270,5 @@ ArenaPage.prototype = {
 		this.refreshArenaTable();
 	}
 }
-ArenaPage.prototype = $.extend(PageBase.prototype, ArenaPage.prototype);
+$.extend(ArenaPage.prototype, PageBase.prototype);
 /* class ArenaPage end */
