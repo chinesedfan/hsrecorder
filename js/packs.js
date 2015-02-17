@@ -183,61 +183,6 @@ PacksPage.prototype = {
 		});
 	},
 
-	_showQualityCounts: function(container, qualityData) {
-		if (eval(qualityData.join("+")) == 0) return null;
-
-		var barTicks = CardsInfo.qualityNames;
-		var barOptions = {
-			axis: {
-				x: {
-					total: 9,
-					tickWidth: 60,
-					ticks: barTicks,
-					labelRotate: 30,
-				},
-				y: {
-					min: 0,
-					tickSize: 2,
-					tickWidth: 16,
-					rotate: 90,
-				},
-			},
-			bar: {
-				radius: 0,
-			},
-		};
-		var arr1 = {}, arr2 = {};
-		for (var i = 0; i < barTicks.length; i++) {
-			arr1[barTicks[i]] = qualityData[i];
-			arr2[barTicks[i]] = qualityData[i+barTicks.length];
-		}
-		var barData = [{name: "golden", data: arr1}, {name: "normal", data: arr2}];
-		var bar = new Venus.SvgChart(container, barData, barOptions);
-		return bar;
-	},
-	_showQualityRates: function(container, qualityData) {
-		// avoid the chart library to crash
-		if (eval(qualityData.join("+")) == 0) return null;
-
-		var pieOptions = {
-			pie: {
-				radius: 60,
-				rotate: 30, 
-			},
-		};
-		var pieData = [];
-		for (var i = 0; i < CardsInfo.qualityNames.length; i++) {
-			pieData.push({name: "Golden " + CardsInfo.qualityNames[i], data: qualityData[i]});
-			pieData.push({name: CardsInfo.qualityNames[i], data: qualityData[i+CardsInfo.qualityNames.length]});
-		}
-
-		pieData.sort(function(a, b) {
-			return b.data - a.data;
-		});
-		var pie = new Venus.SvgChart(container, pieData, pieOptions);
-		return pie;
-	},
-
 	refreshTrendChart: function() {
 		var trendChart = $(".packs-trend"), circles,
 			packsData = this.data,
@@ -289,21 +234,41 @@ PacksPage.prototype = {
 		});
 	},
 	refreshCountsChart: function() {
-        var countTable = $(".packs-counts"),
-            cells = countTable.find("td"), COL_PER_ROW = 5,
-            packsData = this.data;
+		var countTable = $(".packs-counts"),
+			cells = countTable.find("td"), COL_PER_ROW = 5,
+			packsData = this.data;
 
-        QualityList.map(function(q, i) {
-            cells[(i + 1) * COL_PER_ROW + 1].innerHTML = packsData.sums[i + QualityList.length];
-            cells[(i + 1) * COL_PER_ROW + 2].innerHTML = "+" + (packsData.rows.length - packsData.lasts[i + QualityList.length]);
-            cells[(i + 1) * COL_PER_ROW + 3].innerHTML = packsData.sums[i];
-            cells[(i + 1) * COL_PER_ROW + 4].innerHTML = "+" + (packsData.rows.length - packsData.lasts[i]);
-        });
+		QualityList.map(function(q, i) {
+			cells[(i + 1) * COL_PER_ROW + 1].innerHTML = packsData.sums[i + QualityList.length];
+			cells[(i + 1) * COL_PER_ROW + 2].innerHTML = "+" + (packsData.rows.length - packsData.lasts[i + QualityList.length]);
+			cells[(i + 1) * COL_PER_ROW + 3].innerHTML = packsData.sums[i];
+			cells[(i + 1) * COL_PER_ROW + 4].innerHTML = "+" + (packsData.rows.length - packsData.lasts[i]);
+		});
 	},
 	refreshRatesChart: function() {
-		if (this.ratesObj) this.ratesObj.destroy();
+		var packsData = this.data,
+			ratesChart = $(".packs-rates"),
+			pieData = [],
+			pieOptions = {
+				pie: {
+					radius: 60,
+					rotate: 30
+				}
+			};
 
-		this.ratesObj = this._showQualityRates(this.ratesChartDomEle, this.packsData.sums);
+		if (packsData.rows.length == 0) return;
+
+		QualityList.map(function(q, i) {
+			pieData.push({name: "Golden " + q.name, data: packsData.sums[i]});
+			pieData.push({name: q.name, data: packsData.sums[i + QualityList.length]});
+		});
+
+		pieData.sort(function(a, b) {
+			return b.data - a.data;
+		});
+
+		if (this.ratesChartObj) this.ratesChartObj.destroy();
+		this.ratesChartObj = new Venus.SvgChart(ratesChart.get(0), pieData, pieOptions);
 	},
 	refreshPacksEditRow: function() {
 		this.editIdJqEle.val(this.packsData.rows.length + 1);
@@ -370,7 +335,7 @@ PacksPage.prototype = {
 	},
 	refreshCharts: function() {
 		this.refreshTrendChart();
-		this.refreshCountsChart();return;
+		this.refreshCountsChart();
 		this.refreshRatesChart();
 		this.refreshPacksTable();
 	},
