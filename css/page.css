@@ -13,14 +13,16 @@ table { table-layout: fixed; }
 body { padding-top: 42px; }
 .nav { height: 42px; }
 
-#arena-page { padding-top: 160px; }
-.arena-trend { height: 160px; }
+#arena-page, #packs-page, #lacks-page, #export-page { padding-top: 160px; }
+.arena-trend, .packs-trend { height: 160px; }
 .arena-bottom {}
-    .arena-left { width: 66.67%; height: 100%; float: left; padding-top: 160px; }
-        .arena-wins { height: 160px; }
-        .arena-pies {}
-            .arena-class-pie, .arena-wins-pie { width: 50%; height: 100%; float: left; }
-    .arena-right { width: 33.33%; height: 100%; float: left;  padding-top: 88px; height: 100%; }
-    	.arena-right-top { height: 88px; }
-        	.arena-add, .arena-del { width: 50%; float: left; }
-        .arena-right-bottom { overflow-y: scroll; }
+	.arena-left { width: 66.67%; height: 100%; float: left; padding-top: 160px; }
+		.arena-wins { height: 160px; }
+		.arena-pies {}
+			.arena-class-pie, .arena-wins-pie { width: 50%; height: 100%; float: left; }
+	.arena-right { width: 33.33%; height: 100%; float: left;  padding-top: 88px; height: 100%; }
+		.arena-right-top { height: 88px; }
+			.arena-add, .arena-del { width: 50%; float: left; }
+		.arena-right-bottom { overflow-y: scroll; }
+
+.packs-bottom > div { float: left; width: 50%; height: 100%; }

@@ -37,25 +37,38 @@
 			</div>
 		</script>
 		<script type="text/html" id="packs-template">
-			<div class="packs-trend"></div>
-			<div class="packs-bottom">
-				<div>
-					<div class="packs-counts"></div>
-					<div class="packs-rates"></div>
+			<div class="packs-trend fixed-top"></div>
+			<div class="packs-bottom flex-bottom">
+				<div class="flex-main">
+					<table class="packs-counts fixed-top">
+						<tr><td/><td>Normal</td><td/><td>Golden</td><td/></tr>
+					</table>
+					<div class="packs-rates flex-bottom"></div>
 				</div>
-				<div>
-					<div>
-						<button class="btn btn-default packs-card-golden">Normal</button>
-						<input class="form-control packs-card-name">
-						<button class="btn btn-default packs-append">Append</button>
+				<div class="flex-main">
+					<div class="fixed-top">
+						<div>
+							<button class="btn btn-default packs-card-golden">Normal</button>
+							<input class="form-control packs-card-name">
+							<button class="btn btn-default packs-append">Append</button>
+						</div>
+						<table>
+							<tr class="packs-title">
+								<td>id</td><td>day</td>
+							</tr>
+							<tr class="packs-edit">
+								<td><input class="form-control"></td>
+								<td><input class="form-control"></td>
+							</tr>
+						</table>
+						<div>
+							<button class="btn btn-default packs-add">Add Editing</button>
+							<button class="btn btn-default packs-del">Remove Last</button>
+						</div>
 					</div>
-					<div class="packs-title"></div>
-					<div class="packs-edit"></div>
-					<div>
-						<button class="btn btn-default packs-add">Add Editing</button>
-						<button class="btn btn-default packs-del">Remove Last</button>
+					<div class="flex-bottom">
+						<table class="packs-table"></table>
 					</div>
-					<div class="packs-table"></div>
 			</div>
 		</script>
 		<script type="text/html" id="lacks-template">
