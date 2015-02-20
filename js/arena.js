@@ -37,7 +37,7 @@ ArenaData.prototype = {
 		this.totalWins += w;
 	},
 	deleteById: function(id) {
-		var i = id, // TODO: find the position instead of simple mapping
+		var i = id - 1, // TODO: find the position instead of simple mapping
 			r = this.rows[i],
 			icls = GameConst.CLASS_LIST.indexOf(r.class),
 			w = r.wins;
@@ -100,7 +100,7 @@ ArenaPage.prototype = {
 
 		// delete the last one
 		delButton.click(function() {
-			id = self.data.winsList.length - 1;
+			id = self.data.winsList.length;
 
 			window.dbConn.deleteArenaById(id, function(tx, rs) {
 				self.data.deleteById(id);
