@@ -274,23 +274,27 @@ PacksPage.prototype = {
 		this.ratesChartObj = new Venus.SvgChart(ratesChart.get(0), pieData, pieOptions);
 	},
 	refreshPacksEditRow: function() {
-		this.editIdJqEle.val(this.packsData.rows.length + 1);
+		var inputs = $(".packs-edit input"), counts = $(".packs-edit-count"),
+			idInput = $(inputs[0]), dayInput = $(inputs[1]),
+			ncIndex = QualityList.length - 1,
+			ncCount = $(counts[ncIndex]), dustCount = $(".packs-edit-dust"),
+			today = new Date(),
+			y = today.getFullYear(), m = today.getMonth() + 1, d = today.getDate();
 
-		var today = new Date();
-		var month = today.getMonth()+1; // the special one
-		this.editDayJqEle.val(today.getFullYear() + "-" 
-			+ ((month>9) ? month : ("0"+month)) + "-"
-			+ ((today.getDate()>9) ? today.getDate() : ("0"+today.getDate())));
+		if (m < 10) m = "0" + m;
+		if (d < 10) d = "0" + d;
 
-		var trEdit = this.editingRowJqEle;
-		for (var i = 2; i < trEdit.children().length; i++) {
-			trEdit.children().get(i).innerHTML = 0;
-			trEdit.children().get(i).title = "";
-		}
+		// set id and the date
+		idInput.val(this.data.rows.length + 1);
+		dayInput.val([y, m, d].join("-"));;
+
+		counts.map(function(ele) {
+			ele.innerHTML = 0;
+		});
 
 		// by default, it is 5 normal common cards
-		this.editingCellCJqEle.text(5);
-		this.editingCellDustJqEle.text(25);
+		ncCount.text(5);
+		dustCount.text(5 * QualityList[ncIndex].dust);
 	},
 	refreshPacksTable: function() {
 		var rows = this.data.rows, row,
