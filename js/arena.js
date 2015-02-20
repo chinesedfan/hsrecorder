@@ -89,7 +89,7 @@ ArenaPage.prototype = {
 				id: idInput.val(),
 				day: dayInput.val(),
 				class: classSelect.val(),
-				wins: winsInput.val()
+				wins: parseInt(winsInput.val())
 			}
 
 			window.dbConn.insertArenaRow(row, function(tx, rs) {
@@ -141,7 +141,7 @@ ArenaPage.prototype = {
 				axis: {
 					x: {
 						tickWidth: 20,
-						ticks: Object.keys(arenaData.winsList),
+						ticks: [],
 					},
 					y: {
 						min: 0,
@@ -168,7 +168,12 @@ ArenaPage.prototype = {
 						value: totalAvg
 					}
 				}
-			};
+			}, ticks;
+
+		ticks = Object.keys(arenaData.winsList);
+		ticks.push(arenaData.winsList.length);
+		ticks.shift();
+		lineOptions.axis.x.ticks = ticks;
 
 		if (this.trendChartObj) this.trendChartObj.destroy();
 		this.trendChartObj = new Venus.SvgChart(trendChart.get(0), lineData, lineOptions);
@@ -242,7 +247,7 @@ ArenaPage.prototype = {
 		if (m < 10) m = "0" + m;
 		if (d < 10) d = "0" + d;
 
-		idInput.val(this.data.winsList.length);
+		idInput.val(this.data.winsList.length + 1);
 		dayInput.val([y, m, d].join("-"));
 		classSelect.val(0);
 		winsInput.val(0);
