@@ -54,7 +54,22 @@ PacksData.prototype = {
 		self.rows.push(rowData);
 	},
 	deleteById: function(id) {
+		var rowData = this.rows.pop(), index, //TODO: support to delete any row instead of the last only
+			self = this;
 
+		rowData.counts.map(function(count, i) {
+			self.sums[i] -= count;
+			if (count > 0) {
+				for(index = self.rows.length - 1; index >= 0; index--) {
+					if (self.rows[index].counts[i] > 0) break;
+				}
+				self.lasts[i] = index;
+			}
+		});
+
+		if (rowData.counts[0] > 0 || rowData.counts[QualityList.length] > 0) {
+			self.oranges.pop();
+		}
 	}
 }
 
@@ -112,7 +127,7 @@ PacksPage.prototype = {
 			btnGolden = $(".packs-card-golden"), btnAppend = $(".packs-append"),
 			cardInput = $(".packs-card-name"), qindex, golden,
 			inputs = $(".packs-edit input"), counts = $(".packs-edit-count"), cell, count, tips,
-			ncIndex = QualityList.length - 1,
+			ncIndex = QualityList.length - 1, dustCount = $(".packs-edit-dust"),
 			btnAdd = $(".packs-add"), btnDel = $(".packs-del"),
 			rowData;
 
@@ -149,7 +164,7 @@ PacksPage.prototype = {
 			cell.text(parseInt(cell.text()) - 1);
 
 			// update the dust
-			cell = $(".packs-edit-dust");
+			cell = dustCount;
 			count = parseInt(cell.text()) - QualityList[ncIndex].dust; // to replace a normal common
 			if (golden) {
 				cell.text(count + QualityList[qindex].gdust);
@@ -159,39 +174,37 @@ PacksPage.prototype = {
 		});
 
 		btnAdd.click(function() {
-			rowData = {};
+			rowData = {
+				id: parseInt($(inputs[0]).val()),
+				day: $(inputs[1]).val(),
+				counts: [],
+				tips: [],
+				dust: parseInt(dustCount.text())
+			};
 
-			window.dbConn.insertPacksData(rowData, function(tx, rs) {
+			// ATTENTION: in database, the golden is in front of the normal
+			counts.map(function(i, ele) {
+				cell = $(ele);
+
+				if (i < QualityList.length) {
+					rowData.counts.push(parseInt(cell.text()));
+					rowData.tips.push(cell.attr("card-tips"));
+				} else {
+					rowData.counts.splice(0, 0, parseInt(cell.text()));
+					rowData.tips.splice(0, 0, cell.attr("card-tips"));
+				}
+			});
+
+			window.dbConn.insertPacksRow(rowData, function(tx, rs) {
 				self.data.insertRow(rowData);
 				self.refreshCharts();
 			});
-
-			var row = {};
-			row.counts = [];
-			row.tips = [];
-
-			var i = 0; 
-			var tdDomEleList = page.editingRowJqEle.children();
-			// remember they have an inner input box
-			row.id = parseInt(tdDomEleList.get(i++).children[0].value);
-			row.day = tdDomEleList.get(i++).children[0].value;
-
-			// [0, len - 1] -> [len, 2*len - 1], [len, 2*len - 1] -> [0, len - 1]
-			for (var j = 0, len = CardsInfo.qualityList.length; j < len; i++, j++) {
-				row.counts[j] = parseInt(tdDomEleList.get(i+len).innerHTML);
-				row.counts[j+len] = parseInt(tdDomEleList.get(i).innerHTML);
-
-				row.tips[j] = tdDomEleList.get(i+len).title;
-				row.tips[j+len] = tdDomEleList.get(i).title;
-			};
-			row.dust = parseInt(tdDomEleList.get(tdDomEleList.length-1).innerHTML);
-
-			page._dbConn.insertPacksData(page, row);
 		});
 		btnDel.click(function() {
-			var row = {};
-			row.id = page.packsData.rows.length;
-			page._dbConn.deletePacksData(page, row);
+			window.dbConn.deletePacksById(self.data.rows.length, function(tx, rs) {
+				self.data.deleteById(self.data.rows.length);
+				self.refreshCharts();
+			});
 		});
 	},
 
