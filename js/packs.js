@@ -78,6 +78,9 @@ PacksPage.prototype = {
 			countTable = $(".packs-counts"), tr,
 			packsTitle = $(".packs-title"), packsEdit = $(".packs-edit");
 
+		// the card input
+		new AutoInput($(".packs-card-name"));
+
 		// the count table
 		QualityList.map(function(q) {
 			tr = $("<tr></tr>").appendTo(countTable);

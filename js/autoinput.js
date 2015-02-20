@@ -1,112 +1,113 @@
-function AutoInput(cardInput, autoInput) {
-    this.cardInputJqEle = cardInput;
-    this.autoInputJqEle = autoInput;
+function AutoInput(cardInput) {
+    var container = cardInput.parent(),
+        suggestDiv = $("<div></div>").appendTo(container),
+        LABEL_INDEX = "label-index", QUALITY_INDEX = "quality-index", CARD_ID = "card-id";
 
-    this.labelCursor = 0;
+    // set relative position
+    container.css("position", "relative");
+    suggestDiv.addClass("suggest-div");
 
-    this.LABEL_INDEX = "label-index",
-    this.QUALITY_INDEX = "quality-index",
-    this.CARD_ID = "card-id";
+    // the selected index and element
+    selectedIndex = 0;
+    selectedLabel = undefined;
 
-    var page = this;
-    this.cardInputJqEle.focus(function () {
-        // clear the content when obtaining focus
-        page.cardInputJqEle.val("");
+    // clear the content when obtaining focus
+    cardInput.focus(function () {
+        cardInput.val("");
     });
-    this.cardInputJqEle.blur(function () {
-        // hide the candidates area when losing focus, but not clear
-        // delay a while for the click event of autoInputJqEle to be triggered
-        window.setTimeout(function() { page.autoInputJqEle.hide(); }, 100);
+    // hide the candidates area when losing focus, but not clear
+    // delay a while for the click event to be triggered
+    cardInput.blur(function () {
+        window.setTimeout(function() { suggestDiv.hide(); }, 100);
     });
-    this.cardInputJqEle.keyup(function (event) {
-        var key = event.which; 
+    // keyboard events handler
+    cardInput.keyup(function (event) {
         // special keys
-        switch(key) {
-        case 13: // enter
-            page.confirmSelectedLabel();                
-            return;
-        case 27: // escape
-            page.autoInputJqEle.hide();
-            return;
-        case 38: // arrow up
-            page.moveUpCursor();
-            return;
-        case 40: // arrow down
-            page.moveDownCursor();
-            return;
+        switch(event.which) {
+            case 13: // enter
+                confirmSelectedLabel();                
+                return;
+            case 27: // escape
+                suggestDiv.hide();
+                return;
+            case 38: // arrow up
+                updateCursor(true);
+                return;
+            case 40: // arrow down
+                updateCursor(false);
+                return;
         }
+
         // normal input, use the perfix as key to find card candidates
-        page.autoInputJqEle.empty();
-        page.autoInputJqEle.hide();
+        var key = cardInput.val(), list;
 
-        key = page.cardInputJqEle.val();
         if (key.length >= 10) key = key.substring(0, 10);
-
-        var list = CardsInfo.prefixMap[key];
+        list = CardsInfo.prefixMap[key];
         if (!list) return;
         if (list.length >= 10) list.splice(10, list.length-10);
 
+        suggestDiv.empty();
         list.map(function(card) {
             // normal card infomation label
-            var lbl = $("<label/>").appendTo(page.autoInputJqEle);
-            lbl.attr(page.LABEL_INDEX, page.autoInputJqEle.children("label").length - 1);
-            lbl.attr(page.CARD_ID, card.id);
-            lbl.attr(page.QUALITY_INDEX, 5 - parseInt(card.id/10000));
-            lbl.css("color", CardsInfo.qualityList[lbl.attr(page.QUALITY_INDEX)].color);
-            lbl.text(card.name);
-            lbl.mouseover(function() {
-                page.setLabelCursor(lbl.attr(page.LABEL_INDEX));
+            var item = $("<label/>").appendTo(suggestDiv);
+            item.attr(LABEL_INDEX, suggestDiv.children("label").length - 1);
+            item.attr(CARD_ID, card.id);
+            item.attr(QUALITY_INDEX, 5 - parseInt(card.id/10000));
+            item.css("color", CardsInfo.qualityList[item.attr(QUALITY_INDEX)].color);
+            item.text(card.name);
+            item.mouseover(function() {
+                setSelectedIndex(item.attr(LABEL_INDEX));
             });
-            lbl.click(function() {
-                page.confirmSelectedLabel();
+            item.click(function() {
+                confirmSelectedLabel();
             });
             // additional line break element
-            $("<br/>").appendTo(page.autoInputJqEle);
+            $("<br/>").appendTo(suggestDiv);
         });
-        page.setLabelCursor(0);
-        page.updatePosition();
 
-        page.autoInputJqEle.show();
+        setSelectedIndex(0);
+
+        suggestDiv.css({
+            position: "absolute",
+            width: cardInput.outerWidth() + "px",
+            top: cardInput.position().top + cardInput.outerHeight() + "px",
+            left: cardInput.position().left + "px",
+        });
+        suggestDiv.show();
     });
-}
 
-AutoInput.prototype = {
-    setLabelCursor: function(val) {
-        if (this.labelCursor < this.getLabelDomEleList().length) {
-            this.getSelectedLabelDomEle().className = "";
+    function setSelectedIndex(index) {
+        var labels = suggestDiv.children("label");
+
+        selectedIndex = index;
+
+        if (selectedLabel) {
+            selectedLabel.removeClass("card-selected");
         }
-        this.labelCursor = parseInt(val);
-        this.getSelectedLabelDomEle().className = "selected";
-    },
+        selectedLabel = $(labels[selectedIndex])
+        selectedLabel.addClass("card-selected");
+    }
 
-    moveUpCursor: function() {
-        this.setLabelCursor(
-            (this.labelCursor == 0) ? (this.getLabelDomEleList().length-1) : (this.labelCursor-1)
-        );
-    },
-    moveDownCursor: function() {
-        this.setLabelCursor(
-            (this.labelCursor == this.getLabelDomEleList().length-1) ? 0 : (this.labelCursor+1)
-        );
-    },
+    function updateCursor(isUp) {
+        var labels = suggestDiv.children("label");
 
-    getLabelDomEleList: function() {
-        return this.autoInputJqEle.children("label");
-    },
-    getSelectedLabelDomEle: function() {
-        return this.getLabelDomEleList()[this.labelCursor];
-    },
-    confirmSelectedLabel: function() {
-        this.cardInputJqEle.attr("value", this.getSelectedLabelDomEle().innerHTML);
-        this.cardInputJqEle.css("color", this.getSelectedLabelDomEle().style.color);
-        this.autoInputJqEle.hide();
-    },
-    updatePosition: function() {
-        var ele = this.cardInputJqEle;
-        this.autoInputJqEle.css({
-            width: ele.outerWidth() + "px",
-            top: ele.position().top + ele.outerHeight() + "px",
-            left: ele.offset().left + "px",
-        });
-    },
+        if (!isUp) {
+            selectedIndex++;
+            if (selectedIndex > labels.length) selectedIndex = 0;
+        } else {
+            selectedIndex--;
+            if (selectedIndex < 0) selectedIndex = labels.length - 1;
+        }
+
+        setSelectedIndex(selectedIndex);
+    }
+
+    function confirmSelectedLabel() {
+        if (!selectedLabel) return;
+
+        cardInput.val(selectedLabel.text());
+        cardInput.css("color", selectedLabel.css("color"));
+
+        suggestDiv.hide();
+    }
 }
