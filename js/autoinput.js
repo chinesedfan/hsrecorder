@@ -107,6 +107,8 @@ function AutoInput(cardInput) {
 
         cardInput.val(selectedLabel.text());
         cardInput.css("color", selectedLabel.css("color"));
+        cardInput.attr(CARD_ID, selectedLabel.attr(CARD_ID));
+        cardInput.attr(QUALITY_INDEX, selectedLabel.attr(QUALITY_INDEX));
 
         suggestDiv.hide();
     }

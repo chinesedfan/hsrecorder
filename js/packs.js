@@ -110,8 +110,11 @@ PacksPage.prototype = {
 	_initEventHandler: function() {
 		var self = this,
 			btnGolden = $(".packs-card-golden"), btnAppend = $(".packs-append"),
+			cardInput = $(".packs-card-name"), qindex, golden,
+			inputs = $(".packs-edit input"), counts = $(".packs-edit-count"), cell, count, tips,
+			ncIndex = QualityList.length - 1,
 			btnAdd = $(".packs-add"), btnDel = $(".packs-del"),
-			packsEdit = $(".packs-edit"), rowData;
+			rowData;
 
 		btnGolden.toggle(
 			// toggle this button between golden and normal
@@ -124,28 +127,34 @@ PacksPage.prototype = {
 				btnGolden.css("background-color", "#fff");
 			}
 		);
+		//TODO: remove 'append' button and replace with 'reset' function
 		btnAppend.click(function () {
 			// verfiy the input
-			var curLabelDomEle = page.autoInputObj.getSelectedLabelDomEle();
-			if (!curLabelDomEle || curLabelDomEle.innerHTML != page.cardInputJqEle.val()) return;
+			if (!cardInput.val()) return;
+			
 			// update numbers in the editing row
-			var prefix = page.goldenButtonJqEle.text().toLowerCase();
-			var cell = $("#" + prefix + "-" + curLabelDomEle.style.color);
-			var count = parseInt(cell.text());
+			qindex = parseInt(cardInput.attr("quality-index"));
+			golden = (btnGolden.text().toLowerCase() == "golden");
+			cell = $(counts[qindex + (golden ? QualityList.length : 0)]);
+			
+			count = parseInt(cell.text());
 			if (count == 5) return;
-			cell.text(count+1);
-			var tip = cell.attr("title");
-			cell.attr("title", tip ? tip + "\n" + curLabelDomEle.innerHTML : curLabelDomEle.innerHTML);
+			cell.text(count + 1);
+
+			tips = cell.attr("card-tips");
+			cell.attr("card-tips", tips ? tips + ", " + cardInput.val() : cardInput.val());
+
 			// update the normal common cell
-			page.editingCellCJqEle.text(parseInt(page.editingCellCJqEle.text()) - 1);
+			cell = $(counts[ncIndex]);
+			cell.text(parseInt(cell.text()) - 1);
+
 			// update the dust
-			cell = page.editingCellDustJqEle;
-			count = parseInt(cell.text()) - 5; // to replace a normal common
-			var index = curLabelDomEle.getAttribute(page.autoInputObj.QUALITY_INDEX);
-			if (prefix == "golden") {
-				cell.text(count + CardsInfo.qualityList[index].gdust);
+			cell = $(".packs-edit-dust");
+			count = parseInt(cell.text()) - QualityList[ncIndex].dust; // to replace a normal common
+			if (golden) {
+				cell.text(count + QualityList[qindex].gdust);
 			} else {
-				cell.text(count + CardsInfo.qualityList[index].dust);
+				cell.text(count + QualityList[qindex].gdust);
 			}
 		});
 
