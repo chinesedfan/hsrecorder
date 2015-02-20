@@ -1,63 +1,76 @@
+/*
+	@param:
+		rows: [rowObject], list of database rows
+	@member:
+        rows: [object]
+            id: integer, card id definded in cards.js
+            name: string
+            quality: integer, index for CardsInfo.qualityList
+            color: string
+        counts: [integer], length = qualities
+*/
+function LacksData(rows) {
+	var i = 0, n = rows.length,
+		qlen = QualityList.length,
+		row, rowData;
+
+	this.rows = [];
+	this.counts = new SameArray(qlen, 0);
+
+	for (; i < n; i++) {
+		row = rows.item(i);
+		rowData = {
+			id: row.card_id,	
+			name: row.card_name,
+			quality: row.card_quality,
+			color: QualityList[row.card_quality].color
+		}
+
+		this.insertRow(rowData);
+	}
+}
+
+LacksData.prototype = {
+	insertRow: function(rowData) {
+		this.counts[rowData.quality]++;
+		this.rows.push(rowData);
+	},
+	deleteById: function(id) {
+
+	}
+}
+
+/* class LacksPage begin */
 function LacksPage(container) {
 	PageBase.apply(this, arguments);
 }
 
 LacksPage.prototype = {
-	_initView: function() {
-		var page = this;
-		this.controllAreaJqEle.css("width", "30%");
-		this.controllAreaJqEle.css("height", this.addButtonJqEle.outerHeight());
-		this.controllAreaJqEle.css("margin", "20px auto 20px auto");
+	_initData: function() {
+		var self = this;
 
-		CardsInfo.qualityList.map(function(q) {
-			// title
-			$("<th/>", {
-				text: q.name
-			}).appendTo(page.titleTrJqEle);
-			// count
-			$("<th/>", {
-				id: page.countIdPrefix + q.color,
-				text: 0
-			}).appendTo(page.countTrJqEle);
-
-			var div = $("<div/>", {
-			    "class": "quarter yfull yscrolled"
-			}).appendTo(page.lacksTableJqEle);
-
-			$("<table/>", {
-				id: page.tableIdPrefix + q.color
-			}).appendTo(div);
+		window.dbConn.loadLacksData(function(tx, rs) {
+			self.data = new LacksData(rs.rows);
+			self.refreshLacksTable();
 		});
 
-		this.bottomJqEle.css("top", this.container.offsetTop);
-		this.lacksTableJqEle.css("top", this.controllAreaJqEle.outerHeight(true) + this.fixedTableJqEle.outerHeight());
+		self.countIdPrefix = "lacks-count-";
+		self.tableIdPrefix = "lacks-table-";
 	},
-	_initMember: function() {
-		this._dbConn = window.dbConn;
-		this.container.innerHTML = HtmlTemplate.getTemplate("lacks");
+	_initView: function() {
+		var self = this,
+			lacksTitle = $(".lacks-title"), lacksCount = $(".lacks-count"),
+			bottom = $(".lacks-bottom");
 
-		this.bottomJqEle = $("#lacks-bottom");
-		this.controllAreaJqEle = $("#lacks-controll");
-		this.fixedTableJqEle = $("#lacks-fixed");
-		this.lacksTableJqEle = $("#lacks-table");
+		QualityList.map(function(q) {
+			$("<th></th>", { text: q.name }).appendTo(lacksTitle);
+			$("<th id=\"" +self.countIdPrefix + q.color + "\">0</th>").appendTo(lacksCount);
 
-		this.titleTrJqEle = $("#lacks-title");
-		this.countTrJqEle = $("#lacks-count");
-
-		this.lacksInputJqEle = $("#lacks-input");
-		this.autoInputJqEle = $("#lacks-auto");
-		this.addButtonJqEle = $("#lacks-add");
-		this.delButtonJqEle = $("#lacks-del");
-		this.autoInputObj = new AutoInput(this.lacksInputJqEle, this.autoInputJqEle);
-
-		this.countIdPrefix = "lacks-"; // + color
-		this.tableIdPrefix = "table-"; // + color
-		this.trClassPrefix = "Tag-tr-";   // + card_id
-	},
-	_initData: function() {
-		this._dbConn.loadLacksData(this);	
+			$("<div><table id=\"" + self.tableIdPrefix + q.color + "\"></table></div>").appendTo(bottom);
+		});
 	},
 	_initEventHandler: function() {
+		return;
 		var page = this;
 		function _labelToRow(curLabelDomEle) {
 			var row = {};
@@ -124,8 +137,10 @@ LacksPage.prototype = {
         cell.text(count-1);
 	},
 	refreshLacksTable: function() {
-		for (var i = 0; i < this.lacksData.rows.length; i++) {
-			this.insertCard(this.lacksData.rows[i], false);
+		for (var i = 0; i < this.data.rows.length; i++) {
+			this.insertCard(this.data.rows[i], false);
 		}
 	},
 }
+$.extend(LacksPage.prototype, PageBase.prototype);
+/* class LacksPage end */
