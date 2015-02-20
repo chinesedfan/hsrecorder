@@ -4,40 +4,14 @@ function ExportPage() {
 }
 
 ExportPage.prototype = {
-    _initMember: function() {
-        this._dbConn = new DbConn()
-        this.container.innerHTML = HtmlTemplate.getTemplate("export");
-
-        this.btnExport = $("#btn-export");
-        this.btnImport = $("#btn-import");
-        this.exportBottom = $("#export-bottom");
-        this.exportControl = $("#export-control");
-
-        this.exportContainer = $("#export-container");
-        this.exportContent = $("#export-content");
-    },
-    _initView: function() {
-        this.exportBottom.css("top", this.container.offsetTop);
-
-        this.exportControl.css({
-            width: "50%",
-            height: this.btnExport.outerHeight(),
-            margin: "20px auto"
-        });
-        this.exportContainer.css({
-            width: "50%",
-            height: "80%",
-            margin: "0 auto"
-        });
-        this.exportContent.css({
-            width: "100%",
-            height: "100%"
-        });        
-    },
     _initData: function() {
         // do nothing
     },
+    _initView: function() {
+        // do nothing       
+    },
     _initEventHandler: function() {
+        return;
         var page = this;
         this.btnExport.click(function() {
             var mainPage = window.mainPage; // exported in index.js
@@ -107,4 +81,5 @@ ExportPage.prototype = {
         page.exportContent.val(sqls);
     }
 }
+$.extend(ExportPage.prototype, PageBase.prototype);
 /* class ExportPage end */

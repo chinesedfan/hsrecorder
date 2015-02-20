@@ -13,7 +13,7 @@ table { table-layout: fixed; }
 body { padding-top: 42px; }
 .nav { height: 42px; }
 
-#arena-page, #packs-page, #export-page { padding-top: 160px; }
+#arena-page, #packs-page { padding-top: 160px; }
 .arena-trend, .packs-trend { height: 160px; }
 .arena-bottom {}
 	.arena-left { width: 66.67%; height: 100%; float: left; padding-top: 160px; }
@@ -37,6 +37,11 @@ body { padding-top: 42px; }
 
 #lacks-page { padding-top: 114px; }
 .lacks-control { margin: 20px auto; width: 33%; height: 34px; }
-	.lacks-card { width: 50%; float: left; box-sizing: border-box; }
-	.lacks-add, .lacks-del { width: 25%; float: left; box-sizing: border-box; }
+	.lacks-card { width: 50%; float: left; }
+	.lacks-add, .lacks-del { width: 25%; float: left; }
 .lacks-bottom > div { float: left; width: 25%; height: 100%; overflow-y: scroll; }
+
+#export-page { padding-top: 74px; }
+.export-control { margin: 20px auto; width: 50%; height: 34px; }
+	.export-import, .export-export { float: left; width: 50%; }
+.export-content { display: block; margin: 0px auto; width: 50%; height: 80%; }
