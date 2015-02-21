@@ -69,9 +69,7 @@ DbConn.prototype = {
 		this.execSql(this.sqlLoadArenaData, [], callback);
 	},
 	insertArenaRow: function(row, callback) {
-		var args = [row.id, row.day, row.class, row.wins];
-
-		this.execSql(this.sqlInsertArenaRow, args, callback);
+		this.execSql(this.sqlInsertArenaRow, [row.id, row.day, row.class, row.wins], callback);
 	},
 	deleteArenaById: function(id, callback) {
 		this.execSql(this.sqlDeleteArenaById, [id], callback);
@@ -96,7 +94,7 @@ DbConn.prototype = {
 		this.execSql(this.sqlLoadLacksData, [], callback);
 	},
 	insertLacksRow: function(row, callback) {
-		this.execSql(this.sqlInsertLacksRow, Object.keys(row), callback);
+		this.execSql(this.sqlInsertLacksRow, [row.id, row.name, row.quality], callback);
 	},
 	deleteLacksById: function(id, callback) {
 		this.execSql(this.sqlDeleteLacksById, [id], callback);
