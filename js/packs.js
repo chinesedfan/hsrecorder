@@ -310,7 +310,7 @@ PacksPage.prototype = {
 		idInput.val(this.data.rows.length + 1);
 		dayInput.val([y, m, d].join("-"));;
 
-		counts.map(function(ele) {
+		counts.map(function(i, ele) {
 			ele.innerHTML = 0;
 		});
 
