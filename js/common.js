@@ -27,6 +27,9 @@ PageBase.prototype._initHtml = function(container) {
 
 	container.html(template.html());
 };
+PageBase.prototype._initData = function() {};
+PageBase.prototype._initView = function() {};
+PageBase.prototype._initEventHandler = function() {};
 /* class PageBase end */
 
 var GameConst = {

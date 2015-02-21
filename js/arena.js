@@ -56,7 +56,8 @@ function ArenaPage(container) {
 	PageBase.apply(this, arguments);
 }
 
-ArenaPage.prototype = {
+$.extend(ArenaPage.prototype, PageBase.prototype);
+$.extend(ArenaPage.prototype, {
 	constructor: ArenaPage,
 	_initData: function() {
 		var self = this;
@@ -274,6 +275,5 @@ ArenaPage.prototype = {
 		this.refreshRatesChart();
 		this.refreshArenaTable();
 	}
-}
-$.extend(ArenaPage.prototype, PageBase.prototype);
+});
 /* class ArenaPage end */

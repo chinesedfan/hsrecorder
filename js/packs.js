@@ -78,7 +78,8 @@ function PacksPage(container) {
 	PageBase.apply(this, arguments);
 }
 
-PacksPage.prototype = {
+$.extend(PacksPage.prototype, PageBase.prototype);
+$.extend(PacksPage.prototype, {
 	constructor: PacksPage,
 	_initData: function() {
 		var self = this;
@@ -364,6 +365,5 @@ PacksPage.prototype = {
 		this.refreshRatesChart();
 		this.refreshPacksTable();
 	},
-}
-$.extend(PacksPage.prototype, PageBase.prototype);
+});
 /* class PacksPage end */

@@ -47,7 +47,8 @@ function LacksPage(container) {
 	PageBase.apply(this, arguments);
 }
 
-LacksPage.prototype = {
+$.extend(LacksPage.prototype, PageBase.prototype);
+$.extend(LacksPage.prototype, {
 	_initData: function() {
 		var self = this;
 
@@ -158,6 +159,5 @@ LacksPage.prototype = {
 			this.insertCard(this.data.rows[i], false);
 		}
 	},
-}
-$.extend(LacksPage.prototype, PageBase.prototype);
+});
 /* class LacksPage end */
