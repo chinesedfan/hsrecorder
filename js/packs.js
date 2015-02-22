@@ -347,7 +347,7 @@ $.extend(PacksPage.prototype, {
 					td.css("backgroundColor", "rgba(0,0,0,0.1)");
 
 					var title = (j < offset) ? row.tips[j+offset] : row.tips[j-offset];
-					td.data("tips", title ? title : "?");
+					td.attr("title", title ? title : "?");
 				}
 			}
 
