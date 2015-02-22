@@ -106,32 +106,32 @@ DbConn.prototype = {
 			infoStr = 'CREATE TABLE __WebKitDatabaseInfoTable__ (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL);\nINSERT INTO "__WebKitDatabaseInfoTable__" ( "key",value ) VALUES ( \'WebKitDatabaseVersionKey\',\'1.0\' );\n',
 			arenaStr, packsStr, lacksStr,
 			x2str = function(x, isLast) {
-                return (x !== '' ? '\'' + x + '\'' : 'NULL') + (isLast ? '' : ',');
-            },
-            arr2str = function(arr, isLast) {
-                var str = '';
-                for (var i = 0; i < arr.length; i++) {
-                    str += x2str(arr[i], i==arr.length-1);
-                }
-                if (!isLast) str += ','
-                return str;
-            },
-            obj2str = function(obj, last, masks) {
-                var str = '', isLast, func;
-                for (var p in obj) {
-                    if (masks && masks.indexOf(p) >= 0) continue;
+				return (x !== '' ? '\'' + x + '\'' : 'NULL') + (isLast ? '' : ',');
+			},
+			arr2str = function(arr, isLast) {
+				var str = '';
+				for (var i = 0; i < arr.length; i++) {
+					str += x2str(arr[i], i==arr.length-1);
+				}
+				if (!isLast) str += ','
+				return str;
+			},
+			obj2str = function(obj, last, masks) {
+				var str = '', isLast, func;
+				for (var p in obj) {
+					if (masks && masks.indexOf(p) >= 0) continue;
 
-                    isLast = (p == last);
-                    func = (obj[p] instanceof Array ? arr2str : x2str);
-                    str += func(obj[p], isLast);
-                }
-                return str;
-            };
+					isLast = (p == last);
+					func = (obj[p] instanceof Array ? arr2str : x2str);
+					str += func(obj[p], isLast);
+				}
+				return str;
+			};
 
 		function doneAndCheck() {
 			if (++dones < 3) return;
 
-			container.val(infoStr + arenaStr + lacksStr + packsStr);	
+			container.val(infoStr + arenaStr + lacksStr + packsStr);
 		}
 
 		this.loadArenaData(function(tx, rs) {

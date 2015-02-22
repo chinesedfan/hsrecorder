@@ -20,7 +20,7 @@ function LacksData(rows) {
 	for (; i < n; i++) {
 		row = rows.item(i);
 		rowData = {
-			id: row.card_id,	
+			id: row.card_id,
 			name: row.card_name,
 			quality: row.card_quality,
 			color: QualityList[row.card_quality].color
