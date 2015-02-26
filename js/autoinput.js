@@ -41,11 +41,13 @@ function AutoInput(cardInput) {
 		// normal input, use the perfix as key to find card candidates
 		var key = cardInput.val(), list;
 
+		suggestDiv.hide();
+		suggestDiv.empty();
+
 		if (key.length >= GameConst.SUGGEST_KEY_MAX_LEN) key = key.substring(0, GameConst.SUGGEST_KEY_MAX_LEN);
 		list = Key2Card[key];
 		if (!list) return;
 
-		suggestDiv.empty();
 		list.map(function(card) {
 			// normal card infomation label
 			var item = $("<label/>").appendTo(suggestDiv),
