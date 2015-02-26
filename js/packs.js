@@ -154,7 +154,7 @@ $.extend(PacksPage.prototype, {
 			cell = $(counts[qindex + (golden ? QualityList.length : 0)]);
 			
 			count = parseInt(cell.text());
-			if (count == 5) return;
+			if (count == GameConst.CARDS_PER_PACK) return;
 			cell.text(count + 1);
 
 			tips = cell.attr("card-tips");
@@ -316,8 +316,8 @@ $.extend(PacksPage.prototype, {
 		});
 
 		// by default, it is 5 normal common cards
-		ncCount.text(5);
-		dustCount.text(5 * QualityList[ncIndex].dust);
+		ncCount.text(GameConst.CARDS_PER_PACK);
+		dustCount.text(GameConst.CARDS_PER_PACK * QualityList[ncIndex].dust);
 	},
 	refreshPacksTable: function() {
 		var rows = this.data.rows, row,

@@ -33,6 +33,7 @@ PageBase.prototype._initEventHandler = function() {};
 /* class PageBase end */
 
 var GameConst = {
+	CARDS_PER_PACK: 5,
 	CLASS_LIST: ["Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"],
 	MAX_ARENA_WINS: 12,
 	RARITY_MAX: 5
