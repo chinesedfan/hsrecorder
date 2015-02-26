@@ -4,7 +4,7 @@ input, table, th { width: 100%; text-align: center; }
 table { table-layout: fixed; }
 label { width: 100%; margin: 0px; }
 
-.suggest-div { position: absolute; background-color: white; border: solid black 1px;}
+.suggest-div { position: absolute; background-color: white; border: solid black 1px; display: none; }
 .card-selected { background-color: gray; }
 
 /*
