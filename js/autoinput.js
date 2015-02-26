@@ -42,19 +42,23 @@ function AutoInput(cardInput) {
 		var key = cardInput.val(), list;
 
 		if (key.length >= 10) key = key.substring(0, 10);
-		list = CardsInfo.prefixMap[key];
+		list = Key2Card[key];
 		if (!list) return;
 		if (list.length >= 10) list.splice(10, list.length-10);
 
 		suggestDiv.empty();
 		list.map(function(card) {
 			// normal card infomation label
-			var item = $("<label/>").appendTo(suggestDiv);
+			var item = $("<label/>").appendTo(suggestDiv),
+				qindex = parseInt(GameConst.RARITY_MAX - card.RARITY);
+
+			if (qindex == 4) qindex = 3; // skipped RARITY=2, which means free cards
+
 			item.attr(LABEL_INDEX, suggestDiv.children("label").length - 1);
-			item.attr(CARD_ID, card.id);
-			item.attr(QUALITY_INDEX, 5 - parseInt(card.id/10000));
-			item.css("color", CardsInfo.qualityList[item.attr(QUALITY_INDEX)].color);
-			item.text(card.name);
+			item.attr(CARD_ID, card.CardID);
+			item.attr(QUALITY_INDEX, qindex);
+			item.css("color", QualityList[qindex].color);
+			item.text(card.CARDNAME);
 			item.mouseover(function() {
 				setSelectedIndex(item.attr(LABEL_INDEX));
 			});

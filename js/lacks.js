@@ -5,7 +5,7 @@
 		rows: [object]
 			id: integer, card id definded in cards.js
 			name: string
-			quality: integer, index for CardsInfo.qualityList
+			quality: integer, index for QualityList (defined in common.js)
 			color: string
 		counts: [integer], length = qualities
 */

@@ -34,7 +34,8 @@ PageBase.prototype._initEventHandler = function() {};
 
 var GameConst = {
 	CLASS_LIST: ["Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"],
-	MAX_ARENA_WINS: 12
+	MAX_ARENA_WINS: 12,
+	RARITY_MAX: 5
 };
 var QualityList = [
 	{name: "Legendary", color: "orange", dust: 400, gdust: 1600},
