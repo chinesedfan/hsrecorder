@@ -1,6 +1,6 @@
 var Key2Card = (function() {
 	var prefixMap = {},
-		name, key;
+		name, key, list;
 
 	// only classify by prefixes that are shorter than three
 	CardList.forEach(function(card, i) {
@@ -12,6 +12,19 @@ var Key2Card = (function() {
 			prefixMap[key].push(card);
 		}
 	});
+
+	// sort indexed cards
+	for (key in prefixMap) {
+		list = prefixMap[key];
+		
+		if (list.length >= GameConst.SUGGEST_ITEM_MAX) {
+			list.splice(GameConst.SUGGEST_ITEM_MAX, list.length - GameConst.SUGGEST_ITEM_MAX);
+		}
+
+		list.sort(function(o1, o2) {
+			return o1.CARDNAME.localeCompare(o2.CARDNAME);
+		});
+	};
 
 	return prefixMap;
 })();

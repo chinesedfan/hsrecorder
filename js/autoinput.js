@@ -41,10 +41,9 @@ function AutoInput(cardInput) {
 		// normal input, use the perfix as key to find card candidates
 		var key = cardInput.val(), list;
 
-		if (key.length >= 10) key = key.substring(0, 10);
+		if (key.length >= GameConst.SUGGEST_KEY_MAX_LEN) key = key.substring(0, GameConst.SUGGEST_KEY_MAX_LEN);
 		list = Key2Card[key];
 		if (!list) return;
-		if (list.length >= 10) list.splice(10, list.length-10);
 
 		suggestDiv.empty();
 		list.map(function(card) {

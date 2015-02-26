@@ -36,7 +36,9 @@ var GameConst = {
 	CARDS_PER_PACK: 5,
 	CLASS_LIST: ["Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"],
 	MAX_ARENA_WINS: 12,
-	RARITY_MAX: 5
+	RARITY_MAX: 5,
+	SUGGEST_ITEM_MAX: 10,
+	SUGGEST_KEY_MAX_LEN: 10
 };
 var QualityList = [
 	{name: "Legendary", color: "orange", dust: 400, gdust: 1600},
