@@ -16,14 +16,10 @@ var Key2Card = (function() {
 	// sort indexed cards
 	for (key in prefixMap) {
 		list = prefixMap[key];
-		
+
 		if (list.length >= GameConst.SUGGEST_ITEM_MAX) {
 			list.splice(GameConst.SUGGEST_ITEM_MAX, list.length - GameConst.SUGGEST_ITEM_MAX);
 		}
-
-		list.sort(function(o1, o2) {
-			return o1.CARDNAME.localeCompare(o2.CARDNAME);
-		});
 	};
 
 	return prefixMap;

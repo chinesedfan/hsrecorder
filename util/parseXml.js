@@ -56,7 +56,7 @@
 		objs.push(obj);
 	}
 	objs.sort(function(o1, o2) {
-		return o1.CardID.localeCompare(o2.CardID);
+		return o1.CARDNAME.toLowerCase().localeCompare(o2.CARDNAME.toLowerCase());
 	});
 
 	// filter our interested cards and fields
