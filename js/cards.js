@@ -9,18 +9,12 @@ var Key2Card = (function() {
 			key = name.substring(0, i + 1);
 
 			if (!(key in prefixMap)) prefixMap[key] = [];
-			prefixMap[key].push(card);
+
+			if (prefixMap[key].length < GameConst.SUGGEST_ITEM_MAX) {
+				prefixMap[key].push(card);
+			}
 		}
 	});
-
-	// sort indexed cards
-	for (key in prefixMap) {
-		list = prefixMap[key];
-
-		if (list.length >= GameConst.SUGGEST_ITEM_MAX) {
-			list.splice(GameConst.SUGGEST_ITEM_MAX, list.length - GameConst.SUGGEST_ITEM_MAX);
-		}
-	};
 
 	return prefixMap;
 })();
