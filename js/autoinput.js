@@ -45,7 +45,7 @@ function AutoInput(cardInput) {
 		suggestDiv.empty();
 
 		if (key.length >= GameConst.SUGGEST_KEY_MAX_LEN) key = key.substring(0, GameConst.SUGGEST_KEY_MAX_LEN);
-		list = Key2Card[key];
+		list = Key2Card.getCards(key);
 		if (!list) return;
 
 		list.map(function(card) {
