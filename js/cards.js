@@ -1,6 +1,5 @@
 function TrieNode(letter) {
 	this.letter = letter;
-	this.cards = [];
 	this.children = {};
 }
 
@@ -21,7 +20,7 @@ var Key2Card = (function() {
 			node = node.children[letter];
 		}
 
-		node.cards.push(card);
+		node.card = card;
 	});
 
 	function _getCards(key) {
@@ -42,8 +41,8 @@ var Key2Card = (function() {
 				if (node.children[letter]) {
 					node.children[letter].position = node.position + 1;
 				}
-			} else {
-				result.concat(node.cards);
+			} else if (node.card) {
+				result.push(node.card);
 			}
 		}
 
