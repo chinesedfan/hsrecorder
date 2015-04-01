@@ -20,29 +20,50 @@ var Key2Card = (function() {
 			node = node.children[letter];
 		}
 
+		// only the leaf node has the card
 		node.card = card;
 	});
 
+	function _getCardsByRoot(r) {
+		var stack = [r], result = [],
+			node, letters, i, letter;
+
+		// pre-order travelling
+		while (stack.length) {
+			node = stack.pop();
+			if (node.card) {
+				result.push(node.card);
+				if (result.length == GameConst.SUGGEST_ITEM_MAX) break;
+				continue;
+			}
+
+			letters = Object.keys(node.children);
+			for (i = letters.length - 1; i >= 0; i--) {
+				letter = letters[i];
+				stack.push(node.children[letter]);
+			}
+		}
+		return result;
+	}
+
 	function _getCards(key) {
-		var queue = [root], result = [];
+		var queue = [root], result = [],
+			node, letter;
 
 		root.position = 0;
 		// travel the tree level by level
 		while(queue.length) {
 			node = queue.shift();
 
-			for (letter in node.children) {
-				node.children[letter].position = node.position;
-				queue.push(node.children[letter]);
+			if (node.position == key.length) {
+				result = result.concat(_getCardsByRoot(node));
+				if (result.length >= GameConst.SUGGEST_ITEM_MAX) break;
+				continue;
 			}
 
-			if (node.position < key.length) {
-				letter = key[node.position];
-				if (node.children[letter]) {
-					node.children[letter].position = node.position + 1;
-				}
-			} else if (node.card) {
-				result.push(node.card);
+			for (letter in node.children) {
+				node.children[letter].position = (letter == key[node.position]) ? node.position + 1 : node.position;
+				queue.push(node.children[letter]);
 			}
 		}
 
