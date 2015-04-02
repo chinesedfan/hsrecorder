@@ -22,6 +22,11 @@ XML_DIR=$HS_HOME/Data/OSX/cardxml0/CAB-cardxml0/TextAsset
 
 # Generate the tag directory: {id -> name}.
 node parseCs.js $TAG_FILE > $TAG_MAP_FILE
+# Delete the folder if has -f option
+if [ "$1"x = "-f"x ]
+then
+    rm -rf $HS_HOME/Data/OSX/cardxml0
+fi
 # Extract XML from unity3d files
 if [ ! -d $HS_HOME/Data/OSX/cardxml0 ]
 then
