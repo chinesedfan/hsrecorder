@@ -103,6 +103,7 @@ DbConn.prototype = {
 	showExportedSqls: function(container) {
 		//TODO: read schema from db instead of these hard-code sql templates
 		var dones = 0,
+			dropStr = 'DROP TABLE IF EXISTS ' + this.arena +';\nDROP TABLE IF EXISTS ' + this.lacks + ';\nDROP TABLE IF EXISTS ' + this.packs + ';\n',
 			infoStr = 'CREATE TABLE __WebKitDatabaseInfoTable__ (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL);\nINSERT INTO "__WebKitDatabaseInfoTable__" ( "key",value ) VALUES ( \'WebKitDatabaseVersionKey\',\'1.0\' );\n',
 			arenaStr, packsStr, lacksStr,
 			self = this,
@@ -139,7 +140,7 @@ DbConn.prototype = {
 		function doneAndCheck() {
 			if (++dones < 3) return;
 
-			container.val(infoStr + arenaStr + lacksStr + packsStr);
+			container.val(dropStr + infoStr + arenaStr + lacksStr + packsStr);
 		}
 
 		this.loadArenaData(function(tx, rs) {
