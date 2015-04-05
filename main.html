@@ -1,34 +1,120 @@
+<!DOCTYPE html>
 <html>
-<head>
-   <title>HearthStone Recorder</title>
-   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-   <link type="text/css" rel="stylesheet" href="css/page.css" />
-</head>
-<body>
-    <div id="header-div">
-        <div>
-            <ul class="nav nav-tabs">
-                <li id="arena-nav"><a>Arena</a></li>
-                <li id="packs-nav"><a>Packs</a></li>
-                <li id="lacks-nav"><a>Lacks</a></li>
-                <li id="export-nav"><a>Export</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="arena-frame" class="page"></div>
-    <div id="packs-frame" class="page"></div>
-    <div id="lacks-frame" class="page"></div>
-    <div id="export-frame" class="page"></div>
-    <script type="text/javascript" src="js/svgchart.min.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/autoinput.js"></script>
-    <script type="text/javascript" src="js/arena.js"></script>
-    <script type="text/javascript" src="js/packs.js"></script>
-    <script type="text/javascript" src="js/lacks.js"></script>
-    <script type="text/javascript" src="js/export.js"></script>
-    <script type="text/javascript" src="js/cards.js"></script>
-    <script type="text/javascript" src="js/html.js"></script>
-    <script type="text/javascript" src="js/database.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-</body>
+	<head>
+		<title>HearthStone Recorder</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/page.css" />
+		<script type="text/html" id="arena-template">
+			<div class="arena-trend fixed-top"></div>
+			<div class="arena-bottom flex-bottom">
+				<div class="arena-left flex-main">
+					<div class="arena-wins fixed-top"></div>
+					<div class="arena-pies flex-bottom">
+						<div class="arena-class-pie"></div>
+						<div class="arena-wins-pie"></div>
+					</div>
+				</div>
+				<div class="arena-right flex-main">
+					<div class="arena-right-top fixed-top">
+						<div>
+							<button class="btn btn-default col-md-6 arena-add">Add Editing</button>
+							<button class="btn btn-default col-md-6 arena-del">Remove Last</button>
+						</div>
+						<table>
+							<tr><th>id</th><th>day</th><th>class</th><th>wins</th></tr>
+							<tr>
+								<td><input class="form-control arena-edit-id"></td>
+								<td><input class="form-control arena-edit-day"></td>
+								<td><select class="form-control arena-edit-class"></select></td>
+								<td><input class="form-control arena-edit-wins"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="arena-right-bottom flex-bottom">
+						<table class="arena-table"></table>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/html" id="packs-template">
+			<div class="packs-trend fixed-top"></div>
+			<div class="packs-bottom flex-bottom">
+				<div class="packs-left flex-main">
+					<table class="packs-counts fixed-top table">
+						<tr><td/><td>Normal</td><td/><td>Golden</td><td/></tr>
+					</table>
+					<div class="packs-rates flex-bottom"></div>
+				</div>
+				<div class="packs-right flex-main">
+					<div class="fixed-top">
+						<div>
+							<button class="btn btn-default packs-card-golden">Normal</button>
+							<input class="form-control packs-card-name">
+							<button class="btn btn-default packs-append">Append</button>
+						</div>
+						<table>
+							<tr class="packs-title">
+								<td>id</td><td class="packs-day">day</td>
+							</tr>
+							<tr class="packs-edit">
+								<td><input class="form-control"></td>
+								<td class="packs-day"><input class="form-control"></td>
+							</tr>
+						</table>
+						<div>
+							<button class="btn btn-default packs-add">Add Editing</button>
+							<button class="btn btn-default packs-del">Remove Last</button>
+						</div>
+					</div>
+					<div class="flex-bottom">
+						<table class="packs-table"></table>
+					</div>
+			</div>
+		</script>
+		<script type="text/html" id="lacks-template">
+			<div class="fixed-top">
+				<div class="lacks-control">
+					<input  class="form-control lacks-card">
+					<button class="btn btn-default lacks-add">Insert</button>
+					<button class="btn btn-default lacks-del">Delete</button>
+				</div>
+				<table class="lacks-caption">
+					<tr class="lacks-title"></tr>
+					<tr class="lacks-count"></tr>
+				</table>
+			</div>
+			<div class="lacks-bottom flex-bottom"></div>
+		</script>
+		<script type="text/html" id="export-template">
+			<div class="fixed-top export-control">
+				<button class="btn btn-default export-import">Import</button>
+				<button class="btn btn-default export-export">Export</button>
+			</div>
+			<textarea class="flex-bottom export-content"></textarea>
+		</script>
+	</head>
+	<body class="flex-main">
+		<ul class="nav nav-tabs fixed-top">
+			<li><a>Arena</a></li>
+			<li><a>Packs</a></li>
+			<li><a>Lacks</a></li>
+			<li><a>Export</a></li>
+		</ul>
+		<div id="arena-page" class="flex-bottom flex-main" page-constructor="ArenaPage" page-template="arena-template"></div>
+		<div id="packs-page" class="flex-bottom flex-main" page-constructor="PacksPage" page-template="packs-template"></div>
+		<div id="lacks-page" class="flex-bottom flex-main" page-constructor="LacksPage" page-template="lacks-template"></div>
+		<div id="export-page" class="flex-bottom flex-main" page-constructor="ExportPage" page-template="export-template"></div>
+		<script type="text/javascript" src="js/svgchart.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="bin/cardlist.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/cards.js"></script>
+		<script type="text/javascript" src="js/database.js"></script>
+		<script type="text/javascript" src="js/autoinput.js"></script>
+		<script type="text/javascript" src="js/arena.js"></script>
+		<script type="text/javascript" src="js/packs.js"></script>
+		<script type="text/javascript" src="js/lacks.js"></script>
+		<script type="text/javascript" src="js/export.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
 </html>

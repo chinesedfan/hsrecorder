@@ -1,94 +1,52 @@
-body {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
+* { margin: 0px; padding: 0px; }
+html, body { height: 100%; }
+input, table, th { width: 100%; text-align: center; }
+table { table-layout: fixed; }
+label { width: 100%; margin: 0px; }
 
-li {
-    float: left;
-    width: 100px;
-}
+.suggest-div { position: absolute; background-color: white; border: solid black 1px; display: none; }
+.card-selected { background-color: gray; }
 
-input, table, th {
-    width: 100%;
-    text-align: center;
-}
+/*
+ * 'top' has a fixed height, while 'bottom' takes the rest.
+ */
+.flex-main { position: relative; box-sizing: border-box; }
+.fixed-top { position: absolute; top: 0px; left: 0px; right: 0px; }
+.flex-bottom { height: 100%; }
 
-label {
-    margin: 0px;
-}
+body { padding-top: 42px; }
+.nav { height: 42px; }
 
-.chart {
-    height: 160px;
-}
+#arena-page, #packs-page { padding-top: 160px; }
+.arena-trend, .packs-trend { height: 160px; }
+.arena-bottom {}
+	.arena-left { width: 66.67%; height: 100%; float: left; padding-top: 160px; }
+		.arena-wins { height: 160px; }
+		.arena-pies {}
+			.arena-class-pie, .arena-wins-pie { width: 50%; height: 100%; float: left; }
+	.arena-right { width: 33.33%; height: 100%; float: left;  padding-top: 88px; height: 100%; }
+		.arena-right-top { height: 88px; }
+			.arena-add, .arena-del { width: 50%; float: left; }
+		.arena-right-bottom { overflow-y: scroll; }
 
-.yfull {
-    height: 100%;
-}
+.packs-left, .packs-right { float: left; width: 50%; height: 100%; }
+.packs-left { padding-top: 185px; }
+.packs-right { padding-top: 122px; }
+	.packs-card-golden, .packs-append { float: left; width: 25%; box-sizing: border-box; }
+	.packs-card-name { display: inline-block; float: left; width: 50%; box-sizing: border-box; }
+	.packs-right td { width: 8%; }
+	.packs-right .packs-day { width: 20%; }
+	.packs-add, .packs-del { float: left; width: 50%; }
+.packs-right .flex-bottom { overflow-y: scroll; }
 
-.datetd {
-    width: 20%;
-}
+#lacks-page { padding-top: 114px; }
+.lacks-control { margin: 20px auto; width: 33%; height: 34px; }
+	.lacks-card { width: 50%; float: left; }
+	.lacks-add, .lacks-del { width: 25%; float: left; }
+.lacks-bottom > div { float: left; width: 25%; height: 100%; overflow-y: scroll; }
+.lacks-bottom label { width: auto; }
 
-.othertd {
-    width: 8%;
-}
-
-.quarter {
-    float: left;
-    width: 24.9%;
-}
-
-.half {
-    float: left;
-    width: 49.9%;
-}
-
-.third {
-    float: left;
-    width: 33%;
-}
-
-.third2 {
-    float: left;
-    width: 66%;
-}
-
-.center {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.selected {
-    background-color: gray;
-}
-
-.bottom {
-    position: absolute;
-    bottom: 0px;
-    /* top: set in js */
-    width: inherit;
-}
-
-.page {
-    display: table-row;
-    width: 100%;
-    height: 100%;
-}
-
-.auto-input {
-    position: absolute;
-    border: 1px solid black;
-    background-color: white;
-    z-index: 9999;
-    display: none;
-}
-
-.table-fixed {
-    table-layout: fixed;
-}
-
-.yscrolled {
-    overflow-y: auto; 
-}
+#export-page { padding-top: 74px; }
+.export-control { margin: 20px auto; width: 50%; height: 34px; }
+	.export-import, .export-export { float: left; width: 50%; }
+.export-content { display: block; margin: 0px auto; width: 50%; height: 80%; }
