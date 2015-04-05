@@ -138,7 +138,7 @@ DbConn.prototype = {
 		function doneAndCheck() {
 			if (++dones < 3) return;
 
-			container.val(dropStr + infoStr + arenaStr + lacksStr + packsStr);
+			container.val(dropStr + arenaStr + lacksStr + packsStr);
 		}
 
 		this.loadArenaData(function(tx, rs) {
