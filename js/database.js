@@ -47,22 +47,20 @@ DbConn.prototype = {
 			tx.executeSql(sql, args || [], onSucc, onErr || self._onSqlError);
 		});
 	},
-	execSqls: function(sqls) {
+	execSqls: function(sqls, onSucc) {
 		var self = this,
-			i, n = sqls.length, success = 0;
+			i, n = sqls.length;
 		
 		self._db.transaction(function(tx) {
 			for (i = 0; i < n; i++) {
-				tx.executeSql(sqls[i], [], function(tx, rs) {
-					console.log("[execSqlScript]" + (++success) + "/" + n);
-				}, self._onSqlError);
+				tx.executeSql(sqls[i], [], onSucc, self._onSqlError);
 			}
 		});
 	},
-	execSqlScript: function(script) {
+	execSqlScript: function(script, onSucc) {
 		var sqls = script.split(';\n');
 
-		this.execSqls(sqls);
+		this.execSqls(sqls, onSucc);
 	},
 
 	loadArenaData: function(callback) {

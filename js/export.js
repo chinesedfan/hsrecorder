@@ -7,13 +7,22 @@ $.extend(ExportPage.prototype, PageBase.prototype);
 $.extend(ExportPage.prototype, {
 	constructor: ExportPage,
 	_initEventHandler: function() {
-		var textArea = $(".export-content");
+		var textArea = $(".export-content"),
+			progressBar = $(".progress-wrapper div");
 
 		$(".export-export").click(function() {
 			window.dbConn.showExportedSqls(textArea);
 		});
 		$(".export-import").click(function() {
-			window.dbConn.execSqlScript(textArea.val());
+			var success = 0,
+				sqls = textArea.val().split(';\n'), n = sqls.length;
+
+			if (!n) return;
+
+			progressBar.css("width", "0%");
+			window.dbConn.execSqls(sqls, function(tx, rs) {
+				progressBar.css("width", (++success)*100/n + "%");
+			});
 		});
 	}
 });
