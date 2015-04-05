@@ -26,9 +26,11 @@ $.extend(ExportPage.prototype, {
 
 		$(".export-export").click(function() {
 			resetProgress(3);
-			window.dbConn.showExportedSqls(textArea, function() {
-				updateProgress();
-			});
+			window.setTimeout(function() {
+				window.dbConn.showExportedSqls(textArea, function() {
+					updateProgress();
+				});
+			}, 200);
 		});
 		$(".export-import").click(function() {
 			var success = 0,
@@ -42,9 +44,11 @@ $.extend(ExportPage.prototype, {
 			}
 
 			resetProgress(n);
-			window.dbConn.execSqls(sqls, function(tx, rs) {
-				updateProgress();
-			});
+			window.setTimeout(function() {
+				window.dbConn.execSqls(sqls, function(tx, rs) {
+					updateProgress();
+				});
+			}, 200);
 		});
 	}
 });
