@@ -151,7 +151,7 @@ DbConn.prototype = {
 		this.loadLacksData(function(tx, rs) {
 			lacksStr = 'CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);\n';
 			for (var i = 0; i < rs.rows.length; i++) {
-				lacksStr += 'INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( ' + obj2str(rs.rows.item(i), 'quality', ['color']) + ' );\n';
+				lacksStr += 'INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( ' + obj2str(rs.rows.item(i), 'card_quality', ['color']) + ' );\n';
 			}
 			doneAndCheck();
 		});
