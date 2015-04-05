@@ -19,6 +19,11 @@ $.extend(ExportPage.prototype, {
 				sqls = textArea.val().split(';\n'), n = sqls.length;
 
 			if (!n) return;
+			// if the script ends with a comma, we should ignore the last empty item
+			if (!sqls[sqls.length - 1]) {
+				sqls.pop();
+				if (--n == 0) return;
+			}
 
 			progressTitle.text("0/" + n);
 			progressBar.css("width", "0%");
