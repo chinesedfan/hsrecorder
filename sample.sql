@@ -244,12 +244,8 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '90','CS2
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '91','GVG_032','Grove Tender','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '92','GVG_032','Grove Tender','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '93','GVG_034','Mech-Bear-Cat','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '95','GVG_123','Soot Spewer','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '96','GVG_027','Iron Sensei','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '98','GVG_018','Mistress of Pain','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '99','GVG_045','Imp-losion','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '100','GVG_086','Siege Engine','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '101','GVG_086','Siege Engine','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '106','GVG_059','Coghammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '107','GVG_059','Coghammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '108','GVG_060','Quartermaster','1' );
@@ -257,6 +253,7 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '109','GV
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '110','GVG_063','Bolvar Fordragon','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '111','GVG_016','Fel Reaver','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '112','GVG_016','Fel Reaver','1' );
+INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '113','GVG_045','Imp-losion','2' );
 CREATE TABLE packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '1','2014-03-03','0','0','1','0','0','0','2','2',NULL,NULL,'Ethereal Arcanist',NULL,NULL,NULL,'?',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '2','2014-03-03','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'?',NULL,'40' );
