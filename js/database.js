@@ -98,7 +98,7 @@ DbConn.prototype = {
 		this.execSql(this.sqlDeleteLacksById, [id], callback);
 	},
 
-	showExportedSqls: function(container) {
+	showExportedSqls: function(container, stepCallback) {
 		//TODO: read schema from db instead of these hard-code sql templates
 		var dones = 0,
 			dropStr = 'DROP TABLE IF EXISTS ' + this.arena +';\nDROP TABLE IF EXISTS ' + this.lacks + ';\nDROP TABLE IF EXISTS ' + this.packs + ';\n',
@@ -136,6 +136,7 @@ DbConn.prototype = {
 			};
 
 		function doneAndCheck() {
+			stepCallback && stepCallback();
 			if (++dones < 3) return;
 
 			container.val(dropStr + arenaStr + lacksStr + packsStr);
