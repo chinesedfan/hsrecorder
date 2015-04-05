@@ -113,7 +113,7 @@ DbConn.prototype = {
 			},
 			x2str = function(x, isLast) {
 				x = fixQuote(x);
-				return (x !== '' ? '\'' + x + '\'' : 'NULL') + (isLast ? '' : ',');
+				return ((x === '' || x === null) ? 'NULL' : '\'' + x + '\'') + (isLast ? '' : ',');
 			},
 			arr2str = function(arr, isLast) {
 				var str = '';
