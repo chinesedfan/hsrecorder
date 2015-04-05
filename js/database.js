@@ -6,28 +6,28 @@
 	   Linux: ~/.config/google-chrome/Default/databases
 */
 function DbConn(opts) {
-	var arena = opts ? opts.arena || "arena" : "arena",
-		packs = opts ? opts.packs || "packs" : "packs",
-		lacks = opts ? opts.lacks || "lacks" : "lacks";
+	this.arena = opts ? opts.arena || "arena" : "arena",
+	this.packs = opts ? opts.packs || "packs" : "packs",
+	this.lacks = opts ? opts.lacks || "lacks" : "lacks";
 
 	this._db = openDatabase("hsdb", "1.0", "HearthStone Records", "4096");
 	
 	// prepare sqls
-	this.sqlCreateArena = "CREATE TABLE IF NOT EXISTS " + arena + "(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer)";
-	this.sqlCreatePacks = "CREATE TABLE IF NOT EXISTS " + packs + "(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer)";
-	this.sqlCreateLacks = "CREATE TABLE IF NOT EXISTS " + lacks + "(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer)";
+	this.sqlCreateArena = "CREATE TABLE IF NOT EXISTS " + this.arena + "(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer)";
+	this.sqlCreatePacks = "CREATE TABLE IF NOT EXISTS " + this.packs + "(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer)";
+	this.sqlCreateLacks = "CREATE TABLE IF NOT EXISTS " + this.lacks + "(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer)";
 
-	this.sqlLoadArenaData = "SELECT * FROM " + arena;
-	this.sqlInsertArenaRow = "INSERT INTO " + arena + "(id, day, class, wins) VALUES(?, ?, ?, ?)";
-	this.sqlDeleteArenaById = "DELETE FROM " + arena + " WHERE id = ?";
+	this.sqlLoadArenaData = "SELECT * FROM " + this.arena;
+	this.sqlInsertArenaRow = "INSERT INTO " + this.arena + "(id, day, class, wins) VALUES(?, ?, ?, ?)";
+	this.sqlDeleteArenaById = "DELETE FROM " + this.arena + " WHERE id = ?";
 
-	this.sqlLoadPacksData = "SELECT * FROM " + packs + "";
-	this.sqlInsertPacksRow = "INSERT INTO " + packs + " VALUES(?,?, ?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?, ?)";
-	this.sqlDeletePacksById = "DELETE FROM " + packs + " WHERE id = ?";
+	this.sqlLoadPacksData = "SELECT * FROM " + this.packs + "";
+	this.sqlInsertPacksRow = "INSERT INTO " + this.packs + " VALUES(?,?, ?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?, ?)";
+	this.sqlDeletePacksById = "DELETE FROM " + this.packs + " WHERE id = ?";
 
-	this.sqlLoadLacksData = "SELECT * FROM " + lacks + "";
-	this.sqlInsertLacksRow = "INSERT INTO " + lacks + "(card_id, card_name, card_quality) VALUES(?,?,?)";
-	this.sqlDeleteLacksById = "DELETE FROM " + lacks + " WHERE id IN (SELECT min(id) FROM lacks WHERE card_id = ?)";
+	this.sqlLoadLacksData = "SELECT * FROM " + this.lacks + "";
+	this.sqlInsertLacksRow = "INSERT INTO " + this.lacks + "(card_id, card_name, card_quality) VALUES(?,?,?)";
+	this.sqlDeleteLacksById = "DELETE FROM " + this.lacks + " WHERE id IN (SELECT min(id) FROM lacks WHERE card_id = ?)";
 
 	// init the database
 	this.execSqls([this.sqlCreateArena, this.sqlCreatePacks, this.sqlCreateLacks]);
@@ -105,6 +105,7 @@ DbConn.prototype = {
 		var dones = 0,
 			infoStr = 'CREATE TABLE __WebKitDatabaseInfoTable__ (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL);\nINSERT INTO "__WebKitDatabaseInfoTable__" ( "key",value ) VALUES ( \'WebKitDatabaseVersionKey\',\'1.0\' );\n',
 			arenaStr, packsStr, lacksStr,
+			self = this,
 			fixQuote = function(x) {
 				if (typeof(x) != 'string') return x;
 				// assume there has only one single quotation mark
@@ -142,23 +143,23 @@ DbConn.prototype = {
 		}
 
 		this.loadArenaData(function(tx, rs) {
-			arenaStr = 'CREATE TABLE arena(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer);\n';
+			arenaStr = 'CREATE TABLE ' + self.arena + '(id integer PRIMARY KEY UNIQUE,day date,class varchar,wins integer);\n';
 			for (var i = 0; i < rs.rows.length; i++) {
-				arenaStr += 'INSERT INTO arena ( id,day,class,wins ) VALUES ( ' + obj2str(rs.rows.item(i), 'wins') + ' );\n';
+				arenaStr += 'INSERT INTO ' + self.arena + ' ( id,day,class,wins ) VALUES ( ' + obj2str(rs.rows.item(i), 'wins') + ' );\n';
 			}
 			doneAndCheck();
 		});
 		this.loadLacksData(function(tx, rs) {
-			lacksStr = 'CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);\n';
+			lacksStr = 'CREATE TABLE ' + self.lacks + '(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);\n';
 			for (var i = 0; i < rs.rows.length; i++) {
-				lacksStr += 'INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( ' + obj2str(rs.rows.item(i), 'card_quality', ['color']) + ' );\n';
+				lacksStr += 'INSERT INTO ' + self.lacks + ' ( id,"card_id","card_name","card_quality" ) VALUES ( ' + obj2str(rs.rows.item(i), 'card_quality', ['color']) + ' );\n';
 			}
 			doneAndCheck();
 		});
 		this.loadPacksData(function(tx, rs) {
-			packsStr = 'CREATE TABLE packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);\n';
+			packsStr = 'CREATE TABLE ' + self.packs + '(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);\n';
 			for (var i = 0; i < rs.rows.length; i++) {
-				packsStr += 'INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( ' + obj2str(rs.rows.item(i), 'dust') + ' );\n';
+				packsStr += 'INSERT INTO ' + self.packs + ' ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( ' + obj2str(rs.rows.item(i), 'dust') + ' );\n';
 			}
 			doneAndCheck();
 		});
