@@ -105,7 +105,14 @@ DbConn.prototype = {
 		var dones = 0,
 			infoStr = 'CREATE TABLE __WebKitDatabaseInfoTable__ (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL);\nINSERT INTO "__WebKitDatabaseInfoTable__" ( "key",value ) VALUES ( \'WebKitDatabaseVersionKey\',\'1.0\' );\n',
 			arenaStr, packsStr, lacksStr,
+			fixQuote = function(x) {
+				if (typeof(x) != 'string') return x;
+				// assume there has only one single quotation mark
+				var pos = x.indexOf('\'');
+				return (pos < 0) ? x : x.substr(0, pos) + '\'' + x.substr(pos);
+			},
 			x2str = function(x, isLast) {
+				x = fixQuote(x);
 				return (x !== '' ? '\'' + x + '\'' : 'NULL') + (isLast ? '' : ',');
 			},
 			arr2str = function(arr, isLast) {
