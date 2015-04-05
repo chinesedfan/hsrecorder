@@ -8,7 +8,8 @@ $.extend(ExportPage.prototype, {
 	constructor: ExportPage,
 	_initEventHandler: function() {
 		var textArea = $(".export-content"),
-			progressBar = $(".progress-wrapper div");
+			progressTitle = $(".progress-title"),
+			progressBar = $(".progress-bar");
 
 		$(".export-export").click(function() {
 			window.dbConn.showExportedSqls(textArea);
@@ -19,9 +20,11 @@ $.extend(ExportPage.prototype, {
 
 			if (!n) return;
 
+			progressTitle.text("0/" + n);
 			progressBar.css("width", "0%");
 			window.dbConn.execSqls(sqls, function(tx, rs) {
 				progressBar.css("width", (++success)*100/n + "%");
+				progressTitle.text(success + "/" + n);
 			});
 		});
 	}
