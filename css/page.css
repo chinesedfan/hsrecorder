@@ -49,4 +49,7 @@ body { padding-top: 42px; }
 #export-page { padding-top: 74px; }
 .export-control { margin: 20px auto; width: 50%; height: 34px; }
 	.export-import, .export-export { float: left; width: 50%; }
+.progress-wrapper { margin: 0px auto; width: 50%; height: 20px; position: relative; }
+	.progress-title { position: absolute; left: 50%; top: 50%; width: 100px; height: 20px; margin-left: -50px; margin-top: -10px; text-align: center; }
+	.progress-bar { height: 100%; width: 0px; background-color: green; }
 .export-content { display: block; margin: 0px auto; width: 50%; height: 80%; }
