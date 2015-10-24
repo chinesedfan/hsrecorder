@@ -112,7 +112,7 @@ $.extend(LacksPage.prototype, {
 	},
 	showCardPreview: function(e) {
 		var tr = $(this),
-			offset = tr.offset(),
+			offset = tr.position(),
 			cardName = $('label', tr).text(),
 			src = 'http://img.dwstatic.com/ls/pic/card/' + cardName + '.png';
 
@@ -120,11 +120,20 @@ $.extend(LacksPage.prototype, {
 			previewImg = $('img', previewDiv);
 
 		tr.css('background-color', '#f0f0f0');
-		previewImg.attr('src', src);
-		previewDiv.css({
-			left: offset.left,
-			top: offset.top
-		}).show();
+
+		if (previewImg.attr('src') == src) {
+			doShow();
+			return;
+		} else {
+			previewImg.attr('src', src).on('load', doShow);
+		}
+
+		function doShow() {
+			previewDiv.css({
+				left: offset.left + tr.width() - previewDiv.width(),
+				top: Math.max(0, offset.top - previewDiv.height())
+			}).show();
+		}
 	},
 	hideCardPreview: function(e) {
 		var tr = $(this),
