@@ -120,13 +120,14 @@ $.extend(LacksPage.prototype, {
 			previewImg = $('img', previewDiv);
 
 		tr.css('background-color', '#f0f0f0');
+		previewImg.attr('data-src', src);
 
-		if (previewImg.attr('src') == src) {
-			doShow();
-			return;
-		} else {
+		window.setTimeout(function() {
+			// has been changed, then ignore
+			if (previewImg.attr('data-src') != src) return;
+
 			previewImg.attr('src', src).on('load', doShow);
-		}
+		}, 200);
 
 		function doShow() {
 			previewDiv.css({
@@ -137,9 +138,11 @@ $.extend(LacksPage.prototype, {
 	},
 	hideCardPreview: function(e) {
 		var tr = $(this),
-			previewDiv = $('.lacks-preview');
+			previewDiv = $('.lacks-preview'),
+			previewImg = $('img', previewDiv);
 
 		tr.css('background-color', '#fff');
+		previewImg.attr('data-src', '');
 		previewDiv.hide();
 	},
 	insertCard: function(row, isNew) {
