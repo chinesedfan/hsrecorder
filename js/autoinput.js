@@ -18,7 +18,7 @@ function AutoInput(cardInput) {
 	// hide the candidates area when losing focus, but not clear
 	// delay a while for the click event to be triggered
 	cardInput.blur(function () {
-		window.setTimeout(function() { suggestDiv.hide(); }, 100);
+		window.setTimeout(function() { suggestDiv.hide(); }, 200);
 	});
 	// keyboard events handler
 	cardInput.keyup(function (event) {
