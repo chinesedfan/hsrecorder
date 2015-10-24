@@ -126,7 +126,16 @@ $.extend(LacksPage.prototype, {
 			// has been changed, then ignore
 			if (previewImg.attr('data-src') != src) return;
 
-			previewImg.attr('src', src).on('load', doShow);
+			previewImg.attr('src', src)
+					.off('load') // clear other handlers
+					.on('load', function() {
+						if (previewDiv.width() == 8 && /_|-/.test(src)) {
+							// the second chance
+							previewImg.attr('src', src.replace(/_|-/, ' '));
+						} else {
+							doShow();
+						}
+					});
 		}, 200);
 
 		function doShow() {
