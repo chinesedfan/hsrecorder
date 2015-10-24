@@ -110,12 +110,38 @@ $.extend(LacksPage.prototype, {
 			color: cardInput.get(0).style.color
 		};
 	},
+	showCardPreview: function(e) {
+		var tr = $(this),
+			offset = tr.offset(),
+			cardName = $('label', tr).text(),
+			src = 'http://img.dwstatic.com/ls/pic/card/' + cardName + '.png';
+
+		var previewDiv = $('.lacks-preview'),
+			previewImg = $('img', previewDiv);
+
+		tr.css('background-color', '#f0f0f0');
+		previewImg.attr('src', src);
+		previewDiv.css({
+			left: offset.left,
+			top: offset.top
+		}).show();
+	},
+	hideCardPreview: function(e) {
+		var tr = $(this),
+			previewDiv = $('.lacks-preview');
+
+		tr.css('background-color', '#fff');
+		previewDiv.hide();
+	},
 	insertCard: function(row, isNew) {
 		var table, tr, td, lbl, span, count;
 
 		// update the list
 		table = $("#" + this.tableIdPrefix + row.color);
-		tr = $("<tr/>", { "class": this.trClassPrefix + row.id }).appendTo(table);
+		tr = $("<tr/>", { "class": this.trClassPrefix + row.id })
+				.on('mouseenter', this.showCardPreview)
+				.on('mouseleave', this.hideCardPreview)
+				.appendTo(table);
 		td = $("<td/>").appendTo(tr);
 		lbl = $("<label/>", { css: {color: row.color}, text: row.name }).appendTo(td);
 		if (isNew) {
