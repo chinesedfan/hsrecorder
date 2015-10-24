@@ -114,7 +114,7 @@ $.extend(LacksPage.prototype, {
 		var tr = $(this),
 			offset = tr.position(),
 			cardName = $('label', tr).text(),
-			src = 'http://img.dwstatic.com/ls/pic/card/' + cardName + '.png';
+			src = 'http://img.dwstatic.com/ls/pic/card/' + getPath(cardName) + '.png';
 
 		var previewDiv = $('.lacks-preview'),
 			previewImg = $('img', previewDiv);
@@ -134,6 +134,10 @@ $.extend(LacksPage.prototype, {
 				left: offset.left + tr.width() - previewDiv.width(),
 				top: Math.max(0, offset.top - previewDiv.height())
 			}).show();
+		}
+		function getPath(name) {
+			return name.replace(/:/, '')
+					.replace(/'/g, '_');
 		}
 	},
 	hideCardPreview: function(e) {
