@@ -110,12 +110,63 @@ $.extend(LacksPage.prototype, {
 			color: cardInput.get(0).style.color
 		};
 	},
+	showCardPreview: function(e) {
+		var tr = $(this),
+			offset = tr.position(),
+			cardName = $('label', tr).text(),
+			src = 'http://img.dwstatic.com/ls/pic/card/' + getPath(cardName) + '.png';
+
+		var previewDiv = $('.lacks-preview'),
+			previewImg = $('img', previewDiv);
+
+		tr.css('background-color', '#f0f0f0');
+		previewImg.attr('data-src', src);
+
+		window.setTimeout(function() {
+			// has been changed, then ignore
+			if (previewImg.attr('data-src') != src) return;
+
+			previewImg.attr('src', src)
+					.off('load') // clear other handlers
+					.on('load', function() {
+						if (previewDiv.width() == 8 && /_|-/.test(src)) {
+							// the second chance
+							previewImg.attr('src', src.replace(/_|-/, ' '));
+						} else {
+							doShow();
+						}
+					});
+		}, 200);
+
+		function doShow() {
+			previewDiv.css({
+				left: offset.left + tr.width() - previewDiv.width(),
+				top: Math.max(0, offset.top - previewDiv.height())
+			}).show();
+		}
+		function getPath(name) {
+			return name.replace(/:/, '')
+					.replace(/'/g, '_');
+		}
+	},
+	hideCardPreview: function(e) {
+		var tr = $(this),
+			previewDiv = $('.lacks-preview'),
+			previewImg = $('img', previewDiv);
+
+		tr.css('background-color', '#fff');
+		previewImg.attr('data-src', '');
+		previewDiv.hide();
+	},
 	insertCard: function(row, isNew) {
 		var table, tr, td, lbl, span, count;
 
 		// update the list
 		table = $("#" + this.tableIdPrefix + row.color);
-		tr = $("<tr/>", { "class": this.trClassPrefix + row.id }).appendTo(table);
+		tr = $("<tr/>", { "class": this.trClassPrefix + row.id })
+				.on('mouseenter', this.showCardPreview)
+				.on('mouseleave', this.hideCardPreview)
+				.appendTo(table);
 		td = $("<td/>").appendTo(tr);
 		lbl = $("<label/>", { css: {color: row.color}, text: row.name }).appendTo(td);
 		if (isNew) {
