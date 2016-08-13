@@ -1,6 +1,11 @@
 #!/bin/sh
 # THIS SCRIPTS GENERATES A FILE THAT CONTAINS ALL CARDS INFORMATION.
 
+# Python 3
+PYTHON=python3.4
+
+# Current work directory
+CWD=`pwd`
 # The generated files are placed here.
 OUTPUT_DIR=../bin
 
@@ -15,24 +20,23 @@ INFO_FILE=$OUTPUT_DIR/cardlist.js
 
 # The directory where you install the game.
 HS_HOME=/Applications/Hearthstone
-# The directory where you clone https://github.com/ata4/disunity.
-DISUNITY_HOME=~/Desktop/disunity_v0.3.0
 # Extracted XML files are in this folder.
-XML_DIR=$HS_HOME/Data/OSX/cardxml0/CAB-cardxml0/TextAsset
+XML_DIR=../test/xml
 
 # Generate the tag directory: {id -> name}.
 node parseCs.js $TAG_FILE > $TAG_MAP_FILE
 # Delete the folder if has -f option
 if [ "$1"x = "-f"x ]
 then
-    rm -rf $HS_HOME/Data/OSX/cardxml0
+    rm -rf $XML_DIR
 fi
 # Extract XML from unity3d files
-if [ ! -d $HS_HOME/Data/OSX/cardxml0 ]
+if [ ! -d $XML_DIR ]
 then
-    sh $DISUNITY_HOME/disunity.sh extract $HS_HOME/Data/OSX/cardxml0.unity3d
+    mkdir $XML_DIR
+    (cd $XML_DIR; $PYTHON $CWD/extractXml.py $HS_HOME/Data/OSX/cardxml0.unity3d)
 fi
 # Covert XML into json
-node parseXml.js $XML_DIR/enUS.txt $TAG_MAP_FILE > $INFO_FILE
+node parseXml.js $XML_DIR/enUS.xml $TAG_MAP_FILE > $INFO_FILE
 
 echo "...done!"
