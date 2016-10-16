@@ -1,7 +1,7 @@
 /**
  * Cards
  * - Base, 10 * 9 + 43 = 133
- * - Classic, 15 * 9 + 110 = 245
+ * - Classic, 15 * 9 + 110 = 245(not count the 4 award)
  * - Naxx, 1 * 9 + 21 = 30
  * - GVG, 8 * 9 + 51 = 123
  * - BRM, 2 * 9 + 13 = 31
@@ -24,6 +24,7 @@ _.each(CardList, function(item) {
         BRM: 'BRM',
         AT: 'AT',
         LOE: 'LOE',
+        LOEA10: 'LOE',
         OG: 'OG',
         KAR: 'KAR'
     };
