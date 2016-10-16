@@ -97,7 +97,7 @@
 	    return ret;
 	}
 
-	console.log('var CardList =');
+	console.log('CardList =');
 	console.log(objs);
 	console.log(';');
 })();
