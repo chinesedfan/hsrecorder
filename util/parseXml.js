@@ -62,7 +62,7 @@
 	// filter our interested cards and fields
 	function simplifyCard(obj) {
 		var ret = {},
-			NEEDS = ['CARDNAME', 'CardID', 'RARITY'];
+			NEEDS = ['CARDNAME', 'CardID', 'CLASS', 'RARITY'];
 
 		// a valid card should have artist name and flavor text
 		if (!obj.ARTISTNAME) return null;

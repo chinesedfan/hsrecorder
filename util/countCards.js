@@ -1,0 +1,67 @@
+/**
+ * Cards
+ * - Base, 10 * 9 + 43 = 133
+ * - Classic, 15 * 9 + 110 = 245
+ * - Naxx, 1 * 9 + 21 = 30
+ * - GVG, 8 * 9 + 51 = 123
+ * - BRM, 2 * 9 + 13 = 31
+ * - AT, 9 * 9 + 1 + 50 = 131(Hunter has 2 legend)
+ * - LOE, 3 * 9 + 18 = 45
+ * - OG, 9 * 9 + 53 = 134
+ * - KLZ, 3 * 9 + 18 = 45
+ */
+var fs = require('fs');
+var _ = require('lodash');
+require('../bin/cardlist.js');
+
+var counts = {
+    // {cls: {series: {rarity: count}}}
+}; 
+_.each(CardList, function(item) {
+    var series = 'Classic';
+
+    switch (true) {
+    case isGVG(item):
+        series = 'GVG';
+        break;
+    case isAT(item):
+        series = 'AT';
+        break;
+    case isOG(item):
+        series = 'OG';
+        break;
+    default: // Classic
+        break;
+    }
+
+    addCount(counts, item.CLASS, series, item.RARITY);
+    addCount(counts, item.CLASS, series, 'total');
+    addCount(counts, item.CLASS, 'total', item.RARITY);
+    addCount(counts, item.CLASS, 'total', 'total');
+
+    addCount(counts, 'total', series, item.RARITY);
+    addCount(counts, 'total', series, 'total');
+    addCount(counts, 'total', 'total', item.RARITY);
+    addCount(counts, 'total', 'total', 'total');
+});
+console.log(JSON.stringify(counts, null, 4));
+
+function isGVG(item) {
+    return !!~item.CardID.indexOf('GVG_');
+}
+function isAT(item) {
+    return !!~item.CardID.indexOf('AT_');
+}
+function isOG(item) {
+    return !!~item.CardID.indexOf('OG_');
+}
+
+function getCount(counts, cls, series, rarity) {
+    counts[cls] = counts[cls] || {};
+    counts[cls][series] = counts[cls][series] || {};
+    return counts[cls][series][rarity] || 0;
+}
+function addCount(counts, cls, series, rarity) {
+    var val = getCount(counts, cls, series, rarity) + 1;
+    counts[cls][series][rarity] = val;
+}
