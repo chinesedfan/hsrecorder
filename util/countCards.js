@@ -8,7 +8,7 @@
  * - AT, 9 * 9 + 1 + 50 = 131(Hunter has 2 legend)
  * - LOE, 3 * 9 + 18 = 45
  * - OG, 9 * 9 + 53 = 134
- * - KLZ, 3 * 9 + 18 = 45
+ * - KAR, 3 * 9 + 18 = 45
  */
 var fs = require('fs');
 var _ = require('lodash');
@@ -25,6 +25,7 @@ _.each(CardList, function(item) {
         AT: 'AT',
         LOE: 'LOE',
         OG: 'OG',
+        KAR: 'KAR'
     };
     var prefix = item.CardID.replace(/^([^_]+)_.*$/, '$1');
     var series = map[prefix] || 'Classic';
