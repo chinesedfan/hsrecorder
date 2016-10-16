@@ -18,21 +18,16 @@ var counts = {
     // {cls: {series: {rarity: count}}}
 }; 
 _.each(CardList, function(item) {
-    var series = 'Classic';
-
-    switch (true) {
-    case isGVG(item):
-        series = 'GVG';
-        break;
-    case isAT(item):
-        series = 'AT';
-        break;
-    case isOG(item):
-        series = 'OG';
-        break;
-    default: // Classic
-        break;
-    }
+    var map = {
+        FP1: 'NAXX',
+        GVG: 'GVG',
+        BRM: 'BRM',
+        AT: 'AT',
+        LOE: 'LOE',
+        OG: 'OG',
+    };
+    var prefix = item.CardID.replace(/^([^_]+)_.*$/, '$1');
+    var series = map[prefix] || 'Classic';
 
     addCount(counts, item.CLASS, series, item.RARITY);
     addCount(counts, item.CLASS, series, 'total');
@@ -45,16 +40,6 @@ _.each(CardList, function(item) {
     addCount(counts, 'total', 'total', 'total');
 });
 console.log(JSON.stringify(counts, null, 4));
-
-function isGVG(item) {
-    return !!~item.CardID.indexOf('GVG_');
-}
-function isAT(item) {
-    return !!~item.CardID.indexOf('AT_');
-}
-function isOG(item) {
-    return !!~item.CardID.indexOf('OG_');
-}
 
 function getCount(counts, cls, series, rarity) {
     counts[cls] = counts[cls] || {};
