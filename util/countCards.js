@@ -31,7 +31,7 @@ _.each(CardList, function(item) {
     var TOTAL = 'Total';
 
     var prefix = item.CardID.replace(/^([^_]+)_.*$/, '$1');
-    var series = map[prefix] || 'Classic';
+    var series = map[prefix] || 'CLASSIC';
     var cls = getClassName(item.CLASS);
     var rarity = getRarity(item.RARITY);
 

@@ -74,3 +74,38 @@ var Key2Card = (function() {
 		getCards: _getCards
 	};
 })();
+
+var Id2Card = (function() {
+    var data = {};
+    CardList.forEach(function(card) {
+        data[card.CardID] = card;
+    });
+
+    function _getCard(key) {
+        return data[key] || {};
+    }
+
+    return {
+        getCard: _getCard
+    };
+})();
+
+var CardDetails = function() {
+    var config = CardCounts;
+    var current = $.extend({}, config, true);
+
+    function _update(cardId, delta) {
+        // TODO:
+    }
+
+    return {
+        config: config,
+        current: current,
+        addLack: function(cardId) {
+            _update(cardId, 1);
+        },
+        delLack: function(cardId) {
+            _update(cardId, -1);
+        }
+    };
+};

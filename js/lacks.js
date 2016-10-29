@@ -8,6 +8,7 @@
 			quality: integer, index for QualityList (defined in common.js)
 			color: string
 		counts: [integer], length = qualities
+        detail: [object], {series: {cls: {rarity: {count, current}}}}
 */
 function LacksData(rows) {
 	var i = 0, n = rows.length,
@@ -16,6 +17,7 @@ function LacksData(rows) {
 
 	this.rows = [];
 	this.counts = new SameArray(qlen, 0);
+    this.detail = new CardDetails();
 
 	for (; i < n; i++) {
 		row = rows.item(i);
@@ -63,11 +65,22 @@ $.extend(LacksPage.prototype, {
 	},
 	_initView: function() {
 		var self = this,
+            lacksDetail = $('.lacks-detail'),
 			lacksTitle = $(".lacks-title"), lacksCount = $(".lacks-count"),
 			lacksNames = $(".lacks-names");
 
 		new AutoInput($(".lacks-card"));
 
+        GameConst.SERIES_LIST.forEach(function(series) {
+            var tr = $('<tr></tr>').appendTo(lacksDetail);
+
+            GameConst.CLASS_LIST.forEach(function(cls) {
+                var td = $('<td></td>').appendTo(tr);
+                QualityList.forEach(function(q) {
+                    td.text(CardCounts[series][cls][q.name]);
+                });
+            });
+        });
 		QualityList.map(function(q) {
 			$("<th></th>", { text: q.name }).appendTo(lacksTitle);
 			$("<th id=\"" +self.countIdPrefix + q.color + "\">0</th>").appendTo(lacksCount);
