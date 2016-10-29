@@ -64,7 +64,7 @@ $.extend(LacksPage.prototype, {
 	_initView: function() {
 		var self = this,
 			lacksTitle = $(".lacks-title"), lacksCount = $(".lacks-count"),
-			bottom = $(".lacks-bottom");
+			lacksNames = $(".lacks-names");
 
 		new AutoInput($(".lacks-card"));
 
@@ -72,7 +72,7 @@ $.extend(LacksPage.prototype, {
 			$("<th></th>", { text: q.name }).appendTo(lacksTitle);
 			$("<th id=\"" +self.countIdPrefix + q.color + "\">0</th>").appendTo(lacksCount);
 
-			$("<div><table id=\"" + self.tableIdPrefix + q.color + "\"></table></div>").appendTo(bottom);
+			$("<div><table id=\"" + self.tableIdPrefix + q.color + "\"></table></div>").appendTo(lacksNames);
 		});
 	},
 	_initEventHandler: function() {
