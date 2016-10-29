@@ -15,7 +15,7 @@ var _ = require('lodash');
 require('../bin/cardlist.js');
 
 var counts = {
-    // {cls: {series: {rarity: count}}}
+    // {series: {cls: {rarity: count}}}
 }; 
 _.each(CardList, function(item) {
     var map = {
@@ -31,24 +31,24 @@ _.each(CardList, function(item) {
     var prefix = item.CardID.replace(/^([^_]+)_.*$/, '$1');
     var series = map[prefix] || 'Classic';
 
-    addCount(counts, item.CLASS, series, item.RARITY);
-    addCount(counts, item.CLASS, series, 'total');
-    addCount(counts, item.CLASS, 'total', item.RARITY);
-    addCount(counts, item.CLASS, 'total', 'total');
+    addCount(counts, series, item.CLASS, item.RARITY);
+    addCount(counts, series, item.CLASS, 'TOTAL');
+    addCount(counts, 'TOTAL', item.CLASS, item.RARITY);
+    addCount(counts, 'TOTAL', item.CLASS, 'TOTAL');
 
-    addCount(counts, 'total', series, item.RARITY);
-    addCount(counts, 'total', series, 'total');
-    addCount(counts, 'total', 'total', item.RARITY);
-    addCount(counts, 'total', 'total', 'total');
+    addCount(counts, series, 'TOTAL', item.RARITY);
+    addCount(counts, series, 'TOTAL', 'TOTAL');
+    addCount(counts, 'TOTAL', 'TOTAL', item.RARITY);
+    addCount(counts, 'TOTAL', 'TOTAL', 'TOTAL');
 });
 console.log(JSON.stringify(counts, null, 4));
 
-function getCount(counts, cls, series, rarity) {
-    counts[cls] = counts[cls] || {};
-    counts[cls][series] = counts[cls][series] || {};
-    return counts[cls][series][rarity] || 0;
+function getCount(counts, series, cls, rarity) {
+    counts[series] = counts[series] || {};
+    counts[series][cls] = counts[series][cls] || {};
+    return counts[series][cls][rarity] || 0;
 }
-function addCount(counts, cls, series, rarity) {
-    var val = getCount(counts, cls, series, rarity) + 1;
-    counts[cls][series][rarity] = val;
+function addCount(counts, series, cls, rarity) {
+    var val = getCount(counts, series, cls, rarity) + 1;
+    counts[series][cls][rarity] = val;
 }
