@@ -1,0 +1,35 @@
+{
+  "name": "hsrecorder",
+  "version": "1.2.0",
+  "description": "SPA for recording HearthStone related datas",
+  "main": "js/index.js",
+  "bin": {
+    "hsrecorder": "cardlist.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinesedfan/hsrecorder.git"
+  },
+  "keywords": [
+    "hearthstone",
+    "hs",
+    "game",
+    "statistics"
+  ],
+  "author": "Xianming Zhong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chinesedfan/hsrecorder/issues"
+  },
+  "homepage": "https://github.com/chinesedfan/hsrecorder#readme",
+  "devDependencies": {
+    "lodash": "^4.16.4",
+    "xmldom": "^0.1.22"
+  }
+}
