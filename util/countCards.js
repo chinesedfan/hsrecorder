@@ -14,6 +14,7 @@ var fs = require('fs');
 var _ = require('lodash');
 require('../bin/cardlist.js');
 
+var delta;
 var counts = {
     // {series: {cls: {rarity: count}}}
 }; 
@@ -23,6 +24,8 @@ _.each(CardList, function(item) {
     var series = getSeries(item.CardID);
     var cls = getClassName(item.CLASS);
     var rarity = getRarity(item.RARITY);
+
+    delta = rarity == 'Legendary' ? 1 : 2;
 
     addCount(counts, series, cls, rarity);
     addCount(counts, series, cls, TOTAL);
@@ -34,7 +37,7 @@ _.each(CardList, function(item) {
     addCount(counts, TOTAL, TOTAL, rarity);
     addCount(counts, TOTAL, TOTAL, TOTAL);
 });
-// console.log(JSON.stringify(counts, null, 4));
+console.log('CardCounts = ' + JSON.stringify(counts, null, 4) + ';'); return;
 _.each(counts, function(item, series) {
     var clsItem = item["Druid"];
     var extItem = item["Neutral"];
@@ -87,6 +90,6 @@ function getCount(counts, series, cls, rarity) {
     return counts[series][cls][rarity] || 0;
 }
 function addCount(counts, series, cls, rarity) {
-    var val = getCount(counts, series, cls, rarity) + 1;
+    var val = getCount(counts, series, cls, rarity) + delta;
     counts[series][cls][rarity] = val;
 }
