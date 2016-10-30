@@ -68,16 +68,31 @@ $.extend(LacksPage.prototype, {
             lacksDetail = $('.lacks-detail'),
 			lacksTitle = $(".lacks-title"), lacksCount = $(".lacks-count"),
 			lacksNames = $(".lacks-names");
+        var TOTAL = 'Total';
 
 		new AutoInput($(".lacks-card"));
 
-        GameConst.SERIES_LIST.forEach(function(series) {
-            var tr = $('<tr></tr>').appendTo(lacksDetail);
+        GameConst.SERIES_LIST.concat([TOTAL]).forEach(function(series, si) {
+            var thtr, tr, td;
+            if (si == 0) {
+                thtr = $('<tr></tr').appendTo(lacksDetail);
+            }
+            tr = $('<tr></tr>').appendTo(lacksDetail);
 
-            GameConst.CLASS_LIST.forEach(function(cls) {
-                var td = $('<td></td>').appendTo(tr);
+            GameConst.CLASS_LIST.concat([TOTAL]).forEach(function(cls, ci) {
+                if (si == 0) {
+                    if (ci == 0) {
+                        $('<th></th>').appendTo(thtr);
+                    }
+                    $('<th></th>').text(cls).appendTo(thtr);
+                }
+                if (ci == 0) {
+                    $('<td></td>').text(series).appendTo(tr);
+                }
+
+                td = $('<td></td>').appendTo(tr);
                 QualityList.forEach(function(q) {
-                    td.text(CardCounts[series][cls][q.name]);
+                    td.text(CardCounts[series][cls][TOTAL]);
                 });
             });
         });
