@@ -44,9 +44,11 @@ body { padding-top: 42px; }
 	.lacks-card { width: 50%; float: left; }
 	.lacks-add, .lacks-del { width: 25%; float: left; }
 .lacks-left, .lacks-right { width: 50%; height: 100%; float: left; }
+    .lacks-detail tr.detail.hidden { display: none; }
+    .lacks-detail td { cursor: pointer; }
 .lacks-right { padding-top: 40px; }
-.lacks-names > div { float: left; width: 25%; height: 100%; overflow-y: scroll; }
-.lacks-names label { width: auto; }
+    .lacks-names > div { float: left; width: 25%; height: 100%; overflow-y: scroll; }
+    .lacks-names label { width: auto; }
 .lacks-preview { display: none; position: absolute; }
 
 #export-page { padding-top: 74px; }

@@ -82,7 +82,12 @@ $.extend(LacksPage.prototype, {
             }
 
             QualityList.concat([TOTAL]).reverse().forEach(function(q, qi) {
-                tr = $('<tr></tr>').appendTo(lacksDetail);
+                tr = $('<tr></tr>').addClass(qi == 0 ? 'total' : 'detail hidden').appendTo(lacksDetail);
+                if (qi == 0 || qi == 1) {
+                    tr.css({
+                        'border-top': '1px solid #d7d7d7'
+                    });
+                }
 
                 GameConst.CLASS_LIST.concat(['Neutral', TOTAL]).forEach(function(cls, ci) {
                     if (si == 0 && qi == 0) {
@@ -92,7 +97,9 @@ $.extend(LacksPage.prototype, {
                         $('<th></th>').text(cls).appendTo(thtr);
                     }
                     if (ci == 0) {
-                        $('<td></td>').text(qi == 0 ? series : '').appendTo(tr);
+                        $('<td></td>').text(qi == 0 ? series : '')
+                            .css('font-weight', 'bold')
+                            .appendTo(tr);
                     }
 
                     td = $('<td></td>').attr({
@@ -100,6 +107,8 @@ $.extend(LacksPage.prototype, {
                         'data-series': series,
                         'data-cls': cls,
                         'data-rarity': q.name || q
+                    }).css({
+                        'color': q.color || ''
                     }).text(CardCounts[series][cls][q.name ? q.name : q] || 0).appendTo(tr);
                 });
             });
@@ -132,6 +141,24 @@ $.extend(LacksPage.prototype, {
 				self.deleteCard(rowData);
 			});
 		});
+
+        // toggle detail
+        $('.lacks-detail tr.total').click(function(e) {
+            var ele = $(e.currentTarget);
+            if (ele.next().hasClass('hidden')) {
+                $('.lacks-detail tr.detail').addClass('hidden');
+            }
+
+            var selfHidden = true;
+            for (var i = 0; i < 4; i++) {
+                ele = ele.next();
+                if (ele.hasClass('hidden')) {
+                    ele.removeClass('hidden');
+                } else {
+                    ele.addClass('hidden');
+                }
+            }
+        });
 	},
 
 	_getRowData: function() {
@@ -256,7 +283,15 @@ $.extend(LacksPage.prototype, {
             var current = self.data.detail.current[series][cls][rarity] || 0;
             var expected = self.data.detail.expected[series][cls][rarity] || 0;
 
-            ele.html(current + '/' + expected);
+            if (current == expected) {
+                ele.html(expected).css({
+                    'background-color': '#fff'
+                });
+            } else {
+                ele.html(current + '/' + expected).css({
+                    'background-color': '#e1e1e1'
+                });
+            }
         });
     }
 });
