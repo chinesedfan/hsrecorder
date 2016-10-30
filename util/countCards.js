@@ -18,20 +18,9 @@ var counts = {
     // {series: {cls: {rarity: count}}}
 }; 
 _.each(CardList, function(item) {
-    var map = {
-        FP1: 'NAXX',
-        GVG: 'GVG',
-        BRM: 'BRM',
-        AT: 'AT',
-        LOE: 'LOE',
-        LOEA10: 'LOE',
-        OG: 'OG',
-        KAR: 'KAR'
-    };
     var TOTAL = 'Total';
 
-    var prefix = item.CardID.replace(/^([^_]+)_.*$/, '$1');
-    var series = map[prefix] || 'CLASSIC';
+    var series = getSeries(item.CardID);
     var cls = getClassName(item.CLASS);
     var rarity = getRarity(item.RARITY);
 
@@ -60,6 +49,20 @@ _.each(counts, function(item, series) {
     }
 });
 
+function getSeries(str) {
+    var map = {
+        FP1: 'NAXX',
+        GVG: 'GVG',
+        BRM: 'BRM',
+        AT: 'AT',
+        LOE: 'LOE',
+        LOEA10: 'LOE',
+        OG: 'OG',
+        KAR: 'KAR'
+    };
+    var prefix = str.replace(/^([^_]+)_.*$/, '$1');
+    return map[prefix] || 'CLASSIC';
+}
 function getClassName(number) {
     var list = ["Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"];
     if (number == 12) {
