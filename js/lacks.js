@@ -79,7 +79,7 @@ $.extend(LacksPage.prototype, {
             }
             tr = $('<tr></tr>').appendTo(lacksDetail);
 
-            GameConst.CLASS_LIST.concat([TOTAL]).forEach(function(cls, ci) {
+            GameConst.CLASS_LIST.concat(['Neutral', TOTAL]).forEach(function(cls, ci) {
                 if (si == 0) {
                     if (ci == 0) {
                         $('<th></th>').appendTo(thtr);
@@ -91,9 +91,11 @@ $.extend(LacksPage.prototype, {
                 }
 
                 td = $('<td></td>').appendTo(tr);
-                QualityList.forEach(function(q) {
-                    td.text(CardCounts[series][cls][TOTAL]);
-                });
+                var text = CardCounts[series][cls][TOTAL] + '<br>';
+                text += QualityList.map(function(q) {
+                    return CardCounts[series][cls][q.name] || 0;
+                }).join(',');
+                td.html(text);
             });
         });
 		QualityList.map(function(q) {
