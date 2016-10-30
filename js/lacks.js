@@ -80,29 +80,28 @@ $.extend(LacksPage.prototype, {
             if (si == 0) {
                 thtr = $('<tr></tr').appendTo(lacksDetail);
             }
-            tr = $('<tr></tr>').appendTo(lacksDetail);
 
-            GameConst.CLASS_LIST.concat(['Neutral', TOTAL]).forEach(function(cls, ci) {
-                if (si == 0) {
-                    if (ci == 0) {
-                        $('<th></th>').appendTo(thtr);
+            QualityList.concat([TOTAL]).reverse().forEach(function(q, qi) {
+                tr = $('<tr></tr>').appendTo(lacksDetail);
+
+                GameConst.CLASS_LIST.concat(['Neutral', TOTAL]).forEach(function(cls, ci) {
+                    if (si == 0 && qi == 0) {
+                        if (ci == 0) {
+                            $('<th></th>').appendTo(thtr);
+                        }
+                        $('<th></th>').text(cls).appendTo(thtr);
                     }
-                    $('<th></th>').text(cls).appendTo(thtr);
-                }
-                if (ci == 0) {
-                    $('<td></td>').text(series).appendTo(tr);
-                }
+                    if (ci == 0) {
+                        $('<td></td>').text(qi == 0 ? series : '').appendTo(tr);
+                    }
 
-                td = $('<td></td>').attr({
-                    'class': 'J_lacks-detail',
-                    'data-series': series,
-                    'data-cls': cls
-                }).appendTo(tr);
-                var text = CardCounts[series][cls][TOTAL] + '<br>';
-                text += QualityList.map(function(q) {
-                    return CardCounts[series][cls][q.name] || 0;
-                }).join(',');
-                td.html(text);
+                    td = $('<td></td>').attr({
+                        'class': 'J_lacks-detail',
+                        'data-series': series,
+                        'data-cls': cls,
+                        'data-rarity': q.name || q
+                    }).text(CardCounts[series][cls][q.name ? q.name : q] || 0).appendTo(tr);
+                });
             });
         });
 		QualityList.map(function(q) {
@@ -252,8 +251,12 @@ $.extend(LacksPage.prototype, {
 
             var series = ele.attr('data-series');
             var cls = ele.attr('data-cls');
-            ele.html(self.data.detail.current[series][cls][TOTAL]
-                + '/' + self.data.detail.config[series][cls][TOTAL]);
+            var rarity = ele.attr('data-rarity');
+
+            var current = self.data.detail.current[series][cls][rarity] || 0;
+            var expected = self.data.detail.expected[series][cls][rarity] || 0;
+
+            ele.html(current + '/' + expected);
         });
     }
 });

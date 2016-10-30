@@ -128,15 +128,18 @@ var Id2Card = (function() {
 })();
 
 var CardDetails = function() {
-    var config = CardCounts;
-    var current = $.extend(true, {}, config);
+    var expected = CardCounts;
+    var current = $.extend(true, {}, expected);
 
     function _update(cardId, delta) {
         var TOTAL = 'Total';
         var card = Id2Card.getCard(cardId);
+
         current[card.series][card.cls][card.rarity] += delta;
+
         current[card.series][card.cls][TOTAL] += delta;
         current[card.series][TOTAL][card.rarity] += delta;
+        current[TOTAL][card.cls][card.rarity] += delta;
 
         current[TOTAL][card.cls][TOTAL] += delta;
         current[TOTAL][TOTAL][card.rarity] += delta;
@@ -146,7 +149,7 @@ var CardDetails = function() {
     }
 
     return {
-        config: config,
+        expected: expected,
         current: current,
         addLack: function(cardId) {
             _update(cardId, -1);
