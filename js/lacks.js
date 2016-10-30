@@ -203,7 +203,7 @@ $.extend(LacksPage.prototype, {
 
 		function doShow() {
 			previewDiv.css({
-				left: offset.left + tr.width() - previewDiv.width(),
+				left: $('.lacks-left').width() + offset.left - previewDiv.width(),
 				top: Math.max(0, offset.top - previewDiv.height())
 			}).show();
 		}
