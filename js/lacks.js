@@ -36,11 +36,13 @@ LacksData.prototype = {
 	insertRow: function(rowData) {
 		this.counts[rowData.quality]++;
 		this.rows.push(rowData);
+        this.detail.addLack(rowData.id);
 	},
 	deleteById: function(id) {
 		var rowData = this.rows.pop(); //TODO: not the last only
 
 		this.counts[rowData.quality]--;
+        this.detail.delLack(rowData.id);
 	}
 }
 
@@ -57,6 +59,7 @@ $.extend(LacksPage.prototype, {
 		window.dbConn.loadLacksData(function(tx, rs) {
 			self.data = new LacksData(rs.rows);
 			self.refreshLacksTable();
+            self.refreshLacksDetail();
 		});
 
 		self.countIdPrefix = "lacks-count-";
@@ -90,7 +93,11 @@ $.extend(LacksPage.prototype, {
                     $('<td></td>').text(series).appendTo(tr);
                 }
 
-                td = $('<td></td>').appendTo(tr);
+                td = $('<td></td>').attr({
+                    'class': 'J_lacks-detail',
+                    'data-series': series,
+                    'data-cls': cls
+                }).appendTo(tr);
                 var text = CardCounts[series][cls][TOTAL] + '<br>';
                 text += QualityList.map(function(q) {
                     return CardCounts[series][cls][q.name] || 0;
@@ -236,5 +243,18 @@ $.extend(LacksPage.prototype, {
 			this.insertCard(this.data.rows[i], false);
 		}
 	},
+    refreshLacksDetail: function() {
+        var self = this;
+        var TOTAL = 'Total';
+
+        $('.J_lacks-detail').each(function(i, ele) {
+            ele = $(ele);
+
+            var series = ele.attr('data-series');
+            var cls = ele.attr('data-cls');
+            ele.html(self.data.detail.current[series][cls][TOTAL]
+                + '/' + self.data.detail.config[series][cls][TOTAL]);
+        });
+    }
 });
 /* class LacksPage end */
