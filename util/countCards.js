@@ -14,10 +14,45 @@ var fs = require('fs');
 var _ = require('lodash');
 require('../bin/cardlist.js');
 
+var delta;
 var counts = {
-    // {cls: {series: {rarity: count}}}
+    // {series: {cls: {rarity: count}}}
 }; 
 _.each(CardList, function(item) {
+    var TOTAL = 'Total';
+
+    var series = getSeries(item.CardID);
+    var cls = getClassName(item.CLASS);
+    var rarity = getRarity(item.RARITY);
+
+    delta = rarity == 'Legendary' ? 1 : 2;
+
+    addCount(counts, series, cls, rarity);
+    addCount(counts, series, cls, TOTAL);
+    addCount(counts, TOTAL, cls, rarity);
+    addCount(counts, TOTAL, cls, TOTAL);
+
+    addCount(counts, series, TOTAL, rarity);
+    addCount(counts, series, TOTAL, TOTAL);
+    addCount(counts, TOTAL, TOTAL, rarity);
+    addCount(counts, TOTAL, TOTAL, TOTAL);
+});
+console.log('CardCounts = ' + JSON.stringify(counts, null, 4) + ';'); return;
+_.each(counts, function(item, series) {
+    var clsItem = item["Druid"];
+    var extItem = item["Neutral"];
+
+    var row = [item2arr(clsItem), item2arr(extItem)];
+    console.log('    ' + JSON.stringify(row) + ', // ' + series);
+
+    function item2arr(item) {
+        return _.map(['Common', 'Rare', 'Epic', 'Legendary'], function(q) {
+            return item[q] || 0;
+        });
+    }
+});
+
+function getSeries(str) {
     var map = {
         FP1: 'NAXX',
         GVG: 'GVG',
@@ -28,27 +63,33 @@ _.each(CardList, function(item) {
         OG: 'OG',
         KAR: 'KAR'
     };
-    var prefix = item.CardID.replace(/^([^_]+)_.*$/, '$1');
-    var series = map[prefix] || 'Classic';
-
-    addCount(counts, item.CLASS, series, item.RARITY);
-    addCount(counts, item.CLASS, series, 'total');
-    addCount(counts, item.CLASS, 'total', item.RARITY);
-    addCount(counts, item.CLASS, 'total', 'total');
-
-    addCount(counts, 'total', series, item.RARITY);
-    addCount(counts, 'total', series, 'total');
-    addCount(counts, 'total', 'total', item.RARITY);
-    addCount(counts, 'total', 'total', 'total');
-});
-console.log(JSON.stringify(counts, null, 4));
-
-function getCount(counts, cls, series, rarity) {
-    counts[cls] = counts[cls] || {};
-    counts[cls][series] = counts[cls][series] || {};
-    return counts[cls][series][rarity] || 0;
+    var prefix = str.replace(/^([^_]+)_.*$/, '$1');
+    return map[prefix] || 'CLASSIC';
 }
-function addCount(counts, cls, series, rarity) {
-    var val = getCount(counts, cls, series, rarity) + 1;
-    counts[cls][series][rarity] = val;
+function getClassName(number) {
+    var list = ["Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"];
+    if (number == 12) {
+        return 'Neutral';
+    } else {
+        return list[number - 2];
+    }
+}
+function getRarity(number) {
+    var map = {
+        1: 'Common',
+        3: 'Rare',
+        4: 'Epic',
+        5: 'Legendary'
+    };
+    return map[number];
+}
+
+function getCount(counts, series, cls, rarity) {
+    counts[series] = counts[series] || {};
+    counts[series][cls] = counts[series][cls] || {};
+    return counts[series][cls][rarity] || 0;
+}
+function addCount(counts, series, cls, rarity) {
+    var val = getCount(counts, series, cls, rarity) + delta;
+    counts[series][cls][rarity] = val;
 }
