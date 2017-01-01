@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # https://github.com/HearthSim/extract-scripts/blob/master/cardxml_raw_extract.py
+# https://github.com/HearthSim/extract-scripts/issues/11
 import re
 import sys
 from hearthstone.enums import Locale

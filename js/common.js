@@ -37,7 +37,7 @@ var GameConst = {
 	CLASS_LIST: ["Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"],
 	MAX_ARENA_WINS: 12,
 	RARITY_MAX: 5,
-    SERIES_LIST: ["CLASSIC", "NAXX", "GVG", "BRM", "AT", "LOE", "OG", "KAR"],
+    SERIES_LIST: ["CLASSIC", "NAXX", "GVG", "BRM", "AT", "LOE", "OG", "KAR", "CFM"],
 	SUGGEST_ITEM_MAX: 10,
 	SUGGEST_KEY_MAX_LEN: 10
 };
