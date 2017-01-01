@@ -24,8 +24,8 @@
 
 	var TagMap = require(args[1]);
 	function node2obj(entity) {
-		var obj = {}, key,
-		    tags = entity.getElementsByTagName('Tag'),
+		var obj = {}, key, val,
+		    tags = entity.getElementsByTagName('Tag'), locs,
 		    tid, type, value, text;
 
 		obj['CardID'] = entity.getAttribute('CardID');
@@ -37,7 +37,22 @@
 
 			key = TagMap[tid];	
 			if (!key) continue;
-			obj[key] = (type == 'String') ? text : parseInt(value);
+
+            switch (type) {
+            case 'LocString':
+                locs = tags[i].getElementsByTagName('enUS');
+                if (!locs || !locs.length) continue;
+                
+                val = locs[0].textContent;
+                break;
+            case 'String':
+                val = text;
+                break;
+            case 'Int':
+                val = parseInt(value);
+                break;
+            }
+			obj[key] = val;
 		}
 		return obj;
 	}
@@ -62,7 +77,7 @@
 	// filter our interested cards and fields
 	function simplifyCard(obj) {
 		var ret = {},
-			NEEDS = ['CARDNAME', 'CardID', 'RARITY'];
+			NEEDS = ['CARDNAME', 'CardID', 'CLASS', 'RARITY'];
 
 		// a valid card should have artist name and flavor text
 		if (!obj.ARTISTNAME) return null;
@@ -97,7 +112,7 @@
 	    return ret;
 	}
 
-	console.log('var CardList =');
+	console.log('CardList =');
 	console.log(objs);
 	console.log(';');
 })();

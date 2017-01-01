@@ -39,12 +39,17 @@ body { padding-top: 42px; }
 	.packs-add, .packs-del { float: left; width: 50%; }
 .packs-right .flex-bottom { overflow-y: scroll; }
 
-#lacks-page { padding-top: 114px; }
+#lacks-page { padding-top: 74px; }
 .lacks-control { margin: 20px auto; width: 33%; height: 34px; }
 	.lacks-card { width: 50%; float: left; }
 	.lacks-add, .lacks-del { width: 25%; float: left; }
-.lacks-bottom > div { float: left; width: 25%; height: 100%; overflow-y: scroll; }
-.lacks-bottom label { width: auto; }
+.lacks-left, .lacks-right { width: 50%; height: 100%; float: left; }
+    .lacks-detail tr.detail.hidden { display: none; }
+    .lacks-detail td { cursor: pointer; }
+.lacks-right { padding-top: 40px; }
+    .lacks-names > div { float: left; width: 25%; height: 100%; overflow-y: scroll; }
+    .lacks-names label { width: auto; }
+.lacks-preview { display: none; position: absolute; }
 
 #export-page { padding-top: 74px; }
 .export-control { margin: 20px auto; width: 50%; height: 34px; }

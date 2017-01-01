@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>HearthStone Recorder</title>
+		<link rel="icon" type="text/png" href="css/icon.png">
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 		<link type="text/css" rel="stylesheet" href="css/page.css" />
 		<script type="text/html" id="arena-template">
@@ -69,6 +70,7 @@
 					<div class="flex-bottom">
 						<table class="packs-table"></table>
 					</div>
+				</div>
 			</div>
 		</script>
 		<script type="text/html" id="lacks-template">
@@ -78,12 +80,21 @@
 					<button class="btn btn-default lacks-add">Insert</button>
 					<button class="btn btn-default lacks-del">Delete</button>
 				</div>
-				<table class="lacks-caption">
-					<tr class="lacks-title"></tr>
-					<tr class="lacks-count"></tr>
-				</table>
 			</div>
-			<div class="lacks-bottom flex-bottom"></div>
+			<div class="lacks-bottom flex-bottom">
+				<div class="lacks-left">
+					<table class="lacks-detail">
+					</table>
+				</div>
+				<div class="lacks-right flex-main">
+					<table class="lacks-caption fixed-top">
+						<tr class="lacks-title"></tr>
+						<tr class="lacks-count"></tr>
+					</table>
+					<div class="lacks-names flex-bottom"></div>
+				</div>
+			</div>
+			<div class="lacks-preview"><img></div>
 		</script>
 		<script type="text/html" id="export-template">
 			<div class="fixed-top export-control">
@@ -111,6 +122,7 @@
 		<script type="text/javascript" src="js/svgchart.min.js"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="bin/cardlist.js"></script>
+        <script type="text/javascript" src="bin/cardcounts.js"></script>
 		<script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/cards.js"></script>
 		<script type="text/javascript" src="js/database.js"></script>

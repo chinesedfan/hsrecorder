@@ -189,10 +189,10 @@ $.extend(PacksPage.prototype, {
 
 				if (i < QualityList.length) {
 					rowData.counts.push(parseInt(cell.text()));
-					rowData.tips.push(cell.attr("card-tips"));
+					rowData.tips.push(cell.attr("card-tips") || "");
 				} else {
 					rowData.counts.splice(0, 0, parseInt(cell.text()));
-					rowData.tips.splice(0, 0, cell.attr("card-tips"));
+					rowData.tips.splice(0, 0, cell.attr("card-tips") || "");
 				}
 			});
 
