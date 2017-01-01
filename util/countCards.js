@@ -9,6 +9,7 @@
  * - LOE, 3 * 9 + 18 = 45
  * - OG, 9 * 9 + 53 = 134
  * - KAR, 3 * 9 + 18 = 45
+ * - CFM, 9 * 9 + 51 = 132
  */
 var fs = require('fs');
 var _ = require('lodash');
@@ -61,7 +62,8 @@ function getSeries(str) {
         LOE: 'LOE',
         LOEA10: 'LOE',
         OG: 'OG',
-        KAR: 'KAR'
+        KAR: 'KAR',
+        CFM: 'CFM'
     };
     var prefix = str.replace(/^([^_]+)_.*$/, '$1');
     return map[prefix] || 'CLASSIC';
