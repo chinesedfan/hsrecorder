@@ -298,6 +298,8 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '294','2016-10-16','Warrior','4
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '295','2016-10-23','Mage','3' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '296','2016-10-23','Mage','3' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '297','2016-10-24','Rogue','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '298','2016-11-26','Hunter','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '299','2016-12-31','Mage','5' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '1','PRO_001','Elite Tauren Chieftain','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '2','EX1_112','Gelbin Mekkatorque','0' );
@@ -395,7 +397,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '149','AT
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '150','AT_034','Poisoned Blade','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '153','AT_050','Charged Hammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '154','AT_050','Charged Hammer','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '156','AT_049','Thunder Bluff Valiant','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '161','AT_025','Dark Bargain','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '163','AT_023','Void Crusher','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '164','AT_027','Wilfred Fizzlebang','0' );
@@ -460,7 +461,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '248','OG
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '251','OG_328','Master of Evolution','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '252','OG_031','Hammer of Twilight','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '253','OG_031','Hammer of Twilight','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '254','OG_028','Thing from Below','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '255','OG_118','Renounce Darkness','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '256','OG_118','Renounce Darkness','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '258','OG_121','Cho''gall','0' );
@@ -501,7 +501,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '297','OG
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '298','OG_340','Soggoth the Slitherer','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '300','OG_134','Yogg-Saron, Hope''s End','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '301','OG_042','Y''Shaarj, Rage Unbound','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '303','OG_116','Spreading Madness','2' );
 CREATE TABLE packs(id integer PRIMARY KEY UNIQUE,day date,count_gl integer,count_ge integer,count_gr integer,count_gc integer,count_l integer,count_e integer,count_r integer,count_c integer,tip_gl text,tip_ge text,tip_gr text,tip_gc text,tip_l text,tip_e text,tip_r text,tip_c text,dust integer);
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '1','2014-03-03','0','0','1','0','0','0','2','2',NULL,NULL,'Ethereal Arcanist',NULL,NULL,NULL,'?',NULL,'150' );
 INSERT INTO packs ( id,day,"count_gl","count_ge","count_gr","count_gc","count_l","count_e","count_r","count_c","tip_gl","tip_ge","tip_gr","tip_gc","tip_l","tip_e","tip_r","tip_c",dust ) VALUES ( '2','2014-03-03','0','0','0','0','0','0','1','4',NULL,NULL,NULL,NULL,NULL,NULL,'?',NULL,'40' );
