@@ -1,11 +1,11 @@
 'use strict';
 
 import Vue from 'vue';
-import Nav from '../components/nav';
+import Arena from '../components/arena';
 
 new Vue({
     el: '#vue-container',
     components: {
-        'hsr-nav': Nav
+        app: Arena
     }
 });
