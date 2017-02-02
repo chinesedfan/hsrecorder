@@ -1,0 +1,7 @@
+/bin
+/db
+/dist
+/node_modules
+/test
+
+yarn.lock
