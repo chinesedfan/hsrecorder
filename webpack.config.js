@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        arena: './src/pages/arena.js'
+        bundle: './src/pages/entry.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

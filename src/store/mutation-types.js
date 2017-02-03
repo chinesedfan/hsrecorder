@@ -1,3 +1,3 @@
 'use strict';
 
-export const NAV_SELECT_INDEX = 'select-index';
+export const ARENA_UPDATE_ROWS = 'arena/update-rows';

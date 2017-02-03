@@ -1,28 +1,17 @@
 <template>
     <ul class="nav nav-tabs">
-        <li v-for="(item, index) in items" :class="{ active: index == selectedIndex }"
-            @click="() => { onItemClicked(index); }"><a>{{ item }}</a></li>
+        <router-link v-for="(item, i) in items" :to="`/${items[i].toLowerCase()}`"
+                tag="li" active-class="active">
+            <a>{{ item }}</a>
+        </router-link>
     </ul>
 </template>
-<script type="text/javascript">
+<script>
 'use strict';
-
-import {mapState, mapMutations} from 'vuex';
-import {NAV_SELECT_INDEX} from '../store/mutation-types';
 
 export default {
     props: {
         items: Array
-    },
-    computed: {
-        ...mapState('nav', {
-            selectedIndex: (state) => state.selectedIndex
-        })
-    },
-    methods: {
-        ...mapMutations('nav', {
-            onItemClicked: NAV_SELECT_INDEX
-        })
     }
 };
 

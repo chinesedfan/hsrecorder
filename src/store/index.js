@@ -1,9 +1,11 @@
 'use strict';
 
-import Nav from './modules/nav';
+import nav from './modules/nav';
+import arena from './modules/arena';
 
 export default {
     modules: {
-        nav: Nav
+        nav,
+        arena
     }
 };
