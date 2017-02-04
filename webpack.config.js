@@ -18,12 +18,24 @@ module.exports = {
         }, {
             test: /\.vue$/,
             loader: 'vue-loader'
+        }, {
+            test: /\.less$/,
+            use: [
+                'style-loader',
+                {
+                    loader: 'css-loader',
+                    options: {
+                        importLoaders: 1
+                    }
+                },
+                'less-loader'
+            ]
         }]
     },
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.common.js'
         },
-        extensions: ['.vue', '.js']
+        extensions: ['.vue', '.less', '.js']
     }
 };

@@ -22,17 +22,17 @@ export default {
         // {cls: game count}
         countByCls(state) {
             return _(state.rows).groupBy((r) => r.cls)
-                    .map((rs) => rs.length);
+                    .mapValues((rs) => rs.length);
         },
         // {wins: game count}
         countByWins(state) {
             return _(state.rows).groupBy((r) => r.wins)
-                    .map((rs) => rs.length);
+                    .mapValues((rs) => rs.length);
         },
         // {cls: total wins}
         winsByCls(state) {
             return _(state.rows).groupBy((r) => r.cls)
-                    .map((rs) => _.sumBy(rs, (r) => r.wins));
+                    .mapValues((rs) => _.sumBy(rs, (r) => r.wins));
         },
         // [wins]
         wins(state) {

@@ -1,11 +1,12 @@
 <template>
-    <div :config="{svgData, svgOptions}"></div>
+    <div :class="clsNames" :config="{svgData, svgOptions}"></div>
 </template>
 <script type="text/javascript">
 'use strict';
 
 export default {
     props: {
+        clsNames: String,
         svgData: [Array, Object],
         svgOptions: Object
     },

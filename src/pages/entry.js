@@ -1,5 +1,7 @@
 'use strict';
 
+import '../../less/main';
+
 import Vue from 'vue';
 import Vuex, {mapState} from 'vuex';
 import VueRouter from 'vue-router';
