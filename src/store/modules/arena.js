@@ -22,30 +22,31 @@ export default {
         // {cls: game count}
         countByCls(state) {
             return _(state.rows).groupBy((r) => r.cls)
-                    .map((rs) => rs.length).value();
+                    .map((rs) => rs.length);
         },
         // {wins: game count}
         countByWins(state) {
             return _(state.rows).groupBy((r) => r.wins)
-                    .map((rs) => rs.length).value();
+                    .map((rs) => rs.length);
         },
         // {cls: total wins}
         winsByCls(state) {
             return _(state.rows).groupBy((r) => r.cls)
-                    .map((rs) => _.sumBy(rs, (r) => r.wins)).value();
+                    .map((rs) => _.sumBy(rs, (r) => r.wins));
         },
         // [wins]
         wins(state) {
-            return _(state.rows).map((r) => r.wins).value();
+            return _(state.rows).map((r) => r.wins);
         },
         // total wins
         totalWins(state, getters) {
-            return _.sum(getters.wins);
+            return getters.wins.sum();
         },
         // total avg
         totalAvg(state, getters) {
             const wins = getters.wins;
-            return _.isEmpty(wins) ? 0 : (_.sum(wins) / wins.length).toFixed(2);
+            const len = wins.value().length;
+            return len ? (wins.sum() / len).toFixed(2) : 0;
         }
     },
     mutations: {

@@ -13,7 +13,7 @@ import * as ArenaService from '../service/arena';
 export default {
     computed: {
         trendData() {
-            const wins = this.wins();
+            const wins = this.wins().value();
 
             return [{
                 name: `totalGame = ${wins.length}\ntotalWins = ${this.totalWins()}\ntotalAvg = ${this.totalAvg()}`,
@@ -25,7 +25,7 @@ export default {
                 axis: {
                     x: {
                         tickWidth: 20,
-                        ticks: _.map(this.wins(), (w, i) => i + 1)
+                        ticks: this.wins().map((w, i) => i + 1)
                     },
                     y: {
                         min: 0,
