@@ -1,5 +1,5 @@
 <template>
-    <div></div>
+    <div :config="{svgData, svgOptions}"></div>
 </template>
 <script type="text/javascript">
 'use strict';
@@ -13,6 +13,7 @@ export default {
         this.redraw();
     },
     updated() {
+        // if no changes to the template, it will not be triggered
         this.redraw();
     },
     methods: {
