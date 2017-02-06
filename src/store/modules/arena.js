@@ -1,7 +1,8 @@
 'use strict';
 
 import _ from 'lodash';
-import {ARENA_UPDATE_ROWS} from '../mutation-types';
+import {ARENA_UPDATE_ROWS, ARENA_INSERT_ROW, ARENA_DELETE_ROW} from '../mutation-types';
+import * as ArenaService from '../../service/arena';
 
 /**
  * @typedef {ArenaRow}
@@ -52,6 +53,25 @@ export default {
     mutations: {
         [ARENA_UPDATE_ROWS](state, rows) {
             state.rows = rows;
+        },
+        [ARENA_INSERT_ROW](state, row) {
+            state.rows.push(row);
+        },
+        [ARENA_DELETE_ROW](state, id) {
+            const index = _.findIndex(state.rows, (r) => r.id == id);
+            state.rows.splice(index, 1);
+        }
+    },
+    actions: {
+        [ARENA_INSERT_ROW]({commit}, row) {
+            ArenaService.insertArenaRow(row).then(() => {
+                commit(ARENA_INSERT_ROW, row);
+            });
+        },
+        [ARENA_DELETE_ROW]({commit}, id) {
+            ArenaService.deleteArenaRow(id).then(() => {
+                commit(ARENA_DELETE_ROW, id);
+            });
         }
     }
 };

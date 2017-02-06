@@ -9,7 +9,7 @@
                     <hsr-svgchart clsNames="arena-pie" :svgData="winsPieData" :svgOptions="pieOptions" />
                 </div>
             </div>
-            <div class="arena-right"></div>
+            <arena-table clsNames="arena-right" :rows="rows" />
         </div>
     </div>
 </template>
@@ -19,12 +19,16 @@
 import _ from 'lodash';
 import {mapGetters, mapMutations} from 'vuex';
 import SvgChart from './svgchart';
+import ArenaTable from './arenatable';
 import {CLASS_LIST} from '../common/hs';
 import * as types from '../store/mutation-types';
 import * as ArenaService from '../service/arena';
 
 export default {
     computed: {
+        rows() {
+            return this.$store.state.arena.rows;
+        },
         trendData() {
             const wins = this.wins().value();
 
@@ -117,7 +121,8 @@ export default {
         }
     },
     components: {
-        'hsr-svgchart': SvgChart
+        'hsr-svgchart': SvgChart,
+        'arena-table': ArenaTable,
     },
     methods: {
         generatePieData(countMap) {
