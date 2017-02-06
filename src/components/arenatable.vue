@@ -13,7 +13,7 @@
                     <td><select class="form-control" v-model="clsEditing">
                         <option v-for="cls in CLASS_LIST" :value="cls">{{ cls }}</option>
                     </select></td>
-                    <td><input class="form-control" v-model.number="winsEditing"></td>
+                    <td><input class="form-control" v-model.number="winsEditing" @focus="onWinsInputFocus"></td>
                 </tr>
             </tbody></table>
         </div>
@@ -90,6 +90,9 @@ export default {
             if (_.isEmpty(this.reversedRows)) return;
 
             this.deleteRow(this.reversedRows[0].id);
+        },
+        onWinsInputFocus() {
+            this.winsEditing = '';
         }
     }
 };
