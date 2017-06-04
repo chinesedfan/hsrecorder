@@ -9,6 +9,7 @@ import VueRouter from 'vue-router';
 import Nav from '../components/nav';
 import Arena from '../components/arena';
 import Packs from '../components/packs';
+import Lacks from '../components/lacks';
 
 import store from '../store';
 
@@ -22,7 +23,8 @@ new Vue({
         routes: [
             {path: '/', redirect: '/arena'},
             {path: '/arena', component: Arena},
-            {path: '/packs', component: Packs}
+            {path: '/packs', component: Packs},
+            {path: '/lacks', component: Lacks}
         ]
     }),
     components: {
