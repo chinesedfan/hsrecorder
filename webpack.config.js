@@ -8,6 +8,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist',
         filename: '[name].js'
     },
     module: {
@@ -37,5 +38,8 @@ module.exports = {
             'vue$': 'vue/dist/vue.common.js'
         },
         extensions: ['.vue', '.less', '.js']
+    },
+    devServer: {
+        contentBase: __dirname
     }
 };
