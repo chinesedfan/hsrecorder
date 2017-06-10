@@ -13,7 +13,7 @@
  */
 var fs = require('fs');
 var _ = require('lodash');
-require('../bin/cardlist.js');
+var CardList = require('../bin/cardlist.js');
 
 var delta;
 var counts = {
@@ -22,9 +22,9 @@ var counts = {
 _.each(CardList, function(item) {
     var TOTAL = 'Total';
 
-    var series = getSeries(item.CardID);
-    var cls = getClassName(item.CLASS);
-    var rarity = getRarity(item.RARITY);
+    var series = getSeries(item.id);
+    var cls = getClassName(item.cls);
+    var rarity = getRarity(item.rarity);
 
     delta = rarity == 'Legendary' ? 1 : 2;
 
@@ -63,7 +63,8 @@ function getSeries(str) {
         LOEA10: 'LOE',
         OG: 'OG',
         KAR: 'KAR',
-        CFM: 'CFM'
+        CFM: 'CFM',
+        UNG: 'UNG'
     };
     var prefix = str.replace(/^([^_]+)_.*$/, '$1');
     return map[prefix] || 'CLASSIC';
