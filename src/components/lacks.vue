@@ -2,7 +2,7 @@
     <div class="lacks-page">
         <lacks-panel></lacks-panel>
         <div>
-            <lacks-table clsNames="lacks-left"></lacks-table>
+            <lacks-table clsNames="lacks-left" :items="items"></lacks-table>
             <div class="lacks-right">
                 <lacks-list v-for="(q, index) in QUALITY_LIST" :style="{width: 100/QUALITY_LIST.length + '%'}" clsNames="lacks-list"
                         :title="q" :color="COLOR_LIST[index]" :cards="[]"></lacks-list>
@@ -19,6 +19,11 @@ import LacksList from './lackslist';
 import {QUALITY_LIST, COLOR_LIST} from '../common/hs';
 
 export default {
+    computed: {
+        items() {
+            return this.$store.state.lacks.items;
+        }
+    },
     data() {
         return {
             QUALITY_LIST,

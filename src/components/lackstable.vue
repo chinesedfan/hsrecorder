@@ -7,7 +7,7 @@
             </tr>
             <tr v-for="series in rowNames" class="tline">
                 <td class="bold">{{ series }}</td>
-                <td v-for="cls in colNames">{{ 123 }}</td>
+                <td v-for="cls in colNames">{{ counts[series][cls]['Total'].target }}</td>
             </tr>
         </tbody></table>
     </div>
@@ -20,14 +20,60 @@ import {CLASS_LIST, SERIES_LIST} from '../common/hs';
 
 export default {
     props: {
-        clsNames: String
+        clsNames: String,
+        items: Array
+    },
+    computed: {
+        // {series: {cls: {rarity: count}}}
+        counts() {
+            const counts = {};
+            const total = 'Total';
+            const initialItem = {
+                target: 0,
+                owned: 0
+            };
+            _.each(this.items, (item) => {
+                const addItem = {
+                    target: item.rarity === 'Legendary' ? 1 : 2,
+                    owned: item.count
+                };
+                
+                this.updateCounts(counts, item.series, item.cls, item.rarity, addItem);
+
+                this.updateCounts(counts, item.series, item.cls, total, addItem);
+                this.updateCounts(counts, item.series, total, item.rarity, addItem);
+                this.updateCounts(counts, total, item.cls, item.rarity, addItem);
+
+                this.updateCounts(counts, item.series, total, total, addItem);
+                this.updateCounts(counts, total, total, item.rarity, addItem);
+                this.updateCounts(counts, total, item.cls, total, addItem);
+
+                this.updateCounts(counts, total, total, total, addItem);
+            });
+
+            return counts;
+        }
     },
     data() {
         return {
             colNames: CLASS_LIST.concat(['Neutral', 'Total']),
-            rowNames: CLASS_LIST.concat(['Total']),
+            rowNames: SERIES_LIST.concat(['Total']),
             expandedRow: -1
         };
+    },
+    methods: {
+        updateCounts(counts, series, cls, rarity, addItem) {
+            counts[series] = counts[series] || {};
+            counts[series][cls] = counts[series][cls] || {};
+            counts[series][cls][rarity] = counts[series][cls][rarity] || {
+                target: 0,
+                owned: 0
+            };
+
+            const updatedItem = counts[series][cls][rarity];
+            updatedItem.target += addItem.target;
+            updatedItem.owned += addItem.owned;
+        }
     }
 };
 
