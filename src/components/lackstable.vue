@@ -3,11 +3,12 @@
         <table><tbody>
             <tr>
                 <th></th>
-                <th v-for="cls in colNames">{{ cls }}</th>
+                <th v-for="cls in clsList">{{ cls }}</th>
             </tr>
-            <tr v-for="series in rowNames" class="tline">
-                <td class="bold">{{ series }}</td>
-                <td v-for="cls in colNames" :class="getTdCls(series, cls, 'Total')">{{ getTdText(series, cls, 'Total') }}</td>
+            <tr v-for="item in rowItems" v-show="item.rarity == 'Total' || item.series == expandedSeries" class="tline">
+                <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
+                <td v-for="cls in clsList" :class="getTdCls(item.series, cls, item.rarity)"
+                        :style="{color: item.color}">{{ getTdText(item.series, cls, item.rarity) }}</td>
             </tr>
         </tbody></table>
     </div>
@@ -16,7 +17,7 @@
 'use strict';
 
 import _ from 'lodash';
-import {CLASS_LIST, SERIES_LIST} from '../common/hs';
+import {SERIES_LIST, CLASS_LIST, RARITY_LIST} from '../common/hs';
 
 export default {
     props: {
@@ -52,17 +53,30 @@ export default {
             });
 
             return counts;
+        },
+        // [{series, rarity}]
+        rowItems() {
+            return _(this.seriesList).map((series) => {
+                return _.map(this.rarityList, (rarityItem) => {
+                    return {
+                        series,
+                        rarity: rarityItem.name,
+                        color: rarityItem.color
+                    };
+                });
+            }).flatten().value();
         }
     },
     data() {
         return {
-            colNames: CLASS_LIST.concat(['Neutral', 'Total']),
-            rowNames: SERIES_LIST.concat(['Total']),
-            expandedRow: -1
+            seriesList: SERIES_LIST.concat(['Total']),
+            clsList: CLASS_LIST.concat(['Neutral', 'Total']),
+            rarityList: [{name: 'Total', color: '#333'}].concat(_.clone(RARITY_LIST).reverse()),
+            expandedSeries: ''
         };
     },
     methods: {
-        updateCounts(counts, series, cls, rarity, addItem) {
+        getCountsItem(counts, series, cls, rarity) {
             counts[series] = counts[series] || {};
             counts[series][cls] = counts[series][cls] || {};
             counts[series][cls][rarity] = counts[series][cls][rarity] || {
@@ -70,17 +84,25 @@ export default {
                 owned: 0
             };
 
-            const updatedItem = counts[series][cls][rarity];
+            return counts[series][cls][rarity];
+        },
+        updateCounts(counts, series, cls, rarity, addItem) {
+            const updatedItem = this.getCountsItem(counts, series, cls, rarity);
             updatedItem.target += addItem.target;
             updatedItem.owned += addItem.owned;
         },
+
         getTdText(series, cls, rarity) {
-            const item = this.counts[series][cls][rarity];
+            const item = this.getCountsItem(this.counts, series, cls, rarity);
             return item.target == item.owned ? item.target : `${item.owned}/${item.target}`;
         },
         getTdCls(series, cls, rarity) {
-            const item = this.counts[series][cls][rarity];
+            const item = this.getCountsItem(this.counts, series, cls, rarity);
             return item.target == item.owned ? '' : 'grey';
+        },
+
+        onSeriesClicked(series) {
+            this.expandedSeries = this.expandedSeries == series ? '' : series;
         }
     }
 };

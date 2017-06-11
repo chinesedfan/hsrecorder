@@ -15,7 +15,11 @@ export function getRarityByNumber(n) {
         return 'Common';
     }
 }
-export const QUALITY_LIST = ['Legendary', 'Epic', 'Rare', 'Common'];
-export const COLOR_LIST = ['orange', 'purple', 'blue', 'black'];
+export const RARITY_LIST = [
+    {name: 'Legendary', color: 'orange'},
+    {name: 'Epic', color: 'purple'},
+    {name: 'Rare', color: 'blue'},
+    {name: 'Common', color: '#333'}
+];
 
 export const SERIES_LIST = ['CLASSIC', 'NAXX', 'GVG', 'BRM', 'AT', 'LOE', 'OG', 'KAR', 'CFM', 'UNG'];
