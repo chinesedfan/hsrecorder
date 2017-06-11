@@ -14,6 +14,7 @@
 import _ from 'lodash';
 import {getClassByNumber, getRarityByNumber} from '../../common/hs';
 import CardList from '../../../bin/cardlist';
+import {LACKS_SELECT_CELL} from '../mutation-types';
 
 const items = _.map(CardList, (item) => {
     item.cls = getClassByNumber(item.cls);
@@ -28,6 +29,15 @@ export default {
         /**
          * @type {CardItem[]}
          */
-        items
+        items,
+        selectedItem: {
+            series: 'Total',
+            cls: 'Total'
+        }
+    },
+    mutations: {
+        [LACKS_SELECT_CELL](state, item) {
+            state.selectedItem = item;
+        }
     }
 };

@@ -7,8 +7,8 @@
             </tr>
             <tr v-for="item in rowItems" v-show="item.rarity == 'Total' || item.series == expandedSeries" class="tline">
                 <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
-                <td v-for="cls in clsList" :class="getTdCls(item.series, cls, item.rarity)"
-                        :style="{color: item.color}">{{ getTdText(item.series, cls, item.rarity) }}</td>
+                <td v-for="cls in clsList" :class="getTdCls(item.series, cls, item.rarity)" :style="{color: item.color}"
+                        @click="onCellClicked({series: item.series, cls: cls})">{{ getTdText(item.series, cls, item.rarity) }}</td>
             </tr>
         </tbody></table>
     </div>
@@ -17,7 +17,9 @@
 'use strict';
 
 import _ from 'lodash';
+import {mapMutations} from 'vuex';
 import {SERIES_LIST, CLASS_LIST, RARITY_LIST} from '../common/hs';
+import * as types from '../store/mutation-types';
 
 export default {
     props: {
@@ -103,7 +105,10 @@ export default {
 
         onSeriesClicked(series) {
             this.expandedSeries = this.expandedSeries == series ? '' : series;
-        }
+        },
+        ...mapMutations({
+            onCellClicked: types.LACKS_SELECT_CELL
+        })
     }
 };
 

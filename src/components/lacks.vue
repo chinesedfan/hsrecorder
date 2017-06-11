@@ -23,15 +23,14 @@ export default {
     computed: {
         items() {
             return this.$store.state.lacks.items;
+        },
+        selectedItem() {
+            return this.$store.state.lacks.selectedItem;
         }
     },
     data() {
         return {
-            RARITY_LIST,
-            selectedItem: {
-                series: 'Total',
-                cls: 'Total'
-            }
+            RARITY_LIST
         };
     },
     components: {
