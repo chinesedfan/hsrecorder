@@ -2,10 +2,10 @@
     <div class="lacks-page">
         <lacks-panel></lacks-panel>
         <div>
-            <lacks-table clsNames="lacks-left" :items="items"></lacks-table>
-            <div class="lacks-right">
-                <lacks-list v-for="(item, index) in RARITY_LIST" :style="{width: 100/RARITY_LIST.length + '%'}" clsNames="lacks-list"
-                        :title="item.name" :color="item.color" :cards="[]"></lacks-list>
+            <lacks-table clsNames="lacks-left float" :items="items"></lacks-table>
+            <div class="lacks-right float">
+                <lacks-list v-for="(item, index) in RARITY_LIST" :style="{width: 100/RARITY_LIST.length + '%'}" clsNames="float"
+                        :title="item.name" :color="item.color" :items="getItems(selectedItem.series, selectedItem.cls, item.name)"></lacks-list>
             </div>
         </div>
     </div>
@@ -13,6 +13,7 @@
 <script>
 'use strict';
 
+import _ from 'lodash';
 import LacksPanel from './lackspanel';
 import LacksTable from './lackstable';
 import LacksList from './lackslist';
@@ -26,13 +27,30 @@ export default {
     },
     data() {
         return {
-            RARITY_LIST
+            RARITY_LIST,
+            selectedItem: {
+                series: 'Total',
+                cls: 'Total'
+            }
         };
     },
     components: {
         'lacks-panel': LacksPanel,
         'lacks-table': LacksTable,
         'lacks-list': LacksList
+    },
+    methods: {
+        getItems(series, cls, rarity) {
+            return _(this.items).filter(this.fieldFilter('series', series))
+                    .filter(this.fieldFilter('cls', cls))
+                    .filter(this.fieldFilter('rarity', rarity))
+                    .value();
+        },
+        fieldFilter(key, value) {
+            return (item) => {
+                return value == 'Total' || item[key] == value;
+            };
+        }
     }
 };
 
@@ -43,11 +61,9 @@ export default {
     .flex-group-top(74px);
 }
 .lacks-left, .lacks-right {
-    float: left;
     width: 50%;
-    height: 100%;
 }
-.lacks-list {
+.float {
     float: left;
     height: 100%;
 }
