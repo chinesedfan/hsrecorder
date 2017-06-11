@@ -7,7 +7,7 @@
             </tr>
             <tr v-for="series in rowNames" class="tline">
                 <td class="bold">{{ series }}</td>
-                <td v-for="cls in colNames">{{ counts[series][cls]['Total'].target }}</td>
+                <td v-for="cls in colNames" :class="getTdCls(series, cls, 'Total')">{{ getTdText(series, cls, 'Total') }}</td>
             </tr>
         </tbody></table>
     </div>
@@ -73,6 +73,14 @@ export default {
             const updatedItem = counts[series][cls][rarity];
             updatedItem.target += addItem.target;
             updatedItem.owned += addItem.owned;
+        },
+        getTdText(series, cls, rarity) {
+            const item = this.counts[series][cls][rarity];
+            return item.target == item.owned ? item.target : `${item.owned}/${item.target}`;
+        },
+        getTdCls(series, cls, rarity) {
+            const item = this.counts[series][cls][rarity];
+            return item.target == item.owned ? '' : 'grey';
         }
     }
 };
@@ -87,6 +95,9 @@ tr {
 td {
     &.bold {
         font-weight: bold;
+    }
+    &.grey {
+        background-color: #e1e1e1;
     }
 }
 </style>
