@@ -17,7 +17,7 @@ import _ from 'lodash';
 import LacksPanel from './lackspanel';
 import LacksTable from './lackstable';
 import LacksList from './lackslist';
-import {RARITY_LIST} from '../common/hs';
+import {SERIES_LIST, CLASS_LIST, RARITY_LIST} from '../common/hs';
 
 export default {
     computed: {
@@ -44,6 +44,11 @@ export default {
             return _(this.items).filter(this.fieldFilter('series', series))
                     .filter(this.fieldFilter('cls', cls))
                     .filter(this.fieldFilter('rarity', rarity))
+                    .sortBy([
+                        (item) => SERIES_LIST.indexOf(item.series),
+                        (item) => CLASS_LIST.concat(['Neutral']).indexOf(item.cls),
+                        (item) => item.cost
+                    ])
                     .value();
         },
         fieldFilter(key, value) {
