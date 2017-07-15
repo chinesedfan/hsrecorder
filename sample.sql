@@ -359,6 +359,19 @@ INSERT INTO arena ( id,day,class,wins ) VALUES ( '355','2017-05-15','Mage','4' )
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '356','2017-05-19','Paladin','5' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '357','2017-05-21','Paladin','7' );
 INSERT INTO arena ( id,day,class,wins ) VALUES ( '358','2017-05-21','Hunter','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '359','2017-05-29','Paladin','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '360','2017-05-30','Mage','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '361','2017-06-03','Priest','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '362','2017-06-04','Paladin','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '363','2017-06-04','Rogue','4' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '364','2017-06-06','Mage','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '365','2017-06-10','Paladin','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '366','2017-06-21','Hunter','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '367','2017-06-27','Hunter','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '368','2017-06-30','Rogue','2' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '369','2017-07-03','Priest','3' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '370','2017-07-12','Hunter','5' );
+INSERT INTO arena ( id,day,class,wins ) VALUES ( '371','2017-07-15','Paladin','4' );
 CREATE TABLE lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer);
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '1','PRO_001','Elite Tauren Chieftain','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '2','EX1_112','Gelbin Mekkatorque','0' );
@@ -388,7 +401,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '33','NEW
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '34','EX1_549','Bestial Wrath','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '37','EX1_145','Preparation','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '38','EX1_145','Preparation','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '42','EX1_567','Doomhammer','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '45','EX1_312','Twisting Nether','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '46','EX1_320','Bane of Doom','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '49','EX1_407','Brawl','1' );
@@ -465,7 +477,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '181','AT
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '183','AT_121','Crowd Favorite','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '184','AT_121','Crowd Favorite','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '185','AT_122','Gormok the Impaler','0' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '186','AT_017','Twilight Guardian','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '187','AT_017','Twilight Guardian','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '188','AT_127','Nexus-Champion Saraad','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '190','AT_113','Recruiter','1' );
@@ -517,7 +528,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '260','OG
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '261','OG_314','Blood To Ichor','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '262','OG_276','Blood Warriors','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '263','OG_276','Blood Warriors','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '264','OG_033','Tentacles for Arms','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '265','OG_301','Ancient Shieldbearer','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '266','OG_220','Malkorok','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '267','OG_123','Shifter Zerus','0' );
@@ -566,7 +576,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '324','CF
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '325','CFM_606','Mana Geode','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '327','CFM_604','Greater Healing Potion','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '328','CFM_605','Drakonid Operative','2' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '330','CFM_662','Dragonfire Potion','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '331','CFM_662','Dragonfire Potion','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '332','CFM_693','Gadgetzan Ferryman','2' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '333','CFM_781','Shaku, the Collector','0' );
@@ -595,7 +604,6 @@ INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '369','CF
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '371','CFM_902','Aya Blackpaw','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '372','CFM_855','Defias Cleaner','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '373','CFM_855','Defias Cleaner','1' );
-INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '374','CFM_328','Fight Promoter','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '376','CFM_810','Leatherclad Hogleader','1' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '378','CFM_806','Wrathion','0' );
 INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( '379','CFM_685','Don Han''Cho','0' );
