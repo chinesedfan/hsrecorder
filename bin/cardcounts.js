@@ -80,81 +80,160 @@ CardCounts = {
     },
     "Total": {
         "Paladin": {
-            "Common": 46,
-            "Total": 113,
-            "Rare": 40,
-            "Epic": 22,
-            "Legendary": 5
+            "Common": 58,
+            "Total": 149,
+            "Rare": 52,
+            "Epic": 30,
+            "Legendary": 9
         },
         "Total": {
-            "Common": 734,
-            "Total": 1704,
-            "Rare": 532,
-            "Legendary": 138,
-            "Epic": 300
+            "Common": 930,
+            "Total": 2198,
+            "Epic": 408,
+            "Rare": 676,
+            "Legendary": 184
         },
         "Neutral": {
-            "Common": 320,
-            "Total": 686,
-            "Rare": 172,
-            "Legendary": 92,
-            "Epic": 102
-        },
-        "Warlock": {
-            "Common": 46,
-            "Total": 113,
-            "Epic": 22,
-            "Rare": 40,
-            "Legendary": 5
+            "Common": 408,
+            "Total": 856,
+            "Rare": 208,
+            "Legendary": 102,
+            "Epic": 138
         },
         "Hunter": {
-            "Legendary": 6,
-            "Total": 114,
-            "Common": 46,
-            "Rare": 40,
-            "Epic": 22
+            "Epic": 30,
+            "Total": 150,
+            "Legendary": 10,
+            "Common": 58,
+            "Rare": 52
         },
-        "Druid": {
-            "Rare": 40,
-            "Total": 113,
-            "Epic": 22,
-            "Common": 46,
-            "Legendary": 5
-        },
-        "Shaman": {
-            "Legendary": 5,
-            "Total": 113,
-            "Epic": 22,
-            "Common": 46,
-            "Rare": 40
-        },
-        "Warrior": {
-            "Rare": 40,
-            "Total": 113,
-            "Common": 46,
-            "Epic": 22,
-            "Legendary": 5
-        },
-        "Mage": {
-            "Rare": 40,
-            "Total": 113,
-            "Legendary": 5,
-            "Epic": 22,
-            "Common": 46
-        },
-        "Rogue": {
-            "Common": 46,
-            "Total": 113,
-            "Legendary": 5,
-            "Epic": 22,
-            "Rare": 40
+        "Warlock": {
+            "Common": 58,
+            "Total": 149,
+            "Epic": 30,
+            "Legendary": 9,
+            "Rare": 52
         },
         "Priest": {
-            "Rare": 40,
-            "Total": 113,
-            "Epic": 22,
-            "Common": 46,
-            "Legendary": 5
+            "Common": 58,
+            "Total": 149,
+            "Legendary": 9,
+            "Rare": 52,
+            "Epic": 30
+        },
+        "Druid": {
+            "Rare": 52,
+            "Total": 149,
+            "Epic": 30,
+            "Common": 58,
+            "Legendary": 9
+        },
+        "Shaman": {
+            "Common": 58,
+            "Total": 149,
+            "Legendary": 9,
+            "Epic": 30,
+            "Rare": 52
+        },
+        "Warrior": {
+            "Rare": 52,
+            "Total": 149,
+            "Common": 58,
+            "Epic": 30,
+            "Legendary": 9
+        },
+        "Mage": {
+            "Rare": 52,
+            "Total": 149,
+            "Legendary": 9,
+            "Epic": 30,
+            "Common": 58
+        },
+        "Rogue": {
+            "Common": 58,
+            "Total": 149,
+            "Legendary": 9,
+            "Epic": 30,
+            "Rare": 52
+        }
+    },
+    "ICC": {
+        "Hunter": {
+            "Epic": 4,
+            "Total": 18,
+            "Common": 6,
+            "Rare": 6,
+            "Legendary": 2
+        },
+        "Total": {
+            "Epic": 54,
+            "Total": 247,
+            "Common": 98,
+            "Legendary": 23,
+            "Rare": 72
+        },
+        "Neutral": {
+            "Common": 44,
+            "Total": 85,
+            "Legendary": 5,
+            "Rare": 18,
+            "Epic": 18
+        },
+        "Priest": {
+            "Common": 6,
+            "Total": 18,
+            "Legendary": 2,
+            "Rare": 6,
+            "Epic": 4
+        },
+        "Warrior": {
+            "Common": 6,
+            "Total": 18,
+            "Epic": 4,
+            "Rare": 6,
+            "Legendary": 2
+        },
+        "Paladin": {
+            "Rare": 6,
+            "Total": 18,
+            "Epic": 4,
+            "Legendary": 2,
+            "Common": 6
+        },
+        "Shaman": {
+            "Rare": 6,
+            "Total": 18,
+            "Common": 6,
+            "Epic": 4,
+            "Legendary": 2
+        },
+        "Warlock": {
+            "Legendary": 2,
+            "Total": 18,
+            "Rare": 6,
+            "Common": 6,
+            "Epic": 4
+        },
+        "Rogue": {
+            "Common": 6,
+            "Total": 18,
+            "Epic": 4,
+            "Legendary": 2,
+            "Rare": 6
+        },
+        "Mage": {
+            "Common": 6,
+            "Total": 18,
+            "Rare": 6,
+            "Legendary": 2,
+            "Epic": 4
+        },
+        "Druid": {
+            "Common": 6,
+            "Total": 18,
+            "Rare": 6,
+            "Epic": 4,
+            "Legendary": 2
         }
     },
     "CLASSIC": {
@@ -392,6 +471,85 @@ CardCounts = {
             "Common": 6,
             "Rare": 6,
             "Legendary": 1
+        }
+    },
+    "UNG": {
+        "Paladin": {
+            "Common": 6,
+            "Total": 18,
+            "Epic": 4,
+            "Rare": 6,
+            "Legendary": 2
+        },
+        "Total": {
+            "Common": 98,
+            "Total": 247,
+            "Legendary": 23,
+            "Epic": 54,
+            "Rare": 72
+        },
+        "Shaman": {
+            "Common": 6,
+            "Total": 18,
+            "Rare": 6,
+            "Legendary": 2,
+            "Epic": 4
+        },
+        "Mage": {
+            "Common": 6,
+            "Total": 18,
+            "Rare": 6,
+            "Epic": 4,
+            "Legendary": 2
+        },
+        "Priest": {
+            "Legendary": 2,
+            "Total": 18,
+            "Common": 6,
+            "Rare": 6,
+            "Epic": 4
+        },
+        "Rogue": {
+            "Epic": 4,
+            "Total": 18,
+            "Rare": 6,
+            "Common": 6,
+            "Legendary": 2
+        },
+        "Neutral": {
+            "Epic": 18,
+            "Total": 85,
+            "Rare": 18,
+            "Common": 44,
+            "Legendary": 5
+        },
+        "Warlock": {
+            "Epic": 4,
+            "Total": 18,
+            "Legendary": 2,
+            "Rare": 6,
+            "Common": 6
+        },
+        "Warrior": {
+            "Rare": 6,
+            "Total": 18,
+            "Epic": 4,
+            "Legendary": 2,
+            "Common": 6
+        },
+        "Hunter": {
+            "Common": 6,
+            "Total": 18,
+            "Epic": 4,
+            "Rare": 6,
+            "Legendary": 2
+        },
+        "Druid": {
+            "Rare": 6,
+            "Total": 18,
+            "Common": 6,
+            "Epic": 4,
+            "Legendary": 2
         }
     },
     "GVG": {
