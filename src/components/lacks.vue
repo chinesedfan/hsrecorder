@@ -5,7 +5,7 @@
             <lacks-table clsNames="lacks-left float" :items="items"></lacks-table>
             <div class="lacks-right float">
                 <lacks-list v-for="(item, index) in RARITY_LIST" :style="{width: 100/RARITY_LIST.length + '%'}" clsNames="float"
-                        :title="item.name" :color="item.color" :items="getItems(selectedItem.series, selectedItem.cls, item.name)"></lacks-list>
+                        :title="item.name" :color="item.color" :items="getItems(itemsFilter.series, itemsFilter.cls, item.name)"></lacks-list>
             </div>
         </div>
     </div>
@@ -24,8 +24,8 @@ export default {
         items() {
             return this.$store.state.lacks.items;
         },
-        selectedItem() {
-            return this.$store.state.lacks.selectedItem;
+        itemsFilter() {
+            return this.$store.state.lacks.itemsFilter;
         }
     },
     data() {

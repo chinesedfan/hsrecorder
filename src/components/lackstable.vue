@@ -28,7 +28,7 @@ export default {
         items: Array
     },
     computed: {
-        // {series: {cls: {rarity: count}}}
+        // {series: {cls: {rarity: {target, owned}}}}
         counts() {
             const counts = {};
             const total = 'Total';
@@ -37,9 +37,10 @@ export default {
                 owned: 0
             };
             _.each(this.items, (item) => {
+                const targetCount = item.rarity === 'Legendary' ? 1 : 2;
                 const addItem = {
-                    target: item.rarity === 'Legendary' ? 1 : 2,
-                    owned: item.count
+                    target:targetCount,
+                    owned: targetCount - item.lackCount
                 };
                 
                 this.updateCounts(counts, item.series, item.cls, item.rarity, addItem);
@@ -57,7 +58,7 @@ export default {
 
             return counts;
         },
-        // [{series, rarity}]
+        // [{series, rarity, color}]
         rowItems() {
             return _(this.seriesList).map((series) => {
                 return _.map(this.rarityList, (rarityItem) => {

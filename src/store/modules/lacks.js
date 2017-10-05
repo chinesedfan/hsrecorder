@@ -8,7 +8,7 @@
  * @property {Number} rarity
  * @property {Number} cost
  * @property {String} series
- * @property {Number} count
+ * @property {Number} lackCount
  */
 
 import _ from 'lodash';
@@ -20,7 +20,7 @@ const items = _.map(CardList, (item) => {
     item.cls = getClassByNumber(item.cls);
     item.rarity = getRarityByNumber(item.rarity);
     // FIXME: update with the real data
-    item.count = 0;
+    item.lackCount = 0;
     return item;
 });
 
@@ -30,14 +30,15 @@ export default {
          * @type {CardItem[]}
          */
         items,
-        selectedItem: {
+        // filter
+        itemsFilter: {
             series: 'Total',
             cls: 'Total'
         }
     },
     mutations: {
-        [LACKS_SELECT_CELL](state, item) {
-            state.selectedItem = item;
+        [LACKS_SELECT_CELL](state, {filter}) {
+            state.itemsFilter = filter;
         }
     }
 };
