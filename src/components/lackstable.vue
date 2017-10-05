@@ -5,7 +5,8 @@
                 <th></th>
                 <th v-for="cls in clsList">{{ cls }}</th>
             </tr>
-            <tr v-for="item in rowItems" v-show="item.rarity == 'Total' || item.series == expandedSeries" class="tline">
+            <tr v-for="item in rowItems" v-show="item.rarity == 'Total' || item.series == expandedSeries"
+                    :class="{tline: item.rarity == 'Total' || item.rarity == 'Common'}">
                 <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
                 <td v-for="cls in clsList" :class="getTdCls(item.series, cls, item.rarity)" :style="{color: item.color}"
                         @click="onCellClicked({series: item.series, cls: cls})">{{ getTdText(item.series, cls, item.rarity) }}</td>
