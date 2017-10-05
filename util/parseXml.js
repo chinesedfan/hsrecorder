@@ -113,6 +113,6 @@
 	}
 
 	console.log('CardList =');
-	console.log(objs);
+	console.log(JSON.stringify(objs, null, 4));
 	console.log(';');
 })();
