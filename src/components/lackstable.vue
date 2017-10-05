@@ -18,7 +18,6 @@
 'use strict';
 
 import _ from 'lodash';
-import {mapMutations} from 'vuex';
 import {SERIES_LIST, CLASS_LIST, RARITY_LIST} from '../common/hs';
 import * as types from '../store/mutation-types';
 
@@ -106,11 +105,16 @@ export default {
         },
 
         onSeriesClicked(series) {
+            this.$store.commit(types.LACKS_UPDATE_EDIT_MODE, false);
             this.expandedSeries = this.expandedSeries == series ? '' : series;
         },
-        ...mapMutations({
-            onCellClicked: types.LACKS_SELECT_CELL
-        })
+        onCellClicked(filter) {
+            this.$store.commit(types.LACKS_UPDATE_EDIT_MODE, true);
+            this.$store.commit({
+                type: types.LACKS_SELECT_CELL,
+                filter
+            });
+        }
     }
 };
 
