@@ -100,7 +100,9 @@ var Id2Card = (function() {
             LOEA10: 'LOE',
             OG: 'OG',
             KAR: 'KAR',
-            CFM: 'CFM'
+            CFM: 'CFM',
+            UNG: 'UNG',
+            ICC: 'ICC'
         };
         var prefix = str.replace(/^([^_]+)_.*$/, '$1');
         return map[prefix] || 'CLASSIC';

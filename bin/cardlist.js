@@ -13,6 +13,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Abominable Bowman",
+        "CLASS": 3,
+        "CardID": "ICC_825",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Abomination",
         "CLASS": 12,
         "CardID": "EX1_097",
@@ -31,10 +37,22 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Acherus Veteran",
+        "CLASS": 12,
+        "CardID": "ICC_092",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Acidmaw",
         "CLASS": 3,
         "CardID": "AT_063",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Acolyte of Agony",
+        "CLASS": 6,
+        "CardID": "ICC_212",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Acolyte of Pain",
@@ -43,10 +61,22 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Adaptation",
+        "CLASS": 5,
+        "CardID": "UNG_961",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Addled Grizzly",
         "CLASS": 2,
         "CardID": "OG_313",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Air Elemental",
+        "CLASS": 8,
+        "CardID": "UNG_019",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Al'Akir the Windlord",
@@ -193,6 +223,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Animated Berserker",
+        "CLASS": 10,
+        "CardID": "ICC_238",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Annoy-o-Tron",
         "CLASS": 12,
         "CardID": "GVG_085",
@@ -277,6 +313,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Arcanologist",
+        "CLASS": 4,
+        "CardID": "UNG_020",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Arcanosmith",
         "CLASS": 12,
         "CardID": "KAR_710",
@@ -289,9 +331,21 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Archbishop Benedictus",
+        "CLASS": 6,
+        "CardID": "ICC_215",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Archmage Antonidas",
         "CLASS": 4,
         "CardID": "EX1_559",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Arfus",
+        "CLASS": 12,
+        "CardID": "ICC_854",
         "RARITY": 5
     },
     {
@@ -343,6 +397,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Arrogant Crusader",
+        "CLASS": 5,
+        "CardID": "ICC_034",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Astral Communion",
         "CLASS": 2,
         "CardID": "AT_043",
@@ -359,6 +419,12 @@ CardList =
         "CLASS": 12,
         "CardID": "CFM_807",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Avalanche",
+        "CLASS": 8,
+        "CardID": "ICC_078",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Avenge",
@@ -382,6 +448,12 @@ CardList =
         "CARDNAME": "Aviana",
         "CLASS": 2,
         "CardID": "AT_045",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Awaken the Makers",
+        "CLASS": 6,
+        "CardID": "UNG_940",
         "RARITY": 5
     },
     {
@@ -469,6 +541,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Bearshark",
+        "CLASS": 3,
+        "CardID": "ICC_419",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Beckoner of Evil",
         "CLASS": 12,
         "CardID": "OG_281",
@@ -511,10 +589,34 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Binding Heal",
+        "CLASS": 6,
+        "CardID": "UNG_030",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Bite",
         "CLASS": 2,
         "CardID": "EX1_570",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Biteweed",
+        "CLASS": 7,
+        "CardID": "UNG_063",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Bittertide Hydra",
+        "CLASS": 12,
+        "CardID": "UNG_087",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Blackguard",
+        "CLASS": 5,
+        "CardID": "ICC_245",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Blackwater Pirate",
@@ -559,6 +661,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Blazecaller",
+        "CLASS": 12,
+        "CardID": "UNG_847",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Blessed Champion",
         "CLASS": 5,
         "CardID": "EX1_355",
@@ -601,6 +709,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Blood Razor",
+        "CLASS": 10,
+        "CardID": "ICC_064",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Blood To Ichor",
         "CLASS": 10,
         "CardID": "OG_314",
@@ -610,6 +724,18 @@ CardList =
         "CARDNAME": "Blood Warriors",
         "CLASS": 10,
         "CardID": "OG_276",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Blood-Queen Lana'thel",
+        "CLASS": 9,
+        "CardID": "ICC_841",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Bloodbloom",
+        "CLASS": 9,
+        "CardID": "UNG_832",
         "RARITY": 4
     },
     {
@@ -631,6 +757,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Bloodreaver Gul'dan",
+        "CLASS": 9,
+        "CardID": "ICC_831",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Bloodsail Corsair",
         "CLASS": 12,
         "CardID": "NEW1_025",
@@ -646,6 +778,12 @@ CardList =
         "CARDNAME": "Bloodsail Raider",
         "CLASS": 12,
         "CardID": "NEW1_018",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Bloodworm",
+        "CLASS": 12,
+        "CardID": "ICC_905",
         "RARITY": 1
     },
     {
@@ -685,6 +823,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Bolvar, Fireblood",
+        "CLASS": 5,
+        "CardID": "ICC_858",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Bomb Lobber",
         "CLASS": 12,
         "CardID": "GVG_099",
@@ -697,9 +841,27 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Bone Baron",
+        "CLASS": 7,
+        "CardID": "ICC_065",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Bone Drake",
+        "CLASS": 12,
+        "CardID": "ICC_027",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Boneguard Lieutenant",
         "CLASS": 12,
         "CardID": "AT_089",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Bonemare",
+        "CLASS": 12,
+        "CardID": "ICC_705",
         "RARITY": 1
     },
     {
@@ -737,6 +899,30 @@ CardList =
         "CLASS": 10,
         "CardID": "EX1_407",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Breath of Sindragosa",
+        "CLASS": 4,
+        "CardID": "ICC_836",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Bright-Eyed Scout",
+        "CLASS": 12,
+        "CardID": "UNG_113",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Bring It On!",
+        "CLASS": 10,
+        "CardID": "ICC_837",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Brrrloc",
+        "CLASS": 8,
+        "CardID": "ICC_058",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Buccaneer",
@@ -853,16 +1039,34 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Charged Devilsaur",
+        "CLASS": 12,
+        "CardID": "UNG_099",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Charged Hammer",
         "CLASS": 8,
         "CardID": "AT_050",
         "RARITY": 4
     },
     {
+        "CARDNAME": "Chillblade Champion",
+        "CLASS": 5,
+        "CardID": "ICC_820",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Chillmaw",
         "CLASS": 12,
         "CardID": "AT_123",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Chittering Tunneler",
+        "CLASS": 9,
+        "CardID": "UNG_835",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Cho'gall",
@@ -907,10 +1111,22 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Clutchmother Zavas",
+        "CLASS": 9,
+        "CardID": "UNG_836",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Cobalt Guardian",
         "CLASS": 5,
         "CardID": "GVG_062",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Cobalt Scalebane",
+        "CLASS": 12,
+        "CardID": "ICC_029",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Cobra Shot",
@@ -959,6 +1175,12 @@ CardList =
         "CLASS": 12,
         "CardID": "EX1_103",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Coldwraith",
+        "CLASS": 4,
+        "CardID": "ICC_252",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Coliseum Manager",
@@ -1015,6 +1237,30 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Cornered Sentry",
+        "CLASS": 10,
+        "CardID": "UNG_926",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Corpse Raiser",
+        "CLASS": 12,
+        "CardID": "ICC_257",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Corpse Widow",
+        "CLASS": 3,
+        "CardID": "ICC_243",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Corpsetaker",
+        "CLASS": 12,
+        "CardID": "ICC_912",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Corrupted Healbot",
         "CLASS": 12,
         "CardID": "OG_147",
@@ -1024,6 +1270,12 @@ CardList =
         "CARDNAME": "Corrupted Seer",
         "CLASS": 12,
         "CardID": "OG_161",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Corrupting Mist",
+        "CLASS": 9,
+        "CardID": "UNG_831",
         "RARITY": 3
     },
     {
@@ -1045,6 +1297,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Crackling Razormaw",
+        "CLASS": 3,
+        "CardID": "UNG_915",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Crazed Alchemist",
         "CLASS": 12,
         "CardID": "EX1_059",
@@ -1063,6 +1321,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Cruel Dinomancer",
+        "CLASS": 9,
+        "CardID": "UNG_830",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Cruel Taskmaster",
         "CLASS": 10,
         "CardID": "EX1_603",
@@ -1079,6 +1343,24 @@ CardList =
         "CLASS": 4,
         "CardID": "CFM_671",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Cryostasis",
+        "CLASS": 8,
+        "CardID": "ICC_056",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Crypt Lord",
+        "CLASS": 2,
+        "CardID": "ICC_808",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Crystalline Oracle",
+        "CLASS": 6,
+        "CardID": "UNG_032",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Crystalweaver",
@@ -1103,6 +1385,12 @@ CardList =
         "CLASS": 4,
         "CardID": "OG_303",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Curious Glimmerroot",
+        "CLASS": 6,
+        "CardID": "UNG_035",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Curse of Rafaam",
@@ -1157,6 +1445,12 @@ CardList =
         "CLASS": 9,
         "CardID": "AT_025",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Dark Conviction",
+        "CLASS": 5,
+        "CardID": "ICC_039",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Dark Cultist",
@@ -1231,6 +1525,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Dead Man's Hand",
+        "CLASS": 10,
+        "CardID": "ICC_091",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Deadly Fork",
         "CLASS": 7,
         "CardID": "KAR_094",
@@ -1243,16 +1543,46 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Deadscale Knight",
+        "CLASS": 12,
+        "CardID": "ICC_220",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Death Revenant",
+        "CLASS": 10,
+        "CardID": "ICC_450",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Death's Bite",
         "CLASS": 10,
         "CardID": "FP1_021",
         "RARITY": 1
     },
     {
+        "CARDNAME": "Deathaxe Punisher",
+        "CLASS": 12,
+        "CardID": "ICC_810",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Deathlord",
         "CLASS": 12,
         "CardID": "FP1_009",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Deathspeaker",
+        "CLASS": 12,
+        "CardID": "ICC_467",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Deathstalker Rexxar",
+        "CLASS": 3,
+        "CardID": "ICC_828",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Deathwing",
@@ -1283,6 +1613,12 @@ CardList =
         "CLASS": 7,
         "CardID": "EX1_131",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Defile",
+        "CLASS": 9,
+        "CardID": "ICC_041",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Demented Frostcaller",
@@ -1327,16 +1663,58 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Desperate Stand",
+        "CLASS": 5,
+        "CardID": "ICC_244",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Despicable Dreadlord",
+        "CLASS": 9,
+        "CardID": "ICC_075",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Devilsaur Egg",
+        "CLASS": 12,
+        "CardID": "UNG_083",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Devolve",
         "CLASS": 8,
         "CardID": "CFM_696",
         "RARITY": 3
     },
     {
+        "CARDNAME": "Devour Mind",
+        "CLASS": 6,
+        "CardID": "ICC_207",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Dinomancy",
+        "CLASS": 3,
+        "CardID": "UNG_917",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Dinosize",
+        "CLASS": 5,
+        "CardID": "UNG_004",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Dire Wolf Alpha",
         "CLASS": 12,
         "CardID": "EX1_162",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Direhorn Hatchling",
+        "CLASS": 10,
+        "CardID": "UNG_957",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Dirty Rat",
@@ -1391,6 +1769,18 @@ CardList =
         "CLASS": 12,
         "CardID": "OG_255",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Doomed Apprentice",
+        "CLASS": 4,
+        "CardID": "ICC_083",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Doomerang",
+        "CLASS": 7,
+        "CardID": "ICC_233",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Doomguard",
@@ -1465,6 +1855,24 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Drain Soul",
+        "CLASS": 9,
+        "CardID": "ICC_055",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Drakkari Defender",
+        "CLASS": 8,
+        "CardID": "ICC_081",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Drakkari Enchanter",
+        "CLASS": 12,
+        "CardID": "ICC_901",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Drakonid Crusher",
         "CLASS": 12,
         "CardID": "BRM_024",
@@ -1517,6 +1925,12 @@ CardList =
         "CLASS": 2,
         "CardID": "AT_042",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Druid of the Swarm",
+        "CLASS": 2,
+        "CardID": "ICC_051",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Dunemaul Shaman",
@@ -1573,6 +1987,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Earthen Scales",
+        "CLASS": 2,
+        "CardID": "UNG_108",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Eater of Secrets",
         "CLASS": 12,
         "CardID": "OG_254",
@@ -1609,6 +2029,18 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Eggnapper",
+        "CLASS": 12,
+        "CardID": "UNG_076",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Elder Longneck",
+        "CLASS": 2,
+        "CardID": "UNG_109",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Eldritch Horror",
         "CLASS": 12,
         "CardID": "OG_142",
@@ -1627,16 +2059,40 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Elise the Trailblazer",
+        "CLASS": 12,
+        "CardID": "UNG_851",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Elite Tauren Chieftain",
         "CLASS": 12,
         "CardID": "PRO_001",
         "RARITY": 5
     },
     {
+        "CARDNAME": "Embrace Darkness",
+        "CLASS": 6,
+        "CardID": "ICC_849",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Embrace the Shadow",
         "CLASS": 6,
         "CardID": "OG_104",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Emerald Hive Queen",
+        "CLASS": 12,
+        "CardID": "UNG_085",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Emerald Reaver",
+        "CLASS": 12,
+        "CardID": "UNG_803",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Emperor Cobra",
@@ -1675,6 +2131,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Envenom Weapon",
+        "CLASS": 7,
+        "CardID": "UNG_823",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Equality",
         "CLASS": 5,
         "CardID": "EX1_619",
@@ -1685,6 +2147,12 @@ CardList =
         "CLASS": 8,
         "CardID": "OG_026",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Eternal Servitude",
+        "CLASS": 6,
+        "CardID": "ICC_213",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Ethereal Arcanist",
@@ -1735,10 +2203,28 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Evolving Spores",
+        "CLASS": 2,
+        "CardID": "UNG_103",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Excavated Evil",
         "CLASS": 6,
         "CardID": "LOE_111",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Exploding Bloatbat",
+        "CLASS": 3,
+        "CardID": "ICC_021",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Explore Un'Goro",
+        "CLASS": 10,
+        "CardID": "UNG_922",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Explorer's Hat",
@@ -1813,6 +2299,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Fallen Sun Cleric",
+        "CLASS": 12,
+        "CardID": "ICC_094",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Fandral Staghelm",
         "CLASS": 2,
         "CardID": "OG_044",
@@ -1825,10 +2317,22 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Fatespinner",
+        "CLASS": 2,
+        "CardID": "ICC_047",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Fearsome Doomguard",
         "CLASS": 9,
         "CardID": "AT_020",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Feeding Time",
+        "CLASS": 9,
+        "CardID": "UNG_834",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Feign Death",
@@ -1927,6 +2431,30 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Fire Fly",
+        "CLASS": 12,
+        "CardID": "UNG_809",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Fire Plume Harbinger",
+        "CLASS": 8,
+        "CardID": "UNG_202",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Fire Plume Phoenix",
+        "CLASS": 12,
+        "CardID": "UNG_084",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Fire Plume's Heart",
+        "CLASS": 10,
+        "CardID": "UNG_934",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Fireguard Destroyer",
         "CLASS": 8,
         "CardID": "BRM_012",
@@ -1949,6 +2477,12 @@ CardList =
         "CLASS": 12,
         "CardID": "AT_129",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Flame Geyser",
+        "CLASS": 4,
+        "CardID": "UNG_018",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Flame Imp",
@@ -2077,6 +2611,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Forge of Souls",
+        "CLASS": 10,
+        "CardID": "ICC_281",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Forgotten Torch",
         "CLASS": 4,
         "CardID": "LOE_002",
@@ -2099,6 +2639,12 @@ CardList =
         "CLASS": 12,
         "CardID": "LOE_073",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Free From Amber",
+        "CLASS": 6,
+        "CardID": "UNG_854",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Freezing Potion",
@@ -2137,10 +2683,34 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Frost Lich Jaina",
+        "CLASS": 4,
+        "CardID": "ICC_833",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Frothing Berserker",
         "CLASS": 10,
         "CardID": "EX1_604",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Frozen Clone",
+        "CLASS": 4,
+        "CardID": "ICC_082",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Frozen Crusher",
+        "CLASS": 12,
+        "CardID": "UNG_079",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Furnacefire Colossus",
+        "CLASS": 12,
+        "CardID": "ICC_096",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Gadgetzan Auctioneer",
@@ -2197,6 +2767,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Gentle Megasaur",
+        "CLASS": 12,
+        "CardID": "UNG_089",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Genzo, the Shark",
         "CLASS": 12,
         "CardID": "CFM_808",
@@ -2209,15 +2785,51 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Ghastly Conjurer",
+        "CLASS": 4,
+        "CardID": "ICC_069",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Giant Anaconda",
+        "CLASS": 2,
+        "CardID": "UNG_086",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Giant Mastodon",
+        "CLASS": 12,
+        "CardID": "UNG_071",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Giant Sand Worm",
         "CLASS": 3,
         "CardID": "OG_308",
         "RARITY": 4
     },
     {
+        "CARDNAME": "Giant Wasp",
+        "CLASS": 12,
+        "CardID": "UNG_814",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Gilblin Stalker",
         "CLASS": 12,
         "CardID": "GVG_081",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Glacial Mysteries",
+        "CLASS": 4,
+        "CardID": "ICC_086",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Glacial Shard",
+        "CLASS": 12,
+        "CardID": "UNG_205",
         "RARITY": 1
     },
     {
@@ -2231,6 +2843,24 @@ CardList =
         "CLASS": 3,
         "CardID": "GVG_043",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Gluttonous Ooze",
+        "CLASS": 12,
+        "CardID": "UNG_946",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Gnash",
+        "CLASS": 2,
+        "CardID": "ICC_079",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Gnomeferatu",
+        "CLASS": 9,
+        "CardID": "ICC_407",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Gnomeregan Infantry",
@@ -2263,6 +2893,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Golakka Crawler",
+        "CLASS": 12,
+        "CardID": "UNG_807",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Gorehowl",
         "CLASS": 10,
         "CardID": "EX1_411",
@@ -2287,6 +2923,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Grave Shambler",
+        "CLASS": 12,
+        "CardID": "ICC_097",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Greater Arcane Missiles",
         "CLASS": 4,
         "CardID": "CFM_623",
@@ -2297,6 +2939,18 @@ CardList =
         "CLASS": 6,
         "CardID": "CFM_604",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Grievous Bite",
+        "CLASS": 3,
+        "CardID": "UNG_910",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Grim Necromancer",
+        "CLASS": 12,
+        "CardID": "ICC_026",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Grim Patron",
@@ -2383,16 +3037,34 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Hadronox",
+        "CLASS": 2,
+        "CardID": "ICC_835",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Hallazeal the Ascended",
         "CLASS": 8,
         "CardID": "OG_209",
         "RARITY": 5
     },
     {
+        "CARDNAME": "Hallucination",
+        "CLASS": 7,
+        "CardID": "UNG_856",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Hammer of Twilight",
         "CLASS": 8,
         "CardID": "OG_031",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Happy Ghoul",
+        "CLASS": 12,
+        "CardID": "ICC_700",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Harrison Jones",
@@ -2428,6 +3100,12 @@ CardList =
         "CARDNAME": "Hemet Nesingwary",
         "CLASS": 12,
         "CardID": "GVG_120",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Hemet, Jungle Hunter",
+        "CLASS": 12,
+        "CardID": "UNG_840",
         "RARITY": 5
     },
     {
@@ -2497,6 +3175,24 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Hot Spring Guardian",
+        "CLASS": 8,
+        "CardID": "UNG_938",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Howlfiend",
+        "CLASS": 9,
+        "CardID": "ICC_218",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Howling Commander",
+        "CLASS": 5,
+        "CardID": "ICC_801",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Hozen Healer",
         "CLASS": 12,
         "CardID": "CFM_067",
@@ -2509,6 +3205,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Humongous Razorleaf",
+        "CLASS": 12,
+        "CardID": "UNG_844",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Hungry Crab",
         "CLASS": 12,
         "CardID": "NEW1_017",
@@ -2518,6 +3220,18 @@ CardList =
         "CARDNAME": "Hungry Dragon",
         "CLASS": 12,
         "CardID": "BRM_026",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Hydrologist",
+        "CLASS": 5,
+        "CardID": "UNG_011",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Hyldnir Frostrider",
+        "CLASS": 12,
+        "CardID": "ICC_855",
         "RARITY": 1
     },
     {
@@ -2539,6 +3253,18 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Ice Breaker",
+        "CLASS": 8,
+        "CardID": "ICC_236",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Ice Fishing",
+        "CLASS": 8,
+        "CardID": "ICC_089",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Ice Lance",
         "CLASS": 4,
         "CardID": "CS2_031",
@@ -2551,10 +3277,22 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Ice Walker",
+        "CLASS": 4,
+        "CardID": "ICC_068",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Icehowl",
         "CLASS": 12,
         "CardID": "AT_125",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Igneous Elemental",
+        "CLASS": 12,
+        "CardID": "UNG_845",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Illidan Stormrage",
@@ -2632,6 +3370,12 @@ CardList =
         "CARDNAME": "Inner Rage",
         "CLASS": 10,
         "CardID": "EX1_607",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Iron Hide",
+        "CLASS": 10,
+        "CardID": "UNG_923",
         "RARITY": 1
     },
     {
@@ -2725,6 +3469,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Jeweled Macaw",
+        "CLASS": 3,
+        "CardID": "UNG_912",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Jeweled Scarab",
         "CLASS": 12,
         "CardID": "LOE_029",
@@ -2741,6 +3491,12 @@ CardList =
         "CLASS": 7,
         "CardID": "OG_072",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Jungle Giants",
+        "CLASS": 2,
+        "CardID": "UNG_116",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Jungle Moonkin",
@@ -2809,6 +3565,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Kalimos, Primal Lord",
+        "CLASS": 8,
+        "CardID": "UNG_211",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Kara Kazham!",
         "CLASS": 9,
         "CardID": "KAR_025",
@@ -2819,6 +3581,12 @@ CardList =
         "CLASS": 12,
         "CardID": "CFM_621",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Keening Banshee",
+        "CLASS": 12,
+        "CardID": "ICC_911",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Keeper of the Grove",
@@ -2860,6 +3628,12 @@ CardList =
         "CARDNAME": "King Krush",
         "CLASS": 3,
         "CardID": "EX1_543",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "King Mosh",
+        "CLASS": 10,
+        "CardID": "UNG_933",
         "RARITY": 5
     },
     {
@@ -2947,6 +3721,18 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Lakkari Felhound",
+        "CLASS": 9,
+        "CardID": "UNG_833",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Lakkari Sacrifice",
+        "CLASS": 9,
+        "CardID": "UNG_829",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Lance Carrier",
         "CLASS": 12,
         "CardID": "AT_084",
@@ -2977,6 +3763,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Leeching Poison",
+        "CLASS": 7,
+        "CardID": "ICC_221",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Leeroy Jenkins",
         "CLASS": 12,
         "CardID": "EX1_116",
@@ -3001,10 +3793,22 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Light's Sorrow",
+        "CLASS": 5,
+        "CardID": "ICC_071",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Lightbomb",
         "CLASS": 6,
         "CardID": "GVG_008",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Lightfused Stegodon",
+        "CLASS": 5,
+        "CardID": "UNG_962",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Lightning Bolt",
@@ -3043,6 +3847,18 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Lilian Voss",
+        "CLASS": 7,
+        "CardID": "ICC_811",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Living Mana",
+        "CLASS": 2,
+        "CardID": "UNG_111",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Living Roots",
         "CLASS": 2,
         "CardID": "AT_037",
@@ -3077,6 +3893,12 @@ CardList =
         "CLASS": 12,
         "CardID": "EX1_100",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Lost in the Jungle",
+        "CLASS": 5,
+        "CardID": "UNG_960",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Lost Tallstrider",
@@ -3119,6 +3941,12 @@ CardList =
         "CLASS": 2,
         "CardID": "CFM_811",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Lyra the Sunshard",
+        "CLASS": 6,
+        "CardID": "UNG_963",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Mad Bomber",
@@ -3187,6 +4015,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Malfurion the Pestilent",
+        "CLASS": 2,
+        "CardID": "ICC_832",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Malkorok",
         "CLASS": 10,
         "CardID": "OG_220",
@@ -3208,6 +4042,12 @@ CardList =
         "CARDNAME": "Mana Addict",
         "CLASS": 12,
         "CardID": "EX1_055",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Mana Bind",
+        "CLASS": 4,
+        "CardID": "UNG_024",
         "RARITY": 3
     },
     {
@@ -3307,6 +4147,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Meat Wagon",
+        "CLASS": 12,
+        "CardID": "ICC_812",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Mech-Bear-Cat",
         "CLASS": 2,
         "CardID": "GVG_034",
@@ -3361,6 +4207,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Meteor",
+        "CLASS": 4,
+        "CardID": "UNG_955",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Micro Machine",
         "CLASS": 12,
         "CardID": "GVG_103",
@@ -3379,6 +4231,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Mimic Pod",
+        "CLASS": 7,
+        "CardID": "UNG_060",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Mimiron's Head",
         "CLASS": 12,
         "CardID": "GVG_111",
@@ -3388,6 +4246,12 @@ CardList =
         "CARDNAME": "Mind Control Tech",
         "CLASS": 12,
         "CardID": "EX1_085",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Mindbreaker",
+        "CLASS": 12,
+        "CardID": "ICC_902",
         "RARITY": 3
     },
     {
@@ -3401,6 +4265,12 @@ CardList =
         "CLASS": 12,
         "CardID": "GVG_109",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Mirage Caller",
+        "CLASS": 6,
+        "CardID": "UNG_022",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Mire Keeper",
@@ -3457,16 +4327,34 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Molten Blade",
+        "CLASS": 10,
+        "CardID": "UNG_929",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Molten Giant",
         "CLASS": 12,
         "CardID": "EX1_620",
         "RARITY": 4
     },
     {
+        "CARDNAME": "Molten Reflection",
+        "CLASS": 4,
+        "CardID": "UNG_948",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Moonglade Portal",
         "CLASS": 2,
         "CardID": "KAR_075",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Moorabi",
+        "CLASS": 8,
+        "CardID": "ICC_289",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Moroes",
@@ -3485,6 +4373,12 @@ CardList =
         "CLASS": 12,
         "CardID": "EX1_105",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Mountainfire Armor",
+        "CLASS": 10,
+        "CardID": "ICC_062",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Mounted Raptor",
@@ -3595,6 +4489,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Necrotic Geist",
+        "CLASS": 12,
+        "CardID": "ICC_900",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Nefarian",
         "CLASS": 12,
         "CardID": "BRM_030",
@@ -3625,6 +4525,18 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Nerubian Unraveler",
+        "CLASS": 12,
+        "CardID": "ICC_706",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Nesting Roc",
+        "CLASS": 12,
+        "CardID": "UNG_801",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Netherspite Historian",
         "CLASS": 12,
         "CardID": "KAR_062",
@@ -3635,6 +4547,12 @@ CardList =
         "CLASS": 12,
         "CardID": "AT_127",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Night Howler",
+        "CLASS": 12,
+        "CardID": "ICC_031",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Nightbane Templar",
@@ -3671,6 +4589,18 @@ CardList =
         "CLASS": 10,
         "CardID": "LOE_009",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Obsidian Shard",
+        "CLASS": 7,
+        "CardID": "UNG_061",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Obsidian Statue",
+        "CLASS": 6,
+        "CardID": "ICC_214",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Ogre Brute",
@@ -3721,10 +4651,28 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Open the Waygate",
+        "CLASS": 4,
+        "CardID": "UNG_028",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Orgrimmar Aspirant",
         "CLASS": 10,
         "CardID": "AT_066",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Ornery Direhorn",
+        "CLASS": 10,
+        "CardID": "UNG_925",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Ozruk",
+        "CLASS": 12,
+        "CardID": "UNG_907",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Pantry Spider",
@@ -3748,6 +4696,12 @@ CardList =
         "CARDNAME": "Perdition's Blade",
         "CLASS": 7,
         "CardID": "EX1_133",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Phantom Freebooter",
+        "CLASS": 12,
+        "CardID": "ICC_018",
         "RARITY": 3
     },
     {
@@ -3802,6 +4756,18 @@ CardList =
         "CARDNAME": "Pit Snake",
         "CLASS": 7,
         "CardID": "LOE_010",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Plague Scientist",
+        "CLASS": 7,
+        "CardID": "ICC_809",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Play Dead",
+        "CLASS": 3,
+        "CardID": "ICC_052",
         "RARITY": 1
     },
     {
@@ -3913,15 +4879,69 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Primalfin Champion",
+        "CLASS": 5,
+        "CardID": "UNG_953",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Primalfin Lookout",
+        "CLASS": 12,
+        "CardID": "UNG_937",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Primalfin Totem",
+        "CLASS": 8,
+        "CardID": "UNG_201",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Primordial Drake",
+        "CLASS": 12,
+        "CardID": "UNG_848",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Primordial Glyph",
+        "CLASS": 4,
+        "CardID": "UNG_941",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Prince Keleseth",
+        "CLASS": 12,
+        "CardID": "ICC_851",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Prince Malchezaar",
         "CLASS": 12,
         "CardID": "KAR_096",
         "RARITY": 5
     },
     {
+        "CARDNAME": "Prince Taldaram",
+        "CLASS": 12,
+        "CardID": "ICC_852",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Prince Valanar",
+        "CLASS": 12,
+        "CardID": "ICC_853",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Princess Huhuran",
         "CLASS": 3,
         "CardID": "OG_309",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Professor Putricide",
+        "CLASS": 3,
+        "CardID": "ICC_204",
         "RARITY": 5
     },
     {
@@ -3940,6 +4960,12 @@ CardList =
         "CARDNAME": "Psych-o-Tron",
         "CLASS": 12,
         "CardID": "OG_145",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Pterrordax Hatchling",
+        "CLASS": 12,
+        "CardID": "UNG_001",
         "RARITY": 1
     },
     {
@@ -3967,6 +4993,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Pyros",
+        "CLASS": 4,
+        "CardID": "UNG_027",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Quartermaster",
         "CLASS": 5,
         "CardID": "GVG_060",
@@ -3982,6 +5014,12 @@ CardList =
         "CARDNAME": "Quick Shot",
         "CLASS": 3,
         "CardID": "BRM_013",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Radiant Elemental",
+        "CLASS": 6,
+        "CardID": "UNG_034",
         "RARITY": 1
     },
     {
@@ -4021,15 +5059,33 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Raptor Hatchling",
+        "CLASS": 3,
+        "CardID": "UNG_914",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Rat Pack",
         "CLASS": 3,
         "CardID": "CFM_316",
         "RARITY": 4
     },
     {
+        "CARDNAME": "Rattling Rascal",
+        "CLASS": 12,
+        "CardID": "ICC_025",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Ravaging Ghoul",
         "CLASS": 10,
         "CardID": "OG_149",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Ravasaur Runt",
+        "CLASS": 12,
+        "CardID": "UNG_009",
         "RARITY": 1
     },
     {
@@ -4045,10 +5101,28 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Ravenous Pterrordax",
+        "CLASS": 9,
+        "CardID": "UNG_047",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Raza the Chained",
         "CLASS": 6,
         "CardID": "CFM_020",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Razorpetal Lasher",
+        "CLASS": 7,
+        "CardID": "UNG_058",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Razorpetal Volley",
+        "CLASS": 7,
+        "CardID": "UNG_057",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Recombobulator",
@@ -4141,10 +5215,40 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Righteous Protector",
+        "CLASS": 5,
+        "CardID": "ICC_038",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Rockpool Hunter",
+        "CLASS": 12,
+        "CardID": "UNG_073",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Roll the Bones",
+        "CLASS": 7,
+        "CardID": "ICC_201",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Rotface",
+        "CLASS": 10,
+        "CardID": "ICC_405",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Rumbling Elemental",
         "CLASS": 8,
         "CardID": "LOE_016",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Runeforge Haunter",
+        "CLASS": 7,
+        "CardID": "ICC_240",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Runic Egg",
@@ -4165,6 +5269,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Sabretooth Stalker",
+        "CLASS": 12,
+        "CardID": "UNG_812",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Sacred Trial",
         "CLASS": 5,
         "CardID": "LOE_027",
@@ -4174,6 +5284,24 @@ CardList =
         "CARDNAME": "Salty Dog",
         "CLASS": 12,
         "CardID": "GVG_070",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Sanguine Reveler",
+        "CLASS": 9,
+        "CardID": "ICC_903",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Saronite Chain Gang",
+        "CLASS": 12,
+        "CardID": "ICC_466",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Sated Threshadon",
+        "CLASS": 12,
+        "CardID": "UNG_010",
         "RARITY": 1
     },
     {
@@ -4217,6 +5345,12 @@ CardList =
         "CLASS": 3,
         "CardID": "EX1_531",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Scourgelord Garrosh",
+        "CLASS": 10,
+        "CardID": "ICC_834",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Screwjank Clunker",
@@ -4285,6 +5419,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Servant of Kalimos",
+        "CLASS": 12,
+        "CardID": "UNG_816",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Servant of Yogg-Saron",
         "CLASS": 4,
         "CardID": "OG_087",
@@ -4301,6 +5441,18 @@ CardList =
         "CLASS": 7,
         "CardID": "AT_028",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Shadow Ascendant",
+        "CLASS": 6,
+        "CardID": "ICC_210",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Shadow Essence",
+        "CLASS": 6,
+        "CardID": "ICC_235",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Shadow Madness",
@@ -4327,9 +5479,21 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Shadow Visions",
+        "CLASS": 6,
+        "CardID": "UNG_029",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Shadow Word: Horror",
         "CLASS": 6,
         "CardID": "OG_100",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Shadowblade",
+        "CLASS": 7,
+        "CardID": "ICC_850",
         "RARITY": 3
     },
     {
@@ -4369,6 +5533,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Shadowreaper Anduin",
+        "CLASS": 6,
+        "CardID": "ICC_830",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Shadowstep",
         "CLASS": 7,
         "CardID": "EX1_144",
@@ -4393,10 +5563,28 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Shallow Gravedigger",
+        "CLASS": 12,
+        "CardID": "ICC_702",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Shatter",
         "CLASS": 4,
         "CardID": "OG_081",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Shellshifter",
+        "CLASS": 2,
+        "CardID": "UNG_101",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Sherazin, Corpse Flower",
+        "CLASS": 7,
+        "CardID": "UNG_065",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Shield Slam",
@@ -4433,6 +5621,12 @@ CardList =
         "CLASS": 6,
         "CardID": "OG_335",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Shimmering Tempest",
+        "CLASS": 4,
+        "CardID": "UNG_846",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Ship's Cannon",
@@ -4519,6 +5713,18 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Simulacrum",
+        "CLASS": 4,
+        "CardID": "ICC_823",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Sindragosa",
+        "CLASS": 4,
+        "CardID": "ICC_838",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Siphon Soul",
         "CLASS": 9,
         "CardID": "EX1_309",
@@ -4531,10 +5737,22 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Skelemancer",
+        "CLASS": 12,
+        "CardID": "ICC_019",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Skeram Cultist",
         "CLASS": 12,
         "CardID": "OG_339",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Skulking Geist",
+        "CLASS": 12,
+        "CardID": "ICC_701",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Skycap'n Kragg",
@@ -4609,6 +5827,18 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Snowflipper Penguin",
+        "CLASS": 12,
+        "CardID": "ICC_023",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Snowfury Giant",
+        "CLASS": 8,
+        "CardID": "ICC_090",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Soggoth the Slitherer",
         "CLASS": 12,
         "CardID": "OG_340",
@@ -4681,6 +5911,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Spectral Pillager",
+        "CLASS": 7,
+        "CardID": "ICC_910",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Spellbender",
         "CLASS": 4,
         "CardID": "tt_010",
@@ -4699,6 +5935,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Spellweaver",
+        "CLASS": 12,
+        "CardID": "ICC_856",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Spider Tank",
         "CLASS": 12,
         "CardID": "GVG_044",
@@ -4711,10 +5953,34 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Spikeridged Steed",
+        "CLASS": 5,
+        "CardID": "UNG_952",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Spirit Claws",
         "CLASS": 8,
         "CardID": "KAR_063",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Spirit Echo",
+        "CLASS": 8,
+        "CardID": "UNG_956",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Spirit Lash",
+        "CLASS": 6,
+        "CardID": "ICC_802",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Spiritsinger Umbra",
+        "CLASS": 12,
+        "CardID": "UNG_900",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Spiteful Smith",
@@ -4726,6 +5992,12 @@ CardList =
         "CARDNAME": "Spreading Madness",
         "CLASS": 9,
         "CardID": "OG_116",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Spreading Plague",
+        "CLASS": 2,
+        "CardID": "ICC_054",
         "RARITY": 3
     },
     {
@@ -4747,6 +6019,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Stampede",
+        "CLASS": 3,
+        "CardID": "UNG_916",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Stampeding Kodo",
         "CLASS": 12,
         "CardID": "NEW1_041",
@@ -4765,10 +6043,22 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Steam Surger",
+        "CLASS": 4,
+        "CardID": "UNG_021",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Steamwheedle Sniper",
         "CLASS": 3,
         "CardID": "GVG_087",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Stegodon",
+        "CLASS": 12,
+        "CardID": "UNG_810",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Steward of Darkshire",
@@ -4777,9 +6067,27 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Stitched Tracker",
+        "CLASS": 3,
+        "CardID": "ICC_415",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Stolen Goods",
         "CLASS": 10,
         "CardID": "CFM_752",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Stone Sentinel",
+        "CLASS": 8,
+        "CardID": "UNG_208",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Stonehill Defender",
+        "CLASS": 12,
+        "CardID": "UNG_072",
         "RARITY": 3
     },
     {
@@ -4807,6 +6115,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Stormwatcher",
+        "CLASS": 12,
+        "CardID": "UNG_813",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Stranglethorn Tiger",
         "CLASS": 12,
         "CardID": "EX1_028",
@@ -4825,6 +6139,24 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Strongshell Scavenger",
+        "CLASS": 2,
+        "CardID": "ICC_807",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Stubborn Gastropod",
+        "CLASS": 12,
+        "CardID": "UNG_808",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Sudden Genesis",
+        "CLASS": 10,
+        "CardID": "UNG_927",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Summoning Portal",
         "CLASS": 9,
         "CardID": "EX1_315",
@@ -4837,16 +6169,34 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Sunborne Val'kyr",
+        "CLASS": 12,
+        "CardID": "ICC_028",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Sunfury Protector",
         "CLASS": 12,
         "CardID": "EX1_058",
         "RARITY": 3
     },
     {
+        "CARDNAME": "Sunkeeper Tarim",
+        "CLASS": 5,
+        "CardID": "UNG_015",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Sunwalker",
         "CLASS": 12,
         "CardID": "EX1_032",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Swamp King Dred",
+        "CLASS": 3,
+        "CardID": "UNG_919",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Swashburglar",
@@ -4867,9 +6217,33 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Tainted Zealot",
+        "CLASS": 12,
+        "CardID": "ICC_913",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Tanaris Hogchopper",
         "CLASS": 12,
         "CardID": "CFM_809",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Tar Creeper",
+        "CLASS": 12,
+        "CardID": "UNG_928",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Tar Lord",
+        "CLASS": 10,
+        "CardID": "UNG_838",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Tar Lurker",
+        "CLASS": 9,
+        "CardID": "UNG_049",
         "RARITY": 1
     },
     {
@@ -4903,6 +6277,12 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Terrorscale Stalker",
+        "CLASS": 3,
+        "CardID": "UNG_800",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "The Beast",
         "CLASS": 12,
         "CardID": "EX1_577",
@@ -4921,9 +6301,33 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "The Caverns Below",
+        "CLASS": 7,
+        "CardID": "UNG_067",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "The Curator",
         "CLASS": 12,
         "CardID": "KAR_061",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "The Last Kaleidosaur",
+        "CLASS": 5,
+        "CardID": "UNG_954",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "The Lich King",
+        "CLASS": 12,
+        "CardID": "ICC_314",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "The Marsh Queen",
+        "CLASS": 3,
+        "CardID": "UNG_920",
         "RARITY": 5
     },
     {
@@ -4936,6 +6340,12 @@ CardList =
         "CARDNAME": "The Skeleton Knight",
         "CLASS": 12,
         "CardID": "AT_128",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "The Voraxx",
+        "CLASS": 12,
+        "CardID": "UNG_843",
         "RARITY": 5
     },
     {
@@ -4957,6 +6367,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Thrall, Deathseer",
+        "CLASS": 8,
+        "CardID": "ICC_481",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Thrallmar Farseer",
         "CLASS": 12,
         "CardID": "EX1_021",
@@ -4967,6 +6383,24 @@ CardList =
         "CLASS": 8,
         "CardID": "AT_049",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Thunder Lizard",
+        "CLASS": 12,
+        "CardID": "UNG_082",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Ticking Abomination",
+        "CLASS": 12,
+        "CardID": "ICC_099",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Tidal Surge",
+        "CLASS": 8,
+        "CardID": "UNG_817",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Tinker's Sharpsword Oil",
@@ -4999,6 +6433,24 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Tol'vir Stoneshaper",
+        "CLASS": 12,
+        "CardID": "UNG_070",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Tol'vir Warden",
+        "CLASS": 3,
+        "CardID": "UNG_913",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Tomb Lurker",
+        "CLASS": 12,
+        "CardID": "ICC_098",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Tomb Pillager",
         "CLASS": 7,
         "CardID": "LOE_012",
@@ -5008,6 +6460,24 @@ CardList =
         "CARDNAME": "Tomb Spider",
         "CLASS": 12,
         "CardID": "LOE_047",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Tortollan Forager",
+        "CLASS": 2,
+        "CardID": "UNG_078",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Tortollan Primalist",
+        "CLASS": 12,
+        "CardID": "UNG_088",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Tortollan Shellraiser",
+        "CLASS": 6,
+        "CardID": "UNG_037",
         "RARITY": 1
     },
     {
@@ -5035,6 +6505,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Toxic Arrow",
+        "CLASS": 3,
+        "CardID": "ICC_049",
+        "RARITY": 4
+    },
+    {
         "CARDNAME": "Toxic Sewer Ooze",
         "CLASS": 12,
         "CardID": "CFM_655",
@@ -5045,6 +6521,12 @@ CardList =
         "CLASS": 7,
         "CardID": "GVG_028",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Treachery",
+        "CLASS": 9,
+        "CardID": "ICC_206",
+        "RARITY": 4
     },
     {
         "CARDNAME": "Tree of Life",
@@ -5068,6 +6550,12 @@ CardList =
         "CARDNAME": "Tunnel Trogg",
         "CLASS": 8,
         "CardID": "LOE_018",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Tuskarr Fisherman",
+        "CLASS": 12,
+        "CardID": "ICC_093",
         "RARITY": 1
     },
     {
@@ -5149,6 +6637,24 @@ CardList =
         "RARITY": 4
     },
     {
+        "CARDNAME": "Tyrantus",
+        "CLASS": 2,
+        "CardID": "UNG_852",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Ultimate Infestation",
+        "CLASS": 2,
+        "CardID": "ICC_085",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Ultrasaur",
+        "CLASS": 12,
+        "CardID": "UNG_806",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Unbound Elemental",
         "CLASS": 8,
         "CardID": "EX1_258",
@@ -5179,6 +6685,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Unite the Murlocs",
+        "CLASS": 8,
+        "CardID": "UNG_942",
+        "RARITY": 5
+    },
+    {
         "CARDNAME": "Unleash the Hounds",
         "CLASS": 3,
         "CardID": "EX1_538",
@@ -5203,6 +6715,12 @@ CardList =
         "RARITY": 3
     },
     {
+        "CARDNAME": "Unwilling Sacrifice",
+        "CLASS": 9,
+        "CardID": "ICC_469",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Upgrade!",
         "CLASS": 10,
         "CardID": "EX1_409",
@@ -5219,6 +6737,24 @@ CardList =
         "CLASS": 9,
         "CardID": "OG_302",
         "RARITY": 1
+    },
+    {
+        "CARDNAME": "Uther of the Ebon Blade",
+        "CLASS": 5,
+        "CardID": "ICC_829",
+        "RARITY": 5
+    },
+    {
+        "CARDNAME": "Val'kyr Soulclaimer",
+        "CLASS": 10,
+        "CardID": "ICC_408",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Valeera the Hollow",
+        "CLASS": 7,
+        "CardID": "ICC_827",
+        "RARITY": 5
     },
     {
         "CARDNAME": "Validated Doomsayer",
@@ -5245,16 +6781,52 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Venomancer",
+        "CLASS": 12,
+        "CardID": "ICC_032",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Venomstrike Trap",
+        "CLASS": 3,
+        "CardID": "ICC_200",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Venture Co. Mercenary",
         "CLASS": 12,
         "CardID": "CS2_227",
         "RARITY": 1
     },
     {
+        "CARDNAME": "Verdant Longneck",
+        "CLASS": 2,
+        "CardID": "UNG_100",
+        "RARITY": 1
+    },
+    {
+        "CARDNAME": "Vicious Fledgling",
+        "CLASS": 12,
+        "CardID": "UNG_075",
+        "RARITY": 3
+    },
+    {
         "CARDNAME": "Vilefin Inquisitor",
         "CLASS": 5,
         "CardID": "OG_006",
         "RARITY": 4
+    },
+    {
+        "CARDNAME": "Vilespine Slayer",
+        "CLASS": 7,
+        "CardID": "UNG_064",
+        "RARITY": 4
+    },
+    {
+        "CARDNAME": "Vinecleaver",
+        "CLASS": 5,
+        "CardID": "UNG_950",
+        "RARITY": 3
     },
     {
         "CARDNAME": "Violet Illusionist",
@@ -5305,6 +6877,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Volatile Elemental",
+        "CLASS": 12,
+        "CardID": "UNG_818",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Volcanic Drake",
         "CLASS": 12,
         "CardID": "BRM_025",
@@ -5321,6 +6899,30 @@ CardList =
         "CLASS": 4,
         "CardID": "CFM_065",
         "RARITY": 3
+    },
+    {
+        "CARDNAME": "Volcano",
+        "CLASS": 8,
+        "CardID": "UNG_025",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Volcanosaur",
+        "CLASS": 12,
+        "CardID": "UNG_002",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Voodoo Hexxer",
+        "CLASS": 8,
+        "CardID": "ICC_088",
+        "RARITY": 3
+    },
+    {
+        "CARDNAME": "Vryghoul",
+        "CLASS": 12,
+        "CardID": "ICC_067",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Wailing Soul",
@@ -5353,6 +6955,12 @@ CardList =
         "RARITY": 1
     },
     {
+        "CARDNAME": "Webweave",
+        "CLASS": 2,
+        "CardID": "ICC_050",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Wee Spellstopper",
         "CLASS": 4,
         "CardID": "GVG_122",
@@ -5369,6 +6977,12 @@ CardList =
         "CLASS": 8,
         "CardID": "CFM_324",
         "RARITY": 5
+    },
+    {
+        "CARDNAME": "Wicked Skeleton",
+        "CLASS": 12,
+        "CardID": "ICC_904",
+        "RARITY": 1
     },
     {
         "CARDNAME": "Wicked Witchdoctor",
@@ -5461,6 +7075,12 @@ CardList =
         "RARITY": 5
     },
     {
+        "CARDNAME": "Wretched Tiller",
+        "CLASS": 12,
+        "CardID": "ICC_468",
+        "RARITY": 1
+    },
+    {
         "CARDNAME": "Wyrmrest Agent",
         "CLASS": 6,
         "CardID": "AT_116",
@@ -5527,3 +7147,4 @@ CardList =
         "RARITY": 1
     }
 ]
+;
