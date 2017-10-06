@@ -62,7 +62,7 @@ export default {
 <style lang="less" scoped>
 @import '../../less/flex.less';
 .lacks-page {
-    .flex-group-top(74px);
+    .flex-group-top(104px);
 }
 .lacks-left, .lacks-right {
     width: 50%;
