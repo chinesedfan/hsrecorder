@@ -55,7 +55,9 @@ export default {
                     return {
                         ...item,
                         cls: getClassByNumber(item.cls),
-                        rarity: getRarityByNumber(item.rarity)
+                        rarity: getRarityByNumber(item.rarity),
+                        targetCount: getRarityByNumber(item.rarity) === 'Legendary' ? 1 : 2,
+                        lackCount: 0
                     };
                 })
                 .value();
@@ -89,9 +91,7 @@ export default {
                 const items = _.map(CardList, (item) => {
                     return {
                         ...vm.cardMap[item.id],
-                        ...(map[item.id] ? map[item.id][0] : {
-                            lackCount: 0
-                        })
+                        ...(map[item.id] ? map[item.id][0] : {})
                     }
                 });
                 vm.updateRows(items);

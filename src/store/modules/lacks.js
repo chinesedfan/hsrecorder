@@ -8,6 +8,7 @@
  * @property {Number} rarity
  * @property {Number} cost
  * @property {String} series
+ * @property {Number} targetCount
  * @property {Number} lackCount
  */
 
@@ -46,7 +47,7 @@ export default {
             const targetItems = _.remove(state.editPendingList, (x) => x.id == item.id);
             state.editPendingList.push({
                 ...item,
-                lackCount: Math.min(_.isEmpty(targetItems) ? 1 : targetItems[0].lackCount + 1, 2)
+                lackCount: Math.min(_.isEmpty(targetItems) ? 1 : targetItems[0].lackCount + 1, item.targetCount)
             });
         },
         [LACKS_DECREASE_ITEM](state, item) {

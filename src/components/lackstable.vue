@@ -36,10 +36,9 @@ export default {
                 owned: 0
             };
             _.each(this.items, (item) => {
-                const targetCount = item.rarity === 'Legendary' ? 1 : 2;
                 const addItem = {
-                    target: targetCount,
-                    owned: targetCount - item.lackCount
+                    target: item.targetCount,
+                    owned: item.targetCount - item.lackCount
                 };
                 
                 this.updateCounts(counts, item.series, item.cls, item.rarity, addItem);
