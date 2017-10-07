@@ -27,12 +27,10 @@ export default {
         clsNames: String,
         title: String,
         color: String,
+        isEditMode: Boolean,
         items: Array
     },
     computed: {
-        isEditMode() {
-            return this.$store.state.lacks.isEditMode;
-        },
         finalItems() {
             const pendingItems = this.$store.state.lacks.editPendingList;
             return _.map(this.items, (item) => {

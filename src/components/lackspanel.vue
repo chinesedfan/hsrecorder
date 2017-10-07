@@ -17,10 +17,8 @@
 import * as types from '../store/mutation-types';
 
 export default {
-    computed: {
-        isEditMode() {
-            return this.$store.state.lacks.isEditMode;
-        }
+    props: {
+        isEditMode: Boolean
     },
     methods: {
         onCheckboxClicked() {

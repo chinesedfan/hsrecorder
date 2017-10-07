@@ -1,10 +1,11 @@
 <template>
     <div class="lacks-page">
-        <lacks-panel></lacks-panel>
+        <lacks-panel :is-edit-mode="isEditMode"></lacks-panel>
         <div>
-            <lacks-table clsNames="lacks-left float" :items="items"></lacks-table>
+            <lacks-table clsNames="lacks-left float" :is-edit-mode="isEditMode" :items="items"></lacks-table>
             <div class="lacks-right float">
                 <lacks-list v-for="(item, index) in RARITY_LIST" :style="{width: 100/RARITY_LIST.length + '%'}" clsNames="float"
+                        :is-edit-mode="isEditMode"
                         :title="item.name" :color="item.color" :items="getItems(itemsFilter.series, itemsFilter.cls, item.name)"></lacks-list>
             </div>
         </div>
