@@ -38,7 +38,7 @@ export default {
             _.each(this.items, (item) => {
                 const targetCount = item.rarity === 'Legendary' ? 1 : 2;
                 const addItem = {
-                    target:targetCount,
+                    target: targetCount,
                     owned: targetCount - item.lackCount
                 };
                 

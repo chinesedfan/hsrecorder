@@ -14,10 +14,15 @@
 'use strict';
 
 import _ from 'lodash';
+import {mapMutations} from 'vuex';
 import LacksPanel from './lackspanel';
 import LacksTable from './lackstable';
 import LacksList from './lackslist';
-import {SERIES_LIST, CLASS_LIST, RARITY_LIST} from '../common/hs';
+import * as types from '../store/mutation-types';
+import * as LacksService from '../service/lacks';
+import {SERIES_LIST, CLASS_LIST, RARITY_LIST,
+        getClassByNumber, getRarityByNumber} from '../common/hs';
+import CardList from '../../bin/cardlist';
 
 export default {
     computed: {
@@ -38,7 +43,23 @@ export default {
         'lacks-table': LacksTable,
         'lacks-list': LacksList
     },
+    mounted() {
+        // for cache
+        this.cardMap = _(CardList).groupBy('id')
+                .mapValues((g) => g[0])
+                .mapValues((item) => {
+                    return {
+                        ...item,
+                        cls: getClassByNumber(item.cls),
+                        rarity: getRarityByNumber(item.rarity)
+                    };
+                })
+                .value();
+    },
     methods: {
+        ...mapMutations({
+            updateRows: types.LACKS_UPDATE_ROWS
+        }),
         getItems(series, cls, rarity) {
             return _(this.items).filter(this.fieldFilter('series', series))
                     .filter(this.fieldFilter('cls', cls))
@@ -55,6 +76,22 @@ export default {
                 return value == 'Total' || item[key] == value;
             };
         }
+    },
+    beforeRouteEnter(to, from, next) {
+        LacksService.loadLacksData().then((rows) => {
+            next((vm) => {
+                const map = _.groupBy(rows, 'id');
+                const items = _.map(CardList, (item) => {
+                    return {
+                        ...vm.cardMap[item.id],
+                        ...(map[item.id] ? map[item.id][0] : {
+                            lackCount: 0
+                        })
+                    }
+                });
+                vm.updateRows(items);
+            });
+        });
     }
 };
 

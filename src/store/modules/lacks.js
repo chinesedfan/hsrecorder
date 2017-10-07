@@ -12,24 +12,15 @@
  */
 
 import _ from 'lodash';
-import {getClassByNumber, getRarityByNumber} from '../../common/hs';
-import CardList from '../../../bin/cardlist';
-import {LACKS_SELECT_CELL, LACKS_UPDATE_EDIT_MODE, LACKS_INCREASE_ITEM, LACKS_DECREASE_ITEM} from '../mutation-types';
-
-const items = _.map(CardList, (item) => {
-    item.cls = getClassByNumber(item.cls);
-    item.rarity = getRarityByNumber(item.rarity);
-    // FIXME: update with the real data
-    item.lackCount = 0;
-    return item;
-});
+import {LACKS_UPDATE_ROWS, LACKS_SELECT_CELL, LACKS_UPDATE_EDIT_MODE,
+        LACKS_INCREASE_ITEM, LACKS_DECREASE_ITEM} from '../mutation-types';
 
 export default {
     state: {
         /**
          * @type {CardItem[]}
          */
-        items,
+        items: [],
         // filter
         itemsFilter: {
             series: 'Total',
@@ -41,6 +32,9 @@ export default {
         editPendingList: []
     },
     mutations: {
+        [LACKS_UPDATE_ROWS](state, rows) {
+            state.items = rows;
+        },
         [LACKS_SELECT_CELL](state, {filter}) {
             state.itemsFilter = filter;
             state.editPendingList = [];
