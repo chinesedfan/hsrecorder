@@ -5,8 +5,8 @@
             <button class="btn btn-default lacks-add">Insert</button>
             <button class="btn btn-default lacks-del">Delete</button>
         </div>
-        <div class="checkbox-wrapper">
-            <input type="checkbox"></input>
+        <div class="checkbox-wrapper" @click="onCheckboxClicked">
+            <input type="checkbox" :checked="isEditMode"></input>
             <span>edit mode</span>
         </div>
     </div>
@@ -14,7 +14,19 @@
 <script>
 'use strict';
 
+import * as types from '../store/mutation-types';
+
 export default {
+    computed: {
+        isEditMode() {
+            return this.$store.state.lacks.isEditMode;
+        }
+    },
+    methods: {
+        onCheckboxClicked() {
+            this.$store.commit(types.LACKS_UPDATE_EDIT_MODE, !this.isEditMode);
+        }
+    }
 };
 
 </script>

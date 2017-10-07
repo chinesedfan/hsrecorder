@@ -105,11 +105,9 @@ export default {
         },
 
         onSeriesClicked(series) {
-            this.$store.commit(types.LACKS_UPDATE_EDIT_MODE, false);
             this.expandedSeries = this.expandedSeries == series ? '' : series;
         },
         onCellClicked(filter) {
-            this.$store.commit(types.LACKS_UPDATE_EDIT_MODE, true);
             this.$store.commit({
                 type: types.LACKS_SELECT_CELL,
                 filter
