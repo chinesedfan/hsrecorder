@@ -26,6 +26,9 @@ import CardList from '../../bin/cardlist';
 
 export default {
     computed: {
+        isEditMode() {
+            return this.$store.state.lacks.isEditMode;
+        },
         items() {
             return this.$store.state.lacks.items;
         },
@@ -64,6 +67,7 @@ export default {
             return _(this.items).filter(this.fieldFilter('series', series))
                     .filter(this.fieldFilter('cls', cls))
                     .filter(this.fieldFilter('rarity', rarity))
+                    .filter((item) => this.isEditMode || item.lackCount)
                     .sortBy([
                         (item) => SERIES_LIST.indexOf(item.series),
                         (item) => CLASS_LIST.concat(['Neutral']).indexOf(item.cls),
