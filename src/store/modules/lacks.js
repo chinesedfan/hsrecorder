@@ -42,16 +42,19 @@ export default {
             const insertRows = _(state.editPendingList)
                     .filter((item) => item.pendingCount > 0)
                     .map((item) => {
-                        return {
+                        const ret = {
                             card_id: item.id,
                             card_name: item.name,
                             card_quality: item.rarity
                         };
+                        return item.pendingCount == 1 ? ret : [ret, ret];
                     })
+                    .flatten()
                     .value();
             const deleteIds = _(state.editPendingList)
                     .filter((item) => item.pendingCount < 0)
-                    .map((item) => item.id)
+                    .map((item) => (item.pendingCount == -1 ? item.id : [item.id, item.id]))
+                    .flatten()
                     .values()
                     .value();
             const totalSqls = insertRows.length + deleteIds.length;
