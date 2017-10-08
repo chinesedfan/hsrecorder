@@ -115,7 +115,8 @@
 			OG: 'OG',
 			KAR: 'KAR',
 			CFM: 'CFM',
-			UNG: 'UNG'
+			UNG: 'UNG',
+			ICC: 'ICC'
 		};
 		var prefix = str.replace(/^([^_]+)_.*$/, '$1');
 		return map[prefix] || 'CLASSIC';

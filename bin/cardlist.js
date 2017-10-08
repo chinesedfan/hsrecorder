@@ -17,6 +17,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 3,
+        "cost": 7,
+        "id": "ICC_825",
+        "name": "Abominable Bowman",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "EX1_097",
@@ -41,12 +49,28 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "ICC_092",
+        "name": "Acherus Veteran",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 3,
         "cost": 7,
         "id": "AT_063",
         "name": "Acidmaw",
         "rarity": 5,
         "series": "AT"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "ICC_212",
+        "name": "Acolyte of Agony",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -273,6 +297,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 10,
+        "cost": 1,
+        "id": "ICC_238",
+        "name": "Animated Berserker",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "GVG_085",
@@ -409,12 +441,28 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 6,
+        "cost": 7,
+        "id": "ICC_215",
+        "name": "Archbishop Benedictus",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 7,
         "id": "EX1_559",
         "name": "Archmage Antonidas",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_854",
+        "name": "Arfus",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -481,6 +529,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 4,
+        "id": "ICC_034",
+        "name": "Arrogant Crusader",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "AT_043",
@@ -503,6 +559,14 @@ module.exports =
         "name": "Auctionmaster Beardo",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "ICC_078",
+        "name": "Avalanche",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 5,
@@ -657,6 +721,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "ICC_419",
+        "name": "Bearshark",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "OG_281",
@@ -743,6 +815,14 @@ module.exports =
         "name": "Bittertide Hydra",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "ICC_245",
+        "name": "Blackguard",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -866,6 +946,14 @@ module.exports =
     },
     {
         "cls": 10,
+        "cost": 4,
+        "id": "ICC_064",
+        "name": "Blood Razor",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 10,
         "cost": 1,
         "id": "OG_314",
         "name": "Blood To Ichor",
@@ -879,6 +967,14 @@ module.exports =
         "name": "Blood Warriors",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 9,
+        "cost": 5,
+        "id": "ICC_841",
+        "name": "Blood-Queen Lana'thel",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 9,
@@ -913,6 +1009,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 9,
+        "cost": 10,
+        "id": "ICC_831",
+        "name": "Bloodreaver Gul'dan",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "NEW1_025",
@@ -935,6 +1039,14 @@ module.exports =
         "name": "Bloodsail Raider",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ICC_905",
+        "name": "Bloodworm",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -985,6 +1097,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "ICC_858",
+        "name": "Bolvar, Fireblood",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "GVG_099",
@@ -1001,12 +1121,36 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 7,
+        "cost": 5,
+        "id": "ICC_065",
+        "name": "Bone Baron",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "ICC_027",
+        "name": "Bone Drake",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "AT_089",
         "name": "Boneguard Lieutenant",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "ICC_705",
+        "name": "Bonemare",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -1057,12 +1201,36 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 4,
+        "cost": 1,
+        "id": "ICC_836",
+        "name": "Breath of Sindragosa",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_113",
         "name": "Bright-Eyed Scout",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "ICC_837",
+        "name": "Bring It On!",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "ICC_058",
+        "name": "Brrrloc",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 7,
@@ -1233,6 +1401,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 5,
+        "cost": 4,
+        "id": "ICC_820",
+        "name": "Chillblade Champion",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 7,
         "id": "AT_123",
@@ -1320,6 +1496,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "ICC_029",
+        "name": "Cobalt Scalebane",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 3,
         "cost": 5,
         "id": "GVG_073",
@@ -1382,6 +1566,14 @@ module.exports =
         "name": "Coldlight Seer",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "ICC_252",
+        "name": "Coldwraith",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -1462,6 +1654,30 @@ module.exports =
         "name": "Cornered Sentry",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ICC_257",
+        "name": "Corpse Raiser",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "ICC_243",
+        "name": "Corpse Widow",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_912",
+        "name": "Corpsetaker",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -1573,6 +1789,22 @@ module.exports =
         "name": "Cryomancer",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "ICC_056",
+        "name": "Cryostasis",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "ICC_808",
+        "name": "Crypt Lord",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 6,
@@ -1695,6 +1927,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 5,
+        "cost": 2,
+        "id": "ICC_039",
+        "name": "Dark Conviction",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 6,
         "cost": 3,
         "id": "FP1_023",
@@ -1791,6 +2031,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 10,
+        "cost": 2,
+        "id": "ICC_091",
+        "name": "Dead Man's Hand",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "KAR_094",
@@ -1807,6 +2055,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "ICC_220",
+        "name": "Deadscale Knight",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "ICC_450",
+        "name": "Death Revenant",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 10,
         "cost": 4,
         "id": "FP1_021",
@@ -1816,11 +2080,35 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "ICC_810",
+        "name": "Deathaxe Punisher",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
         "cost": 3,
         "id": "FP1_009",
         "name": "Deathlord",
         "rarity": 3,
         "series": "NAXX"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_467",
+        "name": "Deathspeaker",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 6,
+        "id": "ICC_828",
+        "name": "Deathstalker Rexxar",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -1861,6 +2149,14 @@ module.exports =
         "name": "Defias Ringleader",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "ICC_041",
+        "name": "Defile",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 4,
@@ -1919,6 +2215,22 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 5,
+        "cost": 2,
+        "id": "ICC_244",
+        "name": "Desperate Stand",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 9,
+        "cost": 5,
+        "id": "ICC_075",
+        "name": "Despicable Dreadlord",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "UNG_083",
@@ -1933,6 +2245,14 @@ module.exports =
         "name": "Devolve",
         "rarity": 3,
         "series": "CFM"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "ICC_207",
+        "name": "Devour Mind",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 3,
@@ -2039,6 +2359,22 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "ICC_083",
+        "name": "Doomed Apprentice",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "ICC_233",
+        "name": "Doomerang",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 9,
         "cost": 5,
         "id": "EX1_310",
@@ -2135,6 +2471,30 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 9,
+        "cost": 2,
+        "id": "ICC_055",
+        "name": "Drain Soul",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "ICC_081",
+        "name": "Drakkari Defender",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_901",
+        "name": "Drakkari Enchanter",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "BRM_024",
@@ -2205,6 +2565,14 @@ module.exports =
         "name": "Druid of the Saber",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "ICC_051",
+        "name": "Druid of the Swarm",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 8,
@@ -2392,6 +2760,14 @@ module.exports =
     },
     {
         "cls": 6,
+        "cost": 6,
+        "id": "ICC_849",
+        "name": "Embrace Darkness",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 6,
         "cost": 2,
         "id": "OG_104",
         "name": "Embrace the Shadow",
@@ -2487,6 +2863,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 6,
+        "cost": 4,
+        "id": "ICC_213",
+        "name": "Eternal Servitude",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 4,
         "id": "EX1_274",
@@ -2565,6 +2949,14 @@ module.exports =
         "name": "Excavated Evil",
         "rarity": 3,
         "series": "LOE"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "ICC_021",
+        "name": "Exploding Bloatbat",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 10,
@@ -2671,6 +3063,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "ICC_094",
+        "name": "Fallen Sun Cleric",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "OG_044",
@@ -2685,6 +3085,14 @@ module.exports =
         "name": "Far Sight",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "ICC_047",
+        "name": "Fatespinner",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 9,
@@ -3067,6 +3475,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 10,
+        "cost": 2,
+        "id": "ICC_281",
+        "name": "Forge of Souls",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 3,
         "id": "LOE_002",
@@ -3154,6 +3570,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 4,
+        "cost": 9,
+        "id": "ICC_833",
+        "name": "Frost Lich Jaina",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "EX1_604",
@@ -3162,12 +3586,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "ICC_082",
+        "name": "Frozen Clone",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "UNG_079",
         "name": "Frozen Crusher",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "ICC_096",
+        "name": "Furnacefire Colossus",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -3266,6 +3706,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 4,
+        "cost": 4,
+        "id": "ICC_069",
+        "name": "Ghastly Conjurer",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 2,
         "cost": 7,
         "id": "UNG_086",
@@ -3306,6 +3754,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 4,
+        "cost": 8,
+        "id": "ICC_086",
+        "name": "Glacial Mysteries",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "UNG_205",
@@ -3336,6 +3792,22 @@ module.exports =
         "name": "Gluttonous Ooze",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "ICC_079",
+        "name": "Gnash",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "ICC_407",
+        "name": "Gnomeferatu",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -3418,6 +3890,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_097",
+        "name": "Grave Shambler",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 7,
         "id": "CFM_623",
@@ -3440,6 +3920,14 @@ module.exports =
         "name": "Grievous Bite",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_026",
+        "name": "Grim Necromancer",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -3554,6 +4042,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 2,
+        "cost": 9,
+        "id": "ICC_835",
+        "name": "Hadronox",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 8,
         "cost": 5,
         "id": "OG_209",
@@ -3576,6 +4072,14 @@ module.exports =
         "name": "Hammer of Twilight",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_700",
+        "name": "Happy Ghoul",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -3730,6 +4234,22 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "ICC_218",
+        "name": "Howlfiend",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "ICC_801",
+        "name": "Howling Commander",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "CFM_067",
@@ -3778,6 +4298,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_855",
+        "name": "Hyldnir Frostrider",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 10,
         "cost": 1,
         "id": "CFM_940",
@@ -3802,6 +4330,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "cost": 3,
+        "id": "ICC_236",
+        "name": "Ice Breaker",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "ICC_089",
+        "name": "Ice Fishing",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 1,
         "id": "CS2_031",
@@ -3816,6 +4360,14 @@ module.exports =
         "name": "Ice Rager",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "ICC_068",
+        "name": "Ice Walker",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -4217,6 +4769,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_911",
+        "name": "Keening Banshee",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "EX1_166",
@@ -4449,6 +5009,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "ICC_221",
+        "name": "Leeching Poison",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "EX1_116",
@@ -4479,6 +5047,14 @@ module.exports =
         "name": "Light's Champion",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "ICC_071",
+        "name": "Light's Sorrow",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 6,
@@ -4543,6 +5119,14 @@ module.exports =
         "name": "Lil' Exorcist",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "ICC_811",
+        "name": "Lilian Voss",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 2,
@@ -4761,6 +5345,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 2,
+        "cost": 7,
+        "id": "ICC_832",
+        "name": "Malfurion the Pestilent",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 10,
         "cost": 7,
         "id": "OG_220",
@@ -4929,6 +5521,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_812",
+        "name": "Meat Wagon",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 2,
         "cost": 6,
         "id": "GVG_034",
@@ -5055,6 +5655,14 @@ module.exports =
         "name": "Mind Control Tech",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_902",
+        "name": "Mindbreaker",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 6,
@@ -5185,6 +5793,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 8,
+        "cost": 6,
+        "id": "ICC_289",
+        "name": "Moorabi",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "KAR_044",
@@ -5207,6 +5823,14 @@ module.exports =
         "name": "Mountain Giant",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "ICC_062",
+        "name": "Mountainfire Armor",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 2,
@@ -5353,6 +5977,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 6,
+        "id": "ICC_900",
+        "name": "Necrotic Geist",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
         "cost": 9,
         "id": "BRM_030",
         "name": "Nefarian",
@@ -5393,6 +6025,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 6,
+        "id": "ICC_706",
+        "name": "Nerubian Unraveler",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "UNG_801",
         "name": "Nesting Roc",
@@ -5414,6 +6054,14 @@ module.exports =
         "name": "Nexus-Champion Saraad",
         "rarity": 5,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_031",
+        "name": "Night Howler",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 5,
@@ -5470,6 +6118,14 @@ module.exports =
         "name": "Obsidian Shard",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 6,
+        "cost": 9,
+        "id": "ICC_214",
+        "name": "Obsidian Statue",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -5600,6 +6256,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_018",
+        "name": "Phantom Freebooter",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 2,
         "cost": 3,
         "id": "CFM_616",
@@ -5670,6 +6334,22 @@ module.exports =
         "name": "Pit Snake",
         "rarity": 1,
         "series": "LOE"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "ICC_809",
+        "name": "Plague Scientist",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "ICC_052",
+        "name": "Play Dead",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 2,
@@ -5856,11 +6536,35 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "ICC_851",
+        "name": "Prince Keleseth",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "KAR_096",
         "name": "Prince Malchezaar",
         "rarity": 5,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_852",
+        "name": "Prince Taldaram",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_853",
+        "name": "Prince Valanar",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 3,
@@ -5869,6 +6573,14 @@ module.exports =
         "name": "Princess Huhuran",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "ICC_204",
+        "name": "Professor Putricide",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 6,
@@ -6037,6 +6749,14 @@ module.exports =
         "name": "Rat Pack",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_025",
+        "name": "Rattling Rascal",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 10,
@@ -6223,6 +6943,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 5,
+        "cost": 1,
+        "id": "ICC_038",
+        "name": "Righteous Protector",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "UNG_073",
@@ -6231,12 +6959,36 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "ICC_201",
+        "name": "Roll the Bones",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 8,
+        "id": "ICC_405",
+        "name": "Rotface",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 8,
         "cost": 4,
         "id": "LOE_016",
         "name": "Rumbling Elemental",
         "rarity": 1,
         "series": "LOE"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "ICC_240",
+        "name": "Runeforge Haunter",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -6285,6 +7037,22 @@ module.exports =
         "name": "Salty Dog",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "ICC_903",
+        "name": "Sanguine Reveler",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_466",
+        "name": "Saronite Chain Gang",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -6349,6 +7117,14 @@ module.exports =
         "name": "Scavenging Hyena",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 8,
+        "id": "ICC_834",
+        "name": "Scourgelord Garrosh",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 10,
@@ -6472,6 +7248,22 @@ module.exports =
     },
     {
         "cls": 6,
+        "cost": 2,
+        "id": "ICC_210",
+        "name": "Shadow Ascendant",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 6,
+        "cost": 6,
+        "id": "ICC_235",
+        "name": "Shadow Essence",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 6,
         "cost": 4,
         "id": "EX1_334",
         "name": "Shadow Madness",
@@ -6517,6 +7309,14 @@ module.exports =
         "name": "Shadow Word: Horror",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "ICC_850",
+        "name": "Shadowblade",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 6,
@@ -6567,6 +7367,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 6,
+        "cost": 8,
+        "id": "ICC_830",
+        "name": "Shadowreaper Anduin",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 7,
         "id": "EX1_144",
         "name": "Shadowstep",
@@ -6596,6 +7404,14 @@ module.exports =
         "name": "Shaky Zipgunner",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_702",
+        "name": "Shallow Gravedigger",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 4,
@@ -6789,6 +7605,22 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "ICC_823",
+        "name": "Simulacrum",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 4,
+        "cost": 8,
+        "id": "ICC_838",
+        "name": "Sindragosa",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 9,
         "cost": 6,
         "id": "EX1_309",
@@ -6806,11 +7638,27 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "ICC_019",
+        "name": "Skelemancer",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "OG_339",
         "name": "Skeram Cultist",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "ICC_701",
+        "name": "Skulking Geist",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -6910,6 +7758,21 @@ module.exports =
     },
     {
         "cls": 12,
+        "id": "ICC_023",
+        "name": "Snowflipper Penguin",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 8,
+        "cost": 11,
+        "id": "ICC_090",
+        "name": "Snowfury Giant",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
         "cost": 9,
         "id": "OG_340",
         "name": "Soggoth the Slitherer",
@@ -7005,6 +7868,14 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 7,
+        "cost": 6,
+        "id": "ICC_910",
+        "name": "Spectral Pillager",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 3,
         "id": "tt_010",
@@ -7027,6 +7898,14 @@ module.exports =
         "name": "Spellslinger",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "ICC_856",
+        "name": "Spellweaver",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -7069,6 +7948,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 6,
+        "cost": 2,
+        "id": "ICC_802",
+        "name": "Spirit Lash",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_900",
@@ -7091,6 +7978,14 @@ module.exports =
         "name": "Spreading Madness",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 2,
+        "cost": 6,
+        "id": "ICC_054",
+        "name": "Spreading Plague",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -7181,6 +8076,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "ICC_415",
+        "name": "Stitched Tracker",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 10,
         "cost": 2,
         "id": "CFM_752",
@@ -7269,6 +8172,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 2,
+        "cost": 4,
+        "id": "ICC_807",
+        "name": "Strongshell Scavenger",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "UNG_808",
@@ -7299,6 +8210,14 @@ module.exports =
         "name": "Summoning Stone",
         "rarity": 3,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ICC_028",
+        "name": "Sunborne Val'kyr",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -7355,6 +8274,14 @@ module.exports =
         "name": "Sylvanas Windrunner",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ICC_913",
+        "name": "Tainted Zealot",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -7484,6 +8411,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "ICC_314",
+        "name": "The Lich King",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 3,
         "cost": 1,
         "id": "UNG_920",
@@ -7540,6 +8475,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "cost": 5,
+        "id": "ICC_481",
+        "name": "Thrall, Deathseer",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "EX1_021",
@@ -7562,6 +8505,14 @@ module.exports =
         "name": "Thunder Lizard",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_099",
+        "name": "Ticking Abomination",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 8,
@@ -7626,6 +8577,14 @@ module.exports =
         "name": "Tol'vir Warden",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ICC_098",
+        "name": "Tomb Lurker",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 7,
@@ -7700,6 +8659,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "ICC_049",
+        "name": "Toxic Arrow",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "CFM_655",
@@ -7714,6 +8681,14 @@ module.exports =
         "name": "Trade Prince Gallywix",
         "rarity": 5,
         "series": "GVG"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "ICC_206",
+        "name": "Treachery",
+        "rarity": 4,
+        "series": "ICC"
     },
     {
         "cls": 2,
@@ -7746,6 +8721,14 @@ module.exports =
         "name": "Tunnel Trogg",
         "rarity": 1,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ICC_093",
+        "name": "Tuskarr Fisherman",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 5,
@@ -7860,6 +8843,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 2,
+        "cost": 10,
+        "id": "ICC_085",
+        "name": "Ultimate Infestation",
+        "rarity": 4,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 10,
         "id": "UNG_806",
@@ -7948,6 +8939,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "ICC_469",
+        "name": "Unwilling Sacrifice",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
         "cls": 10,
         "cost": 1,
         "id": "EX1_409",
@@ -7970,6 +8969,30 @@ module.exports =
         "name": "Usher of Souls",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 5,
+        "cost": 9,
+        "id": "ICC_829",
+        "name": "Uther of the Ebon Blade",
+        "rarity": 5,
+        "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "ICC_408",
+        "name": "Val'kyr Soulclaimer",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 7,
+        "cost": 9,
+        "id": "ICC_827",
+        "name": "Valeera the Hollow",
+        "rarity": 5,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -8002,6 +9025,22 @@ module.exports =
         "name": "Velen's Chosen",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ICC_032",
+        "name": "Venomancer",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "ICC_200",
+        "name": "Venomstrike Trap",
+        "rarity": 3,
+        "series": "ICC"
     },
     {
         "cls": 12,
@@ -8164,6 +9203,22 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 8,
+        "cost": 5,
+        "id": "ICC_088",
+        "name": "Voodoo Hexxer",
+        "rarity": 3,
+        "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ICC_067",
+        "name": "Vryghoul",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "FP1_016",
@@ -8204,6 +9259,14 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 2,
+        "cost": 5,
+        "id": "ICC_050",
+        "name": "Webweave",
+        "rarity": 1,
+        "series": "ICC"
+    },
+    {
         "cls": 4,
         "cost": 4,
         "id": "GVG_122",
@@ -8226,6 +9289,14 @@ module.exports =
         "name": "White Eyes",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ICC_904",
+        "name": "Wicked Skeleton",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 8,
@@ -8345,6 +9416,14 @@ module.exports =
         "name": "Wrathion",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "ICC_468",
+        "name": "Wretched Tiller",
+        "rarity": 1,
+        "series": "ICC"
     },
     {
         "cls": 6,

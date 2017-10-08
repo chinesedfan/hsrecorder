@@ -10,6 +10,10 @@
  * - OG, 9 * 9 + 53 = 134
  * - KAR, 3 * 9 + 18 = 45
  * - CFM, 9 * 9 + 51 = 132
+ * - UNG, 10 * 9 + 45 = 135
+ * - ICC, 10 * 9 + 45 = 135
+ *
+ * node countCards.js > ../bin/cardcounts.js
  */
 var fs = require('fs');
 var _ = require('lodash');
@@ -64,7 +68,8 @@ function getSeries(str) {
         OG: 'OG',
         KAR: 'KAR',
         CFM: 'CFM',
-        UNG: 'UNG'
+        UNG: 'UNG',
+        ICC: 'ICC'
     };
     var prefix = str.replace(/^([^_]+)_.*$/, '$1');
     return map[prefix] || 'CLASSIC';
