@@ -9,6 +9,8 @@
                 <tr v-for="item in finalItems" :data-id="item.id" @click="onItemClicked(item)" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"><td>
                     <label :style="{color: color}">{{ item.name }}</label>
                     <div v-if="isEditMode && item.pendingCount" class="count">{{ item.pendingCount }}</div>
+                    <div v-if="shouldMaskLeft(item)" class="left"></div>
+                    <div v-if="shouldMaskRight(item)" class="right"></div>
                 </td></tr>
             </tbody></table>
         </div>
@@ -53,6 +55,14 @@ export default {
             increaseItem: types.LACKS_INCREASE_ITEM,
             decreaseItem: types.LACKS_DECREASE_ITEM
         }),
+
+        shouldMaskLeft(item) {
+            return item.lackCount !== item.targetCount;
+        },
+        shouldMaskRight(item) {
+            return !item.lackCount;
+        },
+
         onItemClicked(item) {
             if (!this.isEditMode) return;
 
@@ -107,6 +117,22 @@ export default {
             left: 5px;
             top: 0;
             color: red;
+        }
+
+        .left, .right {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            opacity: 0.5;
+            background-color: #d7d7d7;
+        }
+        .left {
+            left: 0;
+            right: 50%;
+        }
+        .right {
+            left: 50%;
+            right: 0;
         }
     }
     label {
