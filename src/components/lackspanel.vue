@@ -4,6 +4,7 @@
             <input class="form-control lacks-card">
             <button class="btn btn-default lacks-add">Insert</button>
             <button class="btn btn-default lacks-del">Delete</button>
+            <button class="btn btn-default lacks-submit">Submit</button>
         </div>
         <div class="checkbox-wrapper" @click="onCheckboxClicked">
             <input type="checkbox" :checked="isEditMode"></input>
@@ -31,20 +32,20 @@ export default {
 <style lang="less" scoped>
 .lacks-control {
     margin: 20px auto 10px;
-    width: 33%;
+    width: 40%;
     height: 34px;
 }
 .lacks-card {
-    width: 50%;
+    width: 40%;
     float: left;
 }
-.lacks-add, .lacks-del {
-    width: 25%;
+.lacks-add, .lacks-del, .lacks-submit {
+    width: 20%;
     float: left;
 }
 .checkbox-wrapper {
     margin: 0 auto 20px;
-    width: 33%;
+    width: 40%;
     height: 20px;
     font-size: 15px;
 
