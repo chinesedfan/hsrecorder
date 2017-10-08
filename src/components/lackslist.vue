@@ -2,7 +2,7 @@
     <div :class="clsNames" class="lacks-list">
         <div class="list-header">
             <div>{{ title }}</div>
-            <div>{{ items.length }}</div>
+            <div>{{ totalLackCount }}</div>
         </div>
         <div class="list-bottom" ref="bottom">
             <table><tbody>
@@ -42,6 +42,11 @@ export default {
                     pendingCount: (pendingItem && pendingItem.pendingCount) || 0
                 };
             });
+        },
+        totalLackCount() {
+            return _.reduce(this.items, (sum, item) => {
+                return sum + item.lackCount;
+            }, 0);
         }
     },
     data() {
