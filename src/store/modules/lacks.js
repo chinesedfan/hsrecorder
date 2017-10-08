@@ -17,6 +17,7 @@ import _ from 'lodash';
 import {LACKS_UPDATE_ROWS, LACKS_SELECT_CELL, LACKS_UPDATE_EDIT_MODE, LACKS_UPDATE_EDIT_MSG,
         LACKS_INCREASE_ITEM, LACKS_DECREASE_ITEM, LACKS_SUBMIT_PENDING} from '../mutation-types';
 import * as LacksService from '../../service/lacks';
+import {RARITY_LIST} from '../../common/hs';
 
 export default {
     state: {
@@ -45,7 +46,7 @@ export default {
                         const ret = {
                             card_id: item.id,
                             card_name: item.name,
-                            card_quality: item.rarity
+                            card_quality: _.findIndex(RARITY_LIST, (r) => r.name == item.rarity)
                         };
                         return item.pendingCount == 1 ? ret : [ret, ret];
                     })
