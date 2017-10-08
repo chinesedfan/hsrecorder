@@ -2,7 +2,7 @@
     <div class="lacks-page">
         <lacks-panel :is-edit-mode="isEditMode"></lacks-panel>
         <div>
-            <lacks-table clsNames="lacks-left float" :is-edit-mode="isEditMode" :items="items"></lacks-table>
+            <lacks-table clsNames="lacks-left float" :is-edit-mode="isEditMode" :items="items" :items-filter="itemsFilter"></lacks-table>
             <div class="lacks-right float">
                 <lacks-list v-for="(item, index) in RARITY_LIST" :style="{width: 100/RARITY_LIST.length + '%'}" clsNames="float"
                         :is-edit-mode="isEditMode"

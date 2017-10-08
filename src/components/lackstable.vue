@@ -24,7 +24,8 @@ import * as types from '../store/mutation-types';
 export default {
     props: {
         clsNames: String,
-        items: Array
+        items: Array,
+        itemsFilter: Object
     },
     computed: {
         // {series: {cls: {rarity: {target, owned}}}}
@@ -100,7 +101,11 @@ export default {
         },
         getTdCls(series, cls, rarity) {
             const item = this.getCountsItem(this.counts, series, cls, rarity);
-            return item.target == item.owned ? '' : 'grey';
+            const isSelected = this.itemsFilter.series == series && this.itemsFilter.cls == cls;
+
+            let tdCls = item.target == item.owned ? '' : 'grey';
+            if (isSelected) tdCls += ' selected';
+            return tdCls;
         },
 
         onSeriesClicked(series) {
@@ -128,6 +133,9 @@ td {
     }
     &.grey {
         background-color: #e1e1e1;
+    }
+    &.selected {
+        border: 1px solid red;
     }
 }
 </style>
