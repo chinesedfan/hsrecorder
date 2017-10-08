@@ -6,11 +6,11 @@
         </div>
         <div class="list-bottom" ref="bottom">
             <table><tbody>
-                <tr v-for="item in finalItems" :data-id="item.id" @click="onItemClicked(item)" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"><td>
+                <tr v-for="item in finalItems" :data-id="item.id" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"><td>
                     <label :style="{color: color}">{{ item.name }}</label>
-                    <div v-if="isEditMode && item.pendingCount" class="count">{{ item.pendingCount }}</div>
-                    <div v-if="shouldMaskLeft(item)" class="left"></div>
-                    <div v-if="shouldMaskRight(item)" class="right"></div>
+                    <div v-if="isEditMode && item.pendingCount" class="count">{{ item.pendingCount > 0 ? '+' + item.pendingCount : item.pendingCount }}</div>
+                    <div :class="{mask: shouldMaskLeft(item)}" class="left" @click="onLeftClicked(item)"></div>
+                    <div :class="{mask: shouldMaskRight(item)}" class="right" @click="onRightClicked(item)"></div>
                 </td></tr>
             </tbody></table>
         </div>
@@ -39,7 +39,7 @@ export default {
                 const pendingItem = _.find(pendingItems, (x) => x.id == item.id);
                 return {
                     ...item,
-                    pendingCount: (pendingItem && pendingItem.lackCount) || 0
+                    pendingCount: (pendingItem && pendingItem.pendingCount) || 0
                 };
             });
         }
@@ -63,10 +63,15 @@ export default {
             return !item.lackCount;
         },
 
-        onItemClicked(item) {
+        onLeftClicked(item) {
             if (!this.isEditMode) return;
 
             this.increaseItem(item);
+        },
+        onRightClicked(item) {
+            if (!this.isEditMode) return;
+
+            this.decreaseItem(item);
         },
         onMouseEnter(e) {
             if (this.isEditMode) return;
@@ -123,8 +128,10 @@ export default {
             position: absolute;
             top: 0;
             bottom: 0;
-            opacity: 0.5;
-            background-color: #d7d7d7;
+            &.mask {
+                opacity: 0.5;
+                background-color: #d7d7d7;
+            }
         }
         .left {
             left: 0;

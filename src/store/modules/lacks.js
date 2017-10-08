@@ -10,6 +10,7 @@
  * @property {String} series
  * @property {Number} targetCount
  * @property {Number} lackCount
+ * @property {Number} pendingCount
  */
 
 import _ from 'lodash';
@@ -47,16 +48,14 @@ export default {
             const targetItems = _.remove(state.editPendingList, (x) => x.id == item.id);
             state.editPendingList.push({
                 ...item,
-                lackCount: Math.min(_.isEmpty(targetItems) ? 1 : targetItems[0].lackCount + 1, item.targetCount)
+                pendingCount: Math.min(_.isEmpty(targetItems) ? 1 : targetItems[0].pendingCount + 1, item.targetCount - item.lackCount)
             });
         },
         [LACKS_DECREASE_ITEM](state, item) {
             const targetItems = _.remove(state.editPendingList, (x) => x.id == item.id);
-            if (_.isEmpty(targetItems) || targetItems[0].lackCount == 1) return;
-
             state.editPendingList.push({
                 ...item,
-                lackCount: targetItems[0].lackCount - 1
+                pendingCount: Math.max(_.isEmpty(targetItems) ? -1 : targetItems[0].pendingCount - 1, -item.lackCount)
             });
         }
     }
