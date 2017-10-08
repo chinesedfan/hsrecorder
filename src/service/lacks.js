@@ -1,7 +1,7 @@
 'use strict';
 
 import _ from 'lodash';
-import {execSql} from '../common/database';
+import {execSql, execSqls} from '../common/database';
 
 const SQL_LOAD_LACKS_DATA = 'SELECT * FROM lacks';
 const SQL_INSERT_LACKS_ROW = 'INSERT INTO lacks(card_id, card_name, card_quality) VALUES(?, ?, ?)';
@@ -28,4 +28,11 @@ export function insertLacksRow(row) {
 
 export function deleteLacksRow(id) {
     return execSql(SQL_DELETE_LACKS_ROW, [id]);
+}
+
+export function updateInBatch(rows, ids, onEachSucc, onEachErr) {
+    const args = _.map(rows, (r) => [r.card_id, r.card_name, r.card_quality])
+            .concat(_.map(ids, (id) => [id]));
+    const sqls = _.map(args, (a, i) => (i < rows.length ? SQL_INSERT_LACKS_ROW : SQL_DELETE_LACKS_ROW));
+    return execSqls(sqls, args, onEachSucc, onEachErr);
 }

@@ -21,10 +21,24 @@ export function execSql(sql, args) {
     });
 }
 
-export function execSqls(sqls, onEachSucc, onEachErr) {
-    db.transaction((t) => {
-        for (let i = 0; i < sqls.length; i++) {
-            t.executeSql(sqls[i], [], onEachSucc, onEachErr);
-        }
+export function execSqls(sqls, args, onEachSucc, onEachErr) {
+    return new Promise((resolve, reject) => {
+        let count = 0;
+        const realOnSucc = (tx, rs) => {
+            count++;
+            onEachSucc && onEachSucc(rs);
+            if (count == sqls.length) {
+                resolve();
+            }
+        };
+        const realOnErr = (tx, err) => {
+            onEachErr && onEachErr(err);
+            reject(err);
+        };
+        db.transaction((t) => {
+            for (let i = 0; i < sqls.length; i++) {
+                t.executeSql(sqls[i], args[i], realOnSucc, realOnErr);
+            }
+        });
     });
 }
