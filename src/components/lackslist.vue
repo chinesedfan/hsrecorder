@@ -14,7 +14,7 @@
                 </td></tr>
             </tbody></table>
         </div>
-        <div v-show="previewSrc" class="list-preview" :style="previewStyle"><img :src="previewSrc" @load="onPreviewLoaded"></div>
+        <div v-show="previewSrc" class="list-preview" :style="previewStyle"><img :src="previewSrc" :style="{width: '190px'}" @load="onPreviewLoaded"></div>
     </div>
 </template>
 <script>
@@ -79,8 +79,6 @@ export default {
             this.decreaseItem(item);
         },
         onMouseEnter(e) {
-            if (this.isEditMode) return;
-
             const tr = e.currentTarget;
             const id = tr.getAttribute('data-id');
 
@@ -91,8 +89,6 @@ export default {
             };
         },
         onMouseLeave() {
-            if (this.isEditMode) return;
-
             this.previewSrc = '';
         },
         onPreviewLoaded() {
