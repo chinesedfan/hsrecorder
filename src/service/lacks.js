@@ -4,11 +4,13 @@ import _ from 'lodash';
 import {execSql, execSqls} from '../common/database';
 
 const SQL_INIT_LACKS = 'CREATE TABLE IF NOT EXISTS lacks(id integer PRIMARY KEY AUTOINCREMENT UNIQUE,card_id integer,card_name text,card_quality integer)';
+const SQL_EXPORT_LACKS_ROW = 'INSERT INTO lacks ( id,"card_id","card_name","card_quality" ) VALUES ( ?,?,?,? )';
+
 const SQL_LOAD_LACKS_DATA = 'SELECT * FROM lacks';
 const SQL_INSERT_LACKS_ROW = 'INSERT INTO lacks(card_id, card_name, card_quality) VALUES(?, ?, ?)';
 const SQL_DELETE_LACKS_ROW = 'DELETE FROM lacks WHERE id IN (SELECT min(id) FROM lacks WHERE card_id = ?)';
 
-export {SQL_INIT_LACKS, SQL_LOAD_LACKS_DATA, SQL_INSERT_LACKS_ROW};
+export {SQL_INIT_LACKS, SQL_EXPORT_LACKS_ROW, SQL_LOAD_LACKS_DATA};
 
 export function loadLacksData() {
     return execSql(SQL_LOAD_LACKS_DATA).then((rs) => {

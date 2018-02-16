@@ -19,8 +19,8 @@
 import _ from 'lodash';
 
 import {execSql, fillStatement} from '../common/database';
-import {SQL_INIT_ARENA, SQL_LOAD_ARENA_DATA, SQL_INSERT_ARENA_ROW} from '../service/arena';
-import {SQL_INIT_LACKS, SQL_LOAD_LACKS_DATA, SQL_INSERT_LACKS_ROW} from '../service/lacks';
+import {SQL_INIT_ARENA, SQL_EXPORT_ARENA_ROW, SQL_LOAD_ARENA_DATA} from '../service/arena';
+import {SQL_INIT_LACKS, SQL_EXPORT_LACKS_ROW, SQL_LOAD_LACKS_DATA} from '../service/lacks';
 
 export default {
     data() {
@@ -45,25 +45,24 @@ export default {
             this.resetProgress(2);
 
             const p1 = execSql(SQL_LOAD_ARENA_DATA).then((rs) => rs.rows).then((rows) => {
-                return _.map(rows, (item) => fillStatement(SQL_INSERT_ARENA_ROW, {
+                return _.map(rows, (item) => fillStatement(SQL_EXPORT_ARENA_ROW, {
                     ...item,
                     class: item.cls // special case
                 }));
             }).then((sqls) => {
                 this.progressDone++;
-                return sqls;
+                return [SQL_INIT_ARENA].concat(sqls);
             });
 
             const p2 = execSql(SQL_LOAD_LACKS_DATA).then((rs) => rs.rows).then((rows) => {
-                return _.map(rows, (item) => fillStatement(SQL_INSERT_LACKS_ROW, item));
+                return _.map(rows, (item) => fillStatement(SQL_EXPORT_LACKS_ROW, item));
             }).then((sqls) => {
                 this.progressDone++;
-                return sqls;
+                return [SQL_INIT_LACKS].concat(sqls);
             });
 
             Promise.all([p1, p2]).then((res) => {
-                let sqls = [SQL_INIT_ARENA, SQL_INIT_LACKS];
-                sqls = _.reduce(res, (memo, arr) => memo.concat(arr), sqls);
+                const sqls = _.reduce(res, (memo, arr) => memo.concat(arr), []);
 
                 this.progressContent = sqls.join(';\n');
             });

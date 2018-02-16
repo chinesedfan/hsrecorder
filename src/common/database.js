@@ -51,7 +51,7 @@ function val2str(val) {
 
     // fix quote
     if (typeof x === 'string') {
-        x = x.replace(/'/g, '\'');
+        x = x.replace(/'/g, '\'\'');
     }
     // convert to string
     x = (x === '' || x === null) ? 'NULL' : `'${x}'`;
@@ -62,7 +62,7 @@ function val2str(val) {
 export function fillStatement(sql, obj) {
     let keys = [];
     sql.replace(/\(([^)]+)\)/, (match, fields) => {
-        keys = _.map(fields.split(','), (token) => token.trim());
+        keys = _.map(fields.split(','), (token) => token.trim().replace(/"(.+)"/, '$1'));
     });
 
     let index = 0;
