@@ -1,22 +1,74 @@
 <template>
     <div class="export-page">
         <div class="export-control">
-            <button class="btn btn-default export-import">Import</button>
-            <button class="btn btn-default export-export">Export</button>
+            <button class="btn btn-default export-import" @click="onBtnImportClicked">Import</button>
+            <button class="btn btn-default export-export" @click="onBtnExportClicked">Export</button>
         </div>
         <div>
             <div class="progress-wrapper">
-                <div class="progress-title"></div>
-                <div class="progress-bar"></div>
+                <div class="progress-title">{{ progressDone + '/' + progressTotal }}</div>
+                <div class="progress-bar" :style="{width: progressDone * 100 / progressTotal + '%'}"></div>
             </div>
-            <textarea class="export-content"></textarea>
+            <textarea class="export-content" :value="progressContent"></textarea>
         </div>
     </div>
 </template>
 <script>
 'use strict';
 
+import _ from 'lodash';
+
+import {execSql, fillStatement} from '../common/database';
+import {SQL_INIT_ARENA, SQL_LOAD_ARENA_DATA, SQL_INSERT_ARENA_ROW} from '../service/arena';
+import {SQL_INIT_LACKS, SQL_LOAD_LACKS_DATA, SQL_INSERT_LACKS_ROW} from '../service/lacks';
+
 export default {
+    data() {
+        return {
+            progressDone: 0,
+            progressTotal: 0,
+            progressContent: ''
+        };
+    },
+    methods: {
+        resetProgress(n) {
+            this.progressDone = 0;
+            this.progressTotal = n;
+            this.progressContent = '';
+        },
+
+
+        onBtnImportClicked() {
+            // TODO:
+        },
+        onBtnExportClicked() {
+            this.resetProgress(2);
+
+            const p1 = execSql(SQL_LOAD_ARENA_DATA).then((rs) => rs.rows).then((rows) => {
+                return _.map(rows, (item) => fillStatement(SQL_INSERT_ARENA_ROW, {
+                    ...item,
+                    class: item.cls // special case
+                }));
+            }).then((sqls) => {
+                this.progressDone++;
+                return sqls;
+            });
+
+            const p2 = execSql(SQL_LOAD_LACKS_DATA).then((rs) => rs.rows).then((rows) => {
+                return _.map(rows, (item) => fillStatement(SQL_INSERT_LACKS_ROW, item));
+            }).then((sqls) => {
+                this.progressDone++;
+                return sqls;
+            });
+
+            Promise.all([p1, p2]).then((res) => {
+                let sqls = [SQL_INIT_ARENA, SQL_INIT_LACKS];
+                sqls = _.reduce(res, (memo, arr) => memo.concat(arr), sqls);
+
+                this.progressContent = sqls.join(';\n');
+            });
+        }
+    }
 };
 
 </script>

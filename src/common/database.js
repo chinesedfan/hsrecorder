@@ -1,5 +1,7 @@
 'use strict';
 
+import _ from 'lodash';
+
 /**
  * Database location:
  *     Windows Vista or 7: \Users\_username_\AppData\Local\Google\Chrome\User Data\Default\databases
@@ -40,5 +42,32 @@ export function execSqls(sqls, args, onEachSucc, onEachErr) {
                 t.executeSql(sqls[i], args[i], realOnSucc, realOnErr);
             }
         });
+    });
+}
+
+function val2str(val) {
+    let x = val;
+    if (x instanceof Array) return _.map(x, val2str).join(',');
+
+    // fix quote
+    if (typeof x === 'string') {
+        x = x.replace(/'/g, '\'');
+    }
+    // convert to string
+    x = (x === '' || x === null) ? 'NULL' : `'${x}'`;
+
+    return x;
+}
+
+export function fillStatement(sql, obj) {
+    let keys = [];
+    sql.replace(/\(([^)]+)\)/, (match, fields) => {
+        keys = _.map(fields.split(','), (token) => token.trim());
+    });
+
+    let index = 0;
+    return sql.replace(/\?/g, () => {
+        const k = keys[index++];
+        return val2str(obj[k]);
     });
 }
