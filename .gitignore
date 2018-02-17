@@ -1,4 +1,5 @@
-/bin
+/bin/CardDefs.xml
+/bin/tagmap.js
 /db
 /dist
 /node_modules
