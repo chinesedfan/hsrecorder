@@ -20,23 +20,12 @@ INFO_FILE=$OUTPUT_DIR/cardlist.js
 
 # The directory where you install the game.
 HS_HOME=/Applications/Hearthstone
-# Extracted XML files are in this folder.
-XML_DIR=../test/xml
+# https://github.com/HearthSim/hsdata/blob/master/CardDefs.xml
+XML_FILE=../bin/CardDefs.xml
 
 # Generate the tag directory: {id -> name}.
 node parseCs.js $TAG_FILE > $TAG_MAP_FILE
-# Delete the folder if has -f option
-if [ "$1"x = "-f"x ]
-then
-    rm -rf $XML_DIR
-fi
-# Extract XML from unity3d files
-if [ ! -d $XML_DIR ]
-then
-    mkdir $XML_DIR
-    (cd $XML_DIR; $PYTHON $CWD/extractXml.py $HS_HOME/Data/OSX/cardxml0.unity3d)
-fi
 # Covert XML into json
-node parseXml.js $XML_DIR/enUS.xml $TAG_MAP_FILE > $INFO_FILE
+node parseXml.js $XML_FILE $TAG_MAP_FILE > $INFO_FILE
 
 echo "...done!"
