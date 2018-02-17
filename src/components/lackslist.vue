@@ -120,7 +120,7 @@ export default {
 
         .count {
             position: absolute;
-            left: 5px;
+            right: 5px;
             top: 0;
             color: red;
         }
