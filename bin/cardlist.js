@@ -161,6 +161,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 4,
+        "cost": 6,
+        "id": "LOOT_108",
+        "name": "Aluneth",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "OG_248",
@@ -387,6 +395,14 @@ module.exports =
     {
         "cls": 4,
         "cost": 1,
+        "id": "LOOT_231",
+        "name": "Arcane Artificer",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
         "id": "AT_004",
         "name": "Arcane Blast",
         "rarity": 4,
@@ -415,6 +431,14 @@ module.exports =
         "name": "Arcane Nullifier X-21",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_130",
+        "name": "Arcane Tyrant",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -545,6 +569,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 2,
+        "cost": 4,
+        "id": "LOOT_056",
+        "name": "Astral Tiger",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 6,
         "cost": 4,
         "id": "EX1_591",
@@ -673,6 +705,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 2,
+        "cost": 1,
+        "id": "LOOT_047",
+        "name": "Barkskin",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "KAR_114",
@@ -743,6 +783,14 @@ module.exports =
         "name": "Beneath the Grounds",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "LOOT_398",
+        "name": "Benevolent Djinn",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 3,
@@ -871,6 +919,14 @@ module.exports =
         "name": "Bladed Cultist",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "LOOT_044",
+        "name": "Bladed Gauntlet",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 9,
@@ -1074,6 +1130,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 3,
+        "id": "LOOT_152",
+        "name": "Boisterous Bard",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "AT_124",
         "name": "Bolf Ramshield",
@@ -1146,7 +1210,7 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 7,
+        "cost": 8,
         "id": "ICC_705",
         "name": "Bonemare",
         "rarity": 1,
@@ -1167,6 +1231,14 @@ module.exports =
         "name": "Bouncing Blade",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "LOOT_054",
+        "name": "Branching Paths",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -1329,6 +1401,22 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 5,
+        "cost": 4,
+        "id": "LOOT_093",
+        "name": "Call to Arms",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "LOOT_222",
+        "name": "Candleshot",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "NEW1_024",
@@ -1353,6 +1441,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_161",
+        "name": "Carnivorous Cube",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "OG_325",
@@ -1367,6 +1463,30 @@ module.exports =
         "name": "Cat Trick",
         "rarity": 3,
         "series": "KAR"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "LOOT_417",
+        "name": "Cataclysm",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "LOOT_078",
+        "name": "Cave Hydra",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "LOOT_033",
+        "name": "Cavern Shinyfinder",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 2,
@@ -1399,6 +1519,14 @@ module.exports =
         "name": "Charged Hammer",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "LOOT_204",
+        "name": "Cheat Death",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 5,
@@ -1681,6 +1809,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 7,
+        "id": "LOOT_149",
+        "name": "Corridor Creeper",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_122",
+        "name": "Corrosive Sludge",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "OG_147",
         "name": "Corrupted Healbot",
@@ -1783,6 +1927,22 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 8,
+        "cost": 2,
+        "id": "LOOT_060",
+        "name": "Crushing Hand",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 3,
+        "cost": 7,
+        "id": "LOOT_522",
+        "name": "Crushing Walls",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 4,
         "cost": 5,
         "id": "CFM_671",
@@ -1805,6 +1965,14 @@ module.exports =
         "name": "Crypt Lord",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "LOOT_313",
+        "name": "Crystal Lion",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -1869,6 +2037,14 @@ module.exports =
         "name": "Cursed Blade",
         "rarity": 3,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_233",
+        "name": "Cursed Disciple",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 7,
@@ -1957,6 +2133,14 @@ module.exports =
         "name": "Dark Iron Skulker",
         "rarity": 3,
         "series": "BRM"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "LOOT_017",
+        "name": "Dark Pact",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 9,
@@ -2127,6 +2311,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "LOOT_106",
+        "name": "Deck of Wonders",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "EX1_093",
@@ -2269,6 +2461,14 @@ module.exports =
         "name": "Dinosize",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "LOOT_258",
+        "name": "Dire Mole",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -2439,6 +2639,14 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 6,
+        "cost": 3,
+        "id": "LOOT_209",
+        "name": "Dragon Soul",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 4,
         "cost": 5,
         "id": "BRM_003",
@@ -2447,12 +2655,36 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "LOOT_172",
+        "name": "Dragon's Fury",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 9,
+        "id": "LOOT_535",
+        "name": "Dragoncaller Alanna",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 6,
         "cost": 6,
         "id": "CFM_662",
         "name": "Dragonfire Potion",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "LOOT_540",
+        "name": "Dragonhatcher",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -2469,6 +2701,14 @@ module.exports =
         "name": "Dragonkin Sorcerer",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_132",
+        "name": "Dragonslayer",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 9,
@@ -2575,6 +2815,22 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 5,
+        "cost": 2,
+        "id": "LOOT_363",
+        "name": "Drygulch Jailor",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "LOOT_367",
+        "name": "Drywhisker Armorer",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 8,
         "cost": 4,
         "id": "GVG_066",
@@ -2597,6 +2853,14 @@ module.exports =
         "name": "Duskboar",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "LOOT_410",
+        "name": "Duskbreaker",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 8,
@@ -2661,6 +2925,14 @@ module.exports =
         "name": "Eater of Secrets",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_118",
+        "name": "Ebon Dragonsmith",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -2757,6 +3029,14 @@ module.exports =
         "name": "Elite Tauren Chieftain",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "LOOT_211",
+        "name": "Elven Minstrel",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -2895,6 +3175,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "LOOT_214",
+        "name": "Evasion",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 8,
         "cost": 7,
         "id": "LOE_113",
@@ -2975,6 +3263,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "LOOT_101",
+        "name": "Explosive Runes",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "GVG_076",
@@ -3053,6 +3349,14 @@ module.exports =
         "name": "Faerie Dragon",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "LOOT_026",
+        "name": "Fal'dorei Strider",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -3173,6 +3477,14 @@ module.exports =
         "name": "Fencing Coach",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "LOOT_218",
+        "name": "Feral Gibberer",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 2,
@@ -3365,6 +3677,14 @@ module.exports =
         "name": "Flamewreathed Faceless",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "LOOT_077",
+        "name": "Flanking Strike",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 3,
@@ -3603,6 +3923,30 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 3,
+        "id": "LOOT_388",
+        "name": "Fungal Enchanter",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_167",
+        "name": "Fungalmancer",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_150",
+        "name": "Furbolg Mossbinder",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "ICC_096",
         "name": "Furnacefire Colossus",
@@ -3666,6 +4010,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 10,
+        "cost": 6,
+        "id": "LOOT_370",
+        "name": "Gather Your Party",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "GVG_117",
@@ -3682,6 +4034,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 10,
+        "cost": 6,
+        "id": "LOOT_365",
+        "name": "Gemstudded Golem",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_089",
@@ -3696,6 +4056,14 @@ module.exports =
         "name": "Genzo, the Shark",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 10,
+        "cost": 8,
+        "id": "LOOT_519",
+        "name": "Geosculptor Yip",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 5,
@@ -3752,6 +4120,14 @@ module.exports =
         "name": "Gilblin Stalker",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "LOOT_534",
+        "name": "Gilded Gargoyle",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -3883,6 +4259,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 8,
+        "id": "LOOT_414",
+        "name": "Grand Archivist",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "AT_118",
         "name": "Grand Crusader",
@@ -3896,6 +4280,14 @@ module.exports =
         "name": "Grave Shambler",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "LOOT_154",
+        "name": "Gravelsnout Knight",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -3912,6 +4304,22 @@ module.exports =
         "name": "Greater Healing Potion",
         "rarity": 3,
         "series": "CFM"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "LOOT_351",
+        "name": "Greedy Sprite",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_131",
+        "name": "Green Jelly",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 3,
@@ -4002,6 +4410,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 2,
+        "cost": 8,
+        "id": "LOOT_314",
+        "name": "Grizzled Guardian",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 10,
         "cost": 8,
         "id": "EX1_414",
@@ -4034,12 +4450,28 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 8,
+        "cost": 6,
+        "id": "LOOT_358",
+        "name": "Grumble, Worldshaker",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 8,
         "id": "NEW1_038",
         "name": "Gruul",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "LOOT_375",
+        "name": "Guild Recruiter",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 2,
@@ -4116,6 +4548,14 @@ module.exports =
     {
         "cls": 8,
         "cost": 3,
+        "id": "LOOT_373",
+        "name": "Healing Rain",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
         "id": "AT_048",
         "name": "Healing Wave",
         "rarity": 3,
@@ -4160,6 +4600,14 @@ module.exports =
         "name": "Hired Gun",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_144",
+        "name": "Hoarding Dragon",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 10,
@@ -4226,6 +4674,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 9,
+        "cost": 4,
+        "id": "LOOT_018",
+        "name": "Hooked Reaver",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 8,
         "cost": 3,
         "id": "UNG_938",
@@ -4288,6 +4744,14 @@ module.exports =
         "name": "Hungry Dragon",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "LOOT_383",
+        "name": "Hungry Ettin",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 5,
@@ -4529,12 +4993,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 2,
+        "cost": 4,
+        "id": "LOOT_048",
+        "name": "Ironwood Golem",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 5,
         "cost": 6,
         "id": "KAR_057",
         "name": "Ivory Knight",
         "rarity": 3,
         "series": "KAR"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "LOOT_329",
+        "name": "Ixlid, Fungal Lord",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 2,
@@ -4761,6 +5241,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 3,
+        "cost": 8,
+        "id": "LOOT_511",
+        "name": "Kathrena Winterwisp",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "CFM_621",
@@ -4857,6 +5345,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "LOOT_541",
+        "name": "King Togwaggle",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "AT_065",
@@ -4871,6 +5367,14 @@ module.exports =
         "name": "King's Elekk",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "LOOT_542",
+        "name": "Kingsbane",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -4911,6 +5415,54 @@ module.exports =
         "name": "Knuckles",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_347",
+        "name": "Kobold Apprentice",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "LOOT_041",
+        "name": "Kobold Barbarian",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "LOOT_062",
+        "name": "Kobold Hermit",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "LOOT_412",
+        "name": "Kobold Illusionist",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "LOOT_014",
+        "name": "Kobold Librarian",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_382",
+        "name": "Kobold Monk",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -5031,6 +5583,94 @@ module.exports =
         "name": "Leper Gnome",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "LOOT_043",
+        "name": "Lesser Amethyst Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 6,
+        "cost": 7,
+        "id": "LOOT_507",
+        "name": "Lesser Diamond Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "LOOT_080",
+        "name": "Lesser Emerald Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "LOOT_051",
+        "name": "Lesser Jasper Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 7,
+        "id": "LOOT_203",
+        "name": "Lesser Mithril Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "LOOT_503",
+        "name": "Lesser Onyx Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "LOOT_091",
+        "name": "Lesser Pearl Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "LOOT_103",
+        "name": "Lesser Ruby Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 8,
+        "cost": 7,
+        "id": "LOOT_064",
+        "name": "Lesser Sapphire Spellstone",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "LOOT_333",
+        "name": "Level Up!",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 4,
+        "id": "LOOT_537",
+        "name": "Leyline Manipulator",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -5162,6 +5802,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 3,
+        "id": "LOOT_124",
+        "name": "Lone Champion",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "EX1_096",
         "name": "Loot Hoarder",
@@ -5247,6 +5895,14 @@ module.exports =
         "name": "Lunar Visions",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 5,
+        "cost": 7,
+        "id": "LOOT_216",
+        "name": "Lynessa Sunsorrow",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -5433,6 +6089,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "LOOT_357",
+        "name": "Marin the Fox",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 2,
         "cost": 3,
         "id": "EX1_155",
@@ -5471,6 +6135,14 @@ module.exports =
         "name": "Master Jouster",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "LOOT_521",
+        "name": "Master Oakheart",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -5896,6 +6568,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "cost": 2,
+        "id": "LOOT_517",
+        "name": "Murmuring Elemental",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "LOE_006",
@@ -6102,6 +6782,14 @@ module.exports =
         "name": "Nozdormu",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "LOOT_309",
+        "name": "Oaken Summons",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 10,
@@ -6344,6 +7032,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "LOOT_413",
+        "name": "Plated Beetle",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 3,
         "cost": 1,
         "id": "ICC_052",
@@ -6393,11 +7089,27 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 5,
+        "id": "LOOT_306",
+        "name": "Possessed Lackey",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 9,
         "cost": 1,
         "id": "OG_241",
         "name": "Possessed Villager",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "LOOT_088",
+        "name": "Potion of Heroism",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -6493,6 +7205,14 @@ module.exports =
         "name": "Primal Fusion",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "LOOT_344",
+        "name": "Primal Talismans",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 5,
@@ -6599,12 +7319,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "LOOT_353",
+        "name": "Psionic Probe",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "OG_145",
         "name": "Psych-o-Tron",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 7,
+        "id": "LOOT_008",
+        "name": "Psychic Scream",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -6775,6 +7511,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 2,
+        "id": "LOOT_170",
+        "name": "Raven Familiar",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 2,
         "cost": 1,
         "id": "LOE_115",
@@ -6821,6 +7565,14 @@ module.exports =
         "name": "Razorpetal Volley",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "LOOT_364",
+        "name": "Reckless Flurry",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -6935,6 +7687,14 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 3,
+        "cost": 7,
+        "id": "LOOT_085",
+        "name": "Rhok'delar",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 4,
         "cost": 8,
         "id": "AT_009",
@@ -6949,6 +7709,14 @@ module.exports =
         "name": "Righteous Protector",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 9,
+        "cost": 6,
+        "id": "LOOT_415",
+        "name": "Rin, the First Disciple",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -6981,6 +7749,14 @@ module.exports =
         "name": "Rumbling Elemental",
         "rarity": 1,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_389",
+        "name": "Rummaging Kobold",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 7,
@@ -7119,6 +7895,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "LOOT_111",
+        "name": "Scorp-o-matic",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 10,
         "cost": 8,
         "id": "ICC_834",
@@ -7191,6 +7975,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 3,
+        "cost": 6,
+        "id": "LOOT_520",
+        "name": "Seeping Oozeling",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "OG_221",
@@ -7229,6 +8021,14 @@ module.exports =
         "name": "Servant of Yogg-Saron",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_069",
+        "name": "Sewer Crawler",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -7478,12 +8278,27 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 4,
+        "id": "LOOT_104",
+        "name": "Shifting Scroll",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 6,
         "cost": 4,
         "id": "OG_335",
         "name": "Shifting Shade",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_193",
+        "name": "Shimmering Courser",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -7502,12 +8317,28 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_394",
+        "name": "Shrieking Shroom",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "GVG_011",
         "name": "Shrinkmeister",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_291",
+        "name": "Shroom Brewer",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 7,
@@ -7579,6 +8410,14 @@ module.exports =
         "name": "Silver Hand Regent",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "LOOT_184",
+        "name": "Silver Vanguard",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -7661,6 +8500,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 9,
+        "cost": 5,
+        "id": "LOOT_420",
+        "name": "Skull of the Man'ari",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 7,
         "id": "AT_070",
@@ -7683,6 +8530,14 @@ module.exports =
         "name": "Sleep with the Fishes",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "LOOT_137",
+        "name": "Sleepy Dragon",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -7731,6 +8586,14 @@ module.exports =
         "name": "Snake Trap",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_136",
+        "name": "Sneaky Devil",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -7786,6 +8649,14 @@ module.exports =
         "name": "Solemn Vigil",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "LOOT_165",
+        "name": "Sonya Shadowdancer",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 4,
@@ -7972,6 +8843,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 6,
+        "id": "LOOT_539",
+        "name": "Spiteful Summoner",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 9,
         "cost": 3,
         "id": "OG_116",
@@ -8110,6 +8989,14 @@ module.exports =
     {
         "cls": 12,
         "cost": 3,
+        "id": "LOOT_125",
+        "name": "Stoneskin Basilisk",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
         "id": "FP1_027",
         "name": "Stoneskin Gargoyle",
         "rarity": 1,
@@ -8186,6 +9073,14 @@ module.exports =
         "name": "Stubborn Gastropod",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "LOOT_210",
+        "name": "Sudden Betrayal",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 10,
@@ -8339,6 +9234,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 6,
+        "cost": 7,
+        "id": "LOOT_538",
+        "name": "Temporus",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "OG_151",
@@ -8403,6 +9306,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "LOOT_526",
+        "name": "The Darkness",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "UNG_954",
@@ -8433,6 +9344,14 @@ module.exports =
         "name": "The Mistcaller",
         "rarity": 5,
         "series": "AT"
+    },
+    {
+        "cls": 8,
+        "cost": 8,
+        "id": "LOOT_506",
+        "name": "The Runespear",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -8563,6 +9482,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 3,
+        "cost": 6,
+        "id": "LOOT_217",
+        "name": "To My Side!",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_070",
@@ -8601,6 +9528,14 @@ module.exports =
         "name": "Tomb Spider",
         "rarity": 1,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_134",
+        "name": "Toothy Chest",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 2,
@@ -8708,6 +9643,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "LOOT_315",
+        "name": "Trogg Gloomeater",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 12,
         "cost": 7,
         "id": "GVG_118",
         "name": "Troggzor the Earthinator",
@@ -8745,6 +9688,22 @@ module.exports =
         "name": "Tuskarr Totemic",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "LOOT_392",
+        "name": "Twig of the World Tree",
+        "rarity": 5,
+        "series": "LOOT"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "LOOT_528",
+        "name": "Twilight Acolyte",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -8809,6 +9768,14 @@ module.exports =
         "name": "Twilight Whelp",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "LOOT_187",
+        "name": "Twilight's Call",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -8899,6 +9866,30 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 6,
+        "cost": 3,
+        "id": "LOOT_278",
+        "name": "Unidentified Elixir",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "LOOT_286",
+        "name": "Unidentified Maul",
+        "rarity": 3,
+        "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 6,
+        "id": "LOOT_285",
+        "name": "Unidentified Shield",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 8,
         "cost": 1,
         "id": "UNG_942",
@@ -8921,6 +9912,14 @@ module.exports =
         "name": "Unlicensed Apothecary",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "LOOT_504",
+        "name": "Unstable Evolution",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -8977,6 +9976,14 @@ module.exports =
         "name": "Uther of the Ebon Blade",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "LOOT_500",
+        "name": "Val'anyr",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 10,
@@ -9107,6 +10114,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "LOOT_153",
+        "name": "Violet Wurm",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "CFM_816",
@@ -9131,6 +10146,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_529",
+        "name": "Void Ripper",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 9,
         "cost": 3,
         "id": "EX1_304",
@@ -9145,6 +10168,14 @@ module.exports =
         "name": "Voidcaller",
         "rarity": 1,
         "series": "NAXX"
+    },
+    {
+        "cls": 9,
+        "cost": 9,
+        "id": "LOOT_368",
+        "name": "Voidlord",
+        "rarity": 4,
+        "series": "LOOT"
     },
     {
         "cls": 6,
@@ -9219,12 +10250,28 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 9,
+        "cost": 2,
+        "id": "LOOT_013",
+        "name": "Vulgar Homunculus",
+        "rarity": 1,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "FP1_016",
         "name": "Wailing Soul",
         "rarity": 3,
         "series": "NAXX"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "LOOT_079",
+        "name": "Wandering Monster",
+        "rarity": 3,
+        "series": "LOOT"
     },
     {
         "cls": 10,
@@ -9241,6 +10288,14 @@ module.exports =
         "name": "Warhorse Trainer",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "LOOT_117",
+        "name": "Wax Elemental",
+        "rarity": 1,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -9355,6 +10410,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "cost": 5,
+        "id": "LOOT_518",
+        "name": "Windshear Stormcaller",
+        "rarity": 4,
+        "series": "LOOT"
+    },
+    {
         "cls": 12,
         "id": "CS2_231",
         "name": "Wisp",
@@ -9376,6 +10439,14 @@ module.exports =
         "name": "Wobbling Runts",
         "rarity": 3,
         "series": "LOE"
+    },
+    {
+        "cls": 10,
+        "cost": 8,
+        "id": "LOOT_380",
+        "name": "Woecleaver",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 12,
@@ -9496,6 +10567,14 @@ module.exports =
         "name": "Zealous Initiate",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "LOOT_516",
+        "name": "Zola the Gorgon",
+        "rarity": 5,
+        "series": "LOOT"
     },
     {
         "cls": 12,
