@@ -11,6 +11,7 @@ import Arena from '../components/arena';
 import Lacks from '../components/lacks';
 import Export from '../components/export';
 
+import '../service';
 import store from '../store';
 
 Vue.use(Vuex);
