@@ -2,6 +2,6 @@
 
 export default {
     state: {
-        items: ['Arena', 'Packs', 'Lacks', 'Export']
+        items: ['Arena', 'Lacks', 'Export']
     }
 };
