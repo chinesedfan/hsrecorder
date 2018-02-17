@@ -18,9 +18,9 @@
 
 import _ from 'lodash';
 
-import {execSql, fillStatement} from '../common/database';
-import {SQL_INIT_ARENA, SQL_EXPORT_ARENA_ROW, SQL_LOAD_ARENA_DATA} from '../service/arena';
-import {SQL_INIT_LACKS, SQL_EXPORT_LACKS_ROW, SQL_LOAD_LACKS_DATA} from '../service/lacks';
+import {execSql, execSqls, fillStatement} from '../common/database';
+import {SQL_DROP_ARENA, SQL_INIT_ARENA, SQL_EXPORT_ARENA_ROW, SQL_LOAD_ARENA_DATA} from '../service/arena';
+import {SQL_DROP_LACKS, SQL_INIT_LACKS, SQL_EXPORT_LACKS_ROW, SQL_LOAD_LACKS_DATA} from '../service/lacks';
 
 export default {
     data() {
@@ -34,12 +34,23 @@ export default {
         resetProgress(n) {
             this.progressDone = 0;
             this.progressTotal = n;
-            this.progressContent = '';
         },
 
 
         onBtnImportClicked() {
-            // TODO:
+            const sqls = _.filter(this.progressContent.split(';\n'));
+            if (!sqls.length) return;
+            this.resetProgress(sqls.length);
+
+            let hasAlert = false;
+            execSqls(sqls, [], () => {
+                this.progressDone++;
+            }, (err) => {
+                if (hasAlert) return;
+
+                hasAlert = true;
+                alert(err.message);
+            });
         },
         onBtnExportClicked() {
             this.resetProgress(2);
@@ -51,14 +62,14 @@ export default {
                 }));
             }).then((sqls) => {
                 this.progressDone++;
-                return [SQL_INIT_ARENA].concat(sqls);
+                return [SQL_DROP_ARENA, SQL_INIT_ARENA].concat(sqls);
             });
 
             const p2 = execSql(SQL_LOAD_LACKS_DATA).then((rs) => rs.rows).then((rows) => {
                 return _.map(rows, (item) => fillStatement(SQL_EXPORT_LACKS_ROW, item));
             }).then((sqls) => {
                 this.progressDone++;
-                return [SQL_INIT_LACKS].concat(sqls);
+                return [SQL_DROP_LACKS, SQL_INIT_LACKS].concat(sqls);
             });
 
             Promise.all([p1, p2]).then((res) => {

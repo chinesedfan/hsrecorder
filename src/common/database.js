@@ -39,7 +39,7 @@ export function execSqls(sqls, args, onEachSucc, onEachErr) {
         };
         db.transaction((t) => {
             for (let i = 0; i < sqls.length; i++) {
-                t.executeSql(sqls[i], args[i], realOnSucc, realOnErr);
+                t.executeSql(sqls[i], args[i] || [], realOnSucc, realOnErr);
             }
         });
     });
