@@ -11,8 +11,11 @@
                     v-show="item.rarity == 'Total' || item.series == expandedSeries"
                     :class="{tline: item.rarity == 'Total' || item.rarity == 'Common'}">
                 <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
-                <td v-for="cls in clsList" :class="getTdCls(item.series, cls, item.rarity)" :style="{color: item.color}"
-                        @click="onCellClicked({series: item.series, cls: cls})">{{ getTdText(item.series, cls, item.rarity) }}</td>
+                <td v-for="cls in clsList" :style="{color: item.color}"
+                        @click="onCellClicked({series: item.series, cls: cls})">
+                    <div class="bkg" :style="{width: getTdWidth(item.series, cls, item.rarity)}"></div>
+                    <div class="text" :class="{selected: getTdSelected(item.series, cls, item.rarity)}">{{ getTdText(item.series, cls, item.rarity) }}</div>
+                </td>
             </tr>
         </transition-group>
     </div>
@@ -102,13 +105,13 @@ export default {
             const item = this.getCountsItem(this.counts, series, cls, rarity);
             return item.target == item.owned ? item.target : `${item.owned}/${item.target}`;
         },
-        getTdCls(series, cls, rarity) {
+        getTdWidth(series, cls, rarity) {
             const item = this.getCountsItem(this.counts, series, cls, rarity);
-            const isSelected = this.itemsFilter.series == series && this.itemsFilter.cls == cls;
-
-            let tdCls = item.target == item.owned ? '' : 'grey';
-            if (isSelected) tdCls += ' selected';
-            return tdCls;
+            return (item.target - item.owned) * 100 / item.target + '%';
+        },
+        getTdSelected(series, cls, rarity) {
+            const item = this.getCountsItem(this.counts, series, cls, rarity);
+            return this.itemsFilter.series == series && this.itemsFilter.cls == cls;
         },
 
         onSeriesClicked(series) {
@@ -125,25 +128,41 @@ export default {
 
 </script>
 <style lang="less" scoped>
+@height: 21;
 tr {
     &.tline {
         border-top: 1px solid #d7d7d7;
     }
 }
 td {
+    position: relative;
+    height: unit(@height, px);
+
     &.bold {
         font-weight: bold;
     }
-    &.grey {
+
+    .bkg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
         background-color: #e1e1e1;
     }
-    &.selected {
-        border: 1px solid red;
+    .text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        &.selected {
+            border: 1px solid red;
+        }
     }
 }
 
 .fade {
-    @height: 21;
 
     &-enter, &-leave-to {
         transform: translateY(unit(-@height, px));
