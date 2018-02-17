@@ -9,7 +9,7 @@
                 <div class="progress-title">{{ progressDone + '/' + progressTotal }}</div>
                 <div class="progress-bar" :style="{width: progressDone * 100 / progressTotal + '%'}"></div>
             </div>
-            <textarea class="export-content" :value="progressContent"></textarea>
+            <textarea class="export-content" v-model="progressContent"></textarea>
         </div>
     </div>
 </template>
