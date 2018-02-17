@@ -8,6 +8,7 @@
   "scripts": {
     "build": "webpack",
     "start": "serve .",
+    "deploy": "now --public && now alias && now remove hsrecorder --safe -f",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "now": {
