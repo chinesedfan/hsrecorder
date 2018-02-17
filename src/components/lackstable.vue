@@ -5,13 +5,16 @@
                 <th></th>
                 <th v-for="cls in clsList">{{ cls }}</th>
             </tr>
-            <tr v-for="item in rowItems" v-show="item.rarity == 'Total' || item.series == expandedSeries"
+        </tbody></table>
+        <transition-group name="fade" tag="table">
+            <tr v-for="(item, index) in rowItems" :key="index"
+                    v-show="item.rarity == 'Total' || item.series == expandedSeries"
                     :class="{tline: item.rarity == 'Total' || item.rarity == 'Common'}">
                 <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
                 <td v-for="cls in clsList" :class="getTdCls(item.series, cls, item.rarity)" :style="{color: item.color}"
                         @click="onCellClicked({series: item.series, cls: cls})">{{ getTdText(item.series, cls, item.rarity) }}</td>
             </tr>
-        </tbody></table>
+        </transition-group>
     </div>
 </template>
 <script>
@@ -136,6 +139,18 @@ td {
     }
     &.selected {
         border: 1px solid red;
+    }
+}
+
+.fade {
+    @height: 21;
+
+    &-enter, &-leave-to {
+        transform: translateY(unit(-@height, px));
+        opacity: 0;
+    }
+    &-enter-active, &-leave-active {
+        transition: all .2s ease;
     }
 }
 </style>
