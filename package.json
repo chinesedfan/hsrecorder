@@ -6,7 +6,12 @@
     "test": "test"
   },
   "scripts": {
+    "build": "webpack",
+    "start": "serve .",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "now": {
+    "alias": "hsrecorder"
   },
   "repository": {
     "type": "git",
@@ -32,6 +37,7 @@
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "lodash": "^4.16.4",
+    "serve": "latest",
     "style-loader": "^0.13.1",
     "vue-loader": "^10.2.1",
     "vue-template-compiler": "^2.1.10",
