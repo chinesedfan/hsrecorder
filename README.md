@@ -1,4 +1,4 @@
-HearthStone Recorder
+HearthStone Recorder [![Build Status](https://travis-ci.org/chinesedfan/hsrecorder.svg?branch=master)](https://travis-ci.org/chinesedfan/hsrecorder)
 ====================
 
 This project provides a single HTML page for recording your HearthStone's arena winning rates and opening packs results.
