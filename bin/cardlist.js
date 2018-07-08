@@ -425,6 +425,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 4,
+        "cost": 4,
+        "id": "GIL_116",
+        "name": "Arcane Keysmith",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "GVG_091",
@@ -479,6 +487,14 @@ module.exports =
         "name": "Archmage Antonidas",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "GIL_691",
+        "name": "Archmage Arugal",
+        "rarity": 5,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -658,6 +674,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 7,
+        "id": "GIL_198",
+        "name": "Azalina Soulthief",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "EX1_284",
         "name": "Azure Drake",
@@ -687,6 +711,22 @@ module.exports =
         "name": "Backstreet Leper",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "GIL_826",
+        "name": "Baku the Mooneater",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "GIL_815",
+        "name": "Baleful Banker",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 3,
@@ -777,6 +817,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 5,
+        "cost": 4,
+        "id": "GIL_634",
+        "name": "Bellringer Sentry",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "AT_035",
@@ -807,6 +855,14 @@ module.exports =
         "name": "Betrayal",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "GIL_507",
+        "name": "Bewitched Guardian",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -865,12 +921,36 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "GIL_838",
+        "name": "Black Cat",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 5,
         "cost": 6,
         "id": "ICC_245",
         "name": "Blackguard",
         "rarity": 4,
         "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 7,
+        "id": "GIL_152",
+        "name": "Blackhowl Gunspire",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_561",
+        "name": "Blackwald Pixie",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -945,6 +1025,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 8,
+        "cost": 1,
+        "id": "GIL_836",
+        "name": "Blazing Invocation",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 5,
         "cost": 5,
         "id": "EX1_355",
@@ -967,6 +1055,14 @@ module.exports =
         "name": "Blingtron 3000",
         "rarity": 5,
         "series": "GVG"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "GIL_827",
+        "name": "Blink Fox",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 4,
@@ -1023,6 +1119,14 @@ module.exports =
         "name": "Blood Warriors",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "GIL_693",
+        "name": "Blood Witch",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 9,
@@ -1129,6 +1233,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 8,
+        "cost": 7,
+        "id": "GIL_807",
+        "name": "Bogshaper",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "LOOT_152",
@@ -1215,6 +1327,22 @@ module.exports =
         "name": "Bonemare",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 4,
+        "cost": 5,
+        "id": "GIL_645",
+        "name": "Bonfire Elemental",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "GIL_548",
+        "name": "Book of Specters",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -1402,7 +1530,7 @@ module.exports =
     },
     {
         "cls": 5,
-        "cost": 4,
+        "cost": 5,
         "id": "LOOT_093",
         "name": "Call to Arms",
         "rarity": 4,
@@ -1450,6 +1578,14 @@ module.exports =
     },
     {
         "cls": 3,
+        "cost": 5,
+        "id": "GIL_905",
+        "name": "Carrion Drake",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
+        "cls": 3,
         "cost": 3,
         "id": "OG_325",
         "name": "Carrion Grub",
@@ -1471,6 +1607,22 @@ module.exports =
         "name": "Cataclysm",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "GIL_635",
+        "name": "Cathedral Gargoyle",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "GIL_119",
+        "name": "Cauldron Elemental",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 3,
@@ -1505,6 +1657,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "GIL_142",
+        "name": "Chameleos",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 8,
         "id": "UNG_099",
@@ -1523,10 +1683,26 @@ module.exports =
     {
         "cls": 7,
         "cost": 2,
+        "id": "GIL_506",
+        "name": "Cheap Shot",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
         "id": "LOOT_204",
         "name": "Cheat Death",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "GIL_648",
+        "name": "Chief Inspector",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -1569,6 +1745,14 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "GIL_147",
+        "name": "Cinderstorm",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 6,
         "id": "EX1_621",
         "name": "Circle of Healing",
@@ -1582,6 +1766,14 @@ module.exports =
         "name": "Cloaked Huntress",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "GIL_646",
+        "name": "Clockwork Automaton",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -1638,6 +1830,14 @@ module.exports =
         "name": "Cobra Shot",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 6,
+        "cost": 6,
+        "id": "GIL_805",
+        "name": "Coffin Crasher",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -1863,6 +2063,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 7,
+        "id": "GIL_578",
+        "name": "Countess Ashmore",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "GVG_038",
@@ -2015,6 +2223,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "GIL_640",
+        "name": "Curio Collector",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 6,
         "cost": 3,
         "id": "UNG_035",
@@ -2031,12 +2247,28 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 9,
+        "cost": 2,
+        "id": "GIL_665",
+        "name": "Curse of Weakness",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 10,
         "cost": 1,
         "id": "LOE_118",
         "name": "Cursed Blade",
         "rarity": 3,
         "series": "LOE"
+    },
+    {
+        "cls": 7,
+        "cost": 6,
+        "id": "GIL_557",
+        "name": "Cursed Castaway",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -2053,6 +2285,14 @@ module.exports =
         "name": "Cutpurse",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "GIL_902",
+        "name": "Cutthroat Buccaneer",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -2085,6 +2325,14 @@ module.exports =
         "name": "Daring Reporter",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "GIL_547",
+        "name": "Darius Crowley",
+        "rarity": 5,
+        "series": "GIL"
     },
     {
         "cls": 2,
@@ -2151,6 +2399,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 9,
+        "cost": 1,
+        "id": "GIL_543",
+        "name": "Dark Possession",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 2,
         "cost": 6,
         "id": "GVG_041",
@@ -2165,6 +2421,14 @@ module.exports =
         "name": "Darkbomb",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "GIL_121",
+        "name": "Darkmire Moonkin",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 6,
@@ -2221,6 +2485,14 @@ module.exports =
         "name": "Dead Man's Hand",
         "rarity": 4,
         "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 6,
+        "id": "GIL_537",
+        "name": "Deadly Arsenal",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 7,
@@ -2293,6 +2565,14 @@ module.exports =
         "name": "Deathstalker Rexxar",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 9,
+        "cost": 5,
+        "id": "GIL_565",
+        "name": "Deathweb Spider",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -2399,6 +2679,14 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "GIL_118",
+        "name": "Deranged Doctor",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "LOE_020",
@@ -2463,6 +2751,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 3,
+        "cost": 4,
+        "id": "GIL_828",
+        "name": "Dire Frenzy",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "LOOT_258",
@@ -2519,6 +2815,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 6,
+        "cost": 2,
+        "id": "GIL_661",
+        "name": "Divine Hymn",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "OG_223",
@@ -2533,6 +2837,14 @@ module.exports =
         "name": "Djinni of Zephyrs",
         "rarity": 4,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "GIL_620",
+        "name": "Dollmaster Dorian",
+        "rarity": 5,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -2808,6 +3120,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 3,
+        "id": "GIL_188",
+        "name": "Druid of the Scythe",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 2,
         "cost": 2,
         "id": "ICC_051",
         "name": "Druid of the Swarm",
@@ -2847,6 +3167,14 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "GIL_508",
+        "name": "Duskbat",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "OG_326",
@@ -2861,6 +3189,22 @@ module.exports =
         "name": "Duskbreaker",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "GIL_800",
+        "name": "Duskfallen Aviana",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "GIL_200",
+        "name": "Duskhaven Hunter",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 8,
@@ -2901,6 +3245,14 @@ module.exports =
         "name": "Earth Shock",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "GIL_586",
+        "name": "Earthen Might",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -3069,6 +3421,14 @@ module.exports =
         "name": "Emerald Reaver",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 3,
+        "cost": 10,
+        "id": "GIL_128",
+        "name": "Emeriss",
+        "rarity": 5,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -3311,6 +3671,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 7,
+        "cost": 3,
+        "id": "GIL_677",
+        "name": "Face Collector",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 10,
         "id": "OG_141",
@@ -3464,6 +3832,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "GIL_527",
+        "name": "Felsoul Inquisitor",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "CS1_069",
         "name": "Fen Creeper",
@@ -3503,12 +3879,36 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 2,
+        "cost": 3,
+        "id": "GIL_637",
+        "name": "Ferocious Howl",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "GIL_655",
+        "name": "Festeroot Hulk",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "FP1_015",
         "name": "Feugen",
         "rarity": 5,
         "series": "NAXX"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "GIL_191",
+        "name": "Fiendish Circle",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 10,
@@ -3795,6 +4195,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 2,
+        "cost": 4,
+        "id": "GIL_833",
+        "name": "Forest Guide",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 10,
         "cost": 2,
         "id": "ICC_281",
@@ -3947,6 +4355,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 7,
+        "id": "GIL_120",
+        "name": "Furious Ettin",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "ICC_096",
         "name": "Furnacefire Colossus",
@@ -4043,6 +4459,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 6,
+        "id": "GIL_692",
+        "name": "Genn Greymane",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
         "cost": 4,
         "id": "UNG_089",
         "name": "Gentle Megasaur",
@@ -4080,6 +4504,22 @@ module.exports =
         "name": "Ghastly Conjurer",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "GIL_678",
+        "name": "Ghost Light Angler",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "GIL_545",
+        "name": "Ghostly Charger",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 2,
@@ -4130,6 +4570,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "GIL_202",
+        "name": "Gilnean Royal Guard",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 4,
         "cost": 8,
         "id": "ICC_086",
@@ -4160,6 +4608,30 @@ module.exports =
         "name": "Glaivezooka",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 9,
+        "cost": 6,
+        "id": "GIL_618",
+        "name": "Glinda Crowskin",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "GIL_837",
+        "name": "Glitter Moth",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "GIL_130",
+        "name": "Gloom Stag",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -4483,6 +4955,14 @@ module.exports =
     },
     {
         "cls": 8,
+        "cost": 8,
+        "id": "GIL_504",
+        "name": "Hagatha the Witch",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 8,
         "cost": 5,
         "id": "OG_209",
         "name": "Hallazeal the Ascended",
@@ -4578,6 +5058,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_534",
+        "name": "Hench-Clan Thug",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 6,
         "cost": 6,
         "id": "OG_316",
@@ -4592,6 +5080,14 @@ module.exports =
         "name": "Hidden Cache",
         "rarity": 3,
         "series": "CFM"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "GIL_903",
+        "name": "Hidden Wisdom",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -4658,6 +5154,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 6,
+        "cost": 5,
+        "id": "GIL_134",
+        "name": "Holy Water",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 5,
         "cost": 5,
         "id": "EX1_365",
@@ -4688,6 +5192,14 @@ module.exports =
         "name": "Hot Spring Guardian",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "GIL_650",
+        "name": "Houndmaster Shaw",
+        "rarity": 5,
+        "series": "GIL"
     },
     {
         "cls": 9,
@@ -4752,6 +5264,14 @@ module.exports =
         "name": "Hungry Ettin",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "GIL_607t",
+        "name": "Hunting Mastiff",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -5505,6 +6025,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 6,
+        "cost": 6,
+        "id": "GIL_840",
+        "name": "Lady in White",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 9,
         "cost": 4,
         "id": "UNG_833",
@@ -5673,6 +6201,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_622",
+        "name": "Lifedrinker",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 6,
         "cost": 1,
         "id": "GVG_012",
@@ -5818,6 +6354,14 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 7,
+        "id": "GIL_825",
+        "name": "Lord Godfrey",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 9,
         "cost": 9,
         "id": "EX1_323",
         "name": "Lord Jaraxxus",
@@ -5839,6 +6383,14 @@ module.exports =
         "name": "Lost in the Jungle",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "GIL_513",
+        "name": "Lost Spirit",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -5919,6 +6471,14 @@ module.exports =
         "name": "Mad Bomber",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_125",
+        "name": "Mad Hatter",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -6121,6 +6681,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_683",
+        "name": "Marsh Drake",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 6,
         "cost": 4,
         "id": "EX1_626",
@@ -6297,6 +6865,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 10,
+        "cost": 4,
+        "id": "GIL_803",
+        "name": "Militia Commander",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "NEW1_029",
@@ -6401,6 +6977,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "GIL_510",
+        "name": "Mistwraith",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "KAR_041",
@@ -6442,7 +7026,7 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 25,
+        "cost": 20,
         "id": "EX1_620",
         "name": "Molten Giant",
         "rarity": 4,
@@ -6490,6 +7074,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 6,
+        "id": "GIL_124",
+        "name": "Mossy Horror",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
         "cost": 12,
         "id": "EX1_105",
         "name": "Mountain Giant",
@@ -6514,6 +7106,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "GIL_682",
+        "name": "Muck Hunter",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "OG_122",
         "name": "Mukla, Tyrant of the Vale",
@@ -6535,6 +7135,14 @@ module.exports =
         "name": "Mulch",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "GIL_530",
+        "name": "Murkspark Eel",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -6625,7 +7233,7 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 5,
+        "cost": 8,
         "id": "LOE_038",
         "name": "Naga Sea Witch",
         "rarity": 4,
@@ -6744,12 +7352,36 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_624",
+        "name": "Night Prowler",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "KAR_010",
         "name": "Nightbane Templar",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_681",
+        "name": "Nightmare Amalgam",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 6,
+        "cost": 7,
+        "id": "GIL_190",
+        "name": "Nightscale Matriarch",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -6920,6 +7552,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 5,
+        "cost": 3,
+        "id": "GIL_685",
+        "name": "Paragon of Light",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "CFM_637",
@@ -6950,6 +7590,22 @@ module.exports =
         "name": "Phantom Freebooter",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_207",
+        "name": "Phantom Militia",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "GIL_696",
+        "name": "Pick Pocket",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 2,
@@ -7089,7 +7745,7 @@ module.exports =
     },
     {
         "cls": 9,
-        "cost": 5,
+        "cost": 6,
         "id": "LOOT_306",
         "name": "Possessed Lackey",
         "rarity": 3,
@@ -7263,6 +7919,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "GIL_694",
+        "name": "Prince Liam",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "KAR_096",
@@ -7367,6 +8031,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_201",
+        "name": "Pumpkin Peasant",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "KAR_013",
@@ -7399,6 +8071,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 6,
+        "cost": 5,
+        "id": "GIL_156",
+        "name": "Quartz Elemental",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "EX1_044",
@@ -7413,6 +8093,14 @@ module.exports =
         "name": "Quick Shot",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "GIL_113",
+        "name": "Rabid Worgen",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 6,
@@ -7487,6 +8175,22 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "GIL_577",
+        "name": "Rat Trap",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "GIL_515",
+        "name": "Ratcatcher",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "ICC_025",
@@ -7525,6 +8229,14 @@ module.exports =
         "name": "Raven Idol",
         "rarity": 1,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_212",
+        "name": "Ravencaller",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -7567,6 +8279,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 5,
+        "cost": 2,
+        "id": "GIL_203",
+        "name": "Rebuke",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "LOOT_364",
@@ -7605,6 +8325,14 @@ module.exports =
         "name": "Red Mana Wyrm",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "GIL_155",
+        "name": "Redband Wasp",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -7743,6 +8471,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "GIL_667",
+        "name": "Rotten Applebaum",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 8,
         "cost": 4,
         "id": "LOE_016",
@@ -7815,6 +8551,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_581",
+        "name": "Sandbinder",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 9,
         "cost": 1,
         "id": "ICC_903",
@@ -7869,6 +8613,14 @@ module.exports =
         "name": "Scaled Nightmare",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_601",
+        "name": "Scaleworm",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -8341,6 +9093,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 8,
+        "cost": 9,
+        "id": "GIL_820",
+        "name": "Shudderwock",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "EX1_134",
@@ -8410,6 +9170,14 @@ module.exports =
         "name": "Silver Hand Regent",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 5,
+        "cost": 8,
+        "id": "GIL_596",
+        "name": "Silver Sword",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -8588,6 +9356,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 4,
+        "cost": 2,
+        "id": "GIL_801",
+        "name": "Snap Freeze",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "LOOT_136",
@@ -8683,6 +9459,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 2,
+        "id": "GIL_145",
+        "name": "Sound the Bells!",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "NEW1_027",
@@ -8731,6 +9515,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "GIL_672",
+        "name": "Spectral Cutlass",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "FP1_008",
@@ -8761,6 +9553,14 @@ module.exports =
         "name": "Spellbreaker",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "GIL_529",
+        "name": "Spellshifter",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 4,
@@ -8844,11 +9644,27 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 6,
+        "cost": 7,
         "id": "LOOT_539",
         "name": "Spiteful Summoner",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 2,
+        "cost": 8,
+        "id": "GIL_658",
+        "name": "Splintergraft",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "GIL_616",
+        "name": "Splitting Festeroot",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 9,
@@ -8865,6 +9681,14 @@ module.exports =
         "name": "Spreading Plague",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "GIL_835",
+        "name": "Squashling",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -9139,6 +9963,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "GIL_816",
+        "name": "Swamp Dragon Egg",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 3,
         "cost": 7,
         "id": "UNG_919",
@@ -9147,12 +9979,28 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "GIL_558",
+        "name": "Swamp Leech",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 7,
         "cost": 1,
         "id": "KAR_069",
         "name": "Swashburglar",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_528",
+        "name": "Swift Messenger",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -9185,6 +10033,14 @@ module.exports =
         "name": "Tanaris Hogchopper",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_213",
+        "name": "Tanglefur Mystic",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -9266,6 +10122,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 7,
+        "cost": 8,
+        "id": "GIL_598",
+        "name": "Tess Greymane",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "EX1_577",
@@ -9312,6 +10176,14 @@ module.exports =
         "name": "The Darkness",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "GIL_817",
+        "name": "The Glass Knight",
+        "rarity": 5,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -9490,6 +10362,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 4,
+        "cost": 6,
+        "id": "GIL_549",
+        "name": "Toki, Time-Tinker",
+        "rarity": 5,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_070",
@@ -9571,6 +10451,14 @@ module.exports =
     },
     {
         "cls": 8,
+        "cost": 4,
+        "id": "GIL_583",
+        "name": "Totem Cruncher",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 8,
         "cost": 2,
         "id": "AT_052",
         "name": "Totem Golem",
@@ -9594,6 +10482,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 10,
+        "cost": 1,
+        "id": "GIL_580",
+        "name": "Town Crier",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "ICC_049",
@@ -9608,6 +10504,14 @@ module.exports =
         "name": "Toxic Sewer Ooze",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "GIL_607",
+        "name": "Toxmonger",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 7,
@@ -9914,6 +10818,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_809",
+        "name": "Unpowered Steambot",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 8,
         "cost": 1,
         "id": "LOOT_504",
@@ -10066,12 +10978,36 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 4,
+        "id": "GIL_664",
+        "name": "Vex Crow",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "UNG_075",
         "name": "Vicious Fledgling",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "GIL_143",
+        "name": "Vicious Scalehide",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "GIL_562",
+        "name": "Vilebrood Skitterer",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 5,
@@ -10136,6 +11072,14 @@ module.exports =
         "name": "Vitality Totem",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "GIL_813",
+        "name": "Vivid Nightmare",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 9,
@@ -10234,6 +11178,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_614",
+        "name": "Voodoo Doll",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
         "cls": 8,
         "cost": 5,
         "id": "ICC_088",
@@ -10266,12 +11218,28 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_680",
+        "name": "Walnut Sprite",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "LOOT_079",
         "name": "Wandering Monster",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "GIL_687",
+        "name": "WANTED!",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 10,
@@ -10288,6 +11256,14 @@ module.exports =
         "name": "Warhorse Trainer",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "GIL_654",
+        "name": "Warpath",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -10418,6 +11394,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 3,
+        "cost": 4,
+        "id": "GIL_518",
+        "name": "Wing Blast",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
         "cls": 12,
         "id": "CS2_231",
         "name": "Wisp",
@@ -10426,11 +11410,75 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 4,
+        "id": "GIL_553",
+        "name": "Wispering Woods",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 2,
         "cost": 7,
         "id": "OG_195",
         "name": "Wisps of the Old Gods",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "GIL_531",
+        "name": "Witch's Apprentice",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "GIL_819",
+        "name": "Witch's Cauldron",
+        "rarity": 4,
+        "series": "GIL"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "GIL_571",
+        "name": "Witching Hour",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "GIL_663",
+        "name": "Witchwood Apple",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "GIL_623",
+        "name": "Witchwood Grizzly",
+        "rarity": 3,
+        "series": "GIL"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "GIL_608",
+        "name": "Witchwood Imp",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "GIL_584",
+        "name": "Witchwood Piper",
+        "rarity": 3,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -10447,6 +11495,22 @@ module.exports =
         "name": "Woecleaver",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "GIL_653",
+        "name": "Woodcutter's Axe",
+        "rarity": 1,
+        "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "GIL_117",
+        "name": "Worgen Abomination",
+        "rarity": 4,
+        "series": "GIL"
     },
     {
         "cls": 12,
@@ -10495,6 +11559,14 @@ module.exports =
         "name": "Wretched Tiller",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "GIL_526",
+        "name": "Wyrmguard",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 6,
@@ -10559,6 +11631,13 @@ module.exports =
         "name": "Ysera",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "id": "GIL_600",
+        "name": "Zap!",
+        "rarity": 1,
+        "series": "GIL"
     },
     {
         "cls": 12,

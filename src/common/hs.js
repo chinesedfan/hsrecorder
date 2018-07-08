@@ -22,4 +22,7 @@ export const RARITY_LIST = [
     {name: 'Common', color: '#333'}
 ];
 
-export const SERIES_LIST = ['CLASSIC', 'NAXX', 'GVG', 'BRM', 'AT', 'LOE', 'OG', 'KAR', 'CFM', 'UNG', 'ICC', 'LOOT'];
+export const SERIES_LIST = [
+    'CLASSIC', 'NAXX', 'GVG', 'BRM', 'AT', 'LOE', 'OG',
+    'KAR', 'CFM', 'UNG', 'ICC', 'LOOT', 'GIL'
+];

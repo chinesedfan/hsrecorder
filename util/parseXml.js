@@ -118,6 +118,7 @@
 			UNG: 'UNG',
 			ICC: 'ICC',
 			LOOT: 'LOOT',
+			GIL: 'GIL',
 		};
 		var prefix = str.replace(/^([^_]+)_.*$/, '$1');
 		return map[prefix] || 'CLASSIC';
