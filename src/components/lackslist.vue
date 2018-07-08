@@ -14,7 +14,7 @@
                 </td></tr>
             </tbody></table>
         </div>
-        <div v-show="previewSrc" class="list-preview" :style="previewStyle"><img :src="previewSrc" :style="{width: '190px'}" @load="onPreviewLoaded"></div>
+        <div v-show="previewSrc" class="list-preview" :style="previewStyle"><img :src="previewSrc" :style="{width: previewWidth + 'px'}" @load="onPreviewLoaded"></div>
     </div>
 </template>
 <script>
@@ -22,6 +22,7 @@
 
 import _ from 'lodash';
 import {mapMutations} from 'vuex';
+import {getClassByNumber} from '../common/hs';
 import * as types from '../store/mutation-types';
 
 export default {
@@ -51,6 +52,8 @@ export default {
     },
     data() {
         return {
+            previewWidth: 169,
+            previewHeight: 236,
             previewSrc: '',
             previewStyle: null
         };
@@ -81,10 +84,14 @@ export default {
         onMouseEnter(e) {
             const tr = e.currentTarget;
             const id = tr.getAttribute('data-id');
+            const item = _.find(this.items, (x) => x.id == id);
+            if (!item) return;
 
-            this.previewSrc = `http://i1.17173cdn.com/8hpoty/YWxqaGBf/images/resource/new_middler/${id}.png`; // 190x270
+            const {cls, name} = item;
+
+            this.previewSrc = `http://hearthstone.nos.netease.com/1/hscards/${cls.toUpperCase()}__${id}_zhCN_${name.replace(/[^A-Za-z0-9]/g, '')}.png`;
             this.previewStyle = {
-                top: Math.max(0, tr.offsetTop - 270 - this.$refs.bottom.scrollTop) + 'px',
+                top: Math.max(0, tr.offsetTop - this.previewHeight - this.$refs.bottom.scrollTop) + 'px',
                 right: tr.clientWidth + 'px'
             };
         },
