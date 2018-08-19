@@ -24,5 +24,5 @@ export const RARITY_LIST = [
 
 export const SERIES_LIST = [
     'CLASSIC', 'NAXX', 'GVG', 'BRM', 'AT', 'LOE', 'OG',
-    'KAR', 'CFM', 'UNG', 'ICC', 'LOOT', 'GIL'
+    'KAR', 'CFM', 'UNG', 'ICC', 'LOOT', 'GIL', 'BOT'
 ];

@@ -49,6 +49,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "BOT_087",
+        "name": "Academic Espionage",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "ICC_092",
@@ -313,6 +321,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 5,
+        "cost": 4,
+        "id": "BOT_911",
+        "name": "Annoy-o-Module",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "GVG_085",
@@ -407,6 +423,14 @@ module.exports =
         "name": "Arcane Blast",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BOT_539",
+        "name": "Arcane Dynamo",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -585,12 +609,28 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 4,
+        "cost": 2,
+        "id": "BOT_101",
+        "name": "Astral Rift",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "LOOT_056",
         "name": "Astral Tiger",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 7,
+        "id": "BOT_256",
+        "name": "Astromancer",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 6,
@@ -607,6 +647,22 @@ module.exports =
         "name": "Auctionmaster Beardo",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_559",
+        "name": "Augmented Elekk",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "BOT_908",
+        "name": "Autodefense Matrix",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 8,
@@ -793,6 +849,13 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "id": "BOT_246",
+        "name": "Beakered Lightning",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "AT_060",
@@ -839,6 +902,14 @@ module.exports =
         "name": "Benevolent Djinn",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 7,
+        "id": "BOT_237",
+        "name": "Beryllium Nullifier",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 3,
@@ -895,6 +966,14 @@ module.exports =
         "name": "Binding Heal",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "BOT_054",
+        "name": "Biology Project",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 2,
@@ -1047,6 +1126,14 @@ module.exports =
         "name": "Blessing of Wisdom",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "BOT_565",
+        "name": "Blightnozzle Crawler",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -1297,6 +1384,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "BOT_033",
+        "name": "Bomb Toss",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 7,
         "cost": 5,
         "id": "ICC_065",
@@ -1353,12 +1448,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 3,
+        "cost": 7,
+        "id": "BOT_034",
+        "name": "Boommaster Flark",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "GVG_050",
         "name": "Bouncing Blade",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_413",
+        "name": "Brainstormer",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 2,
@@ -1425,6 +1536,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_021",
+        "name": "Bronze Gatekeeper",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "ICC_058",
@@ -1439,6 +1558,14 @@ module.exports =
         "name": "Buccaneer",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "BOT_534",
+        "name": "Bull Dozer",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 7,
@@ -1649,6 +1776,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 4,
+        "cost": 2,
+        "id": "BOT_531",
+        "name": "Celestial Emissary",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 2,
         "cost": 9,
         "id": "EX1_573",
@@ -1769,6 +1904,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "BOT_414",
+        "name": "Cloakscale Chemist",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "GIL_646",
         "name": "Clockwork Automaton",
@@ -1798,6 +1941,14 @@ module.exports =
         "name": "Clockwork Knight",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "BOT_435",
+        "name": "Cloning Device",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 9,
@@ -1968,6 +2119,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_562",
+        "name": "Coppertail Imposter",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 3,
         "cost": 4,
         "id": "BRM_014",
@@ -2048,6 +2207,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 4,
+        "id": "BOT_604",
+        "name": "Cosmic Anomaly",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 7,
         "id": "CFM_630",
         "name": "Counterfeit Coin",
@@ -2093,6 +2260,14 @@ module.exports =
         "name": "Crazed Alchemist",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "BOT_576",
+        "name": "Crazed Chemist",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -2191,12 +2366,36 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "BOT_447",
+        "name": "Crystallizer",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "BOT_236",
+        "name": "Crystalsmith Kangor",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
         "cls": 9,
         "cost": 4,
         "id": "CFM_610",
         "name": "Crystalweaver",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "BOT_909",
+        "name": "Crystology",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -2295,6 +2494,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "BOT_438",
+        "name": "Cybertech Chip",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "OG_337",
@@ -2309,6 +2516,14 @@ module.exports =
         "name": "Dalaran Aspirant",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BOT_448",
+        "name": "Damaged Stegotron",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -2485,6 +2700,14 @@ module.exports =
         "name": "Dead Man's Hand",
         "rarity": 4,
         "series": "ICC"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "BOT_509",
+        "name": "Dead Ringer",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 10,
@@ -2672,11 +2895,27 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 2,
+        "id": "BOT_913",
+        "name": "Demonic Project",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 9,
         "cost": 3,
         "id": "BRM_005",
         "name": "Demonwrath",
         "rarity": 3,
         "series": "BRM"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "BOT_419",
+        "name": "Dendrologist",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -2919,12 +3158,36 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "BOT_224",
+        "name": "Doubling Imp",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 7,
         "id": "GVG_110",
         "name": "Dr. Boom",
         "rarity": 5,
         "series": "GVG"
+    },
+    {
+        "cls": 10,
+        "cost": 7,
+        "id": "BOT_238",
+        "name": "Dr. Boom, Mad Genius",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 9,
+        "cost": 8,
+        "id": "BOT_433",
+        "name": "Dr. Morrigan",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 8,
@@ -3088,6 +3351,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 7,
+        "id": "BOT_423",
+        "name": "Dreampetal Florist",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 2,
         "cost": 5,
         "id": "EX1_165",
         "name": "Druid of the Claw",
@@ -3215,6 +3486,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 10,
+        "cost": 5,
+        "id": "BOT_104",
+        "name": "Dyn-o-matic",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_540",
+        "name": "E.M.P. Operative",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 5,
         "cost": 7,
         "id": "AT_081",
@@ -3303,6 +3590,14 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 9,
+        "cost": 6,
+        "id": "BOT_521",
+        "name": "Ectomancy",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "EX1_613",
@@ -3353,10 +3648,34 @@ module.exports =
     {
         "cls": 8,
         "cost": 3,
+        "id": "BOT_411",
+        "name": "Electra Stormsurge",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_550",
+        "name": "Electrowright",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
         "id": "AT_051",
         "name": "Elemental Destruction",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "BOT_093",
+        "name": "Elementary Reaction",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -3511,6 +3830,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 10,
+        "cost": 1,
+        "id": "BOT_059",
+        "name": "Eternium Rover",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 4,
         "cost": 4,
         "id": "EX1_274",
@@ -3533,6 +3860,14 @@ module.exports =
         "name": "Ethereal Peddler",
         "rarity": 3,
         "series": "KAR"
+    },
+    {
+        "cls": 8,
+        "cost": 6,
+        "id": "BOT_099",
+        "name": "Eureka!",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 7,
@@ -3599,6 +3934,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_532",
+        "name": "Explodinator",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 3,
         "cost": 4,
         "id": "ICC_021",
@@ -3653,6 +3996,14 @@ module.exports =
         "name": "Explosive Trap",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "BOT_219",
+        "name": "Extra Arms",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -3717,6 +4068,14 @@ module.exports =
         "name": "Faerie Dragon",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BOT_079",
+        "name": "Faithful Lumi",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 7,
@@ -3999,6 +4358,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "BOT_038",
+        "name": "Fireworks Tech",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 9,
         "cost": 4,
         "id": "AT_022",
@@ -4095,6 +4462,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 3,
+        "cost": 8,
+        "id": "BOT_429",
+        "name": "Flark's Boom-Zooka",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
         "cls": 6,
         "cost": 1,
         "id": "AT_055",
@@ -4117,6 +4492,22 @@ module.exports =
         "name": "Floating Watcher",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "BOT_434",
+        "name": "Flobbidinous Floop",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "BOT_444",
+        "name": "Floop's Glorious Gloop",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -4410,6 +4801,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "BOT_907",
+        "name": "Galvanizer",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 7,
         "cost": 2,
         "id": "BRM_007",
@@ -4555,6 +4954,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "BOT_270",
+        "name": "Giggling Inventor",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "GVG_081",
         "name": "Gilblin Stalker",
@@ -4634,6 +5041,30 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 2,
+        "cost": 8,
+        "id": "BOT_507",
+        "name": "Gloop Sprayer",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "BOT_906",
+        "name": "Glow-Tron",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "BOT_910",
+        "name": "Glowstone Technician",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "UNG_946",
@@ -4688,6 +5119,22 @@ module.exports =
         "name": "Goblin Blastmage",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BOT_031",
+        "name": "Goblin Bomb",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "BOT_437",
+        "name": "Goblin Prank",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -4995,6 +5442,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "BOT_555",
+        "name": "Harbinger Celestia",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "EX1_558",
         "name": "Harrison Jones",
@@ -5136,6 +5591,14 @@ module.exports =
         "name": "Hogger, Doom of Elwynn",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_280",
+        "name": "Holomancer",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 6,
@@ -5650,6 +6113,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 4,
+        "id": "BOT_404",
+        "name": "Juicy Psychmelon",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 2,
         "cost": 1,
         "id": "UNG_116",
         "name": "Jungle Giants",
@@ -5745,12 +6216,28 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_606",
+        "name": "Kaboom Bot",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 8,
         "cost": 8,
         "id": "UNG_211",
         "name": "Kalimos, Primal Lord",
         "rarity": 5,
         "series": "UNG"
+    },
+    {
+        "cls": 5,
+        "cost": 7,
+        "id": "BOT_912",
+        "name": "Kangor's Endless Army",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 9,
@@ -6025,6 +6512,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "BOT_288",
+        "name": "Lab Recruiter",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 6,
         "cost": 6,
         "id": "GIL_840",
@@ -6055,6 +6550,14 @@ module.exports =
         "name": "Lance Carrier",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "BOT_420",
+        "name": "Landscaping",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 8,
@@ -6346,6 +6849,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "BOT_544",
+        "name": "Loose Specimen",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "EX1_096",
         "name": "Loot Hoarder",
@@ -6439,6 +6950,14 @@ module.exports =
         "name": "Luckydo Buccaneer",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 4,
+        "cost": 7,
+        "id": "BOT_257",
+        "name": "Luna's Pocket Galaxy",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 2,
@@ -6778,11 +7297,43 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 10,
+        "id": "BOT_424",
+        "name": "Mecha'thun",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BOT_066",
+        "name": "Mechanical Whelp",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
         "cost": 4,
         "id": "GVG_078",
         "name": "Mechanical Yeti",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "BOT_537",
+        "name": "Mechano-Egg",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BOT_445",
+        "name": "Mecharoo",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -6817,6 +7368,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 8,
+        "cost": 2,
+        "id": "BOT_533",
+        "name": "Menacing Nimbus",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "KAR_702",
@@ -6849,12 +7408,28 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 6,
+        "id": "BOT_601",
+        "name": "Meteorologist",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "GVG_103",
         "name": "Micro Machine",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_535",
+        "name": "Microtech Controller",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -6959,6 +7534,14 @@ module.exports =
         "name": "Misdirection",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BOT_107",
+        "name": "Missile Launcher",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -7137,6 +7720,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 2,
+        "cost": 10,
+        "id": "BOT_523",
+        "name": "Mulchmuncher",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "GIL_530",
@@ -7198,6 +7789,22 @@ module.exports =
         "name": "Muster for Battle",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "BOT_243",
+        "name": "Myra Rotspring",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "BOT_242",
+        "name": "Myra's Unstable Element",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 5,
@@ -7264,6 +7871,30 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 7,
+        "cost": 3,
+        "id": "BOT_286",
+        "name": "Necrium Blade",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "BOT_508",
+        "name": "Necrium Vial",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "BOT_039",
+        "name": "Necromechanic",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "ICC_900",
@@ -7326,6 +7957,14 @@ module.exports =
         "name": "Nesting Roc",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "BOT_226",
+        "name": "Nethersoul Buster",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -7480,6 +8119,46 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 9,
+        "cost": 5,
+        "id": "BOT_536",
+        "name": "Omega Agent",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "BOT_299",
+        "name": "Omega Assembly",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_296",
+        "name": "Omega Defender",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "BOT_216",
+        "name": "Omega Medic",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "BOT_543",
+        "name": "Omega Mind",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 3,
         "cost": 1,
         "id": "OG_061",
@@ -7618,6 +8297,14 @@ module.exports =
     {
         "cls": 12,
         "cost": 4,
+        "id": "BOT_267",
+        "name": "Piloted Reaper",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
         "id": "GVG_096",
         "name": "Piloted Shredder",
         "rarity": 1,
@@ -7702,6 +8389,14 @@ module.exports =
         "name": "Play Dead",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "BOT_283",
+        "name": "Pogo-Hopper",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 2,
@@ -7806,6 +8501,14 @@ module.exports =
         "name": "Power Word: Glory",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "BOT_529",
+        "name": "Power Word: Replicate",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 6,
@@ -7957,6 +8660,14 @@ module.exports =
         "name": "Princess Huhuran",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "BOT_436",
+        "name": "Prismatic Lens",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 3,
@@ -8287,6 +8998,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 6,
+        "cost": 5,
+        "id": "BOT_566",
+        "name": "Reckless Experimenter",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "LOOT_364",
@@ -8399,6 +9118,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_312",
+        "name": "Replicating Menace",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "BOT_600",
+        "name": "Research Project",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "BRM_017",
@@ -8445,6 +9180,14 @@ module.exports =
         "name": "Rin, the First Disciple",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "BOT_067",
+        "name": "Rocket Boots",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -8509,6 +9252,14 @@ module.exports =
         "name": "Runic Egg",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_050",
+        "name": "Rusty Recycler",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 7,
@@ -8695,6 +9446,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_511",
+        "name": "Seaforium Bomber",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "AT_074",
@@ -8719,12 +9478,28 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 3,
+        "cost": 1,
+        "id": "BOT_402",
+        "name": "Secret Plan",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "EX1_080",
         "name": "Secretkeeper",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 6,
+        "id": "BOT_218",
+        "name": "Security Rover",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 3,
@@ -9069,12 +9844,28 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 4,
+        "cost": 1,
+        "id": "BOT_453",
+        "name": "Shooting Star",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "LOOT_394",
         "name": "Shrieking Shroom",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "BOT_234",
+        "name": "Shrink Ray",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 6,
@@ -9242,6 +10033,14 @@ module.exports =
         "name": "Sir Finley Mrrgglton",
         "rarity": 5,
         "series": "LOE"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BOT_020",
+        "name": "Skaterbot",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -9451,6 +10250,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 9,
+        "cost": 1,
+        "id": "BOT_263",
+        "name": "Soul Infusion",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "EX1_158",
@@ -9489,6 +10296,22 @@ module.exports =
         "name": "Southsea Squidface",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BOT_102",
+        "name": "Spark Drill",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BOT_538",
+        "name": "Spark Engine",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 10,
@@ -9579,6 +10402,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "BOT_251",
+        "name": "Spider Bomb",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GVG_044",
@@ -9601,6 +10432,14 @@ module.exports =
         "name": "Spikeridged Steed",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "BOT_222",
+        "name": "Spirit Bomb",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 8,
@@ -9683,6 +10522,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_308",
+        "name": "Spring Rocket",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "GIL_835",
@@ -9739,12 +10586,28 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 12,
+        "cost": 7,
+        "id": "BOT_552",
+        "name": "Star Aligner",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "NEW1_007",
         "name": "Starfall",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "BOT_103",
+        "name": "Stargazer Luna",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 4,
@@ -9761,6 +10624,14 @@ module.exports =
         "name": "Steamwheedle Sniper",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_603",
+        "name": "Steel Rager",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -9836,6 +10707,14 @@ module.exports =
     },
     {
         "cls": 8,
+        "cost": 4,
+        "id": "BOT_291",
+        "name": "Storm Chaser",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 8,
         "cost": 2,
         "id": "OG_206",
         "name": "Stormcrack",
@@ -9897,6 +10776,14 @@ module.exports =
         "name": "Stubborn Gastropod",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_573",
+        "name": "Subject 9",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 7,
@@ -9961,6 +10848,14 @@ module.exports =
         "name": "Sunwalker",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "BOT_406",
+        "name": "Supercollider",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -10098,6 +10993,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 2,
+        "cost": 6,
+        "id": "BOT_422",
+        "name": "Tending Tauren",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "OG_151",
@@ -10130,6 +11033,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "BOT_558",
+        "name": "Test Subject",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "EX1_577",
@@ -10152,6 +11063,14 @@ module.exports =
         "name": "The Boogeymonster",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 10,
+        "cost": 9,
+        "id": "BOT_069",
+        "name": "The Boomship",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 7,
@@ -10234,6 +11153,22 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 9,
+        "cost": 1,
+        "id": "BOT_568",
+        "name": "The Soularium",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 8,
+        "cost": 7,
+        "id": "BOT_245",
+        "name": "The Storm Bringer",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_843",
@@ -10296,6 +11231,14 @@ module.exports =
         "name": "Thunder Lizard",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "BOT_407",
+        "name": "Thunderhead",
+        "rarity": 4,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -10418,6 +11361,13 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 6,
+        "id": "BOT_517",
+        "name": "Topsy Turvy",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 2,
         "cost": 2,
         "id": "UNG_078",
@@ -10504,6 +11454,14 @@ module.exports =
         "name": "Toxic Sewer Ooze",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BOT_083",
+        "name": "Toxicologist",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 3,
@@ -10770,6 +11728,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 4,
+        "cost": 4,
+        "id": "BOT_254",
+        "name": "Unexpected Results",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
         "cls": 6,
         "cost": 3,
         "id": "LOOT_278",
@@ -10819,6 +11785,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "BOT_098",
+        "name": "Unpowered Mauler",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
         "cost": 4,
         "id": "GIL_809",
         "name": "Unpowered Steambot",
@@ -10864,6 +11838,14 @@ module.exports =
         "name": "Upgrade!",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BOT_309",
+        "name": "Upgradeable Framebot",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 6,
@@ -10956,6 +11938,14 @@ module.exports =
     {
         "cls": 3,
         "cost": 2,
+        "id": "BOT_035",
+        "name": "Venomizer",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
         "id": "ICC_200",
         "name": "Venomstrike Trap",
         "rarity": 3,
@@ -11034,6 +12024,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 7,
+        "cost": 3,
+        "id": "BOT_084",
+        "name": "Violet Haze",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "KAR_712",
@@ -11080,6 +12078,14 @@ module.exports =
         "name": "Vivid Nightmare",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "BOT_443",
+        "name": "Void Analyst",
+        "rarity": 3,
+        "series": "BOT"
     },
     {
         "cls": 9,
@@ -11178,6 +12184,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 8,
+        "cost": 1,
+        "id": "BOT_451",
+        "name": "Voltaic Burst",
+        "rarity": 3,
+        "series": "BOT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GIL_614",
@@ -11250,6 +12264,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_563",
+        "name": "Wargear",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "AT_075",
@@ -11272,6 +12294,22 @@ module.exports =
         "name": "Wax Elemental",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_401",
+        "name": "Weaponized Piñata",
+        "rarity": 4,
+        "series": "BOT"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "BOT_042",
+        "name": "Weapons Project",
+        "rarity": 1,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -11306,6 +12344,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "BOT_431",
+        "name": "Whirliglider",
+        "rarity": 1,
+        "series": "BOT"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "GVG_037",
@@ -11320,6 +12366,14 @@ module.exports =
         "name": "White Eyes",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BOT_914",
+        "name": "Whizbang the Wonderful",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 12,
@@ -11646,6 +12700,30 @@ module.exports =
         "name": "Zealous Initiate",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 6,
+        "id": "BOT_258",
+        "name": "Zerek, Master Cloner",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 6,
+        "cost": 9,
+        "id": "BOT_567",
+        "name": "Zerek's Cloning Gallery",
+        "rarity": 5,
+        "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "BOT_548",
+        "name": "Zilliax",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 12,
