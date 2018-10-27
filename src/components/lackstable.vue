@@ -8,9 +8,9 @@
         </tbody></table>
         <transition-group name="fade" tag="table">
             <tr v-for="(item, index) in rowItems" :key="index"
-                    v-show="item.rarity == 'Total' || item.series == expandedSeries"
-                    :class="{tline: item.rarity == 'Total' || item.rarity == 'Common'}">
-                <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
+                    v-show="item.rarity == visibleRarity || item.series == expandedSeries"
+                    :class="{tline: item.rarity == (item.series == expandedSeries ? 'Total' : visibleRarity) || item.rarity == 'Common'}">
+                <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == (item.series == expandedSeries ? 'Total' : visibleRarity) ? item.series : '' }}</td>
                 <td v-for="cls in clsList" :style="{color: item.color}"
                         @click="onCellClicked({series: item.series, cls: cls})">
                     <div class="bkg" :style="{width: getTdWidth(item.series, cls, item.rarity)}"></div>
@@ -77,6 +77,8 @@ export default {
             seriesList: SERIES_LIST.concat(['Total']),
             clsList: CLASS_LIST.concat(['Neutral', 'Total']),
             rarityList: [{name: 'Total', color: '#333'}].concat(_.clone(RARITY_LIST).reverse()),
+            //
+            visibleRarity: 'Total',
             expandedSeries: ''
         };
     },
