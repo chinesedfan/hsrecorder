@@ -82,7 +82,28 @@ export default {
             expandedSeries: ''
         };
     },
+    mounted() {
+        this.listenToKeyboard();
+    },
     methods: {
+        listenToKeyboard() {
+            // FIXME: avoid conflicting with other inputs
+            window.addEventListener('keydown', (e) => {
+                switch (e.keyCode) {
+                case 84: // t
+                    this.visibleRarity = 'Total'; break;
+                case 76: // l
+                    this.visibleRarity = 'Legendary'; break;
+                case 69: // e
+                    this.visibleRarity = 'Epic'; break;
+                case 82: // r
+                    this.visibleRarity = 'Rare'; break;
+                case 67: // c
+                    this.visibleRarity = 'Common'; break;
+                }
+            });
+        },
+
         getCountsItem(counts, series, cls, rarity) {
             counts[series] = counts[series] || {};
             counts[series][cls] = counts[series][cls] || {};
