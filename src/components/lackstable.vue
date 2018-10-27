@@ -38,16 +38,12 @@ export default {
         counts() {
             const counts = {};
             const total = 'Total';
-            const initialItem = {
-                target: 0,
-                owned: 0
-            };
             _.each(this.items, (item) => {
                 const addItem = {
                     target: item.targetCount,
                     owned: item.targetCount - item.lackCount
                 };
-                
+
                 this.updateCounts(counts, item.series, item.cls, item.rarity, addItem);
 
                 this.updateCounts(counts, item.series, item.cls, total, addItem);
@@ -110,7 +106,6 @@ export default {
             return (item.target - item.owned) * 100 / item.target + '%';
         },
         getTdSelected(series, cls, rarity) {
-            const item = this.getCountsItem(this.counts, series, cls, rarity);
             return this.itemsFilter.series == series && this.itemsFilter.cls == cls;
         },
 
