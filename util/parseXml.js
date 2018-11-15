@@ -71,13 +71,12 @@
 		objs.push(obj);
 	}
 	objs.sort(function(o1, o2) {
-		return o1.CARDNAME.toLowerCase().localeCompare(o2.CARDNAME.toLowerCase());
+		return o1.name.toLowerCase().localeCompare(o2.name.toLowerCase());
 	});
 
 	// filter our interested cards and fields
 	function simplifyCard(obj) {
-		var ret = {},
-			NEEDS = ['CARDNAME', 'CardID', 'CLASS', 'RARITY'];
+		var ret = {};
 
 		// a valid card should have artist name and flavor text
 		if (!obj.ARTISTNAME) return null;
@@ -93,11 +92,37 @@
 		if (obj.RARITY == 2) return null;
 
 		// only keep the neccessary fields
-		NEEDS.forEach(function(key, i) {
-			ret[key] = obj[key];
-		});
+		ret = {
+			id: obj.CardID,
+			name: obj.CARDNAME,
+			cls: obj.CLASS,
+			rarity: obj.RARITY,
+			cost: obj.COST,
+			series: getSeries(obj.CardID)
+		};
 
 		return ret;
+	}
+
+	function getSeries(str) {
+		var map = {
+			FP1: 'NAXX',
+			GVG: 'GVG',
+			BRM: 'BRM',
+			AT: 'AT',
+			LOE: 'LOE',
+			LOEA10: 'LOE',
+			OG: 'OG',
+			KAR: 'KAR',
+			CFM: 'CFM',
+			UNG: 'UNG',
+			ICC: 'ICC',
+			LOOT: 'LOOT',
+			GIL: 'GIL',
+			BOT: 'BOT',
+		};
+		var prefix = str.replace(/^([^_]+)_.*$/, '$1');
+		return map[prefix] || 'CLASSIC';
 	}
 
 	function sortDict(dict) {
@@ -112,7 +137,7 @@
 	    return ret;
 	}
 
-	console.log('CardList =');
+	console.log('module.exports = ');
 	console.log(JSON.stringify(objs, null, 4));
 	console.log(';');
 })();
