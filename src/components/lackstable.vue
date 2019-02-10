@@ -8,9 +8,9 @@
         </tbody></table>
         <transition-group name="fade" tag="table">
             <tr v-for="(item, index) in rowItems" :key="index"
-                    v-show="item.rarity == 'Total' || item.series == expandedSeries"
-                    :class="{tline: item.rarity == 'Total' || item.rarity == 'Common'}">
-                <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == 'Total' ? item.series : '' }}</td>
+                    v-show="item.rarity == visibleRarity || item.series == expandedSeries"
+                    :class="{tline: item.rarity == (item.series == expandedSeries ? 'Total' : visibleRarity) || item.rarity == 'Common'}">
+                <td class="bold" @click="onSeriesClicked(item.series)">{{ item.rarity == (item.series == expandedSeries ? 'Total' : visibleRarity) ? item.series : '' }}</td>
                 <td v-for="cls in clsList" :style="{color: item.color}"
                         @click="onCellClicked({series: item.series, cls: cls})">
                     <div class="bkg" :style="{width: getTdWidth(item.series, cls, item.rarity)}"></div>
@@ -38,16 +38,12 @@ export default {
         counts() {
             const counts = {};
             const total = 'Total';
-            const initialItem = {
-                target: 0,
-                owned: 0
-            };
             _.each(this.items, (item) => {
                 const addItem = {
                     target: item.targetCount,
                     owned: item.targetCount - item.lackCount
                 };
-                
+
                 this.updateCounts(counts, item.series, item.cls, item.rarity, addItem);
 
                 this.updateCounts(counts, item.series, item.cls, total, addItem);
@@ -81,10 +77,33 @@ export default {
             seriesList: SERIES_LIST.concat(['Total']),
             clsList: CLASS_LIST.concat(['Neutral', 'Total']),
             rarityList: [{name: 'Total', color: '#333'}].concat(_.clone(RARITY_LIST).reverse()),
+            //
+            visibleRarity: 'Total',
             expandedSeries: ''
         };
     },
+    mounted() {
+        this.listenToKeyboard();
+    },
     methods: {
+        listenToKeyboard() {
+            // FIXME: avoid conflicting with other inputs
+            window.addEventListener('keydown', (e) => {
+                switch (e.keyCode) {
+                case 84: // t
+                    this.visibleRarity = 'Total'; break;
+                case 76: // l
+                    this.visibleRarity = 'Legendary'; break;
+                case 69: // e
+                    this.visibleRarity = 'Epic'; break;
+                case 82: // r
+                    this.visibleRarity = 'Rare'; break;
+                case 67: // c
+                    this.visibleRarity = 'Common'; break;
+                }
+            });
+        },
+
         getCountsItem(counts, series, cls, rarity) {
             counts[series] = counts[series] || {};
             counts[series][cls] = counts[series][cls] || {};
@@ -110,7 +129,6 @@ export default {
             return (item.target - item.owned) * 100 / item.target + '%';
         },
         getTdSelected(series, cls, rarity) {
-            const item = this.getCountsItem(this.counts, series, cls, rarity);
             return this.itemsFilter.series == series && this.itemsFilter.cls == cls;
         },
 

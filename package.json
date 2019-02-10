@@ -38,7 +38,7 @@
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
     "lodash": "^4.16.4",
-    "now": "^9.3.2",
+    "now": "^11.4.6",
     "serve": "latest",
     "style-loader": "^0.13.1",
     "vue-loader": "^10.2.1",
