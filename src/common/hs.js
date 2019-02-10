@@ -23,6 +23,16 @@ export const RARITY_LIST = [
 ];
 
 export const SERIES_LIST = [
-    'CLASSIC', 'NAXX', 'GVG', 'BRM', 'AT', 'LOE', 'OG',
-    'KAR', 'CFM', 'UNG', 'ICC', 'LOOT', 'GIL', 'BOT'
+    // 2013
+    'CLASSIC',
+    // 2014
+    'NAXX', 'GVG',
+    // 2015
+    'BRM', 'AT', 'LOE',
+    // 2016
+    'OG', 'KAR', 'CFM',
+    // 2017
+    'UNG', 'ICC', 'LOOT',
+    // 2018
+    'GIL', 'BOT', 'TRL'
 ];

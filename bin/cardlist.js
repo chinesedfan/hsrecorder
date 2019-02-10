@@ -9,6 +9,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 5,
+        "cost": 7,
+        "id": "TRL_305",
+        "name": "A New Challenger...",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "OG_150",
@@ -113,6 +121,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 10,
+        "cost": 8,
+        "id": "TRL_329",
+        "name": "Akali, the Rhino",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 8,
         "cost": 8,
         "id": "NEW1_010",
@@ -191,6 +207,14 @@ module.exports =
         "name": "Amani Berserker",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "TRL_550",
+        "name": "Amani War Bear",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -481,6 +505,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 6,
+        "id": "TRL_311",
+        "name": "Arcanosaur",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "KAR_710",
@@ -519,6 +551,30 @@ module.exports =
         "name": "Archmage Arugal",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_517",
+        "name": "Arena Fanatic",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "TRL_521",
+        "name": "Arena Patron",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_525",
+        "name": "Arena Treasure Chest",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -634,6 +690,14 @@ module.exports =
     },
     {
         "cls": 6,
+        "cost": 2,
+        "id": "TRL_501",
+        "name": "Auchenai Phantasm",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
+        "cls": 6,
         "cost": 4,
         "id": "EX1_591",
         "name": "Auchenai Soulpriest",
@@ -698,7 +762,7 @@ module.exports =
     },
     {
         "cls": 2,
-        "cost": 9,
+        "cost": 10,
         "id": "AT_045",
         "name": "Aviana",
         "rarity": 5,
@@ -769,6 +833,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 3,
+        "cost": 5,
+        "id": "TRL_347",
+        "name": "Baited Arrow",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 9,
         "id": "GIL_826",
@@ -791,6 +863,14 @@ module.exports =
         "name": "Ball of Spiders",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "TRL_509",
+        "name": "Banana Buffoon",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 9,
@@ -880,6 +960,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_514",
+        "name": "Belligerent Gnome",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 5,
         "cost": 4,
         "id": "GIL_634",
@@ -934,6 +1022,14 @@ module.exports =
         "name": "Bewitched Guardian",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "TRL_082",
+        "name": "Big Bad Voodoo",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -1088,6 +1184,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "TRL_317",
+        "name": "Blast Wave",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 9,
         "cost": 4,
         "id": "CFM_608",
@@ -1200,6 +1304,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 9,
+        "cost": 7,
+        "id": "TRL_257",
+        "name": "Blood Troll Sapper",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "OG_276",
@@ -1230,6 +1342,14 @@ module.exports =
         "name": "Bloodbloom",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "TRL_543",
+        "name": "Bloodclaw",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 9,
@@ -1280,12 +1400,28 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "TRL_071",
+        "name": "Bloodsail Howler",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "NEW1_018",
         "name": "Bloodsail Raider",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "TRL_349",
+        "name": "Bloodscalp Strategist",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -1318,6 +1454,14 @@ module.exports =
         "name": "Bog Creeper",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "TRL_059",
+        "name": "Bog Slosher",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -1456,6 +1600,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_504",
+        "name": "Booty Bay Bookie",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "GVG_050",
@@ -1592,6 +1744,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 6,
+        "cost": 7,
+        "id": "TRL_260",
+        "name": "Bwonsamdi, the Dead",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 10,
         "id": "OG_280",
@@ -1640,6 +1800,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 9,
+        "cost": 1,
+        "id": "EX1_181",
+        "name": "Call of the Void",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 3,
         "cost": 9,
         "id": "OG_211",
@@ -1672,12 +1840,28 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 7,
+        "cost": 6,
+        "id": "TRL_127",
+        "name": "Cannon Barrage",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "NEW1_024",
         "name": "Captain Greenskin",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 8,
+        "id": "TRL_126",
+        "name": "Captain Hooktusk",
+        "rarity": 5,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -1830,6 +2014,14 @@ module.exports =
         "name": "Cheat Death",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_512",
+        "name": "Cheaty Anklebiter",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -2016,7 +2208,7 @@ module.exports =
     },
     {
         "cls": 7,
-        "cost": 1,
+        "cost": 2,
         "id": "CS2_073",
         "name": "Cold Blood",
         "rarity": 1,
@@ -2286,6 +2478,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 7,
+        "id": "TRL_569",
+        "name": "Crowd Roaster",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 9,
         "cost": 6,
         "id": "UNG_830",
@@ -2510,6 +2710,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "TRL_537",
+        "name": "Da Undatakah",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 4,
         "cost": 4,
         "id": "AT_006",
@@ -2532,6 +2740,14 @@ module.exports =
         "name": "Dancing Swords",
         "rarity": 1,
         "series": "NAXX"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "TRL_390",
+        "name": "Daring Fire-Eater",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -2871,6 +3087,14 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 8,
+        "id": "TRL_555",
+        "name": "Demonbolt",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 9,
         "cost": 2,
         "id": "EX1_596",
         "name": "Demonfire",
@@ -2948,6 +3172,14 @@ module.exports =
         "name": "Despicable Dreadlord",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "TRL_321",
+        "name": "Devastate",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -3167,6 +3399,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "TRL_406",
+        "name": "Dozing Marksman",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
         "cost": 7,
         "id": "GVG_110",
         "name": "Dr. Boom",
@@ -3212,6 +3452,14 @@ module.exports =
         "name": "Dragon Egg",
         "rarity": 3,
         "series": "BRM"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "TRL_362",
+        "name": "Dragon Roar",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 6,
@@ -3279,6 +3527,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "TRL_526",
+        "name": "Dragonmaw Scorcher",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
         "cost": 3,
         "id": "LOOT_132",
         "name": "Dragonslayer",
@@ -3308,6 +3564,14 @@ module.exports =
         "name": "Drakkari Enchanter",
         "rarity": 4,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "TRL_527",
+        "name": "Drakkari Trickster",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -3670,6 +3934,13 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 4,
+        "id": "TRL_310",
+        "name": "Elemental Evocation",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "BOT_093",
@@ -3708,6 +3979,14 @@ module.exports =
         "name": "Elven Minstrel",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "TRL_323",
+        "name": "Emberscale Drake",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 6,
@@ -3807,7 +4086,7 @@ module.exports =
     },
     {
         "cls": 5,
-        "cost": 2,
+        "cost": 4,
         "id": "EX1_619",
         "name": "Equality",
         "rarity": 3,
@@ -4118,6 +4397,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "TRL_304",
+        "name": "Farraki Battleaxe",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "ICC_047",
@@ -4358,6 +4645,14 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_523",
+        "name": "Firetree Witchdoctor",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "BOT_038",
@@ -4476,6 +4771,14 @@ module.exports =
         "name": "Flash Heal",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "TRL_307",
+        "name": "Flash of Light",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -4624,6 +4927,14 @@ module.exports =
         "name": "Forlorn Stalker",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "TRL_151",
+        "name": "Former Champ",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -4954,7 +5265,7 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 5,
+        "cost": 7,
         "id": "BOT_270",
         "name": "Giggling Inventor",
         "rarity": 3,
@@ -5153,6 +5464,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 2,
+        "cost": 7,
+        "id": "TRL_241",
+        "name": "Gonk, the Raptor",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 10,
         "cost": 7,
         "id": "EX1_411",
@@ -5177,6 +5496,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 7,
+        "cost": 5,
+        "id": "TRL_409",
+        "name": "Gral, the Shark",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 8,
         "id": "LOOT_414",
@@ -5191,6 +5518,14 @@ module.exports =
         "name": "Grand Crusader",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 6,
+        "cost": 12,
+        "id": "TRL_408",
+        "name": "Grave Horror",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -5251,6 +5586,14 @@ module.exports =
     {
         "cls": 12,
         "cost": 4,
+        "id": "TRL_096",
+        "name": "Griftah",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
         "id": "ICC_026",
         "name": "Grim Necromancer",
         "rarity": 1,
@@ -5263,6 +5606,14 @@ module.exports =
         "name": "Grim Patron",
         "rarity": 3,
         "series": "BRM"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "TRL_249",
+        "name": "Grim Rally",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 5,
@@ -5393,6 +5744,30 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "TRL_506",
+        "name": "Gurubashi Chicken",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 7,
+        "cost": 7,
+        "id": "TRL_077",
+        "name": "Gurubashi Hypemon",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "TRL_516",
+        "name": "Gurubashi Offering",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 2,
         "cost": 9,
         "id": "ICC_835",
@@ -5407,6 +5782,30 @@ module.exports =
         "name": "Hagatha the Witch",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 10,
+        "id": "TRL_541",
+        "name": "Hakkar, the Soulflayer",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "TRL_900",
+        "name": "Halazzi, the Lynx",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_010",
+        "name": "Half-Time Scavenger",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -5473,12 +5872,28 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 8,
+        "cost": 3,
+        "id": "TRL_058",
+        "name": "Haunting Visions",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "EX1_137",
         "name": "Headcrack",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "TRL_111",
+        "name": "Headhunter's Hatchet",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -5495,6 +5910,22 @@ module.exports =
         "name": "Healing Wave",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 10,
+        "cost": 6,
+        "id": "TRL_324",
+        "name": "Heavy Metal!",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "TRL_505",
+        "name": "Helpless Hatchling",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -5529,6 +5960,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 4,
+        "cost": 8,
+        "id": "TRL_318",
+        "name": "Hex Lord Malacrass",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "CFM_026",
@@ -5543,6 +5982,30 @@ module.exports =
         "name": "Hidden Wisdom",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "TRL_308",
+        "name": "High Priest Thekal",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "TRL_252",
+        "name": "High Priestess Jeklik",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
+        "cls": 9,
+        "cost": 8,
+        "id": "TRL_253",
+        "name": "Hir'eek, the Bat",
+        "rarity": 5,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -5785,6 +6248,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_533",
+        "name": "Ice Cream Peddler",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "ICC_089",
@@ -5825,6 +6296,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 4,
+        "cost": 2,
+        "id": "EX1_179",
+        "name": "Icicle",
+        "rarity": 4,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "UNG_845",
@@ -5847,6 +6326,14 @@ module.exports =
         "name": "Illuminator",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "TRL_306",
+        "name": "Immortal Prelate",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 9,
@@ -5977,6 +6464,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 7,
+        "id": "TRL_232",
+        "name": "Ironhide Direhorn",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 2,
         "cost": 4,
         "id": "LOOT_048",
         "name": "Ironwood Golem",
@@ -6070,6 +6565,14 @@ module.exports =
         "name": "Jade Swarmer",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 4,
+        "cost": 7,
+        "id": "TRL_316",
+        "name": "Jan'alai, the Dragonhawk",
+        "rarity": 5,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -6488,6 +6991,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 8,
+        "cost": 6,
+        "id": "TRL_345",
+        "name": "Krag'wa, the Frog",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 9,
         "cost": 9,
         "id": "CFM_750",
@@ -6593,7 +7104,7 @@ module.exports =
     },
     {
         "cls": 7,
-        "cost": 2,
+        "cost": 1,
         "id": "ICC_221",
         "name": "Leeching Poison",
         "rarity": 1,
@@ -6633,7 +7144,7 @@ module.exports =
     },
     {
         "cls": 3,
-        "cost": 5,
+        "cost": 6,
         "id": "LOOT_080",
         "name": "Lesser Emerald Spellstone",
         "rarity": 3,
@@ -6689,7 +7200,7 @@ module.exports =
     },
     {
         "cls": 5,
-        "cost": 5,
+        "cost": 6,
         "id": "LOOT_333",
         "name": "Level Up!",
         "rarity": 4,
@@ -6792,6 +7303,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "cost": 2,
+        "id": "TRL_352",
+        "name": "Likkim",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GVG_097",
@@ -6806,6 +7325,14 @@ module.exports =
         "name": "Lilian Voss",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "TRL_528",
+        "name": "Linecracker",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 2,
@@ -7153,7 +7680,7 @@ module.exports =
     },
     {
         "cls": 4,
-        "cost": 1,
+        "cost": 2,
         "id": "NEW1_012",
         "name": "Mana Wyrm",
         "rarity": 1,
@@ -7185,6 +7712,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 4,
+        "id": "TRL_254",
+        "name": "Mark of the Loa",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 2,
         "cost": 1,
         "id": "CFM_614",
         "name": "Mark of the Lotus",
@@ -7208,12 +7743,28 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "TRL_530",
+        "name": "Masked Contender",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 6,
         "cost": 4,
         "id": "EX1_626",
         "name": "Mass Dispel",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "TRL_258",
+        "name": "Mass Hysteria",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -7262,6 +7813,14 @@ module.exports =
         "name": "Master Swordsmith",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "TRL_339",
+        "name": "Master's Call",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -7600,6 +8159,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 6,
+        "id": "TRL_564",
+        "name": "Mojomaster Zihi",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 10,
         "cost": 1,
         "id": "UNG_929",
@@ -7654,6 +8221,22 @@ module.exports =
         "name": "Mortal Strike",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "TRL_532",
+        "name": "Mosh'Ogg Announcer",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "TRL_513",
+        "name": "Mosh'Ogg Enforcer",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -7742,6 +8325,14 @@ module.exports =
         "name": "Murloc Knight",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_520",
+        "name": "Murloc Tastyfin",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -8040,7 +8631,7 @@ module.exports =
     },
     {
         "cls": 2,
-        "cost": 5,
+        "cost": 6,
         "id": "EX1_164",
         "name": "Nourish",
         "rarity": 3,
@@ -8191,6 +8782,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 9,
+        "id": "TRL_542",
+        "name": "Oondasta",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 4,
         "cost": 1,
         "id": "UNG_028",
@@ -8213,6 +8812,22 @@ module.exports =
         "name": "Ornery Direhorn",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "TRL_546",
+        "name": "Ornery Tortoise",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "TRL_360",
+        "name": "Overlord's Whip",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -8285,6 +8900,14 @@ module.exports =
         "name": "Pick Pocket",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "EX1_182",
+        "name": "Pilfer",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 2,
@@ -8480,6 +9103,13 @@ module.exports =
     },
     {
         "cls": 2,
+        "id": "TRL_243",
+        "name": "Pounce",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 2,
         "cost": 2,
         "id": "EX1_160",
         "name": "Power of the Wild",
@@ -8533,6 +9163,14 @@ module.exports =
         "name": "Powershot",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "TRL_244",
+        "name": "Predatory Instincts",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 7,
@@ -8662,6 +9300,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 6,
+        "cost": 8,
+        "id": "TRL_259",
+        "name": "Princess Talanji",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 5,
         "cost": 4,
         "id": "BOT_436",
@@ -8767,6 +9413,14 @@ module.exports =
     },
     {
         "cls": 4,
+        "cost": 3,
+        "id": "TRL_315",
+        "name": "Pyromaniac",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 4,
         "cost": 2,
         "id": "UNG_027",
         "name": "Pyros",
@@ -8804,6 +9458,14 @@ module.exports =
         "name": "Quick Shot",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "TRL_515",
+        "name": "Rabble Bouncer",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 10,
@@ -8844,6 +9506,22 @@ module.exports =
         "name": "Ragnaros, Lightlord",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "TRL_124",
+        "name": "Raiding Party",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 8,
+        "cost": 6,
+        "id": "TRL_351",
+        "name": "Rain of Toads",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 5,
@@ -8998,6 +9676,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "TRL_551",
+        "name": "Reckless Diretroll",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 6,
         "cost": 5,
         "id": "BOT_566",
@@ -9068,6 +9754,21 @@ module.exports =
         "name": "Refreshment Vendor",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 6,
+        "id": "TRL_128",
+        "name": "Regenerate",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_508",
+        "name": "Regeneratin' Thug",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -9151,6 +9852,14 @@ module.exports =
     },
     {
         "cls": 3,
+        "cost": 2,
+        "id": "TRL_566",
+        "name": "Revenge of the Wild",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 3,
         "cost": 7,
         "id": "LOOT_085",
         "name": "Rhok'delar",
@@ -9220,6 +9929,14 @@ module.exports =
         "name": "Rotten Applebaum",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "TRL_531",
+        "name": "Rumbletusk Shaker",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -9302,6 +10019,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 6,
+        "cost": 3,
+        "id": "TRL_131",
+        "name": "Sand Drudge",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "GIL_581",
@@ -9327,6 +10052,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 1,
+        "id": "TRL_363",
+        "name": "Saronite Taskmaster",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
         "cost": 7,
         "id": "UNG_010",
         "name": "Sated Threshadon",
@@ -9340,6 +10073,14 @@ module.exports =
         "name": "Savage Combatant",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "TRL_240",
+        "name": "Savage Striker",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 2,
@@ -9375,6 +10116,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "TRL_503",
+        "name": "Scarab Egg",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
         "cost": 3,
         "id": "EX1_020",
         "name": "Scarlet Crusader",
@@ -9396,6 +10145,14 @@ module.exports =
         "name": "Scavenging Hyena",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 4,
+        "id": "TRL_313",
+        "name": "Scorch",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -9470,6 +10227,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 6,
+        "cost": 2,
+        "id": "TRL_097",
+        "name": "Seance",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "CFM_652",
@@ -9532,6 +10297,22 @@ module.exports =
         "name": "Sergeant Sally",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_057",
+        "name": "Serpent Ward",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "TRL_074",
+        "name": "Serrated Tooth",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -9741,6 +10522,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_507",
+        "name": "Sharkfin Fan",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 4,
         "cost": 2,
         "id": "OG_081",
@@ -9779,6 +10568,14 @@ module.exports =
         "name": "Shieldbearer",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_524",
+        "name": "Shieldbreaker",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 5,
@@ -9844,12 +10641,28 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 5,
+        "cost": 25,
+        "id": "TRL_300",
+        "name": "Shirvallah, the Tiger",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
         "cls": 4,
         "cost": 1,
         "id": "BOT_453",
         "name": "Shooting Star",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "TRL_245",
+        "name": "Shriek",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -9914,6 +10727,14 @@ module.exports =
         "name": "Siege Engine",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "TRL_020",
+        "name": "Sightless Ranger",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 6,
@@ -10131,6 +10952,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 10,
+        "cost": 3,
+        "id": "TRL_326",
+        "name": "Smolderthorn Lancer",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 3,
         "cost": 1,
         "id": "CFM_334",
@@ -10161,6 +10990,14 @@ module.exports =
         "name": "Snap Freeze",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "TRL_535",
+        "name": "Snapjaw Shellfighter",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -10266,12 +11103,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 9,
+        "cost": 6,
+        "id": "TRL_247",
+        "name": "Soulwarden",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 5,
         "cost": 2,
         "id": "GIL_145",
         "name": "Sound the Bells!",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_570",
+        "name": "Soup Vendor",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -10402,6 +11255,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_312",
+        "name": "Spellzerker",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "BOT_251",
@@ -10466,6 +11327,78 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 9,
+        "cost": 2,
+        "id": "TRL_251",
+        "name": "Spirit of the Bat",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "TRL_502",
+        "name": "Spirit of the Dead",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "TRL_319",
+        "name": "Spirit of the Dragonhawk",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "TRL_060",
+        "name": "Spirit of the Frog",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "TRL_901",
+        "name": "Spirit of the Lynx",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "TRL_223",
+        "name": "Spirit of the Raptor",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "TRL_327",
+        "name": "Spirit of the Rhino",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "TRL_092",
+        "name": "Spirit of the Shark",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "TRL_309",
+        "name": "Spirit of the Tiger",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "UNG_900",
@@ -10506,6 +11439,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "TRL_400",
+        "name": "Splitting Image",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 9,
         "cost": 3,
         "id": "OG_116",
@@ -10528,6 +11469,14 @@ module.exports =
         "name": "Spring Rocket",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "TRL_348",
+        "name": "Springpaw",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 6,
@@ -10576,6 +11525,14 @@ module.exports =
         "name": "Stampeding Kodo",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 6,
+        "id": "TRL_255",
+        "name": "Stampeding Roar",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 5,
@@ -10664,6 +11621,14 @@ module.exports =
         "name": "Stolen Goods",
         "rarity": 3,
         "series": "CFM"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "TRL_156",
+        "name": "Stolen Steel",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 8,
@@ -10802,6 +11767,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 10,
+        "cost": 6,
+        "id": "TRL_325",
+        "name": "Sul'thraze",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 9,
         "cost": 4,
         "id": "EX1_315",
@@ -10856,6 +11829,14 @@ module.exports =
         "name": "Supercollider",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "TRL_500",
+        "name": "Surrender to Madness",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -11047,6 +12028,14 @@ module.exports =
         "name": "The Beast",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "TRL_119",
+        "name": "The Beast Within",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -11243,6 +12232,14 @@ module.exports =
     {
         "cls": 12,
         "cost": 4,
+        "id": "TRL_015",
+        "name": "Ticket Scalper",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
         "id": "ICC_099",
         "name": "Ticking Abomination",
         "rarity": 3,
@@ -11255,6 +12252,14 @@ module.exports =
         "name": "Tidal Surge",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "TRL_302",
+        "name": "Time Out!",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 7,
@@ -11353,6 +12358,14 @@ module.exports =
         "series": "LOE"
     },
     {
+        "cls": 4,
+        "cost": 1,
+        "id": "EX1_180",
+        "name": "Tome of Intellect",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "LOOT_134",
@@ -11414,6 +12427,14 @@ module.exports =
         "name": "Totem Golem",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "TRL_012",
+        "name": "Totemic Smash",
+        "rarity": 1,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -11494,6 +12515,14 @@ module.exports =
         "name": "Tree of Life",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "TRL_341",
+        "name": "Treespeaker",
+        "rarity": 4,
+        "series": "TRL"
     },
     {
         "cls": 3,
@@ -11824,6 +12853,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "TRL_405",
+        "name": "Untamed Beastmaster",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
         "cls": 9,
         "cost": 3,
         "id": "ICC_469",
@@ -12089,6 +13126,14 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 8,
+        "id": "TRL_246",
+        "name": "Void Contract",
+        "rarity": 4,
+        "series": "TRL"
+    },
+    {
+        "cls": 9,
         "cost": 6,
         "id": "AT_023",
         "name": "Void Crusher",
@@ -12232,6 +13277,14 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "TRL_157",
+        "name": "Walk the Plank",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GIL_680",
@@ -12257,11 +13310,27 @@ module.exports =
     },
     {
         "cls": 10,
+        "cost": 4,
+        "id": "TRL_328",
+        "name": "War Master Voone",
+        "rarity": 5,
+        "series": "TRL"
+    },
+    {
+        "cls": 10,
         "cost": 1,
         "id": "GVG_051",
         "name": "Warbot",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "TRL_343",
+        "name": "Wardruid Loti",
+        "rarity": 5,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -12286,6 +13355,22 @@ module.exports =
         "name": "Warpath",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "TRL_522",
+        "name": "Wartbringer",
+        "rarity": 1,
+        "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "TRL_407",
+        "name": "Waterboy",
+        "rarity": 3,
+        "series": "TRL"
     },
     {
         "cls": 12,
@@ -12687,6 +13772,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 4,
+        "id": "TRL_545",
+        "name": "Zandalari Templar",
+        "rarity": 3,
+        "series": "TRL"
+    },
+    {
         "cls": 8,
         "id": "GIL_600",
         "name": "Zap!",
@@ -12700,6 +13793,14 @@ module.exports =
         "name": "Zealous Initiate",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "TRL_085",
+        "name": "Zentimo",
+        "rarity": 5,
+        "series": "TRL"
     },
     {
         "cls": 6,
@@ -12748,6 +13849,14 @@ module.exports =
         "name": "Zoobot",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 3,
+        "cost": 10,
+        "id": "TRL_065",
+        "name": "Zul'jin",
+        "rarity": 5,
+        "series": "TRL"
     }
 ]
 ;

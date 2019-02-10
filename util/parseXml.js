@@ -120,6 +120,7 @@
 			LOOT: 'LOOT',
 			GIL: 'GIL',
 			BOT: 'BOT',
+			TRL: 'TRL',
 		};
 		var prefix = str.replace(/^([^_]+)_.*$/, '$1');
 		return map[prefix] || 'CLASSIC';
