@@ -8,7 +8,7 @@
         </div>
         <div class="checkbox-wrapper" @click="onCheckboxClicked">
             <input type="checkbox" :checked="isEditMode" />
-            <span>edit mode</span>
+            <span> edit mode </span>
             <span class="red">{{ msg }}</span>
         </div>
     </div>
