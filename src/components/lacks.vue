@@ -47,7 +47,7 @@ export default {
         'lacks-table': LacksTable,
         'lacks-list': LacksList
     },
-    mounted() {
+    created() {
         // for cache
         this.cardMap = _(CardList).groupBy('id')
                 .mapValues((g) => g[0])
