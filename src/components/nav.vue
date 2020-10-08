@@ -1,8 +1,10 @@
 <template>
     <ul class="nav nav-tabs">
         <router-link v-for="(item, i) in items" :to="`/${items[i].toLowerCase()}`"
-                tag="li" active-class="active">
-            <a>{{ item }}</a>
+                custom v-slot="{ href, isActive }">
+            <li :class="isActive ? 'active' : ''">
+                <a :href="href">{{ item }}</a>
+            </li>
         </router-link>
     </ul>
 </template>
