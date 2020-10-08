@@ -57,11 +57,14 @@ export default {
         };
     },
     watch: {
-        rows(val) {
-            this.idEditing = (val || []).length + 1;
-            this.dayEditing = this.getTodayStr();
-            this.clsEditing = CLASS_LIST[0];
-            this.winsEditing = 0;
+        rows: {
+            handler(val) {
+                this.idEditing = (val || []).length + 1;
+                this.dayEditing = this.getTodayStr();
+                this.clsEditing = CLASS_LIST[0];
+                this.winsEditing = 0;
+            },
+            deep: true
         }
     },
     methods: {
