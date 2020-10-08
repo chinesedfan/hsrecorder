@@ -7,7 +7,7 @@
             <button class="btn btn-default lacks-submit" @click="onBtnSubmitClicked">Submit</button>
         </div>
         <div class="checkbox-wrapper" @click="onCheckboxClicked">
-            <input type="checkbox" :checked="isEditMode"></input>
+            <input type="checkbox" :checked="isEditMode" />
             <span>edit mode</span>
             <span class="red">{{ msg }}</span>
         </div>

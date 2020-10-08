@@ -2,9 +2,9 @@
 
 import '../../less/main';
 
-import Vue from 'vue';
+import * as Vue from 'vue';
 import Vuex, {mapState} from 'vuex';
-import VueRouter from 'vue-router';
+import * as VueRouter from 'vue-router';
 
 import Nav from '../components/nav';
 import Arena from '../components/arena';
@@ -14,20 +14,7 @@ import Export from '../components/export';
 import '../service';
 import store from '../store';
 
-Vue.use(Vuex);
-Vue.use(VueRouter);
-
-new Vue({
-    el: '#vue-container',
-    store: new Vuex.Store(store),
-    router: new VueRouter({
-        routes: [
-            {path: '/', redirect: '/arena'},
-            {path: '/arena', component: Arena},
-            {path: '/lacks', component: Lacks},
-            {path: '/export', component: Export}
-        ]
-    }),
+const app = Vue.createApp({
     components: {
         'hsr-nav': Nav
     },
@@ -38,3 +25,16 @@ new Vue({
         })
     }
 });
+
+app.use(Vuex.createStore(store));
+app.use(VueRouter.createRouter({
+    history: VueRouter.createWebHashHistory(),
+    routes: [
+        {path: '/', redirect: '/arena'},
+        {path: '/arena', component: Arena},
+        {path: '/lacks', component: Lacks},
+        {path: '/export', component: Export}
+    ]
+}));
+
+app.mount('#vue-container');

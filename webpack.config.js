@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const VueLoaderPlugin = require('vue-loader').VueLoaderPlugin;
 
 module.exports = {
     entry: {
@@ -33,10 +34,10 @@ module.exports = {
             ]
         }]
     },
+    plugins: [
+        new VueLoaderPlugin(),
+    ],
     resolve: {
-        alias: {
-            'vue$': 'vue/dist/vue.common.js'
-        },
         extensions: ['.vue', '.less', '.js']
     },
     devServer: {
