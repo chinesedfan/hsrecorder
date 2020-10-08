@@ -38,6 +38,9 @@ module.exports = {
         new VueLoaderPlugin(),
     ],
     resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm-bundler.js'
+        },
         extensions: ['.vue', '.less', '.js']
     },
     devServer: {
