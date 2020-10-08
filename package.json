@@ -42,15 +42,14 @@
     "now": "^19.2.0",
     "serve": "latest",
     "style-loader": "^0.13.1",
-    "vue-loader": "^10.2.1",
-    "vue-template-compiler": "^2.1.10",
+    "vue-loader": "next",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^1.16.3",
     "xmldom": "^0.1.22"
   },
   "dependencies": {
-    "vue": "^2.1.10",
-    "vue-router": "^2.2.0",
-    "vuex": "^2.1.1"
+    "vue": "next",
+    "vue-router": "next",
+    "vuex": "next"
   }
 }
