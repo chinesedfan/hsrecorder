@@ -57,12 +57,28 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 9,
+        "cost": 6,
+        "id": "DRG_207",
+        "name": "Abyssal Summoner",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 7,
         "cost": 4,
         "id": "BOT_087",
         "name": "Academic Espionage",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 14,
+        "cost": 3,
+        "id": "SCH_538",
+        "name": "Ace Hunter Kreen",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -97,6 +113,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 2,
+        "cost": 1,
+        "id": "DAL_354",
+        "name": "Acornbearer",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "ULD_724",
+        "name": "Activate the Obelisk",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "UNG_961",
@@ -113,6 +145,30 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 3,
+        "cost": 1,
+        "id": "SCH_617",
+        "name": "Adorable Infestation",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 6,
+        "cost": 6,
+        "id": "YOD_014",
+        "name": "Aeon Reaver",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "DRG_314",
+        "name": "Aeroponics",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 1,
         "id": "UNG_019",
@@ -121,12 +177,28 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 5,
+        "cost": 2,
+        "id": "YOD_012",
+        "name": "Air Raid",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 10,
         "cost": 8,
         "id": "TRL_329",
         "name": "Akali, the Rhino",
         "rarity": 5,
         "series": "TRL"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "BT_713",
+        "name": "Akama",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 8,
@@ -138,6 +210,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "BT_735",
+        "name": "Al'ar",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
         "cost": 3,
         "id": "EX1_006",
         "name": "Alarm-o-Bot",
@@ -146,11 +226,27 @@ module.exports =
     },
     {
         "cls": 5,
+        "cost": 1,
+        "id": "BT_020",
+        "name": "Aldor Attendant",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 5,
         "cost": 3,
         "id": "EX1_382",
         "name": "Aldor Peacekeeper",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "BT_026",
+        "name": "Aldor Truthseeker",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -185,6 +281,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 14,
+        "cost": 4,
+        "id": "BT_937",
+        "name": "Altruis the Outcast",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
         "cls": 4,
         "cost": 6,
         "id": "LOOT_108",
@@ -217,12 +321,36 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "DRG_226",
+        "name": "Amber Watcher",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "BT_707",
+        "name": "Ambush",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 8,
         "cost": 4,
         "id": "GVG_029",
         "name": "Ancestor's Call",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "ULD_207",
+        "name": "Ancestral Guardian",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 8,
@@ -239,6 +367,14 @@ module.exports =
         "name": "Ancestral Spirit",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "DRG_025",
+        "name": "Ancharrr",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -263,6 +399,14 @@ module.exports =
         "name": "Ancient Mage",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "ULD_726",
+        "name": "Ancient Mysteries",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -294,7 +438,7 @@ module.exports =
         "id": "LOE_110",
         "name": "Ancient Shade",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -303,6 +447,14 @@ module.exports =
         "name": "Ancient Shieldbearer",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 14,
+        "cost": 9,
+        "id": "SCH_354",
+        "name": "Ancient Void Hound",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -334,7 +486,15 @@ module.exports =
         "id": "LOE_119",
         "name": "Animated Armor",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 7,
+        "id": "YOD_007",
+        "name": "Animated Avalanche",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -343,6 +503,22 @@ module.exports =
         "name": "Animated Berserker",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_311",
+        "name": "Animated Broomstick",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "ULD_288",
+        "name": "Anka, the Buried",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 5,
@@ -401,12 +577,28 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 2,
+        "cost": 5,
+        "id": "ULD_138",
+        "name": "Anubisath Defender",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "LOE_061",
         "name": "Anubisath Sentinel",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "ULD_183",
+        "name": "Anubisath Warbringer",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 5,
@@ -414,13 +606,53 @@ module.exports =
         "id": "LOE_026",
         "name": "Anyfin Can Happen",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 5,
+        "id": "BT_291",
+        "name": "Apexis Blast",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "BT_022",
+        "name": "Apexis Smuggler",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "BT_257",
+        "name": "Apotheosis",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 6,
+        "id": "DAL_185",
+        "name": "Aranasi Broodmother",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 10,
         "cost": 4,
         "id": "EX1_398",
         "name": "Arathi Weaponsmith",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "YOD_008",
+        "name": "Arcane Amplifier",
         "rarity": 1,
         "series": "CLASSIC"
     },
@@ -449,12 +681,44 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 4,
+        "cost": 1,
+        "id": "DRG_106",
+        "name": "Arcane Breath",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "EX1_187",
+        "name": "Arcane Devourer",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "BOT_539",
         "name": "Arcane Dynamo",
         "rarity": 3,
         "series": "BOT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "ULD_240",
+        "name": "Arcane Flakmage",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "DAL_372",
+        "name": "Arcane Fletcher",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -490,11 +754,27 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "DAL_092",
+        "name": "Arcane Servant",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "LOOT_130",
         "name": "Arcane Tyrant",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DAL_434",
+        "name": "Arcane Watcher",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 4,
@@ -526,7 +806,15 @@ module.exports =
         "id": "LOE_092",
         "name": "Arch-Thief Rafaam",
         "rarity": 5,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 7,
+        "id": "DAL_422",
+        "name": "Arch-Villain Rafaam",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 6,
@@ -535,6 +823,14 @@ module.exports =
         "name": "Archbishop Benedictus",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "DAL_736",
+        "name": "Archivist Elysiana",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 4,
@@ -551,6 +847,30 @@ module.exports =
         "name": "Archmage Arugal",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_558",
+        "name": "Archmage Vargoth",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "BT_136",
+        "name": "Archspore Msshi'fn",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 8,
+        "id": "SCH_181",
+        "name": "Archwitch Willow",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -583,6 +903,14 @@ module.exports =
         "name": "Arfus",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "SCH_149",
+        "name": "Argent Braggart",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -633,6 +961,22 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 10,
+        "cost": 6,
+        "id": "ULD_258",
+        "name": "Armagedillo",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 10,
+        "cost": 6,
+        "id": "ULD_709",
+        "name": "Armored Goon",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "AT_108",
@@ -657,12 +1001,36 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 14,
+        "cost": 4,
+        "id": "BT_423",
+        "name": "Ashtongue Battlelord",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "BT_702",
+        "name": "Ashtongue Slayer",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "AT_043",
         "name": "Astral Communion",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "WE1_021",
+        "name": "Astral Communion",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 4,
@@ -687,6 +1055,22 @@ module.exports =
         "name": "Astromancer",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "BT_028",
+        "name": "Astromancer Solarian",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "SCH_237",
+        "name": "Athletic Studies",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 6,
@@ -721,6 +1105,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "BT_201",
+        "name": "Augmented Porcupine",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "BOT_908",
@@ -743,6 +1135,14 @@ module.exports =
         "name": "Avenge",
         "rarity": 1,
         "series": "NAXX"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "WE1_025",
+        "name": "Avenge",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 5,
@@ -778,6 +1178,14 @@ module.exports =
     },
     {
         "cls": 10,
+        "cost": 3,
+        "id": "DRG_249",
+        "name": "Awaken!",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 10,
         "cost": 4,
         "id": "BRM_016",
         "name": "Axe Flinger",
@@ -803,10 +1211,26 @@ module.exports =
     {
         "cls": 12,
         "cost": 5,
+        "id": "DAL_548",
+        "name": "Azerite Elemental",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
         "id": "EX1_284",
         "name": "Azure Drake",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 4,
+        "id": "DRG_102",
+        "name": "Azure Explorer",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 4,
@@ -815,6 +1239,14 @@ module.exports =
         "name": "Babbling Book",
         "rarity": 3,
         "series": "KAR"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "WE1_006",
+        "name": "Babbling Book",
+        "rarity": 3,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -831,6 +1263,14 @@ module.exports =
         "name": "Backstreet Leper",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_071",
+        "name": "Bad Luck Albatross",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 3,
@@ -865,6 +1305,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "BT_042",
+        "name": "Bamboozle",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "TRL_509",
@@ -873,12 +1321,28 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 8,
+        "cost": 5,
+        "id": "DRG_096",
+        "name": "Bandersmosh",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 9,
         "cost": 5,
         "id": "EX1_320",
         "name": "Bane of Doom",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DAL_546",
+        "name": "Barista Lynchen",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 2,
@@ -890,7 +1354,7 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 4,
+        "cost": 5,
         "id": "KAR_114",
         "name": "Barnes",
         "rarity": 5,
@@ -913,12 +1377,28 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 12,
+        "cost": 7,
+        "id": "EX1_188",
+        "name": "Barrens Stablehand",
+        "rarity": 4,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "AT_064",
         "name": "Bash",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "DAL_592",
+        "name": "Batterhead",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 10,
@@ -929,11 +1409,43 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 14,
+        "cost": 1,
+        "id": "BT_351",
+        "name": "Battlefiend",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "ULD_326",
+        "name": "Bazaar Burglary",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "ULD_327",
+        "name": "Bazaar Mugger",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 8,
         "id": "BOT_246",
         "name": "Beakered Lightning",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "ULD_191",
+        "name": "Beaming Sidekick",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 3,
@@ -952,12 +1464,28 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 3,
+        "cost": 8,
+        "id": "BT_214",
+        "name": "Beastmaster Leoroxx",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "OG_281",
         "name": "Beckoner of Evil",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "ULD_134",
+        "name": "BEEEES!!!",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -1024,6 +1552,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 10,
+        "id": "DAL_553",
+        "name": "Big Bad Archmage",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "TRL_082",
@@ -1038,6 +1574,14 @@ module.exports =
         "name": "Big Game Hunter",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_054",
+        "name": "Big Ol' Whelp",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -1120,6 +1664,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 7,
+        "cost": 1,
+        "id": "BT_711",
+        "name": "Blackjack Stunner",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GIL_561",
@@ -1150,6 +1702,14 @@ module.exports =
         "name": "Blackwing Technician",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_354",
+        "name": "Blade Dance",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 7,
@@ -1184,6 +1744,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 10,
+        "cost": 3,
+        "id": "BT_117",
+        "name": "Bladestorm",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 4,
         "cost": 5,
         "id": "TRL_317",
@@ -1200,12 +1768,36 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 10,
+        "cost": 7,
+        "id": "DAL_064",
+        "name": "Blastmaster Boom",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "ULD_706",
+        "name": "Blatant Decoy",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 7,
         "id": "UNG_847",
         "name": "Blazecaller",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "DRG_239",
+        "name": "Blazing Battlemage",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 8,
@@ -1222,6 +1814,22 @@ module.exports =
         "name": "Blessed Champion",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "SCH_138",
+        "name": "Blessing of Authority",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "DAL_351",
+        "name": "Blessing of the Ancients",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 5,
@@ -1256,12 +1864,36 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "BT_721",
+        "name": "Blistering Rot",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 4,
         "cost": 6,
         "id": "CS2_028",
         "name": "Blizzard",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "SCH_340",
+        "name": "Bloated Python",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 5,
+        "id": "SCH_618",
+        "name": "Blood Herald",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 9,
@@ -1337,11 +1969,19 @@ module.exports =
     },
     {
         "cls": 9,
-        "cost": 2,
+        "cost": 4,
         "id": "UNG_832",
         "name": "Bloodbloom",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 10,
+        "cost": 7,
+        "id": "BT_138",
+        "name": "Bloodboil Brute",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 5,
@@ -1366,6 +2006,14 @@ module.exports =
         "name": "Bloodhoof Brave",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "WE1_034",
+        "name": "Bloodhoof Brave",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -1401,6 +2049,14 @@ module.exports =
     },
     {
         "cls": 7,
+        "cost": 1,
+        "id": "DRG_035",
+        "name": "Bloodsail Flybooter",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 7,
         "cost": 2,
         "id": "TRL_071",
         "name": "Bloodsail Howler",
@@ -1424,6 +2080,14 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 10,
+        "cost": 3,
+        "id": "ULD_720",
+        "name": "Bloodsworn Mercenary",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "ICC_905",
@@ -1442,10 +2106,33 @@ module.exports =
     {
         "cls": 12,
         "cost": 3,
+        "id": "DRG_403",
+        "name": "Blowtorch Saboteur",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
         "id": "CFM_064",
         "name": "Blubber Baron",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 14,
+        "id": "BT_752",
+        "name": "Blur",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ULD_727",
+        "name": "Body Wrapper",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -1464,12 +2151,36 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 2,
+        "cost": 3,
+        "id": "BT_134",
+        "name": "Bogbeam",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 8,
+        "cost": 5,
+        "id": "BT_102",
+        "name": "Boggspine Knuckles",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 8,
         "cost": 7,
         "id": "GIL_807",
         "name": "Bogshaper",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "BT_106",
+        "name": "Bogstrok Clacker",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -1536,6 +2247,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 10,
+        "cost": 3,
+        "id": "YOD_024",
+        "name": "Bomb Wrangler",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 7,
         "cost": 5,
         "id": "ICC_065",
@@ -1553,6 +2272,38 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "ULD_275",
+        "name": "Bone Wraith",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BT_715",
+        "name": "Bonechewer Brawler",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "BT_140",
+        "name": "Bonechewer Raider",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "BT_716",
+        "name": "Bonechewer Vanguard",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "AT_089",
         "name": "Boneguard Lieutenant",
@@ -1566,6 +2317,14 @@ module.exports =
         "name": "Bonemare",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "SCH_147",
+        "name": "Boneweb Egg",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 4,
@@ -1592,12 +2351,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 10,
+        "cost": 1,
+        "id": "YOD_023",
+        "name": "Boom Squad",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 3,
         "cost": 7,
         "id": "BOT_034",
         "name": "Boommaster Flark",
         "rarity": 5,
         "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "YOD_033",
+        "name": "Boompistol Bully",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -1614,6 +2389,14 @@ module.exports =
         "name": "Bouncing Blade",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_509",
+        "name": "Brain Freeze",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -1637,7 +2420,7 @@ module.exports =
         "id": "LOE_077",
         "name": "Brann Bronzebeard",
         "rarity": 5,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -1664,12 +2447,36 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 1,
+        "id": "ULD_145",
+        "name": "Brazen Zealot",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "DRG_318",
+        "name": "Breath of Dreams",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 4,
         "cost": 1,
         "id": "ICC_836",
         "name": "Breath of Sindragosa",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "DRG_307",
+        "name": "Breath of the Infinite",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -1680,6 +2487,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "EX1_189",
+        "name": "Brightwing",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 10,
         "cost": 2,
         "id": "ICC_837",
@@ -1688,12 +2503,36 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 6,
+        "cost": 4,
+        "id": "SCH_513",
+        "name": "Brittlebone Destroyer",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "DRG_229",
+        "name": "Bronze Explorer",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "BOT_021",
         "name": "Bronze Gatekeeper",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "DAL_146",
+        "name": "Bronze Herald",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 8,
@@ -1713,11 +2552,27 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "ULD_712",
+        "name": "Bug Collector",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 9,
         "id": "BOT_534",
         "name": "Bull Dozer",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "BT_781",
+        "name": "Bulwark of Azzinoth",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 7,
@@ -1744,6 +2599,22 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 9,
+        "id": "DAL_760",
+        "name": "Burly Shovelfist",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BT_717",
+        "name": "Burrowing Scorpid",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 6,
         "cost": 7,
         "id": "TRL_260",
@@ -1766,6 +2637,14 @@ module.exports =
         "name": "C'Thun's Chosen",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "SCH_120",
+        "name": "Cabal Acolyte",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 6,
@@ -1809,11 +2688,19 @@ module.exports =
     },
     {
         "cls": 3,
-        "cost": 9,
+        "cost": 8,
         "id": "OG_211",
         "name": "Call of the Wild",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 3,
+        "cost": 8,
+        "id": "WE1_027",
+        "name": "Call of the Wild",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 3,
@@ -1825,11 +2712,35 @@ module.exports =
     },
     {
         "cls": 5,
+        "cost": 3,
+        "id": "DAL_727",
+        "name": "Call to Adventure",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 5,
         "cost": 5,
         "id": "LOOT_093",
         "name": "Call to Arms",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DRG_074",
+        "name": "Camouflaged Dirigible",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 7,
+        "cost": 6,
+        "id": "DRG_033",
+        "name": "Candle Breath",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 3,
@@ -1838,6 +2749,14 @@ module.exports =
         "name": "Candleshot",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_205",
+        "name": "Candletaker",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 7,
@@ -1905,6 +2824,14 @@ module.exports =
     },
     {
         "cls": 3,
+        "cost": 1,
+        "id": "SCH_300",
+        "name": "Carrion Studies",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 3,
         "cost": 2,
         "id": "KAR_004",
         "name": "Cat Trick",
@@ -1926,6 +2853,14 @@ module.exports =
         "name": "Cathedral Gargoyle",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 6,
+        "cost": 8,
+        "id": "DAL_721",
+        "name": "Catrina Muerte",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -1976,12 +2911,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 3,
+        "id": "SCH_523",
+        "name": "Ceremonial Maul",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 6,
         "cost": 1,
         "id": "GIL_142",
         "name": "Chameleos",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "YOD_027",
+        "name": "Chaos Gazer",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -2025,6 +2976,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 7,
+        "id": "DAL_554",
+        "name": "Chef Nomi",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "DRG_104",
+        "name": "Chenvaala",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
         "cost": 5,
         "id": "GIL_648",
         "name": "Chief Inspector",
@@ -2064,12 +3031,36 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "YOD_004",
+        "name": "Chopshop Copter",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 8,
         "id": "BRM_031",
         "name": "Chromaggus",
         "rarity": 5,
         "series": "BRM"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_086",
+        "name": "Chromatic Egg",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "DRG_304",
+        "name": "Chronobreaker",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 4,
@@ -2085,6 +3076,30 @@ module.exports =
         "name": "Circle of Healing",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "DRG_251",
+        "name": "Clear the Way",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "YOD_013",
+        "name": "Cleric of Scales",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "ULD_328",
+        "name": "Clever Disguise",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 3,
@@ -2127,6 +3142,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 10,
+        "cost": 3,
+        "id": "DAL_060",
+        "name": "Clockwork Goblin",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "AT_096",
@@ -2136,11 +3159,19 @@ module.exports =
     },
     {
         "cls": 6,
-        "cost": 2,
+        "cost": 1,
         "id": "BOT_435",
         "name": "Cloning Device",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 4,
+        "cost": 5,
+        "id": "ULD_293",
+        "name": "Cloud Prince",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 9,
@@ -2167,12 +3198,28 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_075",
+        "name": "Cobalt Spellkin",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 3,
         "cost": 5,
         "id": "GVG_073",
         "name": "Cobra Shot",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "SCH_521",
+        "name": "Coerce",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 6,
@@ -2205,6 +3252,14 @@ module.exports =
         "name": "Cogmaster's Wrench",
         "rarity": 4,
         "series": "GVG"
+    },
+    {
+        "cls": 14,
+        "cost": 8,
+        "id": "BT_761",
+        "name": "Coilfang Warlord",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 7,
@@ -2255,12 +3310,52 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 10,
+        "id": "ULD_721",
+        "name": "Colossus of the Moon",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "SCH_348",
+        "name": "Combustion",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 5,
+        "id": "BT_173",
+        "name": "Command the Illidari",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "DAL_573",
+        "name": "Commander Rhyssa",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
         "cls": 10,
         "cost": 2,
         "id": "NEW1_036",
         "name": "Commanding Shout",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 7,
+        "id": "SCH_533",
+        "name": "Commencement",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 5,
@@ -2303,12 +3398,44 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "ULD_198",
+        "name": "Conjured Mirage",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 4,
+        "cost": 4,
+        "id": "DAL_177",
+        "name": "Conjurer's Calling",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 14,
+        "cost": 1,
+        "id": "BT_490",
+        "name": "Consume Magic",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "AT_015",
         "name": "Convert",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "DAL_039",
+        "name": "Convincing Infiltrator",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -2367,12 +3494,36 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "DRG_006",
+        "name": "Corrosive Breath",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "LOOT_122",
         "name": "Corrosive Sludge",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 8,
+        "cost": 6,
+        "id": "DRG_218",
+        "name": "Corrupt Elementalist",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "ULD_291",
+        "name": "Corrupt the Waters",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -2397,6 +3548,14 @@ module.exports =
         "name": "Corrupting Mist",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "BT_124",
+        "name": "Corsair Cache",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 4,
@@ -2446,6 +3605,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 2,
+        "id": "SCH_353",
+        "name": "Cram Session",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "EX1_059",
@@ -2462,12 +3629,36 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 9,
+        "cost": 5,
+        "id": "DRG_201",
+        "name": "Crazed Netherwing",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "OG_321",
         "name": "Crazed Worshipper",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_232",
+        "name": "Crimson Hothead",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 1,
+        "id": "BT_480",
+        "name": "Crimson Sigil Runner",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -2558,6 +3749,30 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 2,
+        "cost": 2,
+        "id": "ULD_133",
+        "name": "Crystal Merchant",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "DAL_350",
+        "name": "Crystal Power",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "DAL_799",
+        "name": "Crystal Stag",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
         "cls": 6,
         "cost": 1,
         "id": "UNG_032",
@@ -2582,6 +3797,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 2,
+        "cost": 2,
+        "id": "DAL_352",
+        "name": "Crystalsong Portal",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
         "cls": 9,
         "cost": 4,
         "id": "CFM_610",
@@ -2591,7 +3814,7 @@ module.exports =
     },
     {
         "cls": 5,
-        "cost": 2,
+        "cost": 1,
         "id": "BOT_909",
         "name": "Crystology",
         "rarity": 3,
@@ -2614,12 +3837,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "SCH_713",
+        "name": "Cult Neophyte",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 4,
         "cost": 2,
         "id": "OG_303",
         "name": "Cult Sorcerer",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 8,
+        "cost": 5,
+        "id": "DRG_223",
+        "name": "Cumulo-Maximus",
+        "rarity": 4,
+        "series": "DRG"
     },
     {
         "cls": 4,
@@ -2643,7 +3882,7 @@ module.exports =
         "id": "LOE_007",
         "name": "Curse of Rafaam",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 9,
@@ -2659,7 +3898,7 @@ module.exports =
         "id": "LOE_118",
         "name": "Cursed Blade",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -2679,6 +3918,14 @@ module.exports =
     },
     {
         "cls": 7,
+        "cost": 7,
+        "id": "BT_703",
+        "name": "Cursed Vagrant",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 7,
         "cost": 2,
         "id": "AT_031",
         "name": "Cutpurse",
@@ -2694,12 +3941,28 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_623",
+        "name": "Cutting Class",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "BOT_438",
         "name": "Cybertech Chip",
         "rarity": 3,
         "series": "BOT"
+    },
+    {
+        "cls": 14,
+        "cost": 7,
+        "id": "SCH_253",
+        "name": "Cycle of Hatred",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -2727,6 +3990,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "DAL_085",
+        "name": "Dalaran Crusader",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DAL_735",
+        "name": "Dalaran Librarian",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "BOT_448",
         "name": "Damaged Stegotron",
@@ -2740,6 +4019,14 @@ module.exports =
         "name": "Dancing Swords",
         "rarity": 1,
         "series": "NAXX"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "DAL_728",
+        "name": "Daring Escape",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 4,
@@ -2827,7 +4114,15 @@ module.exports =
         "id": "LOE_023",
         "name": "Dark Peddler",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 5,
+        "id": "ULD_168",
+        "name": "Dark Pharaoh Tekahn",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 9,
@@ -2836,6 +4131,22 @@ module.exports =
         "name": "Dark Possession",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "YOD_015",
+        "name": "Dark Prophecy",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "DRG_204",
+        "name": "Dark Skies",
+        "rarity": 4,
+        "series": "DRG"
     },
     {
         "cls": 2,
@@ -2852,6 +4163,22 @@ module.exports =
         "name": "Darkbomb",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 9,
+        "cost": 6,
+        "id": "DAL_173",
+        "name": "Darkest Hour",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "BT_307",
+        "name": "Darkglare",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -2907,7 +4234,7 @@ module.exports =
         "id": "LOE_021",
         "name": "Dart Trap",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -3030,12 +4357,28 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 10,
+        "cost": 8,
+        "id": "DRG_026",
+        "name": "Deathwing, Mad Aspect",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 4,
         "cost": 5,
         "id": "LOOT_106",
         "name": "Deck of Wonders",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 8,
+        "id": "BT_072",
+        "name": "Deep Freeze",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -3086,6 +4429,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 14,
+        "cost": 1,
+        "id": "SCH_600",
+        "name": "Demon Companion",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 9,
         "cost": 8,
         "id": "TRL_555",
@@ -3127,6 +4478,14 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 1,
+        "id": "SCH_158",
+        "name": "Demonic Studies",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 9,
         "cost": 3,
         "id": "BRM_005",
         "name": "Demonwrath",
@@ -3143,6 +4502,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 1,
+        "id": "DRG_078",
+        "name": "Depth Charge",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
         "cost": 8,
         "id": "GIL_118",
         "name": "Deranged Doctor",
@@ -3155,7 +4522,46 @@ module.exports =
         "id": "LOE_020",
         "name": "Desert Camel",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_719",
+        "name": "Desert Hare",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ULD_703",
+        "name": "Desert Obelisk",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "ULD_430",
+        "name": "Desert Spear",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "id": "SCH_145",
+        "name": "Desk Imp",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "DAL_141",
+        "name": "Desperate Measures",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 5,
@@ -3198,12 +4604,52 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_235",
+        "name": "Devolving Missiles",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_050",
+        "name": "Devoted Maniac",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 6,
         "cost": 5,
         "id": "ICC_207",
         "name": "Devour Mind",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "SCH_139",
+        "name": "Devout Pupil",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "SCH_236",
+        "name": "Diligent Notetaker",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 10,
+        "cost": 10,
+        "id": "DAL_059",
+        "name": "Dimensional Ripper",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 3,
@@ -3220,6 +4666,14 @@ module.exports =
         "name": "Dinosize",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 3,
+        "cost": 7,
+        "id": "ULD_156",
+        "name": "Dinotamer Brann",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 3,
@@ -3262,12 +4716,52 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "BT_709",
+        "name": "Dirty Tricks",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "OG_162",
         "name": "Disciple of C'Thun",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "DRG_303",
+        "name": "Disciple of Galakrond",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "SCH_126",
+        "name": "Disciplinarian Gandling",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "ULD_167",
+        "name": "Diseased Vulture",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BT_728",
+        "name": "Disguised Wanderer",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 3,
@@ -3294,6 +4788,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_143",
+        "name": "Divine Rager",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "OG_223",
@@ -3302,12 +4804,28 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "DRG_010",
+        "name": "Diving Gryphon",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "LOE_053",
         "name": "Djinni of Zephyrs",
         "rarity": 4,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_425",
+        "name": "Doctor Krastinov",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -3390,6 +4908,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 14,
+        "cost": 1,
+        "id": "SCH_422",
+        "name": "Double Jump",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 9,
         "cost": 3,
         "id": "BOT_224",
@@ -3422,12 +4948,28 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 10,
+        "cost": 4,
+        "id": "DAL_008",
+        "name": "Dr. Boom's Scheme",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 9,
-        "cost": 8,
+        "cost": 6,
         "id": "BOT_433",
         "name": "Dr. Morrigan",
         "rarity": 5,
         "series": "BOT"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "SCH_233",
+        "name": "Draconic Studies",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 8,
@@ -3436,6 +4978,14 @@ module.exports =
         "name": "Draenei Totemcarver",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DRG_070",
+        "name": "Dragon Breeder",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 5,
@@ -3470,6 +5020,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "DAL_147",
+        "name": "Dragon Speaker",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
         "cls": 4,
         "cost": 5,
         "id": "BRM_003",
@@ -3486,12 +5044,52 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 7,
+        "cost": 1,
+        "id": "DRG_028",
+        "name": "Dragon's Hoard",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 8,
+        "cost": 5,
+        "id": "DRG_217",
+        "name": "Dragon's Pack",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "DRG_256",
+        "name": "Dragonbane",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "DRG_202",
+        "name": "Dragonblight Cultist",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 4,
         "cost": 9,
         "id": "LOOT_535",
         "name": "Dragoncaller Alanna",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 4,
+        "cost": 7,
+        "id": "DRG_322",
+        "name": "Dragoncaster",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 6,
@@ -3526,12 +5124,60 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 6,
+        "cost": 3,
+        "id": "BT_256",
+        "name": "Dragonmaw Overseer",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_063",
+        "name": "Dragonmaw Poacher",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "TRL_526",
         "name": "Dragonmaw Scorcher",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "BT_262",
+        "name": "Dragonmaw Sentinel",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BT_726",
+        "name": "Dragonmaw Sky Stalker",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "DRG_089",
+        "name": "Dragonqueen Alexstrasza",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "DRG_235",
+        "name": "Dragonrider Talritha",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -3598,6 +5244,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "DRG_088",
+        "name": "Dread Raven",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "AT_063t",
@@ -3620,6 +5274,14 @@ module.exports =
         "name": "Dreampetal Florist",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "DAL_733",
+        "name": "Dreamway Guardians",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 2,
@@ -3686,6 +5348,22 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "DAL_731",
+        "name": "Duel!",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "ULD_329",
+        "name": "Dune Sculptor",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 8,
         "cost": 4,
         "id": "GVG_066",
@@ -3750,6 +5428,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_309",
+        "name": "Dwarven Archaeologist",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "DRG_253",
+        "name": "Dwarven Sharpshooter",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 5,
         "id": "BOT_104",
@@ -3772,6 +5466,14 @@ module.exports =
         "name": "Eadric the Pure",
         "rarity": 5,
         "series": "AT"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "DAL_563",
+        "name": "Eager Underling",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 3,
@@ -3822,6 +5524,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 8,
+        "cost": 7,
+        "id": "ULD_181",
+        "name": "Earthquake",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "OG_254",
@@ -3836,6 +5546,14 @@ module.exports =
         "name": "Ebon Dragonsmith",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DAL_566",
+        "name": "Eccentric Scribe",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 4,
@@ -3862,6 +5580,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "SCH_714",
+        "name": "Educated Elekk",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "EX1_613",
@@ -3875,7 +5601,7 @@ module.exports =
         "id": "LOE_107",
         "name": "Eerie Statue",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 4,
@@ -3926,6 +5652,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 4,
+        "cost": 1,
+        "id": "DRG_324",
+        "name": "Elemental Allies",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 3,
         "id": "AT_051",
@@ -3954,7 +5688,15 @@ module.exports =
         "id": "LOE_079",
         "name": "Elise Starseeker",
         "rarity": 5,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 5,
+        "id": "ULD_139",
+        "name": "Elise the Enlightened",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -3981,12 +5723,27 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "ULD_265",
+        "name": "Embalming Ritual",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
         "cls": 10,
         "cost": 5,
         "id": "TRL_323",
         "name": "Emberscale Drake",
         "rarity": 3,
         "series": "TRL"
+    },
+    {
+        "cls": 2,
+        "id": "DRG_315",
+        "name": "Embiggen",
+        "rarity": 4,
+        "series": "DRG"
     },
     {
         "cls": 6,
@@ -4003,6 +5760,14 @@ module.exports =
         "name": "Embrace the Shadow",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 2,
+        "cost": 6,
+        "id": "DRG_313",
+        "name": "Emerald Explorer",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -4045,6 +5810,22 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 12,
+        "cost": 6,
+        "id": "WE1_039",
+        "name": "Emperor Thaurissan",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "SCH_157",
+        "name": "Enchanted Cauldron",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 2,
         "cost": 1,
         "id": "KAR_300",
@@ -4061,6 +5842,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 9,
+        "cost": 8,
+        "id": "BT_304",
+        "name": "Enhanced Dreadlord",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 5,
         "cost": 6,
         "id": "AT_078",
@@ -4074,7 +5863,7 @@ module.exports =
         "id": "LOE_104",
         "name": "Entomb",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -4085,11 +5874,27 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 6,
+        "cost": 2,
+        "id": "DRG_306",
+        "name": "Envoy of Lazul",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 5,
         "cost": 4,
         "id": "EX1_619",
         "name": "Equality",
         "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "YOD_006",
+        "name": "Escaped Manasaber",
+        "rarity": 4,
         "series": "CLASSIC"
     },
     {
@@ -4125,12 +5930,20 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "BT_724",
+        "name": "Ethereal Augmerchant",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 4,
         "cost": 5,
         "id": "LOE_003",
         "name": "Ethereal Conjurer",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -4157,12 +5970,68 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "DRG_066",
+        "name": "Evasive Chimaera",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "DRG_310",
+        "name": "Evasive Drakonid",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_073",
+        "name": "Evasive Feywing",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DRG_079",
+        "name": "Evasive Wyrm",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 7,
         "id": "LOE_113",
         "name": "Everyfin is Awesome",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DAL_400",
+        "name": "EVIL Cable Rat",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "DAL_413",
+        "name": "EVIL Conscripter",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "DAL_606",
+        "name": "EVIL Genius",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -4174,11 +6043,51 @@ module.exports =
     },
     {
         "cls": 7,
+        "cost": 3,
+        "id": "DAL_415",
+        "name": "EVIL Miscreant",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "DRG_020",
+        "name": "EVIL Quartermaster",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "ULD_162",
+        "name": "EVIL Recruiter",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "ULD_276",
+        "name": "EVIL Totem",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 7,
         "cost": 2,
         "id": "EX1_124",
         "name": "Eviscerate",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "BT_006",
+        "name": "Evocation",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 8,
@@ -4187,6 +6096,14 @@ module.exports =
         "name": "Evolve",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "WE1_014",
+        "name": "Evolve",
+        "rarity": 3,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -4210,7 +6127,23 @@ module.exports =
         "id": "LOE_111",
         "name": "Excavated Evil",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "DAL_774",
+        "name": "Exotic Mountseller",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "ULD_163",
+        "name": "Expired Merchant",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -4242,7 +6175,15 @@ module.exports =
         "id": "LOE_105",
         "name": "Explorer's Hat",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "YOD_020",
+        "name": "Explosive Evolution",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 4,
@@ -4293,10 +6234,26 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 14,
+        "cost": 3,
+        "id": "BT_801",
+        "name": "Eye Beam",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "EX1_132",
         "name": "Eye for an Eye",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "cost": 10,
+        "id": "YOD_041",
+        "name": "Eye of the Storm",
         "rarity": 1,
         "series": "CLASSIC"
     },
@@ -4319,10 +6276,34 @@ module.exports =
     {
         "cls": 12,
         "cost": 5,
+        "id": "DRG_076",
+        "name": "Faceless Corruptor",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ULD_189",
+        "name": "Faceless Lurker",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
         "id": "EX1_564",
         "name": "Faceless Manipulator",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DAL_744",
+        "name": "Faceless Rager",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -4405,6 +6386,14 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 6,
+        "cost": 4,
+        "id": "DRG_300",
+        "name": "Fate Weaver",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "ICC_047",
@@ -4419,6 +6408,14 @@ module.exports =
         "name": "Fearsome Doomguard",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_427",
+        "name": "Feast of Souls",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 9,
@@ -4445,6 +6442,22 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 14,
+        "cost": 7,
+        "id": "SCH_357",
+        "name": "Fel Guardians",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 9,
+        "cost": 8,
+        "id": "DAL_607",
+        "name": "Fel Lord Betrug",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "CFM_609",
@@ -4461,6 +6474,22 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 14,
+        "cost": 6,
+        "id": "BT_509",
+        "name": "Fel Summoner",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BT_010",
+        "name": "Felfin Navigator",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 9,
         "cost": 6,
         "id": "CFM_094",
@@ -4475,6 +6504,14 @@ module.exports =
         "name": "Felguard",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "SCH_702",
+        "name": "Felosophy",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -4557,12 +6594,28 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 9,
+        "cost": 4,
+        "id": "DRG_250",
+        "name": "Fiendish Rites",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "YOD_026",
+        "name": "Fiendish Servant",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "LOE_022",
         "name": "Fierce Monkey",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 3,
@@ -4605,6 +6658,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "DRG_060",
+        "name": "Fire Hawk",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 2,
         "id": "UNG_202",
@@ -4627,6 +6688,14 @@ module.exports =
         "name": "Fire Plume's Heart",
         "rarity": 5,
         "series": "UNG"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "SCH_241",
+        "name": "Firebrand",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 8,
@@ -4659,6 +6728,29 @@ module.exports =
         "name": "Fireworks Tech",
         "rarity": 3,
         "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "id": "SCH_247",
+        "name": "First Day of School",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_289",
+        "name": "Fishflinger",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_707",
+        "name": "Fishy Flyer",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 9,
@@ -4718,11 +6810,27 @@ module.exports =
     },
     {
         "cls": 4,
+        "cost": 3,
+        "id": "ULD_239",
+        "name": "Flame Ward",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 4,
         "cost": 2,
         "id": "GVG_001",
         "name": "Flamecannon",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 14,
+        "cost": 7,
+        "id": "BT_271",
+        "name": "Flamereaper",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 4,
@@ -4731,6 +6839,14 @@ module.exports =
         "name": "Flamewaker",
         "rarity": 3,
         "series": "BRM"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "WE1_023",
+        "name": "Flamewaker",
+        "rarity": 3,
+        "series": "CLASSIC"
     },
     {
         "cls": 8,
@@ -4758,7 +6874,7 @@ module.exports =
     },
     {
         "cls": 3,
-        "cost": 8,
+        "cost": 7,
         "id": "BOT_429",
         "name": "Flark's Boom-Zooka",
         "rarity": 5,
@@ -4781,12 +6897,36 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 6,
+        "cost": 8,
+        "id": "SCH_140",
+        "name": "Flesh Giant",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "tt_004",
         "name": "Flesheating Ghoul",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DAL_747",
+        "name": "Flight Master",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 7,
+        "cost": 6,
+        "id": "DRG_037",
+        "name": "Flik Skyshiv",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 9,
@@ -4827,6 +6967,14 @@ module.exports =
         "name": "Foe Reaper 4000",
         "rarity": 5,
         "series": "GVG"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "BT_021",
+        "name": "Font of Power",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 10,
@@ -4873,6 +7021,13 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 6,
+        "id": "DAL_723",
+        "name": "Forbidden Words",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "EX1_571",
@@ -4897,6 +7052,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 2,
+        "cost": 6,
+        "id": "SCH_614",
+        "name": "Forest Warden Omu",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 10,
         "cost": 2,
         "id": "ICC_281",
@@ -4910,7 +7073,7 @@ module.exports =
         "id": "LOE_002",
         "name": "Forgotten Torch",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 8,
@@ -4942,7 +7105,15 @@ module.exports =
         "id": "LOE_073",
         "name": "Fossilized Devilsaur",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "SCH_137",
+        "name": "Frazzled Freshman",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 6,
@@ -4969,11 +7140,35 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "YOD_032",
+        "name": "Frenzied Felwing",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "YOD_005",
+        "name": "Fresh Scent",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "CFM_654",
         "name": "Friendly Bartender",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "ULD_195",
+        "name": "Frightened Flunky",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -4982,6 +7177,14 @@ module.exports =
         "name": "Frigid Snobold",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_257",
+        "name": "Frizz Kindleroost",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -5034,10 +7237,26 @@ module.exports =
     {
         "cls": 12,
         "cost": 3,
+        "id": "BT_714",
+        "name": "Frozen Shadoweaver",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
         "id": "LOOT_388",
         "name": "Fungal Enchanter",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "BT_128",
+        "name": "Fungal Fortunes",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -5062,6 +7281,14 @@ module.exports =
         "name": "Furious Ettin",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_496",
+        "name": "Furious Felfin",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -5112,6 +7339,46 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 7,
+        "cost": 7,
+        "id": "DRG_610",
+        "name": "Galakrond, the Nightmare",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 8,
+        "cost": 7,
+        "id": "DRG_620",
+        "name": "Galakrond, the Tempest",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 10,
+        "cost": 7,
+        "id": "DRG_650",
+        "name": "Galakrond, the Unbreakable",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 6,
+        "cost": 7,
+        "id": "DRG_660",
+        "name": "Galakrond, the Unspeakable",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 9,
+        "cost": 7,
+        "id": "DRG_600",
+        "name": "Galakrond, the Wretched",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "BOT_907",
@@ -5126,6 +7393,14 @@ module.exports =
         "name": "Gang Up",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "ULD_137",
+        "name": "Garden Gnome",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -5169,6 +7444,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 3,
+        "id": "ULD_214",
+        "name": "Generous Mummy",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "GIL_692",
         "name": "Genn Greymane",
@@ -5198,6 +7481,14 @@ module.exports =
         "name": "Geosculptor Yip",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "BT_129",
+        "name": "Germination",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 5,
@@ -5264,8 +7555,32 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 2,
+        "cost": 1,
+        "id": "SCH_242",
+        "name": "Gibberling",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "SCH_302",
+        "name": "Gift of Luminance",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 2,
+        "cost": 8,
+        "id": "EX1_183",
+        "name": "Gift of the Wild",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
-        "cost": 7,
+        "cost": 6,
         "id": "BOT_270",
         "name": "Giggling Inventor",
         "rarity": 3,
@@ -5328,6 +7643,14 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 14,
+        "cost": 4,
+        "id": "SCH_356",
+        "name": "Glide",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 9,
         "cost": 6,
         "id": "GIL_618",
@@ -5353,7 +7676,7 @@ module.exports =
     },
     {
         "cls": 2,
-        "cost": 8,
+        "cost": 7,
         "id": "BOT_507",
         "name": "Gloop Sprayer",
         "rarity": 1,
@@ -5368,8 +7691,16 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 2,
+        "cost": 5,
+        "id": "BT_135",
+        "name": "Glowfly Swarm",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 5,
-        "cost": 6,
+        "cost": 5,
         "id": "BOT_910",
         "name": "Glowstone Technician",
         "rarity": 4,
@@ -5457,11 +7788,27 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 3,
+        "id": "DRG_059",
+        "name": "Goboglide Tech",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "UNG_807",
         "name": "Golakka Crawler",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_188",
+        "name": "Golden Scarab",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 2,
@@ -5470,6 +7817,14 @@ module.exports =
         "name": "Gonk, the Raptor",
         "rarity": 5,
         "series": "TRL"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "SCH_532",
+        "name": "Goody Two-Shields",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 10,
@@ -5485,7 +7840,7 @@ module.exports =
         "id": "LOE_039",
         "name": "Gorillabot A-3",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -5494,6 +7849,14 @@ module.exports =
         "name": "Gormok the Impaler",
         "rarity": 5,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 7,
+        "id": "DRG_319",
+        "name": "Goru the Mightree",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 7,
@@ -5520,12 +7883,36 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "YOD_035",
+        "name": "Grand Lackey Erkh",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "ULD_266",
+        "name": "Grandmummy",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 6,
         "cost": 12,
         "id": "TRL_408",
         "name": "Grave Horror",
         "rarity": 3,
         "series": "TRL"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "DRG_302",
+        "name": "Grave Rune",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -5574,6 +7961,14 @@ module.exports =
         "name": "Green Jelly",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "BT_710",
+        "name": "Greyheart Sage",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 3,
@@ -5688,6 +8083,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "DRG_401",
+        "name": "Grizzled Wizard",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 8,
         "id": "EX1_414",
@@ -5713,6 +8116,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 4,
+        "id": "SCH_613",
+        "name": "Groundskeeper",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 2,
         "cost": 3,
         "id": "GVG_032",
         "name": "Grove Tender",
@@ -5734,6 +8145,22 @@ module.exports =
         "name": "Gruul",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 8,
+        "id": "SCH_610",
+        "name": "Guardian Animals",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BT_722",
+        "name": "Guardian Augmerchant",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -5768,6 +8195,22 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 12,
+        "cost": 6,
+        "id": "DRG_061",
+        "name": "Gyrocopter",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "ULD_711",
+        "name": "Hack the System",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
         "cls": 2,
         "cost": 9,
         "id": "ICC_835",
@@ -5782,6 +8225,22 @@ module.exports =
         "name": "Hagatha the Witch",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 5,
+        "id": "DAL_009",
+        "name": "Hagatha's Scheme",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "YOD_029",
+        "name": "Hailbringer",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -5830,6 +8289,22 @@ module.exports =
         "name": "Hammer of Twilight",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "BT_292",
+        "name": "Hand of A'dal",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 6,
+        "id": "BT_300",
+        "name": "Hand of Gul'dan",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -5896,6 +8371,14 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_224",
+        "name": "Headmaster Kel'Thuzad",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 8,
         "cost": 3,
         "id": "LOOT_373",
@@ -5918,6 +8401,30 @@ module.exports =
         "name": "Heavy Metal!",
         "rarity": 3,
         "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_058",
+        "name": "Hecklebot",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 7,
+        "cost": 6,
+        "id": "DAL_417",
+        "name": "Heistbaron Togwaggle",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "BT_202",
+        "name": "Helboar",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -5944,6 +8451,46 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "DAL_416",
+        "name": "Hench-Clan Burglar",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_087",
+        "name": "Hench-Clan Hag",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DAL_743",
+        "name": "Hench-Clan Hogsteed",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "DAL_040",
+        "name": "Hench-Clan Shadequill",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DAL_090",
+        "name": "Hench-Clan Sneak",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GIL_534",
@@ -5958,6 +8505,14 @@ module.exports =
         "name": "Herald Volazj",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "DAL_560",
+        "name": "Heroic Innkeeper",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 4,
@@ -5976,12 +8531,44 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 2,
+        "cost": 6,
+        "id": "ULD_135",
+        "name": "Hidden Oasis",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "GIL_903",
         "name": "Hidden Wisdom",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "SCH_141",
+        "name": "High Abbess Alura",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "EX1_190",
+        "name": "High Inquisitor Whitemane",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "ULD_262",
+        "name": "High Priest Amet",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 5,
@@ -6000,6 +8587,14 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_065",
+        "name": "Hippogryph",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 9,
         "cost": 8,
         "id": "TRL_253",
@@ -6014,6 +8609,22 @@ module.exports =
         "name": "Hired Gun",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_290",
+        "name": "History Buff",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_055",
+        "name": "Hoard Pillager",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -6081,6 +8692,14 @@ module.exports =
     },
     {
         "cls": 6,
+        "cost": 2,
+        "id": "ULD_272",
+        "name": "Holy Ripple",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 6,
         "cost": 5,
         "id": "GIL_134",
         "name": "Holy Water",
@@ -6110,6 +8729,22 @@ module.exports =
         "name": "Hooked Reaver",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "ULD_285",
+        "name": "Hooked Scimitar",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "DRG_057",
+        "name": "Hot Air Balloon",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 8,
@@ -6157,7 +8792,15 @@ module.exports =
         "id": "LOE_046",
         "name": "Huge Toad",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 14,
+        "cost": 8,
+        "id": "BT_487",
+        "name": "Hulking Overfiend",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -6193,11 +8836,27 @@ module.exports =
     },
     {
         "cls": 3,
+        "cost": 3,
+        "id": "ULD_429",
+        "name": "Hunter's Pack",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
         "cost": 2,
         "id": "GIL_607t",
         "name": "Hunting Mastiff",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "DAL_589",
+        "name": "Hunting Party",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 5,
@@ -6206,6 +8865,14 @@ module.exports =
         "name": "Hydrologist",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "ULD_154",
+        "name": "Hyena Alpha",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -6312,12 +8979,12 @@ module.exports =
         "series": "UNG"
     },
     {
-        "cls": 12,
-        "cost": 6,
-        "id": "EX1_614",
-        "name": "Illidan Stormrage",
-        "rarity": 5,
-        "series": "CLASSIC"
+        "cls": 14,
+        "cost": 4,
+        "id": "BT_814",
+        "name": "Illidari Felblade",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -6326,6 +8993,14 @@ module.exports =
         "name": "Illuminator",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_514",
+        "name": "Immolation Aura",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 5,
@@ -6344,6 +9019,14 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "WE1_015",
+        "name": "Imp Gang Boss",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "EX1_597",
@@ -6360,12 +9043,140 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 9,
+        "cost": 4,
+        "id": "ULD_324",
+        "name": "Impbalming",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "DAL_605",
+        "name": "Impferno",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 14,
+        "cost": 6,
+        "id": "BT_934",
+        "name": "Imprisoned Antaen",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "BT_211",
+        "name": "Imprisoned Felmaw",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "BT_121",
+        "name": "Imprisoned Gan'arg",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 6,
+        "cost": 1,
+        "id": "BT_258",
+        "name": "Imprisoned Homunculus",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "BT_004",
+        "name": "Imprisoned Observer",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "BT_127",
+        "name": "Imprisoned Satyr",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "BT_305",
+        "name": "Imprisoned Scrap Imp",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "BT_009",
+        "name": "Imprisoned Sungill",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BT_156",
+        "name": "Imprisoned Vilefiend",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "DAL_769",
+        "name": "Improve Morale",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "SCH_525",
+        "name": "In Formation!",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "BT_002",
+        "name": "Incanter's Flow",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BT_731",
+        "name": "Infectious Sporeling",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "OG_045",
         "name": "Infest",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_250",
+        "name": "Infested Goblin",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -6384,6 +9195,22 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "SCH_426",
+        "name": "Infiltrator Lilian",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 6,
+        "cost": 6,
+        "id": "SCH_512",
+        "name": "Initiation",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "CS2_181",
@@ -6398,6 +9225,14 @@ module.exports =
         "name": "Injured Kvaldir",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_271",
+        "name": "Injured Tol'vir",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 4,
@@ -6423,6 +9258,38 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 8,
+        "cost": 3,
+        "id": "SCH_507",
+        "name": "Instructor Fireheart",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "ULD_256",
+        "name": "Into the Fray",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_231",
+        "name": "Intrepid Initiate",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "DRG_248",
+        "name": "Invocation of Frost",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 1,
         "id": "UNG_923",
@@ -6445,6 +9312,14 @@ module.exports =
         "name": "Iron Sensei",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "BT_132",
+        "name": "Ironbark",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -6576,11 +9451,35 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "SCH_351",
+        "name": "Jandice Barov",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "ULD_282",
+        "name": "Jar Dealer",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 4,
         "id": "GVG_094",
         "name": "Jeeves",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "DAL_752",
+        "name": "Jepetto Joybuzz",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 3,
@@ -6596,7 +9495,7 @@ module.exports =
         "id": "LOE_029",
         "name": "Jeweled Scarab",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 8,
@@ -6615,12 +9514,28 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 5,
+        "cost": 6,
+        "id": "SCH_712",
+        "name": "Judicious Junior",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "BOT_404",
         "name": "Juicy Psychmelon",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 9,
+        "cost": 10,
+        "id": "DAL_561",
+        "name": "Jumbo Imp",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 2,
@@ -6636,7 +9551,7 @@ module.exports =
         "id": "LOE_051",
         "name": "Jungle Moonkin",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -6727,6 +9642,22 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 12,
+        "cost": 7,
+        "id": "BT_255",
+        "name": "Kael'thas Sunstrider",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 4,
+        "cost": 10,
+        "id": "DAL_609",
+        "name": "Kalecgos",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
         "cls": 8,
         "cost": 8,
         "id": "UNG_211",
@@ -6744,11 +9675,27 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 2,
+        "id": "BT_309",
+        "name": "Kanrethad Ebonlocke",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
         "cost": 5,
         "id": "KAR_025",
         "name": "Kara Kazham!",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "BT_123",
+        "name": "Kargath Bladefist",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 3,
@@ -6757,6 +9704,14 @@ module.exports =
         "name": "Kathrena Winterwisp",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 14,
+        "cost": 4,
+        "id": "BT_187",
+        "name": "Kayn Sunfury",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -6788,7 +9743,15 @@ module.exports =
         "id": "LOE_017",
         "name": "Keeper of Uldaman",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "DAL_732",
+        "name": "Keeper Stalladris",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -6799,12 +9762,44 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 9,
+        "cost": 6,
+        "id": "BT_196",
+        "name": "Keli'dan the Breaker",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "SCH_717",
+        "name": "Keymaster Alabaster",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "GVG_074",
         "name": "Kezan Mystic",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "DAL_575",
+        "name": "Khadgar",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "ULD_208",
+        "name": "Khartut Defender",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 7,
@@ -6856,6 +9851,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 10,
+        "id": "ULD_304",
+        "name": "King Phaoris",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 8,
         "id": "LOOT_541",
         "name": "King Togwaggle",
@@ -6893,6 +9896,14 @@ module.exports =
         "name": "Kirin Tor Mage",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 4,
+        "id": "DAL_576",
+        "name": "Kirin Tor Tricaster",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 2,
@@ -6976,6 +9987,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "ULD_184",
+        "name": "Kobold Sandtrooper",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_082",
+        "name": "Kobold Stickyfinger",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "AT_099",
         "name": "Kodorider",
@@ -6999,12 +10026,36 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 3,
+        "cost": 4,
+        "id": "SCH_239",
+        "name": "Krolusk Barkstripper",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DRG_099",
+        "name": "Kronx Dragonhoof",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 9,
         "cost": 9,
         "id": "CFM_750",
         "name": "Krul the Unshackled",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "EX1_195",
+        "name": "Kul Tiran Chaplain",
+        "rarity": 3,
+        "series": "CLASSIC"
     },
     {
         "cls": 2,
@@ -7015,12 +10066,28 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 2,
+        "cost": 10,
+        "id": "WE1_022",
+        "name": "Kun the Forgotten King",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "AT_119",
         "name": "Kvaldir Raider",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "SCH_310",
+        "name": "Lab Partner",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 7,
@@ -7037,6 +10104,30 @@ module.exports =
         "name": "Lady in White",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 5,
+        "cost": 7,
+        "id": "BT_334",
+        "name": "Lady Liadrin",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "BT_109",
+        "name": "Lady Vashj",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_605",
+        "name": "Lake Thresher",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 9,
@@ -7095,6 +10186,21 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 6,
+        "id": "DAL_011",
+        "name": "Lazul's Scheme",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "DRG_323",
+        "name": "Learn Draconic",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "CFM_810",
@@ -7144,7 +10250,7 @@ module.exports =
     },
     {
         "cls": 3,
-        "cost": 6,
+        "cost": 5,
         "id": "LOOT_080",
         "name": "Lesser Emerald Spellstone",
         "rarity": 3,
@@ -7215,12 +10321,52 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 5,
+        "cost": 9,
+        "id": "BT_024",
+        "name": "Libram of Hope",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 5,
+        "cost": 5,
+        "id": "BT_011",
+        "name": "Libram of Justice",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "BT_025",
+        "name": "Libram of Wisdom",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "YOD_030",
+        "name": "Licensed Adventurer",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "GIL_622",
         "name": "Lifedrinker",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 2,
+        "cost": 3,
+        "id": "DAL_355",
+        "name": "Lifeweaver",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 6,
@@ -7255,6 +10401,38 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 6,
+        "cost": 6,
+        "id": "WE1_030",
+        "name": "Lightbomb",
+        "rarity": 4,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "DAL_568",
+        "name": "Lightforged Blessing",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 5,
+        "cost": 7,
+        "id": "DRG_231",
+        "name": "Lightforged Crusader",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "DRG_232",
+        "name": "Lightforged Zealot",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 5,
         "cost": 4,
         "id": "UNG_962",
@@ -7263,12 +10441,27 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 2,
+        "id": "SCH_427",
+        "name": "Lightning Bloom",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 8,
         "cost": 1,
         "id": "EX1_238",
         "name": "Lightning Bolt",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "DRG_219",
+        "name": "Lightning Breath",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 8,
@@ -7335,12 +10528,36 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 10,
+        "cost": 3,
+        "id": "ULD_708",
+        "name": "Livewire Lance",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DRG_068",
+        "name": "Living Dragonbreath",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "UNG_111",
         "name": "Living Mana",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 10,
+        "id": "ULD_193",
+        "name": "Living Monument",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 2,
@@ -7367,6 +10584,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "WE1_026",
+        "name": "Lock and Load",
+        "rarity": 4,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "LOOT_124",
@@ -7391,6 +10616,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 3,
+        "id": "SCH_526",
+        "name": "Lord Barov",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 9,
         "cost": 7,
         "id": "GIL_825",
@@ -7405,6 +10638,14 @@ module.exports =
         "name": "Lord Jaraxxus",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_428",
+        "name": "Lorekeeper Polkelt",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -7469,6 +10710,14 @@ module.exports =
         "name": "Lowly Squire",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 2,
+        "cost": 8,
+        "id": "DAL_357",
+        "name": "Lucentbark",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 7,
@@ -7537,10 +10786,26 @@ module.exports =
     {
         "cls": 12,
         "cost": 6,
+        "id": "DAL_751",
+        "name": "Mad Summoner",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
         "id": "CFM_672",
         "name": "Madam Goya",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "DAL_729",
+        "name": "Madame Lazul",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -7567,12 +10832,52 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 14,
+        "cost": 3,
+        "id": "SCH_276",
+        "name": "Magehunter",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DAL_773",
+        "name": "Magic Carpet",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "DAL_182",
+        "name": "Magic Dart Frog",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "DAL_608",
+        "name": "Magic Trick",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 10,
         "cost": 4,
         "id": "AT_067",
         "name": "Magnataur Alpha",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BT_850",
+        "name": "Magtheridon",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -7584,11 +10889,27 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "BT_737",
+        "name": "Maiev Shadowsong",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
         "cost": 9,
         "id": "BRM_027",
         "name": "Majordomo Executus",
         "rarity": 5,
         "series": "BRM"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "ULD_431",
+        "name": "Making Mummies",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 9,
@@ -7639,6 +10960,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "DRG_270",
+        "name": "Malygos, Aspect of Magic",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 2,
         "id": "EX1_055",
@@ -7655,12 +10984,44 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 14,
+        "cost": 1,
+        "id": "BT_753",
+        "name": "Mana Burn",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "DAL_603",
+        "name": "Mana Cyclone",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "CFM_606",
         "name": "Mana Geode",
         "rarity": 4,
         "series": "CFM"
+    },
+    {
+        "cls": 4,
+        "cost": 8,
+        "id": "DRG_109",
+        "name": "Mana Giant",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DAL_748",
+        "name": "Mana Reservoir",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 8,
@@ -7685,6 +11046,14 @@ module.exports =
         "name": "Mana Wyrm",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "SCH_283",
+        "name": "Manafeeder Panthara",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 4,
@@ -7735,12 +11104,44 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 3,
+        "cost": 4,
+        "id": "DAL_371",
+        "name": "Marked Shot",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 14,
+        "cost": 4,
+        "id": "SCH_252",
+        "name": "Marrowslicer",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GIL_683",
         "name": "Marsh Drake",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 2,
+        "cost": 7,
+        "id": "BT_133",
+        "name": "Marsh Hydra",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "BT_115",
+        "name": "Marshspawn",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -7765,6 +11166,14 @@ module.exports =
         "name": "Mass Hysteria",
         "rarity": 3,
         "series": "TRL"
+    },
+    {
+        "cls": 6,
+        "cost": 9,
+        "id": "DAL_724",
+        "name": "Mass Resurrection",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -7951,12 +11360,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 4,
+        "cost": 3,
+        "id": "DAL_163",
+        "name": "Messenger Raven",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "GVG_048",
         "name": "Metaltooth Leaper",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 14,
+        "cost": 5,
+        "id": "BT_429",
+        "name": "Metamorphosis",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 4,
@@ -7981,6 +11406,14 @@ module.exports =
         "name": "Micro Machine",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "ULD_217",
+        "name": "Micro Mummy",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -8048,11 +11481,27 @@ module.exports =
     },
     {
         "cls": 6,
+        "cost": 3,
+        "id": "DRG_308",
+        "name": "Mindflayer Kaahrj",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 6,
         "cost": 4,
         "id": "EX1_345",
         "name": "Mindgames",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "SCH_159",
+        "name": "Mindrender Illucia",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -8087,6 +11536,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_229",
+        "name": "Mischief Maker",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "EX1_533",
@@ -8111,20 +11568,20 @@ module.exports =
         "series": "CFM"
     },
     {
-        "cls": 9,
-        "cost": 2,
-        "id": "GVG_018",
-        "name": "Mistress of Pain",
-        "rarity": 3,
-        "series": "GVG"
-    },
-    {
         "cls": 7,
         "cost": 4,
         "id": "GIL_510",
         "name": "Mistwraith",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BT_733",
+        "name": "Mo'arg Artificer",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -8152,6 +11609,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 1,
+        "id": "ULD_705",
+        "name": "Mogu Cultist",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 8,
+        "cost": 9,
+        "id": "ULD_169",
+        "name": "Mogu Fleshshaper",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 4,
         "id": "EX1_396",
         "name": "Mogu'shan Warden",
@@ -8167,12 +11640,36 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 3,
+        "cost": 4,
+        "id": "BT_212",
+        "name": "Mok'Nathal Lion",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 10,
         "cost": 1,
         "id": "UNG_929",
         "name": "Molten Blade",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "SCH_271",
+        "name": "Molten Blast",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "DRG_500",
+        "name": "Molten Breath",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -8225,6 +11722,14 @@ module.exports =
     {
         "cls": 12,
         "cost": 5,
+        "id": "ULD_702",
+        "name": "Mortuary Machine",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
         "id": "TRL_532",
         "name": "Mosh'Ogg Announcer",
         "rarity": 4,
@@ -8268,7 +11773,15 @@ module.exports =
         "id": "LOE_050",
         "name": "Mounted Raptor",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 5,
+        "id": "SCH_400",
+        "name": "Mozaki, Master Duelist",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -8277,6 +11790,14 @@ module.exports =
         "name": "Muck Hunter",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 5,
+        "id": "DAL_052",
+        "name": "Muckmorpher",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -8304,11 +11825,19 @@ module.exports =
     },
     {
         "cls": 2,
-        "cost": 10,
+        "cost": 9,
         "id": "BOT_523",
         "name": "Mulchmuncher",
         "rarity": 3,
         "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "BT_019",
+        "name": "Murgur Murgurgle",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 8,
@@ -8366,12 +11895,28 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "ULD_723",
+        "name": "Murmy",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 6,
+        "cost": 8,
+        "id": "DRG_090",
+        "name": "Murozond the Infinite",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 6,
         "cost": 2,
         "id": "LOE_006",
         "name": "Museum Curator",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 5,
@@ -8380,6 +11925,13 @@ module.exports =
         "name": "Muster for Battle",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 8,
+        "id": "DAL_071",
+        "name": "Mutate",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 7,
@@ -8399,11 +11951,27 @@ module.exports =
     },
     {
         "cls": 5,
+        "cost": 2,
+        "id": "DAL_571",
+        "name": "Mysterious Blade",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 5,
         "cost": 6,
         "id": "AT_079",
         "name": "Mysterious Challenger",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "WE1_024",
+        "name": "Mysterious Challenger",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -8412,6 +11980,14 @@ module.exports =
         "name": "N'Zoth, the Corruptor",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 10,
+        "id": "WE1_035",
+        "name": "N'Zoth, the Corruptor",
+        "rarity": 5,
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -8430,12 +12006,28 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "ULD_435",
+        "name": "Naga Sand Witch",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 8,
         "id": "LOE_038",
         "name": "Naga Sea Witch",
         "rarity": 4,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 10,
+        "id": "BT_163",
+        "name": "Nagrand Slam",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -8454,12 +12046,36 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 6,
+        "cost": 8,
+        "id": "EX1_198",
+        "name": "Natalie Seline",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 2,
         "cost": 1,
         "id": "EX1_161",
         "name": "Naturalize",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "SCH_333",
+        "name": "Nature Studies",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "DRG_031",
+        "name": "Necrium Apothecary",
+        "rarity": 4,
+        "series": "DRG"
     },
     {
         "cls": 7,
@@ -8479,7 +12095,7 @@ module.exports =
     },
     {
         "cls": 3,
-        "cost": 5,
+        "cost": 4,
         "id": "BOT_039",
         "name": "Necromechanic",
         "rarity": 4,
@@ -8500,6 +12116,22 @@ module.exports =
         "name": "Nefarian",
         "rarity": 5,
         "series": "BRM"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_196",
+        "name": "Neferset Ritualist",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "ULD_161",
+        "name": "Neferset Thrasher",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 8,
@@ -8551,6 +12183,14 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 2,
+        "id": "DRG_205",
+        "name": "Nether Breath",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 9,
         "cost": 3,
         "id": "BOT_226",
         "name": "Nethersoul Buster",
@@ -8564,6 +12204,38 @@ module.exports =
         "name": "Netherspite Historian",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_321",
+        "name": "Netherwalker",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 4,
+        "cost": 3,
+        "id": "BT_003",
+        "name": "Netherwind Portal",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 14,
+        "cost": 9,
+        "id": "BT_481",
+        "name": "Nethrandamus",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "DAL_570",
+        "name": "Never Surrender!",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -8614,6 +12286,30 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 9,
+        "cost": 4,
+        "id": "BT_301",
+        "name": "Nightshade Matron",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "DAL_377",
+        "name": "Nine Lives",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 8,
+        "cost": 6,
+        "id": "DRG_224",
+        "name": "Nithogg",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "EX1_130",
@@ -8638,12 +12334,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 5,
+        "cost": 10,
+        "id": "DAL_581",
+        "name": "Nozari",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 9,
         "id": "EX1_560",
         "name": "Nozdormu",
         "rarity": 5,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 4,
+        "id": "DRG_309",
+        "name": "Nozdormu the Timeless",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 2,
@@ -8654,12 +12366,28 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 2,
+        "cost": 5,
+        "id": "ULD_292",
+        "name": "Oasis Surger",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
+        "cost": 6,
+        "id": "DAL_376",
+        "name": "Oblivitron",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
         "cls": 10,
         "cost": 7,
         "id": "LOE_009",
         "name": "Obsidian Destroyer",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -8676,6 +12404,14 @@ module.exports =
         "name": "Obsidian Statue",
         "rarity": 4,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "ULD_177",
+        "name": "Octosari",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -8700,6 +12436,14 @@ module.exports =
         "name": "Ogre Warmaul",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_710",
+        "name": "Ogremancer",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -8732,6 +12476,14 @@ module.exports =
         "name": "Omega Defender",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "DAL_770",
+        "name": "Omega Devastator",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 6,
@@ -8772,6 +12524,14 @@ module.exports =
         "name": "Onyx Bishop",
         "rarity": 3,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "SCH_230",
+        "name": "Onyx Magescribe",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -8822,12 +12582,44 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "BT_730",
+        "name": "Overconfident Orc",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 2,
+        "cost": 7,
+        "id": "ULD_273",
+        "name": "Overflow",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 2,
+        "cost": 4,
+        "id": "BT_130",
+        "name": "Overgrowth",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 10,
         "cost": 3,
         "id": "TRL_360",
         "name": "Overlord's Whip",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "SCH_604",
+        "name": "Overwhelm",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -8838,6 +12630,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 3,
+        "cost": 2,
+        "id": "BT_203",
+        "name": "Pack Tactics",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "KAR_030a",
@@ -8846,12 +12646,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "DRG_056",
+        "name": "Parachute Brigand",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "GIL_685",
         "name": "Paragon of Light",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "SCH_606",
+        "name": "Partner Assignment",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -8870,12 +12686,36 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_248",
+        "name": "Pen Flinger",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "ULD_714",
+        "name": "Penance",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
         "cls": 7,
         "cost": 3,
         "id": "EX1_133",
         "name": "Perdition's Blade",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ULD_179",
+        "name": "Phalanx Commander",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -8892,6 +12732,30 @@ module.exports =
         "name": "Phantom Militia",
         "rarity": 3,
         "series": "GIL"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "ULD_186",
+        "name": "Pharaoh Cat",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 5,
+        "cost": 6,
+        "id": "ULD_143",
+        "name": "Pharaoh's Blessing",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "DRG_252",
+        "name": "Phase Stalker",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 7,
@@ -8966,6 +12830,22 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 14,
+        "cost": 9,
+        "id": "BT_486",
+        "name": "Pit Commander",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "ULD_190",
+        "name": "Pit Crocolisk",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 5,
         "id": "AT_101",
@@ -8987,7 +12867,55 @@ module.exports =
         "id": "LOE_010",
         "name": "Pit Snake",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "SCH_706",
+        "name": "Plagiarize",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 6,
+        "cost": 9,
+        "id": "ULD_718",
+        "name": "Plague of Death",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "ULD_717",
+        "name": "Plague of Flames",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "ULD_715",
+        "name": "Plague of Madness",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "ULD_172",
+        "name": "Plague of Murlocs",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "ULD_707",
+        "name": "Plague of Wrath",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 7,
@@ -8996,6 +12924,22 @@ module.exports =
         "name": "Plague Scientist",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "SCH_711",
+        "name": "Plagued Protodrake",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_069",
+        "name": "Platebreaker",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -9014,8 +12958,24 @@ module.exports =
         "series": "ICC"
     },
     {
-        "cls": 7,
+        "cls": 10,
+        "cost": 3,
+        "id": "SCH_317",
+        "name": "Playmaker",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 9,
         "cost": 2,
+        "id": "DAL_602",
+        "name": "Plot Twist",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
         "id": "BOT_283",
         "name": "Pogo-Hopper",
         "rarity": 3,
@@ -9062,6 +13022,22 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_582",
+        "name": "Portal Keeper",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DAL_565",
+        "name": "Portal Overfiend",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
         "cls": 9,
         "cost": 6,
         "id": "LOOT_306",
@@ -9086,6 +13062,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_352",
+        "name": "Potion of Illusion",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 6,
         "cost": 1,
         "id": "CFM_603",
@@ -9102,11 +13086,27 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "DAL_544",
+        "name": "Potion Vendor",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 2,
         "id": "TRL_243",
         "name": "Pounce",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 4,
+        "cost": 8,
+        "id": "DAL_578",
+        "name": "Power of Creation",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 2,
@@ -9123,6 +13123,14 @@ module.exports =
         "name": "Power Overwhelming",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "SCH_136",
+        "name": "Power Word: Feast",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 6,
@@ -9165,6 +13173,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 7,
+        "cost": 1,
+        "id": "DRG_030",
+        "name": "Praise Galakrond!",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "TRL_244",
@@ -9178,6 +13194,14 @@ module.exports =
         "name": "Preparation",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "ULD_152",
+        "name": "Pressure Plate",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 6,
@@ -9194,6 +13218,14 @@ module.exports =
         "name": "Priestess of Elune",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 14,
+        "cost": 7,
+        "id": "BT_493",
+        "name": "Priestess of Fury",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 8,
@@ -9244,12 +13276,28 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "DRG_254",
+        "name": "Primordial Explorer",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 4,
         "cost": 2,
         "id": "UNG_941",
         "name": "Primordial Glyph",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_270",
+        "name": "Primordial Studies",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -9324,6 +13372,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "SCH_539",
+        "name": "Professor Slate",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 6,
         "cost": 7,
         "id": "EX1_350",
@@ -9338,6 +13394,14 @@ module.exports =
         "name": "Protect the King!",
         "rarity": 3,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_551",
+        "name": "Proud Defender",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 6,
@@ -9357,11 +13421,27 @@ module.exports =
     },
     {
         "cls": 6,
+        "cost": 5,
+        "id": "BT_253",
+        "name": "Psyche Split",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 6,
         "cost": 7,
         "id": "LOOT_008",
         "name": "Psychic Scream",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "ULD_268",
+        "name": "Psychopomp",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -9406,6 +13486,14 @@ module.exports =
     {
         "cls": 4,
         "cost": 10,
+        "id": "ULD_216",
+        "name": "Puzzle Box of Yogg-Saron",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 4,
+        "cost": 10,
         "id": "EX1_279",
         "name": "Pyroblast",
         "rarity": 4,
@@ -9444,6 +13532,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 9,
+        "cost": 2,
+        "id": "GVG_018",
+        "name": "Queen of Pain",
+        "rarity": 3,
+        "series": "GVG"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "EX1_044",
@@ -9452,12 +13548,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_157",
+        "name": "Questing Explorer",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "BRM_013",
         "name": "Quick Shot",
         "rarity": 1,
         "series": "BRM"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_197",
+        "name": "Quicksand Elemental",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -9484,6 +13596,22 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 9,
+        "cost": 3,
+        "id": "DAL_007",
+        "name": "Rafaam's Scheme",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 14,
+        "cost": 4,
+        "id": "BT_416",
+        "name": "Raging Felscreamer",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "EX1_412",
@@ -9500,12 +13628,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "WE1_037",
+        "name": "Ragnaros the Firelord",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 5,
         "cost": 8,
         "id": "OG_229",
         "name": "Ragnaros, Lightlord",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "ULD_433",
+        "name": "Raid the Sky Temple",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 7,
@@ -9516,12 +13660,27 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 9,
+        "cost": 1,
+        "id": "DRG_206",
+        "name": "Rain of Fire",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 6,
         "id": "TRL_351",
         "name": "Rain of Toads",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 6,
+        "id": "SCH_514",
+        "name": "Raise Dead",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 5,
@@ -9540,6 +13699,22 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "ULD_151",
+        "name": "Ramkahen Wildtamer",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "DRG_022",
+        "name": "Ramming Speed",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 2,
         "id": "CS2_104",
@@ -9550,10 +13725,26 @@ module.exports =
     {
         "cls": 3,
         "cost": 1,
+        "id": "DAL_373",
+        "name": "Rapid Fire",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
         "id": "UNG_914",
         "name": "Raptor Hatchling",
         "rarity": 3,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_273",
+        "name": "Ras Frostwhisper",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 3,
@@ -9578,6 +13769,14 @@ module.exports =
         "name": "Ratcatcher",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 10,
+        "cost": 9,
+        "id": "SCH_621",
+        "name": "Rattlegore",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -9617,7 +13816,7 @@ module.exports =
         "id": "LOE_115",
         "name": "Raven Idol",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -9644,6 +13843,14 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 4,
+        "cost": 1,
+        "id": "DAL_577",
+        "name": "Ray of Frost",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 6,
         "cost": 5,
         "id": "CFM_020",
@@ -9666,6 +13873,14 @@ module.exports =
         "name": "Razorpetal Volley",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "SCH_238",
+        "name": "Reaper's Scythe",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 5,
@@ -9714,6 +13929,14 @@ module.exports =
         "name": "Recruiter",
         "rarity": 4,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DAL_749",
+        "name": "Recurring Villain",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 2,
@@ -9779,12 +14002,20 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "BT_197",
+        "name": "Reliquary of Souls",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
         "cls": 9,
         "cost": 1,
         "id": "LOE_116",
         "name": "Reliquary Seeker",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -9795,12 +14026,28 @@ module.exports =
         "series": "BRM"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "BT_252",
+        "name": "Renew",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "LOE_011",
         "name": "Reno Jackson",
         "rarity": 5,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 4,
+        "cost": 6,
+        "id": "ULD_238",
+        "name": "Reno the Relicologist",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 9,
@@ -9811,12 +14058,28 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 9,
+        "cost": 2,
+        "id": "WE1_032",
+        "name": "Renounce Darkness",
+        "rarity": 4,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "EX1_379",
         "name": "Repentance",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BT_190",
+        "name": "Replicat-o-tron",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -9833,6 +14096,14 @@ module.exports =
         "name": "Research Project",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "ULD_206",
+        "name": "Restless Mummy",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 6,
@@ -9875,6 +14146,22 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 9,
+        "cost": 6,
+        "id": "ULD_165",
+        "name": "Riftcleaver",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "DRG_008",
+        "name": "Righteous Cause",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 5,
         "cost": 1,
         "id": "ICC_038",
@@ -9883,12 +14170,60 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "EX1_184",
+        "name": "Righteousness",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 9,
         "cost": 6,
         "id": "LOOT_415",
         "name": "Rin, the First Disciple",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 2,
+        "cost": 2,
+        "id": "YOD_001",
+        "name": "Rising Winds",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "YOD_022",
+        "name": "Risky Skipper",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "DRG_021",
+        "name": "Ritual Chopper",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "SCH_146",
+        "name": "Robes of Protection",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BT_723",
+        "name": "Rocket Augmerchant",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 10,
@@ -9915,12 +14250,28 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 4,
+        "cost": 5,
+        "id": "DRG_321",
+        "name": "Rolling Fireball",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 8,
         "id": "ICC_405",
         "name": "Rotface",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 5,
+        "id": "YOD_036",
+        "name": "Rotnest Drake",
+        "rarity": 3,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -9944,7 +14295,7 @@ module.exports =
         "id": "LOE_016",
         "name": "Rumbling Elemental",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -9955,6 +14306,14 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 8,
+        "cost": 2,
+        "id": "SCH_301",
+        "name": "Rune Dagger",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 7,
         "cost": 4,
         "id": "ICC_240",
@@ -9963,12 +14322,44 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 2,
+        "cost": 6,
+        "id": "SCH_612",
+        "name": "Runic Carvings",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "KAR_029",
         "name": "Runic Egg",
         "rarity": 1,
         "series": "KAR"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "BT_720",
+        "name": "Ruststeed Raider",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "BT_160",
+        "name": "Rustsworn Cultist",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "BT_008",
+        "name": "Rustsworn Initiate",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -10008,7 +14399,31 @@ module.exports =
         "id": "LOE_027",
         "name": "Sacred Trial",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DAL_088",
+        "name": "Safeguard",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "ULD_280",
+        "name": "Sahket Sapper",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 5,
+        "cost": 3,
+        "id": "ULD_438",
+        "name": "Salhet's Pride",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -10017,6 +14432,22 @@ module.exports =
         "name": "Salty Dog",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "DRG_258",
+        "name": "Sanctuary",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "DRG_233",
+        "name": "Sand Breath",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 6,
@@ -10033,6 +14464,30 @@ module.exports =
         "name": "Sandbinder",
         "rarity": 4,
         "series": "GIL"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "ULD_270",
+        "name": "Sandhoof Waterbearer",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "ULD_158",
+        "name": "Sandstorm Elemental",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "ULD_439",
+        "name": "Sandwasp Queen",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 9,
@@ -10065,6 +14520,14 @@ module.exports =
         "name": "Sated Threshadon",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 9,
+        "id": "DRG_402",
+        "name": "Sathrovarr",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 2,
@@ -10107,6 +14570,22 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 5,
+        "cost": 5,
+        "id": "YOD_043",
+        "name": "Scalelord",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "DRG_081",
+        "name": "Scalerider",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "GIL_601",
@@ -10121,6 +14600,14 @@ module.exports =
         "name": "Scarab Egg",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "DAL_726",
+        "name": "Scargil",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -10139,12 +14626,60 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 6,
+        "cost": 1,
+        "id": "EX1_196",
+        "name": "Scarlet Subjugator",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 3,
+        "cost": 6,
+        "id": "ULD_410",
+        "name": "Scarlet Webweaver",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 3,
+        "cost": 2,
+        "id": "BT_213",
+        "name": "Scavenger's Ingenuity",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "EX1_531",
         "name": "Scavenging Hyena",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "BT_732",
+        "name": "Scavenging Shivarra",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "SCH_307",
+        "name": "School Spirits",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "DRG_019",
+        "name": "Scion of Ruin",
+        "rarity": 4,
+        "series": "DRG"
     },
     {
         "cls": 4,
@@ -10169,6 +14704,30 @@ module.exports =
         "name": "Scourgelord Garrosh",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 10,
+        "cost": 5,
+        "id": "BT_249",
+        "name": "Scrap Golem",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 3,
+        "cost": 4,
+        "id": "BT_205",
+        "name": "Scrap Shot",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 10,
+        "id": "BT_155",
+        "name": "Scrapyard Colossus",
+        "rarity": 3,
+        "series": "BT"
     },
     {
         "cls": 10,
@@ -10211,6 +14770,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 7,
+        "cost": 3,
+        "id": "DRG_247",
+        "name": "Seal Fate",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "AT_074",
@@ -10243,6 +14810,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 7,
+        "cost": 1,
+        "id": "SCH_305",
+        "name": "Secret Passage",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
         "cls": 3,
         "cost": 1,
         "id": "BOT_402",
@@ -10259,6 +14834,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 2,
+        "cost": 1,
+        "id": "DRG_317",
+        "name": "Secure the Deck",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 6,
         "id": "BOT_218",
@@ -10273,6 +14856,14 @@ module.exports =
         "name": "Seeping Oozeling",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "SCH_622",
+        "name": "Self-Sharpening Sword",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 5,
@@ -10301,10 +14892,26 @@ module.exports =
     {
         "cls": 12,
         "cost": 2,
+        "id": "ULD_174",
+        "name": "Serpent Egg",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
         "id": "TRL_057",
         "name": "Serpent Ward",
         "rarity": 3,
         "series": "TRL"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "BT_100",
+        "name": "Serpentshrine Portal",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 7,
@@ -10329,6 +14936,14 @@ module.exports =
         "name": "Servant of Yogg-Saron",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "BT_254",
+        "name": "Sethekk Veilweaver",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -10363,6 +14978,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 9,
+        "cost": 1,
+        "id": "BT_306",
+        "name": "Shadow Council",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 6,
         "cost": 6,
         "id": "ICC_235",
@@ -10372,11 +14995,19 @@ module.exports =
     },
     {
         "cls": 6,
-        "cost": 4,
+        "cost": 3,
         "id": "EX1_334",
         "name": "Shadow Madness",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "ULD_286",
+        "name": "Shadow of Death",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 7,
@@ -10385,6 +15016,14 @@ module.exports =
         "name": "Shadow Rager",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "YOD_017",
+        "name": "Shadow Sculptor",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -10417,6 +15056,14 @@ module.exports =
         "name": "Shadow Word: Horror",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "EX1_197",
+        "name": "Shadow Word: Ruin",
+        "rarity": 4,
+        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -10475,6 +15122,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "BT_188",
+        "name": "Shadowjeweler Hanar",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 3,
+        "id": "SCH_517",
+        "name": "Shadowlight Scholar",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 6,
         "cost": 8,
         "id": "ICC_830",
@@ -10488,6 +15151,14 @@ module.exports =
         "name": "Shadowstep",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 6,
+        "cost": 2,
+        "id": "DAL_030",
+        "name": "Shadowy Figure",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 7,
@@ -10506,6 +15177,14 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 7,
+        "cost": 3,
+        "id": "WE1_028",
+        "name": "Shaku, the Collector",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 3,
         "cost": 3,
         "id": "CFM_336",
@@ -10520,6 +15199,22 @@ module.exports =
         "name": "Shallow Gravedigger",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "SCH_607",
+        "name": "Shan'do Wildclaw",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 3,
+        "id": "SCH_355",
+        "name": "Shardshatter Mystic",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -10538,6 +15233,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 8,
+        "cost": 5,
+        "id": "BT_114",
+        "name": "Shattered Rumbler",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "UNG_101",
@@ -10552,6 +15255,22 @@ module.exports =
         "name": "Sherazin, Corpse Flower",
         "rarity": 5,
         "series": "UNG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_242",
+        "name": "Shield of Galakrond",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "SCH_524",
+        "name": "Shield of Honor",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 10,
@@ -10617,6 +15336,22 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 7,
+        "cost": 4,
+        "id": "SCH_234",
+        "name": "Shifty Sophomore",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "DAL_587",
+        "name": "Shimmerfly",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "LOOT_193",
@@ -10655,6 +15390,14 @@ module.exports =
         "name": "Shooting Star",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "YOD_010",
+        "name": "Shotbot",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 9,
@@ -10697,6 +15440,22 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 2,
+        "cost": 2,
+        "id": "DRG_312",
+        "name": "Shrubadier",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "DRG_091",
+        "name": "Shu'ma",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 9,
         "id": "GIL_820",
@@ -10714,6 +15473,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "EX1_186",
+        "name": "SI:7 Infiltrator",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "ULD_178",
+        "name": "Siamat",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "AT_098",
         "name": "Sideshow Spelleater",
@@ -10727,6 +15502,14 @@ module.exports =
         "name": "Siege Engine",
         "rarity": 3,
         "series": "GVG"
+    },
+    {
+        "cls": 9,
+        "cost": 7,
+        "id": "EX1_185",
+        "name": "Siegebreaker",
+        "rarity": 3,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -10841,6 +15624,14 @@ module.exports =
     },
     {
         "cls": 9,
+        "cost": 1,
+        "id": "ULD_160",
+        "name": "Sinister Deal",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 9,
         "cost": 6,
         "id": "EX1_309",
         "name": "Siphon Soul",
@@ -10853,7 +15644,15 @@ module.exports =
         "id": "LOE_076",
         "name": "Sir Finley Mrrgglton",
         "rarity": 5,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "ULD_500",
+        "name": "Sir Finley of the Sands",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -10872,6 +15671,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 6,
+        "cost": 7,
+        "id": "BT_341",
+        "name": "Skeletal Dragon",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 6,
         "id": "OG_339",
@@ -10888,6 +15695,14 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 14,
+        "cost": 6,
+        "id": "BT_601",
+        "name": "Skull of Gul'dan",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 9,
         "cost": 5,
         "id": "LOOT_420",
@@ -10896,12 +15711,68 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 5,
+        "cost": 3,
+        "id": "DRG_225",
+        "name": "Sky Claw",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "YOD_038",
+        "name": "Sky Gen'ral Kragg",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "DRG_024",
+        "name": "Sky Raider",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "DRG_023",
+        "name": "Skybarge",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 7,
         "id": "AT_070",
         "name": "Skycap'n Kragg",
         "rarity": 5,
         "series": "AT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "YOD_028",
+        "name": "Skydiving Instructor",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_072",
+        "name": "Skyfin",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "YOD_016",
+        "name": "Skyvateer",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -10936,6 +15807,14 @@ module.exports =
         "series": "NAXX"
     },
     {
+        "cls": 8,
+        "cost": 1,
+        "id": "DAL_433",
+        "name": "Sludge Slurper",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "CFM_325",
@@ -10960,6 +15839,14 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 12,
+        "cost": 6,
+        "id": "SCH_709",
+        "name": "Smug Senior",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 3,
         "cost": 1,
         "id": "CFM_334",
@@ -10974,6 +15861,14 @@ module.exports =
         "name": "Smuggler's Run",
         "rarity": 1,
         "series": "CFM"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BOT_700",
+        "name": "SN1P-SN4P",
+        "rarity": 5,
+        "series": "BOT"
     },
     {
         "cls": 3,
@@ -10998,6 +15893,14 @@ module.exports =
         "name": "Snapjaw Shellfighter",
         "rarity": 4,
         "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "SCH_708",
+        "name": "Sneaky Delinquent",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -11055,6 +15958,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_771",
+        "name": "Soldier of Fortune",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 5,
         "cost": 5,
         "id": "BRM_001",
@@ -11087,6 +15998,14 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 12,
+        "cost": 6,
+        "id": "SCH_530",
+        "name": "Sorcerous Substitute",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 9,
         "cost": 1,
         "id": "BOT_263",
@@ -11095,12 +16014,68 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 6,
+        "cost": 7,
+        "id": "BT_198",
+        "name": "Soul Mirror",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
         "cls": 2,
         "cost": 4,
         "id": "EX1_158",
         "name": "Soul of the Forest",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "DAL_710",
+        "name": "Soul of the Murloc",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "SCH_701",
+        "name": "Soul Shear",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 4,
+        "id": "BT_488",
+        "name": "Soul Split",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "BT_727",
+        "name": "Soulbound Ashtongue",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 7,
+        "id": "SCH_703",
+        "name": "Soulciologist Malicia",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 5,
+        "id": "SCH_704",
+        "name": "Soulshard Lapidary",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 9,
@@ -11191,6 +16166,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 3,
+        "id": "SCH_182",
+        "name": "Speaker Gidra",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 7,
         "cost": 4,
         "id": "GIL_672",
@@ -11215,12 +16198,28 @@ module.exports =
         "series": "ICC"
     },
     {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_491",
+        "name": "Spectral Sight",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
         "cls": 4,
         "cost": 3,
         "id": "tt_010",
         "name": "Spellbender",
         "rarity": 4,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DAL_089",
+        "name": "Spellbook Binder",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -11248,6 +16247,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 3,
+        "id": "DAL_081",
+        "name": "Spellward Jeweler",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "ICC_856",
         "name": "Spellweaver",
@@ -11261,6 +16268,14 @@ module.exports =
         "name": "Spellzerker",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_259",
+        "name": "Sphere of Sapience",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 3,
@@ -11296,7 +16311,7 @@ module.exports =
     },
     {
         "cls": 9,
-        "cost": 2,
+        "cost": 1,
         "id": "BOT_222",
         "name": "Spirit Bomb",
         "rarity": 1,
@@ -11317,6 +16332,14 @@ module.exports =
         "name": "Spirit Echo",
         "rarity": 4,
         "series": "UNG"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "SCH_700",
+        "name": "Spirit Jailer",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 6,
@@ -11416,11 +16439,19 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 7,
+        "cost": 6,
         "id": "LOOT_539",
         "name": "Spiteful Summoner",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_182",
+        "name": "Spitting Camel",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 2,
@@ -11429,6 +16460,14 @@ module.exports =
         "name": "Splintergraft",
         "rarity": 5,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "ULD_413",
+        "name": "Splitting Axe",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -11477,6 +16516,22 @@ module.exports =
         "name": "Springpaw",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "BT_701",
+        "name": "Spymistress",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "DRG_211",
+        "name": "Squallhunter",
+        "rarity": 1,
+        "series": "DRG"
     },
     {
         "cls": 6,
@@ -11551,6 +16606,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 14,
+        "cost": 4,
+        "id": "SCH_603",
+        "name": "Star Student Stelina",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "NEW1_007",
@@ -11565,6 +16628,14 @@ module.exports =
         "name": "Stargazer Luna",
         "rarity": 5,
         "series": "BOT"
+    },
+    {
+        "cls": 4,
+        "cost": 2,
+        "id": "BT_014",
+        "name": "Starscryer",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 4,
@@ -11583,12 +16654,28 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 2,
+        "cost": 2,
+        "id": "YOD_040",
+        "name": "Steel Beetle",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "BOT_603",
         "name": "Steel Rager",
         "rarity": 1,
         "series": "BOT"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_522",
+        "name": "Steeldancer",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -11605,6 +16692,14 @@ module.exports =
         "name": "Steward of Darkshire",
         "rarity": 3,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_245",
+        "name": "Steward of Scrolls",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 3,
@@ -11680,6 +16775,14 @@ module.exports =
     },
     {
         "cls": 8,
+        "cost": 1,
+        "id": "DRG_215",
+        "name": "Storm's Wrath",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 8,
         "cost": 2,
         "id": "OG_206",
         "name": "Stormcrack",
@@ -11695,12 +16798,28 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "DRG_007",
+        "name": "Stormhammer",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 12,
         "cost": 7,
         "id": "UNG_813",
         "name": "Stormwatcher",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 7,
+        "cost": 5,
+        "id": "DRG_034",
+        "name": "Stowaway",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -11728,6 +16847,14 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 1,
+        "id": "DRG_051",
+        "name": "Strength in Numbers",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 2,
         "cost": 4,
         "id": "ICC_807",
         "name": "Strongshell Scavenger",
@@ -11741,6 +16868,14 @@ module.exports =
         "name": "Stubborn Gastropod",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 5,
+        "cost": 2,
+        "id": "ULD_728",
+        "name": "Subdue",
+        "rarity": 1,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -11788,7 +16923,7 @@ module.exports =
         "id": "LOE_086",
         "name": "Summoning Stone",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -11816,6 +16951,30 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "DAL_086",
+        "name": "Sunreaver Spy",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "DAL_539",
+        "name": "Sunreaver Warmage",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "ULD_180",
+        "name": "Sunstruck Henchman",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 6,
         "id": "EX1_032",
         "name": "Sunwalker",
@@ -11831,12 +16990,44 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 12,
+        "cost": 8,
+        "id": "BT_734",
+        "name": "Supreme Abyssal",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "ULD_140",
+        "name": "Supreme Archaeology",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 8,
+        "cost": 1,
+        "id": "DRG_216",
+        "name": "Surging Tempest",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 6,
         "cost": 3,
         "id": "TRL_500",
         "name": "Surrender to Madness",
         "rarity": 4,
         "series": "TRL"
+    },
+    {
+        "cls": 2,
+        "cost": 10,
+        "id": "SCH_609",
+        "name": "Survival of the Fittest",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -11863,6 +17054,22 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 8,
+        "cost": 7,
+        "id": "DAL_431",
+        "name": "Swampqueen Hagatha",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 3,
+        "cost": 6,
+        "id": "ULD_713",
+        "name": "Swarm of Locusts",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 7,
         "cost": 1,
         "id": "KAR_069",
@@ -11871,12 +17078,36 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 7,
+        "cost": 1,
+        "id": "WE1_029",
+        "name": "Swashburglar",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 2,
+        "id": "DAL_062",
+        "name": "Sweeping Strikes",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "GIL_528",
         "name": "Swift Messenger",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 10,
+        "cost": 1,
+        "id": "BT_233",
+        "name": "Sword and Board",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 5,
@@ -11896,11 +17127,27 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 6,
+        "id": "WE1_036",
+        "name": "Sylvanas Windrunner",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "ICC_913",
         "name": "Tainted Zealot",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 7,
+        "cost": 7,
+        "id": "DAL_719",
+        "name": "Tak Nozwhisker",
+        "rarity": 5,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -11951,6 +17198,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "DRG_049",
+        "name": "Tasty Flyfish",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
         "cost": 3,
         "id": "EX1_390",
         "name": "Tauren Warrior",
@@ -11958,8 +17213,24 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 3,
+        "cost": 5,
+        "id": "SCH_244",
+        "name": "Teacher's Pet",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_185",
+        "name": "Temple Berserker",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
         "cls": 6,
-        "cost": 6,
+        "cost": 5,
         "id": "EX1_623",
         "name": "Temple Enforcer",
         "rarity": 1,
@@ -11990,12 +17261,36 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 12,
+        "cost": 5,
+        "id": "DRG_084",
+        "name": "Tentacled Menace",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 10,
         "cost": 5,
         "id": "OG_033",
         "name": "Tentacles for Arms",
         "rarity": 4,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BT_126",
+        "name": "Teron Gorefiend",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "BT_159",
+        "name": "Terrorguard Escapee",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 3,
@@ -12020,6 +17315,14 @@ module.exports =
         "name": "Test Subject",
         "rarity": 3,
         "series": "BOT"
+    },
+    {
+        "cls": 4,
+        "cost": 10,
+        "id": "YOD_009",
+        "name": "The Amazing Reno",
+        "rarity": 5,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -12055,6 +17358,14 @@ module.exports =
     },
     {
         "cls": 10,
+        "cost": 10,
+        "id": "DAL_070",
+        "name": "The Boom Reaver",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 10,
         "cost": 9,
         "id": "BOT_069",
         "name": "The Boomship",
@@ -12079,11 +17390,43 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 7,
+        "id": "WE1_038",
+        "name": "The Curator",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "BT_302",
+        "name": "The Dark Portal",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
         "cost": 4,
         "id": "LOOT_526",
         "name": "The Darkness",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "YOD_042",
+        "name": "The Fist of Ra-den",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 2,
+        "cost": 8,
+        "id": "DAL_256",
+        "name": "The Forest's Aid",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 5,
@@ -12108,6 +17451,14 @@ module.exports =
         "name": "The Lich King",
         "rarity": 5,
         "series": "ICC"
+    },
+    {
+        "cls": 8,
+        "cost": 6,
+        "id": "BT_230",
+        "name": "The Lurker Below",
+        "rarity": 5,
+        "series": "BT"
     },
     {
         "cls": 3,
@@ -12151,7 +17502,7 @@ module.exports =
     },
     {
         "cls": 8,
-        "cost": 7,
+        "cost": 6,
         "id": "BOT_245",
         "name": "The Storm Bringer",
         "rarity": 5,
@@ -12174,6 +17525,14 @@ module.exports =
         "series": "OG"
     },
     {
+        "cls": 8,
+        "cost": 6,
+        "id": "WE1_013",
+        "name": "Thing from Below",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 7,
         "cost": 6,
         "id": "OG_073",
@@ -12183,7 +17542,7 @@ module.exports =
     },
     {
         "cls": 6,
-        "cost": 3,
+        "cost": 2,
         "id": "EX1_339",
         "name": "Thoughtsteal",
         "rarity": 1,
@@ -12254,12 +17613,28 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 8,
+        "cost": 8,
+        "id": "SCH_535",
+        "name": "Tidal Wave",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "TRL_302",
         "name": "Time Out!",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "DRG_246",
+        "name": "Time Rip",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 7,
@@ -12296,6 +17671,14 @@ module.exports =
     {
         "cls": 5,
         "cost": 8,
+        "id": "ULD_716",
+        "name": "Tip the Scales",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 5,
+        "cost": 8,
         "id": "EX1_383",
         "name": "Tirion Fordring",
         "rarity": 5,
@@ -12308,6 +17691,14 @@ module.exports =
         "name": "To My Side!",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 7,
+        "cost": 1,
+        "id": "DAL_010",
+        "name": "Togwaggle's Scheme",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 4,
@@ -12347,7 +17738,7 @@ module.exports =
         "id": "LOE_012",
         "name": "Tomb Pillager",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -12355,7 +17746,15 @@ module.exports =
         "id": "LOE_047",
         "name": "Tomb Spider",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 10,
+        "cost": 8,
+        "id": "ULD_253",
+        "name": "Tomb Warden",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 4,
@@ -12381,12 +17780,28 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 8,
+        "cost": 4,
+        "id": "BT_110",
+        "name": "Torrent",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 2,
         "cost": 2,
         "id": "UNG_078",
         "name": "Tortollan Forager",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 4,
+        "cost": 8,
+        "id": "ULD_236",
+        "name": "Tortollan Pilgrim",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -12430,11 +17845,42 @@ module.exports =
     },
     {
         "cls": 8,
+        "cost": 5,
+        "id": "SCH_615",
+        "name": "Totem Goliath",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "BT_113",
+        "name": "Totemic Reflection",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 8,
         "cost": 1,
         "id": "TRL_012",
         "name": "Totemic Smash",
         "rarity": 1,
         "series": "TRL"
+    },
+    {
+        "cls": 8,
+        "id": "ULD_171",
+        "name": "Totemic Surge",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_312",
+        "name": "Tour Guide",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -12461,12 +17907,28 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "DAL_077",
+        "name": "Toxfin",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "ICC_049",
         "name": "Toxic Arrow",
         "rarity": 4,
         "series": "ICC"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "DRG_255",
+        "name": "Toxic Reinforcements",
+        "rarity": 4,
+        "series": "DRG"
     },
     {
         "cls": 12,
@@ -12501,6 +17963,30 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "SCH_199",
+        "name": "Transfer Student",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "DRG_092",
+        "name": "Transmogrifier",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "DAL_078",
+        "name": "Traveling Healer",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 9,
         "cost": 3,
         "id": "ICC_206",
@@ -12518,11 +18004,27 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 1,
+        "id": "DRG_311",
+        "name": "Treenforcements",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
+        "cls": 2,
         "cost": 5,
         "id": "TRL_341",
         "name": "Treespeaker",
         "rarity": 4,
         "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "SCH_537",
+        "name": "Trick Totem",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 3,
@@ -12549,12 +18051,52 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_067",
+        "name": "Troll Batrider",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 10,
+        "cost": 8,
+        "id": "SCH_337",
+        "name": "Troublemaker",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 14,
+        "cost": 1,
+        "id": "SCH_279",
+        "name": "Trueaim Crescent",
+        "rarity": 4,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "DAL_775",
+        "name": "Tunnel Blaster",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
         "cls": 8,
         "cost": 1,
         "id": "LOE_018",
         "name": "Tunnel Trogg",
         "rarity": 1,
-        "series": "LOE"
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 5,
+        "cost": 8,
+        "id": "SCH_135",
+        "name": "Turalyon, the Tenured",
+        "rarity": 5,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -12645,6 +18187,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 2,
+        "cost": 5,
+        "id": "SCH_616",
+        "name": "Twilight Runner",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "OG_272",
@@ -12675,6 +18225,30 @@ module.exports =
         "name": "Twin Emperor Vek'lor",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 14,
+        "cost": 1,
+        "id": "BT_175",
+        "name": "Twin Slice",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "DRG_213",
+        "name": "Twin Tyrant",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 9,
+        "cost": 2,
+        "id": "YOD_025",
+        "name": "Twisted Knowledge",
+        "rarity": 1,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -12717,12 +18291,52 @@ module.exports =
         "series": "UNG"
     },
     {
+        "cls": 14,
+        "cost": 2,
+        "id": "BT_922",
+        "name": "Umberwing",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "DRG_027",
+        "name": "Umbral Skulker",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 3,
         "id": "EX1_258",
         "name": "Unbound Elemental",
         "rarity": 1,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "DAL_049",
+        "name": "Underbelly Angler",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "DAL_714",
+        "name": "Underbelly Fence",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "DAL_550",
+        "name": "Underbelly Ooze",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 7,
@@ -12741,6 +18355,14 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 5,
+        "cost": 3,
+        "id": "BT_018",
+        "name": "Underlight Angling Rod",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "FP1_028",
@@ -12754,15 +18376,23 @@ module.exports =
         "id": "LOE_019",
         "name": "Unearthed Raptor",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 4,
-        "cost": 4,
+        "cost": 3,
         "id": "BOT_254",
         "name": "Unexpected Results",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 7,
+        "cost": 6,
+        "id": "DAL_366",
+        "name": "Unidentified Contract",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 6,
@@ -12798,6 +18428,14 @@ module.exports =
     },
     {
         "cls": 3,
+        "cost": 6,
+        "id": "DAL_378",
+        "name": "Unleash the Beast",
+        "rarity": 3,
+        "series": "DAL"
+    },
+    {
+        "cls": 3,
         "cost": 3,
         "id": "EX1_538",
         "name": "Unleash the Hounds",
@@ -12829,12 +18467,44 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 3,
+        "cost": 1,
+        "id": "ULD_155",
+        "name": "Unseal the Vault",
+        "rarity": 5,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DAL_538",
+        "name": "Unseen Saboteur",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 6,
+        "cost": 4,
+        "id": "DAL_065",
+        "name": "Unsleeping Soul",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 8,
         "cost": 1,
         "id": "LOOT_504",
         "name": "Unstable Evolution",
         "rarity": 4,
         "series": "LOOT"
+    },
+    {
+        "cls": 9,
+        "cost": 1,
+        "id": "BT_199",
+        "name": "Unstable Felbolt",
+        "rarity": 1,
+        "series": "BT"
     },
     {
         "cls": 12,
@@ -12859,6 +18529,14 @@ module.exports =
         "name": "Untamed Beastmaster",
         "rarity": 4,
         "series": "TRL"
+    },
+    {
+        "cls": 2,
+        "cost": 1,
+        "id": "ULD_131",
+        "name": "Untapped Potential",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 9,
@@ -12893,12 +18571,36 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 14,
+        "cost": 1,
+        "id": "BT_407",
+        "name": "Ur'zul Horror",
+        "rarity": 1,
+        "series": "BT"
+    },
+    {
+        "cls": 3,
+        "cost": 3,
+        "id": "DAL_604",
+        "name": "Ursatron",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 9,
         "cost": 5,
         "id": "OG_302",
         "name": "Usher of Souls",
         "rarity": 1,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DRG_077",
+        "name": "Utgarde Grapplesniper",
+        "rarity": 3,
+        "series": "DRG"
     },
     {
         "cls": 5,
@@ -12923,6 +18625,14 @@ module.exports =
         "name": "Val'kyr Soulclaimer",
         "rarity": 3,
         "series": "ICC"
+    },
+    {
+        "cls": 9,
+        "cost": 7,
+        "id": "DRG_208",
+        "name": "Valdris Felgorge",
+        "rarity": 5,
+        "series": "DRG"
     },
     {
         "cls": 7,
@@ -12957,12 +18667,44 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 10,
+        "cost": 10,
+        "id": "WE1_033",
+        "name": "Varian Wrynn",
+        "rarity": 5,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "SCH_162",
+        "name": "Vectus",
+        "rarity": 5,
+        "series": "SCH"
+    },
+    {
+        "cls": 9,
+        "cost": 4,
+        "id": "DRG_203",
+        "name": "Veiled Worshipper",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 6,
         "cost": 3,
         "id": "GVG_010",
         "name": "Velen's Chosen",
         "rarity": 1,
         "series": "GVG"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "DAL_716",
+        "name": "Vendetta",
+        "rarity": 3,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -12997,12 +18739,36 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 3,
+        "cost": 6,
+        "id": "DRG_095",
+        "name": "Veranus",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
         "cls": 2,
         "cost": 5,
         "id": "UNG_100",
         "name": "Verdant Longneck",
         "rarity": 1,
         "series": "UNG"
+    },
+    {
+        "cls": 3,
+        "cost": 7,
+        "id": "DAL_379",
+        "name": "Vereesa Windrunner",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 8,
+        "cost": 4,
+        "id": "ULD_173",
+        "name": "Vessina",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 4,
@@ -13029,12 +18795,36 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 10,
+        "cost": 2,
+        "id": "DAL_759",
+        "name": "Vicious Scraphound",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 3,
         "cost": 5,
         "id": "GIL_562",
         "name": "Vilebrood Skitterer",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_450",
+        "name": "Vilefiend",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 14,
+        "cost": 4,
+        "id": "SCH_705",
+        "name": "Vilefiend Trainer",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 5,
@@ -13062,7 +18852,7 @@ module.exports =
     },
     {
         "cls": 7,
-        "cost": 3,
+        "cost": 2,
         "id": "BOT_084",
         "name": "Violet Haze",
         "rarity": 1,
@@ -13079,10 +18869,34 @@ module.exports =
     {
         "cls": 12,
         "cost": 4,
+        "id": "DAL_095",
+        "name": "Violet Spellsword",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
+        "cls": 4,
+        "cost": 1,
+        "id": "DRG_107",
+        "name": "Violet Spellwing",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
         "id": "NEW1_026",
         "name": "Violet Teacher",
         "rarity": 3,
         "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "DAL_096",
+        "name": "Violet Warden",
+        "rarity": 1,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -13117,6 +18931,14 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 8,
+        "cost": 4,
+        "id": "BT_101",
+        "name": "Vivid Spores",
+        "rarity": 3,
+        "series": "BT"
+    },
+    {
         "cls": 9,
         "cost": 2,
         "id": "BOT_443",
@@ -13139,6 +18961,14 @@ module.exports =
         "name": "Void Crusher",
         "rarity": 3,
         "series": "AT"
+    },
+    {
+        "cls": 9,
+        "cost": 5,
+        "id": "SCH_343",
+        "name": "Void Drinker",
+        "rarity": 4,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -13179,6 +19009,14 @@ module.exports =
         "name": "Vol'jin",
         "rarity": 5,
         "series": "GVG"
+    },
+    {
+        "cls": 6,
+        "cost": 5,
+        "id": "WE1_031",
+        "name": "Vol'jin",
+        "rarity": 5,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -13254,6 +19092,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "SCH_142",
+        "name": "Voracious Reader",
+        "rarity": 3,
+        "series": "SCH"
+    },
+    {
+        "cls": 12,
         "cost": 3,
         "id": "ICC_067",
         "name": "Vryghoul",
@@ -13267,6 +19113,30 @@ module.exports =
         "name": "Vulgar Homunculus",
         "rarity": 1,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 3,
+        "id": "ULD_209",
+        "name": "Vulpera Scoundrel",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 7,
+        "cost": 3,
+        "id": "SCH_519",
+        "name": "Vulpera Toxinblade",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 7,
+        "cost": 4,
+        "id": "DAL_720",
+        "name": "Waggle Pick",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -13285,6 +19155,14 @@ module.exports =
         "series": "TRL"
     },
     {
+        "cls": 8,
+        "cost": 8,
+        "id": "DAL_047",
+        "name": "Walking Fountain",
+        "rarity": 1,
+        "series": "DAL"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "GIL_680",
@@ -13293,12 +19171,28 @@ module.exports =
         "series": "GIL"
     },
     {
+        "cls": 12,
+        "cost": 1,
+        "id": "SCH_350",
+        "name": "Wand Thief",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
         "cls": 3,
         "cost": 2,
         "id": "LOOT_079",
         "name": "Wandering Monster",
         "rarity": 3,
         "series": "LOOT"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "SCH_160",
+        "name": "Wandmaker",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 7,
@@ -13341,12 +19235,28 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 14,
+        "cost": 6,
+        "id": "BT_430",
+        "name": "Warglaives of Azzinoth",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
         "cls": 5,
         "cost": 3,
         "id": "AT_075",
         "name": "Warhorse Trainer",
         "rarity": 1,
         "series": "AT"
+    },
+    {
+        "cls": 10,
+        "cost": 3,
+        "id": "BT_120",
+        "name": "Warmaul Challenger",
+        "rarity": 4,
+        "series": "BT"
     },
     {
         "cls": 10,
@@ -13366,11 +19276,43 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 5,
+        "id": "BT_729",
+        "name": "Waste Warden",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 12,
+        "cost": 5,
+        "id": "ULD_274",
+        "name": "Wasteland Assassin",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "ULD_194",
+        "name": "Wasteland Scorpid",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
         "cost": 2,
         "id": "TRL_407",
         "name": "Waterboy",
         "rarity": 3,
         "series": "TRL"
+    },
+    {
+        "cls": 5,
+        "cost": 1,
+        "id": "SCH_250",
+        "name": "Wave of Apathy",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -13381,12 +19323,36 @@ module.exports =
         "series": "LOOT"
     },
     {
+        "cls": 7,
+        "cost": 5,
+        "id": "DRG_036",
+        "name": "Waxadred",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 7,
+        "cost": 2,
+        "id": "YOD_018",
+        "name": "Waxmancy",
+        "rarity": 1,
+        "series": "CLASSIC"
+    },
+    {
         "cls": 12,
         "cost": 4,
         "id": "BOT_401",
         "name": "Weaponized Piñata",
         "rarity": 4,
         "series": "BOT"
+    },
+    {
+        "cls": 8,
+        "cost": 3,
+        "id": "ULD_170",
+        "name": "Weaponized Wasp",
+        "rarity": 3,
+        "series": "ULD"
     },
     {
         "cls": 10,
@@ -13445,6 +19411,29 @@ module.exports =
         "series": "GVG"
     },
     {
+        "cls": 7,
+        "cost": 2,
+        "id": "ULD_231",
+        "name": "Whirlkick Master",
+        "rarity": 4,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 8,
+        "id": "DAL_742",
+        "name": "Whirlwind Tempest",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 6,
+        "id": "DRG_301",
+        "name": "Whispers of EVIL",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
         "cls": 8,
         "cost": 5,
         "id": "CFM_324",
@@ -13483,6 +19472,14 @@ module.exports =
         "name": "Wickerflame Burnbristle",
         "rarity": 5,
         "series": "CFM"
+    },
+    {
+        "cls": 3,
+        "cost": 6,
+        "id": "ULD_212",
+        "name": "Wild Bloodstinger",
+        "rarity": 4,
+        "series": "ULD"
     },
     {
         "cls": 12,
@@ -13542,6 +19539,22 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 4,
+        "id": "DRG_058",
+        "name": "Wing Commander",
+        "rarity": 1,
+        "series": "DRG"
+    },
+    {
+        "cls": 2,
+        "cost": 7,
+        "id": "YOD_003",
+        "name": "Winged Guardian",
+        "rarity": 3,
+        "series": "CLASSIC"
+    },
+    {
+        "cls": 12,
         "id": "CS2_231",
         "name": "Wisp",
         "rarity": 1,
@@ -13570,6 +19583,14 @@ module.exports =
         "name": "Witch's Apprentice",
         "rarity": 1,
         "series": "GIL"
+    },
+    {
+        "cls": 8,
+        "cost": 2,
+        "id": "DAL_432",
+        "name": "Witch's Brew",
+        "rarity": 4,
+        "series": "DAL"
     },
     {
         "cls": 12,
@@ -13625,7 +19646,7 @@ module.exports =
         "id": "LOE_089",
         "name": "Wobbling Runts",
         "rarity": 3,
-        "series": "LOE"
+        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -13634,6 +19655,14 @@ module.exports =
         "name": "Woecleaver",
         "rarity": 5,
         "series": "LOOT"
+    },
+    {
+        "cls": 3,
+        "cost": 1,
+        "id": "SCH_133",
+        "name": "Wolpertinger",
+        "rarity": 1,
+        "series": "SCH"
     },
     {
         "cls": 10,
@@ -13669,6 +19698,22 @@ module.exports =
     },
     {
         "cls": 2,
+        "cost": 1,
+        "id": "ULD_136",
+        "name": "Worthy Expedition",
+        "rarity": 1,
+        "series": "ULD"
+    },
+    {
+        "cls": 12,
+        "cost": 7,
+        "id": "ULD_215",
+        "name": "Wrapped Golem",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
+        "cls": 2,
         "cost": 2,
         "id": "EX1_154",
         "name": "Wrath",
@@ -13692,12 +19737,60 @@ module.exports =
         "series": "CFM"
     },
     {
+        "cls": 14,
+        "cost": 3,
+        "id": "BT_355",
+        "name": "Wrathscale Naga",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 14,
+        "cost": 5,
+        "id": "BT_510",
+        "name": "Wrathspike Brute",
+        "rarity": 4,
+        "series": "BT"
+    },
+    {
+        "cls": 10,
+        "cost": 4,
+        "id": "DAL_063",
+        "name": "Wrenchcalibur",
+        "rarity": 4,
+        "series": "DAL"
+    },
+    {
+        "cls": 6,
+        "cost": 3,
+        "id": "ULD_269",
+        "name": "Wretched Reclaimer",
+        "rarity": 3,
+        "series": "ULD"
+    },
+    {
         "cls": 12,
         "cost": 1,
         "id": "ICC_468",
         "name": "Wretched Tiller",
         "rarity": 1,
         "series": "ICC"
+    },
+    {
+        "cls": 12,
+        "cost": 4,
+        "id": "SCH_313",
+        "name": "Wretched Tutor",
+        "rarity": 1,
+        "series": "SCH"
+    },
+    {
+        "cls": 4,
+        "cost": 5,
+        "id": "SCH_243",
+        "name": "Wyrm Weaver",
+        "rarity": 3,
+        "series": "SCH"
     },
     {
         "cls": 12,
@@ -13716,12 +19809,28 @@ module.exports =
         "series": "AT"
     },
     {
+        "cls": 12,
+        "cost": 2,
+        "id": "DRG_062",
+        "name": "Wyrmrest Purifier",
+        "rarity": 4,
+        "series": "DRG"
+    },
+    {
         "cls": 7,
         "cost": 4,
         "id": "OG_080",
         "name": "Xaril, Poisoned Mind",
         "rarity": 5,
         "series": "OG"
+    },
+    {
+        "cls": 12,
+        "cost": 6,
+        "id": "EX1_614",
+        "name": "Xavius",
+        "rarity": 5,
+        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -13772,6 +19881,22 @@ module.exports =
         "series": "CLASSIC"
     },
     {
+        "cls": 2,
+        "cost": 9,
+        "id": "DRG_320",
+        "name": "Ysera, Unleashed",
+        "rarity": 5,
+        "series": "DRG"
+    },
+    {
+        "cls": 2,
+        "cost": 9,
+        "id": "BT_131",
+        "name": "Ysiel Windsinger",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
         "cls": 5,
         "cost": 4,
         "id": "TRL_545",
@@ -13788,6 +19913,14 @@ module.exports =
     },
     {
         "cls": 12,
+        "cost": 2,
+        "id": "DAL_800",
+        "name": "Zayle, Shadow Cloak",
+        "rarity": 5,
+        "series": "DAL"
+    },
+    {
+        "cls": 12,
         "cost": 1,
         "id": "OG_158",
         "name": "Zealous Initiate",
@@ -13801,6 +19934,14 @@ module.exports =
         "name": "Zentimo",
         "rarity": 5,
         "series": "TRL"
+    },
+    {
+        "cls": 12,
+        "cost": 2,
+        "id": "ULD_003",
+        "name": "Zephrys the Great",
+        "rarity": 5,
+        "series": "ULD"
     },
     {
         "cls": 6,
@@ -13827,6 +19968,14 @@ module.exports =
         "series": "BOT"
     },
     {
+        "cls": 3,
+        "cost": 3,
+        "id": "BT_210",
+        "name": "Zixor, Apex Predator",
+        "rarity": 5,
+        "series": "BT"
+    },
+    {
         "cls": 12,
         "cost": 3,
         "id": "LOOT_516",
@@ -13851,12 +20000,28 @@ module.exports =
         "series": "KAR"
     },
     {
+        "cls": 12,
+        "cost": 4,
+        "id": "DRG_064",
+        "name": "Zul'Drak Ritualist",
+        "rarity": 3,
+        "series": "DRG"
+    },
+    {
         "cls": 3,
         "cost": 10,
         "id": "TRL_065",
         "name": "Zul'jin",
         "rarity": 5,
         "series": "TRL"
+    },
+    {
+        "cls": 9,
+        "cost": 8,
+        "id": "DRG_209",
+        "name": "Zzeraku the Warped",
+        "rarity": 5,
+        "series": "DRG"
     }
 ]
 ;

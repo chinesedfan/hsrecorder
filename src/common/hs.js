@@ -22,6 +22,8 @@ export const RARITY_LIST = [
     {name: 'Common', color: '#333'}
 ];
 
+// https://hs.blizzard.cn/version
+// https://en.wikipedia.org/wiki/Hearthstone#Card_sets
 export const SERIES_LIST = [
     // 2013
     'CLASSIC',
@@ -31,8 +33,12 @@ export const SERIES_LIST = [
     'BRM', 'AT', 'LOE',
     // 2016
     'OG', 'KAR', 'CFM',
-    // 2017
+    // 2017 
     'UNG', 'ICC', 'LOOT',
     // 2018
-    'GIL', 'BOT', 'TRL'
+    'GIL', 'BOT', 'TRL',
+    // 2019
+    'DAL', 'ULD', 'DRG',
+    // 2020
+    'BT', 'SCH',
 ];

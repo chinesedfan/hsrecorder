@@ -58,19 +58,31 @@ _.each(counts, function(item, series) {
 });
 
 function getSeries(str) {
-    var map = {
-        FP1: 'NAXX',
-        GVG: 'GVG',
-        BRM: 'BRM',
-        AT: 'AT',
-        LOE: 'LOE',
-        LOEA10: 'LOE',
-        OG: 'OG',
-        KAR: 'KAR',
-        CFM: 'CFM',
-        UNG: 'UNG',
-        ICC: 'ICC'
-    };
+    var map = [
+        // 2014
+        'NAXX', 'GVG',
+        // 2015
+        'BRM', 'AT', 'LOE',
+        // 2016
+        'OG', 'KAR', 'CFM',
+        // 2017 
+        'UNG', 'ICC', 'LOOT',
+        // 2018
+        'GIL', 'BOT', 'TRL',
+        // 2019
+        'DAL', 'ULD', 'DRG',
+        // 2020
+        'BT', 'SCH',
+    ].reduce((o, k) => {
+        if (k === 'NAXX') {
+            o.FP1 = k;
+        } else if (k === 'LOE') {
+            o.LOEA10 = k;
+        } else {
+            o[k] = k;
+        }
+        return o;
+    }, {});
     var prefix = str.replace(/^([^_]+)_.*$/, '$1');
     return map[prefix] || 'CLASSIC';
 }

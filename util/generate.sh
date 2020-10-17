@@ -17,6 +17,8 @@ TAG_FILE=GameTag.cs
 TAG_MAP_FILE=$OUTPUT_DIR/tagmap.js
 # The final result is saved into this file.
 INFO_FILE=$OUTPUT_DIR/cardlist.js
+# Counts for each series
+COUNTS_FILE=$OUTPUT_DIR/cardcounts.js
 
 # The directory where you install the game.
 HS_HOME=/Applications/Hearthstone
@@ -27,5 +29,7 @@ XML_FILE=../bin/CardDefs.xml
 node parseCs.js $TAG_FILE > $TAG_MAP_FILE
 # Covert XML into json
 node parseXml.js $XML_FILE $TAG_MAP_FILE > $INFO_FILE
+# Update counts
+node countCards.js > $COUNTS_FILE
 
 echo "...done!"
