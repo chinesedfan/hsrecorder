@@ -438,7 +438,7 @@ module.exports =
         "id": "LOE_110",
         "name": "Ancient Shade",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 10,
@@ -486,7 +486,7 @@ module.exports =
         "id": "LOE_119",
         "name": "Animated Armor",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 4,
@@ -590,7 +590,7 @@ module.exports =
         "id": "LOE_061",
         "name": "Anubisath Sentinel",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -606,7 +606,7 @@ module.exports =
         "id": "LOE_026",
         "name": "Anyfin Can Happen",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 4,
@@ -806,7 +806,7 @@ module.exports =
         "id": "LOE_092",
         "name": "Arch-Thief Rafaam",
         "rarity": 5,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 9,
@@ -2388,7 +2388,7 @@ module.exports =
         "id": "LOE_077",
         "name": "Brann Bronzebeard",
         "rarity": 5,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 10,
@@ -3842,7 +3842,7 @@ module.exports =
         "id": "LOE_007",
         "name": "Curse of Rafaam",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 9,
@@ -3858,7 +3858,7 @@ module.exports =
         "id": "LOE_118",
         "name": "Cursed Blade",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 7,
@@ -4074,7 +4074,7 @@ module.exports =
         "id": "LOE_023",
         "name": "Dark Peddler",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 9,
@@ -4194,7 +4194,7 @@ module.exports =
         "id": "LOE_021",
         "name": "Dart Trap",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 10,
@@ -4482,7 +4482,7 @@ module.exports =
         "id": "LOE_020",
         "name": "Desert Camel",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -4777,7 +4777,7 @@ module.exports =
         "id": "LOE_053",
         "name": "Djinni of Zephyrs",
         "rarity": 4,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -5561,7 +5561,7 @@ module.exports =
         "id": "LOE_107",
         "name": "Eerie Statue",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 4,
@@ -5648,7 +5648,7 @@ module.exports =
         "id": "LOE_079",
         "name": "Elise Starseeker",
         "rarity": 5,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 2,
@@ -5815,7 +5815,7 @@ module.exports =
         "id": "LOE_104",
         "name": "Entomb",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 7,
@@ -5895,7 +5895,7 @@ module.exports =
         "id": "LOE_003",
         "name": "Ethereal Conjurer",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 7,
@@ -5959,7 +5959,7 @@ module.exports =
         "id": "LOE_113",
         "name": "Everyfin is Awesome",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -6071,7 +6071,7 @@ module.exports =
         "id": "LOE_111",
         "name": "Excavated Evil",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -6119,7 +6119,7 @@ module.exports =
         "id": "LOE_105",
         "name": "Explorer's Hat",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 8,
@@ -6559,7 +6559,7 @@ module.exports =
         "id": "LOE_022",
         "name": "Fierce Monkey",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 3,
@@ -7009,7 +7009,7 @@ module.exports =
         "id": "LOE_002",
         "name": "Forgotten Torch",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 8,
@@ -7041,7 +7041,7 @@ module.exports =
         "id": "LOE_073",
         "name": "Fossilized Devilsaur",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 6,
@@ -7776,7 +7776,7 @@ module.exports =
         "id": "LOE_039",
         "name": "Gorillabot A-3",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -8728,7 +8728,7 @@ module.exports =
         "id": "LOE_046",
         "name": "Huge Toad",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 14,
@@ -9423,7 +9423,7 @@ module.exports =
         "id": "LOE_029",
         "name": "Jeweled Scarab",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 8,
@@ -9479,7 +9479,7 @@ module.exports =
         "id": "LOE_051",
         "name": "Jungle Moonkin",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -9671,7 +9671,7 @@ module.exports =
         "id": "LOE_017",
         "name": "Keeper of Uldaman",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 2,
@@ -11677,7 +11677,7 @@ module.exports =
         "id": "LOE_050",
         "name": "Mounted Raptor",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 4,
@@ -11820,7 +11820,7 @@ module.exports =
         "id": "LOE_006",
         "name": "Museum Curator",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 5,
@@ -11907,7 +11907,7 @@ module.exports =
         "id": "LOE_038",
         "name": "Naga Sea Witch",
         "rarity": 4,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 3,
@@ -12275,7 +12275,7 @@ module.exports =
         "id": "LOE_009",
         "name": "Obsidian Destroyer",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 7,
@@ -12755,7 +12755,7 @@ module.exports =
         "id": "LOE_010",
         "name": "Pit Snake",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 7,
@@ -13696,7 +13696,7 @@ module.exports =
         "id": "LOE_115",
         "name": "Raven Idol",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -13895,7 +13895,7 @@ module.exports =
         "id": "LOE_116",
         "name": "Reliquary Seeker",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -13919,7 +13919,7 @@ module.exports =
         "id": "LOE_011",
         "name": "Reno Jackson",
         "rarity": 5,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 4,
@@ -14167,7 +14167,7 @@ module.exports =
         "id": "LOE_016",
         "name": "Rumbling Elemental",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -14271,7 +14271,7 @@ module.exports =
         "id": "LOE_027",
         "name": "Sacred Trial",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -15508,7 +15508,7 @@ module.exports =
         "id": "LOE_076",
         "name": "Sir Finley Mrrgglton",
         "rarity": 5,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 5,
@@ -16787,7 +16787,7 @@ module.exports =
         "id": "LOE_086",
         "name": "Summoning Stone",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -17570,7 +17570,7 @@ module.exports =
         "id": "LOE_012",
         "name": "Tomb Pillager",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 12,
@@ -17578,7 +17578,7 @@ module.exports =
         "id": "LOE_047",
         "name": "Tomb Spider",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 10,
@@ -17920,7 +17920,7 @@ module.exports =
         "id": "LOE_018",
         "name": "Tunnel Trogg",
         "rarity": 1,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 5,
@@ -18208,7 +18208,7 @@ module.exports =
         "id": "LOE_019",
         "name": "Unearthed Raptor",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 4,
@@ -19462,7 +19462,7 @@ module.exports =
         "id": "LOE_089",
         "name": "Wobbling Runts",
         "rarity": 3,
-        "series": "CLASSIC"
+        "series": "LOE"
     },
     {
         "cls": 10,

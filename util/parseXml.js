@@ -126,6 +126,7 @@
 			if (k === 'NAXX') {
 				o.FP1 = k;
 			} else if (k === 'LOE') {
+				o.LOE = k;
 				o.LOEA10 = k;
 			} else {
 				o[k] = k;
