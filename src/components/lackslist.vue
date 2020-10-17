@@ -6,7 +6,7 @@
         </div>
         <div class="list-bottom" ref="bottom">
             <table><tbody>
-                <tr v-for="item in finalItems" :data-id="item.id" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"><td>
+                <tr v-for="item in finalItems" :data-id="item.id" :data-raw-id="item.rawId" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave"><td>
                     <label :style="{color: color}">{{ item.name }}</label>
                     <div v-if="isEditMode && item.pendingCount" class="count">{{ item.pendingCount > 0 ? '+' + item.pendingCount : item.pendingCount }}</div>
                     <div :class="{mask: shouldMaskLeft(item)}" class="left" @click="onLeftClicked(item)"></div>
@@ -84,12 +84,13 @@ export default {
         onMouseEnter(e) {
             const tr = e.currentTarget;
             const id = tr.getAttribute('data-id');
+            const rawId = tr.getAttribute('data-raw-id');
             const item = _.find(this.items, (x) => x.id == id);
             if (!item) return;
 
             const {cls, name} = item;
 
-            this.previewSrc = `http://hearthstone.nos.netease.com/1/hscards/${cls.toUpperCase()}__${id}_zhCN_${name.replace(/[^A-Za-z0-9]/g, '')}.png`;
+            this.previewSrc = `http://wspic.iyingdi.cn/card/hearthstone/series/blz_all/${rawId}.png`;
             this.previewStyle = {
                 top: Math.max(0, tr.offsetTop - this.previewHeight - this.$refs.bottom.scrollTop) + 'px',
                 right: tr.clientWidth + 'px'

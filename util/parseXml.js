@@ -28,6 +28,7 @@
 		    tags = entity.getElementsByTagName('Tag'), locs,
 		    tid, type, value, text;
 
+		obj['ID'] = entity.getAttribute('ID');
 		obj['CardID'] = entity.getAttribute('CardID');
 		for (var i = 0; i < tags.length; i++) {
 			tid = tags[i].getAttribute('enumID');
@@ -96,6 +97,7 @@
 		// only keep the neccessary fields
 		ret = {
 			id: obj.CardID,
+			rawId: obj.ID,
 			name: obj.CARDNAME,
 			cls: obj.CLASS,
 			rarity: obj.RARITY,
