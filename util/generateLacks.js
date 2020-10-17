@@ -46,12 +46,13 @@ function main() {
     cardsMap.forEach(card => {
         const id = m1[card.id]
         const [normal, golden] = res.collection[id] || [0, 0]
+        const total = normal + golden
 
         let lack
         if (card.rarity === 5) { // Legendary
-            lack = Math.max(0, 1 - normal)
+            lack = Math.max(0, 1 - total)
         } else {
-            lack = Math.max(0, 2 - normal)
+            lack = Math.max(0, 2 - total)
         }
 
         if (lack) {
