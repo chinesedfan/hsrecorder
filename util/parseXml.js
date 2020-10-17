@@ -90,6 +90,8 @@
 		if (!obj.RARITY) return null;
 		// ignore free cards
 		if (obj.RARITY == 2) return null;
+		// ignore duplicated cards
+		if (obj.DECK_RULE_COUNT_AS_COPY_OF_CARD_ID) return null;
 
 		// only keep the neccessary fields
 		ret = {

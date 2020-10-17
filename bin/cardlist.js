@@ -1025,14 +1025,6 @@ module.exports =
         "series": "AT"
     },
     {
-        "cls": 2,
-        "cost": 4,
-        "id": "WE1_021",
-        "name": "Astral Communion",
-        "rarity": 4,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 4,
         "cost": 2,
         "id": "BOT_101",
@@ -1138,14 +1130,6 @@ module.exports =
     },
     {
         "cls": 5,
-        "cost": 1,
-        "id": "WE1_025",
-        "name": "Avenge",
-        "rarity": 1,
-        "series": "CLASSIC"
-    },
-    {
-        "cls": 5,
         "cost": 6,
         "id": "EX1_384",
         "name": "Avenging Wrath",
@@ -1239,14 +1223,6 @@ module.exports =
         "name": "Babbling Book",
         "rarity": 3,
         "series": "KAR"
-    },
-    {
-        "cls": 4,
-        "cost": 1,
-        "id": "WE1_006",
-        "name": "Babbling Book",
-        "rarity": 3,
-        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -2008,14 +1984,6 @@ module.exports =
         "series": "OG"
     },
     {
-        "cls": 10,
-        "cost": 4,
-        "id": "WE1_034",
-        "name": "Bloodhoof Brave",
-        "rarity": 1,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 12,
         "cost": 2,
         "id": "EX1_012",
@@ -2693,14 +2661,6 @@ module.exports =
         "name": "Call of the Wild",
         "rarity": 4,
         "series": "OG"
-    },
-    {
-        "cls": 3,
-        "cost": 8,
-        "id": "WE1_027",
-        "name": "Call of the Wild",
-        "rarity": 4,
-        "series": "CLASSIC"
     },
     {
         "cls": 3,
@@ -5811,14 +5771,6 @@ module.exports =
     },
     {
         "cls": 12,
-        "cost": 6,
-        "id": "WE1_039",
-        "name": "Emperor Thaurissan",
-        "rarity": 5,
-        "series": "CLASSIC"
-    },
-    {
-        "cls": 12,
         "cost": 3,
         "id": "SCH_157",
         "name": "Enchanted Cauldron",
@@ -6096,14 +6048,6 @@ module.exports =
         "name": "Evolve",
         "rarity": 3,
         "series": "OG"
-    },
-    {
-        "cls": 8,
-        "cost": 1,
-        "id": "WE1_014",
-        "name": "Evolve",
-        "rarity": 3,
-        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -6839,14 +6783,6 @@ module.exports =
         "name": "Flamewaker",
         "rarity": 3,
         "series": "BRM"
-    },
-    {
-        "cls": 4,
-        "cost": 3,
-        "id": "WE1_023",
-        "name": "Flamewaker",
-        "rarity": 3,
-        "series": "CLASSIC"
     },
     {
         "cls": 8,
@@ -9019,14 +8955,6 @@ module.exports =
         "series": "BRM"
     },
     {
-        "cls": 9,
-        "cost": 3,
-        "id": "WE1_015",
-        "name": "Imp Gang Boss",
-        "rarity": 1,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 12,
         "cost": 3,
         "id": "EX1_597",
@@ -10066,14 +9994,6 @@ module.exports =
         "series": "CFM"
     },
     {
-        "cls": 2,
-        "cost": 10,
-        "id": "WE1_022",
-        "name": "Kun the Forgotten King",
-        "rarity": 5,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 12,
         "cost": 5,
         "id": "AT_119",
@@ -10401,14 +10321,6 @@ module.exports =
         "series": "GVG"
     },
     {
-        "cls": 6,
-        "cost": 6,
-        "id": "WE1_030",
-        "name": "Lightbomb",
-        "rarity": 4,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 5,
         "cost": 2,
         "id": "DAL_568",
@@ -10582,14 +10494,6 @@ module.exports =
         "name": "Lock and Load",
         "rarity": 4,
         "series": "AT"
-    },
-    {
-        "cls": 3,
-        "cost": 2,
-        "id": "WE1_026",
-        "name": "Lock and Load",
-        "rarity": 4,
-        "series": "CLASSIC"
     },
     {
         "cls": 12,
@@ -11966,28 +11870,12 @@ module.exports =
         "series": "AT"
     },
     {
-        "cls": 5,
-        "cost": 6,
-        "id": "WE1_024",
-        "name": "Mysterious Challenger",
-        "rarity": 4,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 12,
         "cost": 10,
         "id": "OG_133",
         "name": "N'Zoth, the Corruptor",
         "rarity": 5,
         "series": "OG"
-    },
-    {
-        "cls": 12,
-        "cost": 10,
-        "id": "WE1_035",
-        "name": "N'Zoth, the Corruptor",
-        "rarity": 5,
-        "series": "CLASSIC"
     },
     {
         "cls": 10,
@@ -13628,14 +13516,6 @@ module.exports =
         "series": "CLASSIC"
     },
     {
-        "cls": 12,
-        "cost": 8,
-        "id": "WE1_037",
-        "name": "Ragnaros the Firelord",
-        "rarity": 5,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 5,
         "cost": 8,
         "id": "OG_229",
@@ -14056,14 +13936,6 @@ module.exports =
         "name": "Renounce Darkness",
         "rarity": 4,
         "series": "OG"
-    },
-    {
-        "cls": 9,
-        "cost": 2,
-        "id": "WE1_032",
-        "name": "Renounce Darkness",
-        "rarity": 4,
-        "series": "CLASSIC"
     },
     {
         "cls": 5,
@@ -15175,14 +15047,6 @@ module.exports =
         "name": "Shaku, the Collector",
         "rarity": 5,
         "series": "CFM"
-    },
-    {
-        "cls": 7,
-        "cost": 3,
-        "id": "WE1_028",
-        "name": "Shaku, the Collector",
-        "rarity": 5,
-        "series": "CLASSIC"
     },
     {
         "cls": 3,
@@ -17078,14 +16942,6 @@ module.exports =
         "series": "KAR"
     },
     {
-        "cls": 7,
-        "cost": 1,
-        "id": "WE1_029",
-        "name": "Swashburglar",
-        "rarity": 1,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 10,
         "cost": 2,
         "id": "DAL_062",
@@ -17121,14 +16977,6 @@ module.exports =
         "cls": 12,
         "cost": 6,
         "id": "EX1_016",
-        "name": "Sylvanas Windrunner",
-        "rarity": 5,
-        "series": "CLASSIC"
-    },
-    {
-        "cls": 12,
-        "cost": 6,
-        "id": "WE1_036",
         "name": "Sylvanas Windrunner",
         "rarity": 5,
         "series": "CLASSIC"
@@ -17389,14 +17237,6 @@ module.exports =
         "series": "KAR"
     },
     {
-        "cls": 12,
-        "cost": 7,
-        "id": "WE1_038",
-        "name": "The Curator",
-        "rarity": 5,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 9,
         "cost": 4,
         "id": "BT_302",
@@ -17523,14 +17363,6 @@ module.exports =
         "name": "Thing from Below",
         "rarity": 3,
         "series": "OG"
-    },
-    {
-        "cls": 8,
-        "cost": 6,
-        "id": "WE1_013",
-        "name": "Thing from Below",
-        "rarity": 3,
-        "series": "CLASSIC"
     },
     {
         "cls": 7,
@@ -18667,14 +18499,6 @@ module.exports =
         "series": "AT"
     },
     {
-        "cls": 10,
-        "cost": 10,
-        "id": "WE1_033",
-        "name": "Varian Wrynn",
-        "rarity": 5,
-        "series": "CLASSIC"
-    },
-    {
         "cls": 12,
         "cost": 5,
         "id": "SCH_162",
@@ -19009,14 +18833,6 @@ module.exports =
         "name": "Vol'jin",
         "rarity": 5,
         "series": "GVG"
-    },
-    {
-        "cls": 6,
-        "cost": 5,
-        "id": "WE1_031",
-        "name": "Vol'jin",
-        "rarity": 5,
-        "series": "CLASSIC"
     },
     {
         "cls": 12,
